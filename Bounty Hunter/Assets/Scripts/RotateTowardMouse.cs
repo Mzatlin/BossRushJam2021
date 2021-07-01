@@ -5,11 +5,15 @@ using UnityEngine;
 public class RotateTowardMouse : MonoBehaviour
 {
     Quaternion gunRotation;
+    SpriteRenderer render;
+    int sortOrder;
     Camera cam;
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
+        render = GetComponentInChildren<SpriteRenderer>();
+        sortOrder = render.sortingOrder;
     }
 
     // Update is called once per frame
@@ -38,11 +42,23 @@ public class RotateTowardMouse : MonoBehaviour
         if (angle > 90 || angle < -90)
         {
             aimLocalScale.y = -1f;
+           
         }
         else
         {
             aimLocalScale.y = +1f;
+           
         }
+        if(angle < 0)
+        {
+            render.sortingOrder = sortOrder;
+        }
+        else
+        {
+            render.sortingOrder -= 1;
+        }
+
+
         transform.localScale = aimLocalScale;
     }
 }
