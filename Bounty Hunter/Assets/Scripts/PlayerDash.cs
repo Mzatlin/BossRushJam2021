@@ -7,12 +7,13 @@ public class PlayerDash : MonoBehaviour
     Camera cam;
     bool canDash = true;
     bool isdashing = false;
+    float distance;
     Vector2 mousePos;
     Vector2 dashDirection;
     float dashSpeed;
     IMovePhysics physics;
     [SerializeField] float maxDashSpeed = 100f;
-    float timeThreshold = 0.3f;
+    float timeThreshold = 0.4f;
     float dashDelay;
     // Start is called before the first frame update
     void Start()
@@ -45,10 +46,10 @@ public class PlayerDash : MonoBehaviour
 
     void HandleDash()
     {
-        if (Vector2.Distance(mousePos, transform.position) < 3f)
+        distance = Vector2.Distance(mousePos, transform.position);
+        if (distance < 3f || dashSpeed < 5)
         {
             isdashing = false;
-            canDash = false;
             dashSpeed = maxDashSpeed;
             dashDelay = Time.time + timeThreshold;
         }
