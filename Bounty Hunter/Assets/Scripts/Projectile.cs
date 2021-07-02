@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] float projectileSpeed = 20f;
+    public float projectileSpeed = 20f;
     float lifetime = 5f;
     float currentTime;
     Rigidbody2D rb;
