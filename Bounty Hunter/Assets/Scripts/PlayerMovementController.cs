@@ -10,17 +10,27 @@ public class PlayerMovementController : MonoBehaviour
     float horizontalMovement;
 
     IMovePhysics physics;
+    IPlayerStats stats;
 
     // Start is called before the first frame update
     void Start()
     {
         physics = GetComponent<IMovePhysics>();
+        stats = GetComponent<IPlayerStats>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        CalculateMovement();
+        if(stats != null && stats.GetPlayerReadiness())
+        {
+            CalculateMovement();
+        }
+        else
+        {
+            physics.SetMoveVelocity(Vector2.zero);
+        }
+
     }
 
     void CalculateMovement()

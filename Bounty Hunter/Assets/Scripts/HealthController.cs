@@ -23,6 +23,7 @@ public class HealthController : HitBase, IHealth
     {
         if (isDead)
         {
+            CanHit = false;
             return;
         }
 

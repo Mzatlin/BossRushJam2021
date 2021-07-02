@@ -8,10 +8,12 @@ public class PlayerFireWeapon : MonoBehaviour
 
     [SerializeField] GameObject weapon;
     IShootable fire;
+    IPlayerStats stats;
 
     // Start is called before the first frame update
     void Start()
     {
+        stats = GetComponent<IPlayerStats>();
         if (weapon != null)
         {
             fire = weapon.GetComponent<IShootable>();
@@ -33,6 +35,6 @@ public class PlayerFireWeapon : MonoBehaviour
 
     bool CanFire()
     {
-        return Time.time > timeBeforeFire;
+        return Time.time > timeBeforeFire && stats.GetPlayerReadiness();
     }
 }

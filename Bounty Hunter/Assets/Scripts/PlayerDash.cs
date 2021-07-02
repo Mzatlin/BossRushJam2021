@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerDash : MonoBehaviour
@@ -10,8 +8,10 @@ public class PlayerDash : MonoBehaviour
     float distance;
     Vector2 mousePos;
     Vector2 dashDirection;
+    Collider2D playerCollider;
     float dashSpeed;
     IMovePhysics physics;
+    IPlayerStats stats;
     [SerializeField] float maxDashSpeed = 100f;
     float timeThreshold = 0.4f;
     float dashDelay;
@@ -21,6 +21,8 @@ public class PlayerDash : MonoBehaviour
         cam = Camera.main;
         dashSpeed = maxDashSpeed;
         physics = GetComponent<IMovePhysics>();
+        stats = GetComponent<IPlayerStats>();
+        playerCollider = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -33,7 +35,7 @@ public class PlayerDash : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && stats != null && stats.GetPlayerReadiness())
         {
             AttemptDash();
         }
@@ -52,6 +54,14 @@ public class PlayerDash : MonoBehaviour
             isdashing = false;
             dashSpeed = maxDashSpeed;
             dashDelay = Time.time + timeThreshold;
+            if (stats != null)
+            {
+                stats.SetPlayerReadiness(true);
+            }
+            if (playerCollider != null)
+            {
+                playerCollider.enabled = true;
+            }
         }
         else
         {
@@ -69,6 +79,14 @@ public class PlayerDash : MonoBehaviour
             dashDirection = (mousePos - (Vector2)transform.position).normalized;
             isdashing = true;
             canDash = false;
+            if(stats != null)
+            {
+                stats.SetPlayerReadiness(false);
+            }
+            if(playerCollider != null)
+            {
+                playerCollider.enabled = false;
+            }
         }
     }
 }

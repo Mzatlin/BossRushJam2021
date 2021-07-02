@@ -29,12 +29,16 @@ public class CircleBulletPattern : MonoBehaviour
     void SpawnProjectile(int projectileAmount)
     {
         float angleStep = 360f / projectileAmount;
-        float angle = 0f;
+        float angle = 90f;
 
         for (int i = 0; i < projectileAmount; i++)
         {
-            float projectileDirectionX = startPoint.x + Mathf.Sin((angle * Mathf.PI) / 180) * radius;
-            float projectileDirectionY = startPoint.y + Mathf.Cos((angle * Mathf.PI) / 180) * radius;
+            //float projectileDirectionX = startPoint.x + Mathf.Sin((angle * Mathf.PI) / 180) * radius;
+           // float projectileDirectionY = startPoint.y + Mathf.Cos((angle * Mathf.PI) / 180) * radius;
+
+            float projectileDirectionX = startPoint.x + Mathf.Sin((angle * Mathf.PI) / 180f);
+            float projectileDirectionY = startPoint.y + Mathf.Cos((angle * Mathf.PI) / 180f);
+
 
             Vector2 projectileVector = new Vector2(projectileDirectionX, projectileDirectionY);
             Vector2 projectileMoveDirection = (projectileVector - (Vector2)startPoint).normalized * projectileSpeed;
@@ -44,10 +48,9 @@ public class CircleBulletPattern : MonoBehaviour
 
             gunRotation.eulerAngles = new Vector3(0, 0, bulletangle);
             tmpObj.transform.rotation = gunRotation;
-            //tmpObj.GetComponent<Rigidbody2D>().velocity = new Vector3(projectileMoveDirection.x,projectileMoveDirection.y,0);
 
-            angle += angleStep;
-
+             //angle += angleStep;
+            angle += 10f;
         }
     }
 }
