@@ -13,13 +13,11 @@ public class BossChargePlayer : MonoBehaviour
     [SerializeField] LineRenderer render;
     bool isCharging = false;
     bool isAiming = false;
-    Rigidbody2D rb;
     int chargeAmounts = 3;
     Vector2 moveDirection;
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         ResetEnemy();
         render = GetComponent<LineRenderer>();
     }
@@ -32,7 +30,7 @@ public class BossChargePlayer : MonoBehaviour
             if (render != null && isAiming)
             {
                 render.enabled = true;
-                render.SetPosition(0, (player.transform.position)/2 );
+                render.SetPosition(0, (player.transform.position)/4 );
                 render.SetPosition(1, transform.position);
             }
             moveDirection = (player.transform.position - transform.position).normalized;
@@ -42,9 +40,6 @@ public class BossChargePlayer : MonoBehaviour
             render.enabled = false;
             transform.position += (Vector3)(moveDirection * chargeSpeed * Time.fixedDeltaTime);
         }
-
-
-        //rb.velocity = moveDirection * chargeSpeed * Time.fixedDeltaTime;
     }
 
     void ResetEnemy()
@@ -72,7 +67,7 @@ public class BossChargePlayer : MonoBehaviour
 
     IEnumerator ResetDelay()
     {
-        yield return new WaitForSeconds(chargeDelay / 2);
+        yield return new WaitForSeconds(chargeDelay / 1.5f);
         ResetEnemy();
     }
 

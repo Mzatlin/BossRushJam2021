@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-public abstract class BossStateBase 
+public abstract class BossStateBase : IState
 {
     protected GameObject bossGameObject;
 
