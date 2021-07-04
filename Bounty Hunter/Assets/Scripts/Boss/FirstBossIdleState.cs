@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class FirstBossIdleState :BossStateBase
 {
     FirstBossAI boss;
-    Type LastState;
+    Type lastState;
+    Type currentState;
     bool hasWaited = false;
     public FirstBossIdleState(FirstBossAI _boss) : base(_boss.gameObject)
     {
@@ -17,13 +19,21 @@ public class FirstBossIdleState :BossStateBase
     {
         Debug.Log("Entered Idle State");
         hasWaited = false;
+        currentState = GetRandomState();
     }
 
-    void GetRandomState()
+    Type GetRandomState()
     {
-     /*   int randomPos = UnityEngine.Random.Range(0, boss.states.Count);
-        Type nextType = boss.states[randomPos];
-        */
+        Type randomType = boss.states.Keys.ElementAt(UnityEngine.Random.Range(1, boss.states.Keys.Count));
+        if(lastState == null || lastState != randomType)
+        {
+            lastState = randomType;
+            return lastState;
+        }
+        else
+        {
+            return GetRandomState();
+        }
     }
 
     
@@ -45,12 +55,14 @@ public class FirstBossIdleState :BossStateBase
         {
             if (boss.CurrentBossHealth < 50)//boss.currentPhaseThreshold) //put in check health section
             {
-                boss.AddToStates(typeof(BossCornerSpreadBulletPattern), new BossCornerSpreadBulletPattern(boss));
-                return typeof(BossCornerSpreadBulletPattern);
+                //boss.AddToStates(typeof(BossCornerSpreadBulletPattern), new BossCornerSpreadBulletPattern(boss));
+                //return typeof(BossCornerSpreadBulletPattern);
+                return currentState;
             }
             else
             {
-                return typeof(BossCornerSpreadBulletPattern);
+             
+                return currentState;
             }
            
         }

@@ -1166,7 +1166,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 320
   bullet: {fileID: 8528241465411945205, guid: a4544e3aba38648488e164f36cb90d99, type: 3}
-  bossLocations: []
+  bossLocations:
+  - {fileID: 633579640}
+  - {fileID: 1095249978}
+  - {fileID: 704044226}
+  - {fileID: 334348695}
 --- !u!114 &465725181
 MonoBehaviour:
   m_ObjectHideFlags: 0
