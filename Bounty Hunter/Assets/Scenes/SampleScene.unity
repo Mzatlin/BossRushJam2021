@@ -651,7 +651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 334348695}
   m_Layer: 0
-  m_Name: BossA (3)
+  m_Name: BossBottomLeft
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1158,11 +1158,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546d28cf694fda74ea85fd1b77a6ab23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentPhaseThreshold: 50
+  currentPhase: 1
   player: {fileID: 82141796}
   centerPoint: {fileID: 814783591}
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 320
+  bullet: {fileID: 8528241465411945205, guid: a4544e3aba38648488e164f36cb90d99, type: 3}
 --- !u!114 &465725181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1358,7 +1361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 633579640}
   m_Layer: 0
-  m_Name: BossA
+  m_Name: BossTopLeft
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1388,7 +1391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704044226}
   m_Layer: 0
-  m_Name: BossA (2)
+  m_Name: BossBottomRight
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1781,7 +1784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1095249978}
   m_Layer: 0
-  m_Name: BossA (1)
+  m_Name: BossTopRight
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

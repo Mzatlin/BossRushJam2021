@@ -32,7 +32,16 @@ public class FirstBossIdleState :BossStateBase
         }
         else
         {
-            return typeof(BossChargeState);
+            if (boss.CurrentBossHealth < 50)//boss.currentPhaseThreshold)
+            {
+                boss.AddToStates(typeof(BossCornerSpreadBulletPattern), new BossCornerSpreadBulletPattern(boss));
+                return typeof(BossCornerSpreadBulletPattern);
+            }
+            else
+            {
+                return typeof(BossChargeState);
+            }
+           
         }
     }
 

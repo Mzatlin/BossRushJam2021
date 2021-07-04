@@ -13,9 +13,16 @@ public class FirstBossAI : MonoBehaviour
 
     Coroutine enemyCoroutine;
 
+    public float currentPhaseThreshold = 50f;
+
+    public int currentPhase = 1;
+
     [SerializeField] GameObject player;
     [SerializeField] Transform centerPoint;
     [SerializeField] LayerMask obstacleLayers;
+    [SerializeField] GameObject bullet;
+
+    Dictionary<Type, IState> states;
 
     // Start is called before the first frame update
     void Awake()
@@ -26,7 +33,7 @@ public class FirstBossAI : MonoBehaviour
 
     void InitializeStateMachine()
     {
-        var states = new Dictionary<Type, IState>()
+        states = new Dictionary<Type, IState>()
         {
             {typeof(FirstBossIdleState), new FirstBossIdleState(this) },
             {typeof(BossChargeState), new BossChargeState(this) }
@@ -76,5 +83,18 @@ public class FirstBossAI : MonoBehaviour
         {
             hitEvent(collision);
         }
+    }
+
+    public void AddToStates(Type type, IState state)
+    {
+        if (!states.ContainsKey(type))
+        {
+            states.Add(type, state);
+        }
+    }
+
+    public GameObject CreateBullet(Vector3 startPos, Quaternion rotation)
+    {
+        return Instantiate(bullet, startPos, rotation);
     }
 }

@@ -24,7 +24,9 @@ public class BossCornerSpreadBulletPattern : BossStateBase
 
     public override void BeginState()
     {
-        throw new NotImplementedException();
+        projectileAmount = 10;
+        projectileSpeed = 100f;
+        fireRate = 2f;
     }
 
     public override void EndState()
@@ -62,11 +64,11 @@ public class BossCornerSpreadBulletPattern : BossStateBase
             Vector2 projectileVector = new Vector2(projectileDirectionX, projectileDirectionY);
             Vector2 projectileMoveDirection = (projectileVector - (Vector2)startPoint).normalized * projectileSpeed;
 
-           // GameObject tmpObj = Instantiate(projectilePrefab, startPoint, Quaternion.identity); -no instantiate, must use an object pooler.
+            GameObject tmpObj = boss.CreateBullet(startPoint, Quaternion.identity); //Instantiate(projectilePrefab, startPoint, Quaternion.identity); 
             float bulletangle = Mathf.Atan2(projectileMoveDirection.y, projectileMoveDirection.x) * Mathf.Rad2Deg;
 
             gunRotation.eulerAngles = new Vector3(0, 0, bulletangle);
-            //tmpObj.transform.rotation = gunRotation;
+            tmpObj.transform.rotation = gunRotation;
 
             //angle += angleStep;
             angle += 10f;

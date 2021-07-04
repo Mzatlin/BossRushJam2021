@@ -38,6 +38,7 @@ public class BossChargeState : BossStateBase
         boss.hitEvent += HandleHit;
         chargeAmounts = 3;
         isEnd = false;
+        chargeDelay /= boss.currentPhase;
         ResetEnemy();
     }
 
@@ -94,7 +95,7 @@ public class BossChargeState : BossStateBase
     void ResetEnemy()
     {
         boss.transform.position = startPosition.position;
-        if (chargeAmounts > 0)
+        if (chargeAmounts > 0 && !isAiming)
         {
             isAiming = true;
             boss.HandleCoroutine(ChargeDelay());
