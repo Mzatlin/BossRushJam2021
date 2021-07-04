@@ -18,17 +18,35 @@ public class FirstBossAI : MonoBehaviour
     public int currentPhase = 1;
 
     [SerializeField] GameObject player;
-    [SerializeField] Transform centerPoint;
+    public Transform centerPoint;
     [SerializeField] LayerMask obstacleLayers;
     [SerializeField] GameObject bullet;
+    public Transform[] bossLocations;
 
-    Dictionary<Type, IState> states;
+    public Dictionary<Type, IState> states;
+    public  Dictionary<Transform, float> bossPositions;
+
 
     // Start is called before the first frame update
     void Awake()
     {
         lineRender = GetComponent<LineRenderer>();
         InitializeStateMachine();
+        InitializeBossPositions();
+    }
+
+    void InitializeBossPositions()
+    {
+        float angle = 90f;
+        bossPositions = new Dictionary<Transform, float>();
+        foreach(Transform location in bossLocations)
+        {
+            if (!bossPositions.ContainsKey(location))
+            {
+                bossPositions.Add(location, angle);
+                angle += 90f;
+            }
+        }
     }
 
     void InitializeStateMachine()
@@ -36,7 +54,8 @@ public class FirstBossAI : MonoBehaviour
         states = new Dictionary<Type, IState>()
         {
             {typeof(FirstBossIdleState), new FirstBossIdleState(this) },
-            {typeof(BossChargeState), new BossChargeState(this) }
+            {typeof(BossChargeState), new BossChargeState(this) },
+            {typeof(BossCornerSpreadBulletPattern), new BossCornerSpreadBulletPattern(this) }
         };
 
         ResetStateMachineStates(states, 50);

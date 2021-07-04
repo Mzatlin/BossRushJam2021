@@ -11,6 +11,10 @@ public class BossCornerSpreadBulletPattern : BossStateBase
     public GameObject projectilePrefab;
     public float fireRate = 0.3f;
     float timeDelay = 0f;
+    int attackCount = 2;
+    float angle = 90f;
+    Transform lastPosition;
+
 
     Vector3 startPoint;
     const float radius = 1F;
@@ -26,8 +30,25 @@ public class BossCornerSpreadBulletPattern : BossStateBase
     {
         projectileAmount = 10;
         projectileSpeed = 100f;
-        fireRate = 2f;
+        fireRate = 3f;
+        attackCount = 3;//attackCount += boss.currentPhase;
     }
+
+    Transform GetNextPosition()
+    {
+        int randomPos = UnityEngine.Random.Range(0, boss.bossLocations.Length);
+        Transform nextPos = boss.bossLocations[randomPos];
+        if(lastPosition == null || nextPos != lastPosition)
+        {
+            lastPosition = nextPos;
+            return lastPosition;
+        }
+        else
+        {
+            return GetNextPosition();
+        }
+    }
+
 
     public override void EndState()
     {
@@ -36,21 +57,33 @@ public class BossCornerSpreadBulletPattern : BossStateBase
 
     public override Type Tick()
     {
-        if (Time.time > timeDelay)
+        if (attackCount < 1)
         {
-            startPoint = bossGameObject.transform.position;
+            //boss.transform.position = boss.centerPoint.position;
+            return typeof(FirstBossIdleState);
+        }
+ 
+        else if(Time.time > timeDelay)
+        {
             timeDelay = Time.time + fireRate;
+            boss.transform.position = GetNextPosition().position;
+            startPoint = bossGameObject.transform.position;
+            angle = boss.bossPositions[lastPosition];
+            
             SpawnProjectile(projectileAmount);
+            attackCount--;
         }
         
 
         return null;
     }
 
+
+
     void SpawnProjectile(int projectileAmount)
     {
         float angleStep = 360f / projectileAmount;
-        float angle = 90f;
+
 
         for (int i = 0; i < projectileAmount; i++)
         {

@@ -84,6 +84,7 @@ public class BossChargeState : BossStateBase
     {
         if (isEnd)
         {
+            render.enabled = false;
             return typeof(FirstBossIdleState);
         }
         else

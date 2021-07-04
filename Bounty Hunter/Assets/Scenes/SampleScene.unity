@@ -509,8 +509,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212946425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0000007301569, y: -0.012500019, z: 0.065104574}
-  m_LocalScale: {x: 1, y: 1.0750005, z: 1}
+  m_LocalPosition: {x: 0, y: -0.01143, z: 0.065104574}
+  m_LocalScale: {x: 1, y: 1.0728621, z: 1}
   m_Children: []
   m_Father: {fileID: 1128332187}
   m_RootOrder: 0
@@ -1166,6 +1166,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 320
   bullet: {fileID: 8528241465411945205, guid: a4544e3aba38648488e164f36cb90d99, type: 3}
+  bossLocations: []
 --- !u!114 &465725181
 MonoBehaviour:
   m_ObjectHideFlags: 0

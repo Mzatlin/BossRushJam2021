@@ -6,6 +6,7 @@ using UnityEngine;
 public class FirstBossIdleState :BossStateBase
 {
     FirstBossAI boss;
+    Type LastState;
     bool hasWaited = false;
     public FirstBossIdleState(FirstBossAI _boss) : base(_boss.gameObject)
     {
@@ -17,6 +18,16 @@ public class FirstBossIdleState :BossStateBase
         Debug.Log("Entered Idle State");
         hasWaited = false;
     }
+
+    void GetRandomState()
+    {
+     /*   int randomPos = UnityEngine.Random.Range(0, boss.states.Count);
+        Type nextType = boss.states[randomPos];
+        */
+    }
+
+    
+
 
     public override void EndState()
     {
@@ -32,14 +43,14 @@ public class FirstBossIdleState :BossStateBase
         }
         else
         {
-            if (boss.CurrentBossHealth < 50)//boss.currentPhaseThreshold)
+            if (boss.CurrentBossHealth < 50)//boss.currentPhaseThreshold) //put in check health section
             {
                 boss.AddToStates(typeof(BossCornerSpreadBulletPattern), new BossCornerSpreadBulletPattern(boss));
                 return typeof(BossCornerSpreadBulletPattern);
             }
             else
             {
-                return typeof(BossChargeState);
+                return typeof(BossCornerSpreadBulletPattern);
             }
            
         }
