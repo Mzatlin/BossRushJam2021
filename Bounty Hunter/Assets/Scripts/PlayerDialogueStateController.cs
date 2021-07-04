@@ -7,24 +7,35 @@ public class PlayerDialogueStateController : MonoBehaviour
 {
     [SerializeField] PlayerStatsSO playerStats;
     IDialogueActivate activate;
+    IDialogueEnd end;
     // Start is called before the first frame update
     void Start()
     {
         activate = GetComponent<IDialogueActivate>();
-        if(activate != null)
+        end = GetComponent<IDialogueEnd>();
+        if(activate != null && end != null)
         {
             activate.OnDialogueStart += HandleActivation;
+            end.OnDialogueEnd += HandleEnd;
         }
     }
+
+
     void OnDestroy()
     {
-        if(activate != null)
+        if(activate != null && end != null)
         {
             activate.OnDialogueStart -= HandleActivation;
+            end.OnDialogueEnd -= HandleEnd;
         }    
     }
     private void HandleActivation()
     {
         playerStats.isReady = false;
     }
+    private void HandleEnd()
+    {
+        playerStats.isReady = true;
+    }
+
 }
