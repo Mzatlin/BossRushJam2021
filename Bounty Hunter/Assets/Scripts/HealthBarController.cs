@@ -21,6 +21,10 @@ public class HealthBarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthSlider.value = health.CurrentHealth;
+        if(health != null && healthSlider != null)
+        {
+            healthSlider.value = health.CurrentHealth;
+        }
+
     }
 }
