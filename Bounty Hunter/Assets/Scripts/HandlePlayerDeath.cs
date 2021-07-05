@@ -7,9 +7,14 @@ public class HandlePlayerDeath : MonoBehaviour
 {
     IHealth health;
     IPlayerStats stats;
+    SpriteRenderer sprite;
+    Collider2D collider;
+    [SerializeField] GameObject gun;
     // Start is called before the first frame update
     void Start()
     {
+        collider = GetComponent<Collider2D>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
         health = GetComponent<IHealth>();
         if(health != null)
         {
@@ -31,7 +36,15 @@ public class HandlePlayerDeath : MonoBehaviour
        if(stats != null)
         {
             stats.SetPlayerReadiness(false);
-            //set player death as well.
+            stats.SetPlayerDeath(true);
+        }
+       if(gun != null)
+        {
+            gun.SetActive(false);
+        }
+       if(sprite != null)
+        {
+            sprite.enabled = false;
         }
     }
 

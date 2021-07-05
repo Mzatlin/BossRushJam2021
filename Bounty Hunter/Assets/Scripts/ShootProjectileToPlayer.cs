@@ -33,4 +33,9 @@ public class ShootProjectileToPlayer : MonoBehaviour
             Instantiate(projectile, transform.position, bulletAngle);
         }
     }
+
+    public void SetPlayer(GameObject obj)
+    {
+        player = obj;
+    }
 }

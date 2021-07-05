@@ -12,6 +12,7 @@ public class SetupPlayerOnAwake : MonoBehaviour
         if(stats != null)
         {
             stats.SetPlayerReadiness(true);
+            stats.SetPlayerDeath(false);
         }
     }
 

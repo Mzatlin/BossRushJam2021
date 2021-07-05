@@ -8,11 +8,15 @@ public class PlayerStatsManager : MonoBehaviour, IPlayerStats
 
     public bool GetPlayerReadiness()
     {
-        return stats.isReady;
+        return stats.isReady && !stats.isDead;
     }
 
     public void SetPlayerReadiness(bool isready)
     {
         stats.isReady = isready;
+    }
+    public void SetPlayerDeath(bool isdead)
+    {
+        stats.isDead = isdead;
     }
 }
