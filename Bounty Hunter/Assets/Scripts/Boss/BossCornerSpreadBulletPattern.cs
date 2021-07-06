@@ -63,21 +63,19 @@ public class BossCornerSpreadBulletPattern : BossStateBase
     public override Type Tick()
     { 
  
-        if(Time.time > nextJumpTime && !isJumping && jumpAmount > 0 && isShooting == false)
+        if(Time.time > nextJumpTime)
         {
-            nextJumpTime = Time.time + fireRate;
-            // boss.transform.position = GetNextPosition().position;
-            //  startPoint = bossGameObject.transform.position;
-            startPoint = GetNextPosition().position;
-            angle = boss.bossPositions[lastPosition];
-            boss.HandleCoroutine(jumpTime(startPoint));
-           // isAttacking = true;
-            //SpawnProjectile(projectileAmount);
-        }
-
-        if (jumpAmount < 1)
-        {
-            return typeof(FirstBossIdleState);
+            if(!isJumping && jumpAmount > 0 && isShooting == false)
+            {
+                nextJumpTime = Time.time + fireRate;
+                startPoint = GetNextPosition().position;
+                angle = boss.bossPositions[lastPosition];
+                boss.HandleCoroutine(jumpTime(startPoint));
+            }
+            if (jumpAmount < 1)
+            {
+                return typeof(FirstBossIdleState);
+            }
         }
         return null;
     }

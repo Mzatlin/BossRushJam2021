@@ -36,7 +36,7 @@ public class BossChargeState : BossStateBase
         player = boss.GetPlayer();
         startPosition = boss.GetCenterPosition();
         boss.hitEvent += HandleHit;
-        chargeAmounts = 3;
+        chargeAmounts = 1;
         isEnd = false;
         chargeDelay /= boss.currentPhase;
         ResetEnemy();

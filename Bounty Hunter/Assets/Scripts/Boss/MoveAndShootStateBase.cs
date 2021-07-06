@@ -7,7 +7,9 @@ public class MoveAndShootStateBase : BossStateBase
 {
     FirstBossAI boss;
     float fireAmount = 10f;
+    float baseFireAmount = 10f;
     float jumpAmount = 2f;
+    int baseJumpAmount = 2;
     float jumpdelay = 3f;
     float nextJumpTime = 0f;
     bool isJumping = false;
@@ -23,8 +25,8 @@ public class MoveAndShootStateBase : BossStateBase
 
     public override void BeginState()
     {
-        fireAmount += boss.currentPhase;
-        jumpAmount += boss.currentPhase;
+        fireAmount = baseFireAmount + boss.currentPhase;
+        jumpAmount = baseJumpAmount + boss.currentPhase;
     }
 
     public override void EndState()
@@ -33,15 +35,17 @@ public class MoveAndShootStateBase : BossStateBase
 
     public override Type Tick()
     {
-        if (Time.time > nextJumpTime && !isJumping && jumpAmount > 0 && isShooting == false)
+        if (Time.time > nextJumpTime)
         {
-            nextJumpTime = Time.time + jumpdelay;
-            boss.HandleCoroutine(jumpTime(GetRandomPosition()));
-        }
-
-        if (jumpAmount < 1)
-        {
-            return typeof(FirstBossIdleState);
+            if(!isJumping && jumpAmount > 0 && isShooting == false)
+            {
+                nextJumpTime = Time.time + jumpdelay;
+                boss.HandleCoroutine(jumpTime(GetRandomPosition()));
+            }
+            if (jumpAmount < 1)
+            {
+                return typeof(FirstBossIdleState);
+            }
         }
         return null;
     }
