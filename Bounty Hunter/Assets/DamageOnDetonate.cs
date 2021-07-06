@@ -33,6 +33,14 @@ public class DamageOnDetonate : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        if (detonate != null)
+        {
+            detonate.OnDetonate -= HandleDetonation;
+        }
+    }
+
     private void HandleDetonation()
     {
         StartCoroutine(ExplosionDelay());   
@@ -68,5 +76,12 @@ public class DamageOnDetonate : MonoBehaviour
             explosionParticle.Play();
         }
         DamageOnExplosion();
+        StartCoroutine(DeactivateDelay());
+    }
+
+    IEnumerator DeactivateDelay()
+    {
+        yield return new WaitForSeconds(0.7f);
+        gameObject.SetActive(false);
     }
 }
