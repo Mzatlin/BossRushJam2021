@@ -20,7 +20,8 @@ public class FirstBossIdleState :BossStateBase
     {
         Debug.Log("Entered Idle State");
         hasWaited = false;
-        currentState = GetRandomState();
+        isJumping = false;
+        //currentState = GetRandomState();
     }
 
     Type GetRandomState()
@@ -56,7 +57,7 @@ public class FirstBossIdleState :BossStateBase
 
         if (!hasWaited)
         {
-            boss.HandleCoroutine(Delay());
+            //boss.HandleCoroutine(Delay());
             return null;
         }
         else
@@ -80,6 +81,7 @@ public class FirstBossIdleState :BossStateBase
     {
         yield return new WaitForSeconds(2f);
         hasWaited = true;
+        currentState = GetRandomState();
     }
 
     IEnumerator jumpTime(Vector2 endPos)
@@ -97,6 +99,6 @@ public class FirstBossIdleState :BossStateBase
             boss.transform.position = Vector3.Lerp(startPos, endPos, fractionOfJourney);
             yield return null;
         }
-
+        boss.HandleCoroutine(Delay());
     }
 }

@@ -85,7 +85,17 @@ public class FirstBossAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(CurrentBossHealth < 25f && currentPhase < 3)
+        {
+            currentPhase++;
+            //Add new initial phase to dictionary + intermediate attack
+            //Set initial state as the new state 
+            //When new state completes, remove initial state from dictionary.
+        }
+        else if (CurrentBossHealth < 50f && currentPhase < 2)
+        {
+            currentPhase++;
+        }
     }
 
     public void HandleCoroutine(IEnumerator routine)

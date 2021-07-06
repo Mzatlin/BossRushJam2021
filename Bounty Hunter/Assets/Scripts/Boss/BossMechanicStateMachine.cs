@@ -3,7 +3,7 @@ using UnityEngine;
 using System;
 using System.Linq;
 
-public class BossMechanicStateMachine : MonoBehaviour
+public class BossMechanicStateMachine : MonoBehaviour, IStateMachine
 {
     public IState CurrentState { get; private set; }
     private Type nextState;
@@ -44,7 +44,7 @@ public class BossMechanicStateMachine : MonoBehaviour
         }
     }
 
-    void SwitchToNewState(Type nextState)
+    public void SwitchToNewState(Type nextState)
     {
         CurrentState = states[nextState];
         if (CurrentState != null)

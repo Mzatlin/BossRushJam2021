@@ -833,6 +833,7 @@ GameObject:
   - component: {fileID: 465725179}
   - component: {fileID: 465725180}
   - component: {fileID: 465725181}
+  - component: {fileID: 465725182}
   m_Layer: 7
   m_Name: Boss
   m_TagString: Untagged
@@ -1112,6 +1113,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseHealthThreshold: 50
+--- !u!114 &465725182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465725171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99fb6c2d01f9b054c8a7312a79f2b572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &502107083
 GameObject:
   m_ObjectHideFlags: 0
