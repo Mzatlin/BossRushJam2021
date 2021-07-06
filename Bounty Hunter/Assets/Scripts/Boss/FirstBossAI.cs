@@ -54,8 +54,8 @@ public class FirstBossAI : MonoBehaviour
         states = new Dictionary<Type, IState>()
         {
             {typeof(FirstBossIdleState), new FirstBossIdleState(this) },
-            /*typeof(BossChargeState), new BossChargeState(this) },
-            {typeof(BossCornerSpreadBulletPattern), new BossCornerSpreadBulletPattern(this) },*/
+            {typeof(BossChargeState), new BossChargeState(this) },
+            {typeof(BossCornerSpreadBulletPattern), new BossCornerSpreadBulletPattern(this) },
             {typeof(DashAndShootState), new DashAndShootState(this) }
         };
 

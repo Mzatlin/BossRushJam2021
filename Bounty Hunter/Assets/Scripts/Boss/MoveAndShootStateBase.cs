@@ -1,9 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class DashAndShootState : BossStateBase
+public class MoveAndShootStateBase : BossStateBase
 {
     FirstBossAI boss;
     float fireAmount = 10f;
@@ -15,8 +15,8 @@ public class DashAndShootState : BossStateBase
     Quaternion bulletAngle;
     Vector2 lastPosition;
     List<Vector2> possiblePositions = new List<Vector2> { new Vector2(-5, 0), new Vector2(5, 0), new Vector2(0, 3) };
-   // List<Vector2> possiblePositions = new List<Vector2> { new Vector2(-8, 6), new Vector2(-8, -4), new Vector2(10, 6), new Vector2(10, -4) };
-    public DashAndShootState(FirstBossAI _boss) : base(_boss.gameObject)
+
+    public MoveAndShootStateBase(FirstBossAI _boss) : base(_boss.gameObject)
     {
         boss = _boss;
     }
