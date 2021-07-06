@@ -11,7 +11,8 @@ public class BossCornerSpreadBulletPattern : BossStateBase
     public GameObject projectilePrefab;
     public float fireRate = 0.3f;
     float nextJumpTime = 0f;
-    int jumpAmount = 2;
+    int jumpAmount = 0;
+    int baseJumpAmount = 2;
     bool isShooting = false;
     bool isJumping = false;
     Quaternion bulletAngle;
@@ -35,7 +36,7 @@ public class BossCornerSpreadBulletPattern : BossStateBase
         projectileAmount = 10;
         projectileSpeed = 100f;
         fireRate = 2f;
-        jumpAmount += boss.currentPhase;
+        jumpAmount = baseJumpAmount + boss.currentPhase;
     }
 
     Transform GetNextPosition()

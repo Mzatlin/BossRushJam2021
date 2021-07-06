@@ -7,7 +7,8 @@ public class DashAndShootState : BossStateBase
 {
     FirstBossAI boss;
     float fireAmount = 10f;
-    float jumpAmount = 2f;
+    float jumpAmount = 0f;
+    float baseJumpAmount = 2f;
     float jumpdelay = 3f;
     float nextJumpTime = 0f;
     bool isJumping = false;
@@ -24,7 +25,7 @@ public class DashAndShootState : BossStateBase
     public override void BeginState()
     {
         fireAmount += boss.currentPhase;
-        jumpAmount += boss.currentPhase;
+        jumpAmount = baseJumpAmount + boss.currentPhase;
     }
 
     public override void EndState()
