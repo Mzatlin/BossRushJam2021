@@ -10,6 +10,8 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
     public PlayerStatsSO playerStats;
     public TextMeshProUGUI textDialogue;
     public DialogueHandlerSO dialoguewriter;
+    IPortrait portrait;
+    IDialogueActivate activate; 
     [TextArea(2, 3)]
     public List<string> content;
     [SerializeField]
@@ -21,13 +23,12 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
     public event Action OnDialogueEnd = delegate { };
 
 
-    IDialogueActivate activate; 
 
     // Start is called before the first frame update
     void Awake()
     {
         activate = GetComponent<IDialogueActivate>();
-
+        portrait = GetComponent<IPortrait>();
         if (dialoguewriter == null)
         {
             Debug.Log(gameObject.name + " has a dialoguecontroller without the dialogueSO!");
@@ -80,6 +81,10 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
     void StartWriting()
     {
         dialoguewriter.RequestToWrite();
+        if(portrait != null)
+        {
+            portrait.SetPortrait(index);
+        }
         dialogueCoroutine = StartCoroutine(TypeDelay(content[index]));
     }
 
