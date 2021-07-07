@@ -9,14 +9,14 @@ public class DashAndShootState : BossStateBase
     float fireAmount = 10f;
     float jumpAmount = 0f;
     float baseJumpAmount = 2f;
-    float jumpdelay = 3f;
+    float jumpdelay = 1.5f;
     float nextJumpTime = 0f;
     bool isJumping = false;
     bool isShooting = false;
     Quaternion bulletAngle;
     Vector2 lastPosition;
     List<Vector2> possiblePositions = new List<Vector2> { new Vector2(-5, 0), new Vector2(5, 0), new Vector2(0, 3) };
-   // List<Vector2> possiblePositions = new List<Vector2> { new Vector2(-8, 6), new Vector2(-8, -4), new Vector2(10, 6), new Vector2(10, -4) };
+    // List<Vector2> possiblePositions = new List<Vector2> { new Vector2(-8, 6), new Vector2(-8, -4), new Vector2(10, 6), new Vector2(10, -4) };
     public DashAndShootState(FirstBossAI _boss) : base(_boss.gameObject)
     {
         boss = _boss;
@@ -34,16 +34,19 @@ public class DashAndShootState : BossStateBase
 
     public override Type Tick()
     {
-        if (Time.time > nextJumpTime && !isJumping && jumpAmount > 0 && isShooting == false)
+        if (Time.time > nextJumpTime)
         {
-            nextJumpTime = Time.time + jumpdelay;
-            boss.HandleCoroutine(jumpTime(GetRandomPosition()));
+            if (!isJumping && jumpAmount > 0 && isShooting == false)
+            {
+                nextJumpTime = Time.time + jumpdelay;
+                boss.HandleCoroutine(jumpTime(GetRandomPosition()));
+            }
+            if (jumpAmount < 1)
+            {
+                return typeof(FirstBossIdleState);
+            }
         }
 
-        if (jumpAmount < 1)
-        {
-            return typeof(FirstBossIdleState);
-        }
         return null;
     }
 

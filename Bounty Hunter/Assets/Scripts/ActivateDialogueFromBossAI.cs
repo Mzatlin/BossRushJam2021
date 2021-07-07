@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-public class ActivateDialogueFromBossAI : MonoBehaviour
+public class ActivateDialogueFromBossAI : MonoBehaviour, IDialogueActivate
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public event Action OnDialogueStart = delegate { };
 
-    // Update is called once per frame
-    void Update()
+    public void ActivateDialogue()
     {
-        
+        OnDialogueStart();
     }
 }

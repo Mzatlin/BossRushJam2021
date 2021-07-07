@@ -95,7 +95,7 @@ public class BossChargeState : BossStateBase
 
     void ResetEnemy()
     {
-        boss.transform.position = startPosition.position;
+        //boss.transform.position = startPosition.position;
         if (chargeAmounts > 0 && !isAiming)
         {
             isAiming = true;

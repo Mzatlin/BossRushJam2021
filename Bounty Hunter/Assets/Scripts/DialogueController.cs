@@ -66,7 +66,6 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
         content = _content;
     }
 
-
     void HandleActivateDialogue()
     {
         if (dialogueCanvas != null && !dialoguewriter.IsWriting)

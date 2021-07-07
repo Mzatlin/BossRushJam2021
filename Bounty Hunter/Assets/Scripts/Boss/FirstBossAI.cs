@@ -6,10 +6,13 @@ using System;
 public class FirstBossAI : MonoBehaviour
 {
     IHealth health => GetComponent<IHealth>();
+    IDialogueEnd dialogueEnd => GetComponent<IDialogueEnd>();
     public float CurrentBossHealth => health.CurrentHealth;
+    ActivateDialogueFromBossAI dialogue;
     public BossMechanicStateMachine StateMachine => GetComponent<BossMechanicStateMachine>();
     LineRenderer lineRender;
     public event Action<Collider2D> hitEvent = delegate { };
+    public event Action endDialogueEvent = delegate { };
 
     Coroutine enemyCoroutine;
 
@@ -30,9 +33,32 @@ public class FirstBossAI : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        dialogue = GetComponent<ActivateDialogueFromBossAI>();
         lineRender = GetComponent<LineRenderer>();
         InitializeStateMachine();
         InitializeBossPositions();
+       if(dialogueEnd != null)
+        {
+            dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if(dialogueEnd != null)
+        {
+            dialogueEnd.OnDialogueEnd -= HandleDialogueEnd;
+        }
+    }
+
+    private void HandleDialogueEnd()
+    {
+        endDialogueEvent();
+    }
+
+    public void ActivateDialogue()
+    {
+        dialogue.ActivateDialogue();
     }
 
     void InitializeBossPositions()
@@ -88,13 +114,16 @@ public class FirstBossAI : MonoBehaviour
         if(CurrentBossHealth < 25f && currentPhase < 3)
         {
             currentPhase++;
-            //Add new initial phase to dictionary + intermediate attack
-            //Set initial state as the new state 
-            //When new state completes, remove initial state from dictionary.
+
         }
         else if (CurrentBossHealth < 50f && currentPhase < 2)
         {
             currentPhase++;
+            //Add new initial phase to dictionary + intermediate attack
+            //Set initial state as the new state 
+            states.Add(typeof(FirstBossPhase2State), new FirstBossPhase2State(this));
+            StateMachine.SetStates(states, 25f);
+            StateMachine.SwitchToNewState(typeof(FirstBossPhase2State));
         }
     }
 
