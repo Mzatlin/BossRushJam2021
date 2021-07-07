@@ -1379,7 +1379,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3990,7 +3990,8 @@ PrefabInstance:
       propertyPath: gun
       value: 
       objectReference: {fileID: 233944904}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2274305537142250183, guid: 970e2532a22c963418115466cb654078, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 970e2532a22c963418115466cb654078, type: 3}
 --- !u!1001 &4794873656172833135
 PrefabInstance:

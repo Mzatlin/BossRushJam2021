@@ -40,6 +40,7 @@ public class PlayerMovementController : MonoBehaviour
         verticalMovement = Input.GetAxis("Vertical");
         horizontalMovement = Input.GetAxis("Horizontal");
         animate.SetFloat("XInput", horizontalMovement);
+        animate.SetFloat("YInput", verticalMovement);
         movement = new Vector2(horizontalMovement, verticalMovement);
         movement = Vector2.ClampMagnitude(movement, 1f);
         physics.SetMoveVelocity(movement * moveSpeed);

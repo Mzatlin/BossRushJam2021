@@ -898,6 +898,7 @@ GameObject:
   - component: {fileID: 1955660956}
   - component: {fileID: 1955660955}
   - component: {fileID: 1955660958}
+  - component: {fileID: 1955660959}
   m_Layer: 0
   m_Name: DialogueTrigger
   m_TagString: Untagged
@@ -992,6 +993,18 @@ MonoBehaviour:
   content: Hello there, I am a Bounty Hunter, and I have a gambling problem. Got
     any bounties available?
   typingSpeed: 0.3
+--- !u!114 &1955660959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955660953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a54ed880aa53cd45ba5384d42785f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5625233364461007913
 PrefabInstance:
   m_ObjectHideFlags: 0
