@@ -34,6 +34,8 @@ public class FirstBossPhase2State : BossStateBase
     {
         if (isEnd)
         {
+            boss.states.Remove(typeof(FirstBossPhase2State));
+            boss.ResetStateMachineStates(boss.states, 25f);
             return typeof(FirstBossIdleState);
         }
         else
