@@ -8,4 +8,9 @@ public class LoadLevelOnClick : MonoBehaviour
     {
         SceneManager.LoadScene(levelName);
     }
+
+    public void LoadTitle()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
