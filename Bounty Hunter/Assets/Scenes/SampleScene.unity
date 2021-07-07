@@ -1157,7 +1157,8 @@ MonoBehaviour:
   playerStats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
   textDialogue: {fileID: 1632314111}
   dialoguewriter: {fileID: 11400000, guid: 6d5b279ba8252264694dcac375bd5b11, type: 2}
-  content: I really don't want to use up my merchandise, but you give me no choice.
+  content:
+  - "I really don\u2019t want to use up my merchandise, but you give me no choice."
   typingSpeed: 0.3
 --- !u!1 &502107083
 GameObject:

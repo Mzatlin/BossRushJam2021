@@ -990,8 +990,9 @@ MonoBehaviour:
   playerStats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
   textDialogue: {fileID: 461370291}
   dialoguewriter: {fileID: 11400000, guid: 6d5b279ba8252264694dcac375bd5b11, type: 2}
-  content: Hello there, I am a Bounty Hunter, and I have a gambling problem. Got
-    any bounties available?
+  content:
+  - Hello There. I am a Bounty Hunter I think Blabababababab
+  - 'I am Bounty Hunter  '
   typingSpeed: 0.3
 --- !u!114 &1955660959
 MonoBehaviour:

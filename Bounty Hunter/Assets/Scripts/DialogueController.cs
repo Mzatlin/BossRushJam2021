@@ -11,11 +11,12 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
     public TextMeshProUGUI textDialogue;
     public DialogueHandlerSO dialoguewriter;
     [TextArea(2, 3)]
-    public string content;
+    public List<string> content;
     [SerializeField]
     float typingSpeed = 0.3f;
     bool isActive = false;
     Coroutine dialogueCoroutine = null;
+    int index = 0;
 
     public event Action OnDialogueEnd = delegate { };
 
@@ -63,7 +64,7 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
 
     public void SetContentText(string _content)
     {
-        content = _content;
+        content[index] = _content;
     }
 
     void HandleActivateDialogue()
@@ -72,9 +73,14 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
         {
             dialogueCanvas.enabled = true;
             isActive = true;
-            dialoguewriter.RequestToWrite();
-            dialogueCoroutine = StartCoroutine(TypeDelay(content));
+            StartWriting();
         }
+    }
+
+    void StartWriting()
+    {
+        dialoguewriter.RequestToWrite();
+        dialogueCoroutine = StartCoroutine(TypeDelay(content[index]));
     }
 
     IEnumerator TypeDelay(string sentence)
@@ -103,16 +109,25 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
         {
             if (IsTextFinished())
             {
-                OnDialogueEnd();
-                dialogueCanvas.enabled = false;
                 textDialogue.text = "";
-                isActive = false;
-                dialoguewriter.ResetWriter();
+                if (index >= content.Count - 1)
+                {
+                    OnDialogueEnd();
+                    dialogueCanvas.enabled = false;
+                    isActive = false;
+                    dialoguewriter.ResetWriter();
+                }
+                else
+                {
+                    index++;
+                    StartWriting();
+                }
             }
             else
             {
                 StopCoroutine(dialogueCoroutine);
-                textDialogue.text = content;
+                textDialogue.text = content[index];
+
             }
 
         }
@@ -121,7 +136,7 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
 
     bool IsTextFinished()
     {
-        if (textDialogue.text == content)
+        if (textDialogue.text == content[index])
         {
             return true;
         }
