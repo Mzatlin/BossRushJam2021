@@ -8,6 +8,7 @@ public class PlayerMovementController : MonoBehaviour
     Vector2 movement;
     float verticalMovement;
     float horizontalMovement;
+    Animator animate;
 
     IMovePhysics physics;
     IPlayerStats stats;
@@ -17,6 +18,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         physics = GetComponent<IMovePhysics>();
         stats = GetComponent<IPlayerStats>();
+        animate = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -37,6 +39,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         verticalMovement = Input.GetAxis("Vertical");
         horizontalMovement = Input.GetAxis("Horizontal");
+        animate.SetFloat("XInput", horizontalMovement);
         movement = new Vector2(horizontalMovement, verticalMovement);
         movement = Vector2.ClampMagnitude(movement, 1f);
         physics.SetMoveVelocity(movement * moveSpeed);
