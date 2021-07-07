@@ -112,10 +112,23 @@ public class FirstBossAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(CurrentBossHealth < 1f && currentPhase < 4)
+        {
+            currentPhase++;
+            //Death Phase
+            states.Add(typeof(FirstBossDeathState), new FirstBossDeathState(this));
+            StateMachine.SetStates(states, 0f);
+            StateMachine.SwitchToNewState(typeof(FirstBossDeathState));
+        }
+
         if(CurrentBossHealth < 25f && currentPhase < 3)
         {
             currentPhase++;
-
+            //Add new initial phase to dictionary + intermediate attack
+            //Set initial state as the new state 
+            states.Add(typeof(FirstBossPhase3State), new FirstBossPhase3State(this));
+            StateMachine.SetStates(states, 25f);
+            StateMachine.SwitchToNewState(typeof(FirstBossPhase3State));
         }
         else if (CurrentBossHealth < 50f && currentPhase < 2)
         {
