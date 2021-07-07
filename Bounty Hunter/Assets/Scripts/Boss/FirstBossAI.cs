@@ -24,6 +24,7 @@ public class FirstBossAI : MonoBehaviour
     public Transform centerPoint;
     [SerializeField] LayerMask obstacleLayers;
     [SerializeField] GameObject bullet;
+    [SerializeField] GameObject landMine;
     public Transform[] bossLocations;
 
     public Dictionary<Type, IState> states;
@@ -155,5 +156,10 @@ public class FirstBossAI : MonoBehaviour
     public GameObject CreateBullet(Vector3 startPos, Quaternion rotation)
     {
         return Instantiate(bullet, startPos, rotation);
+    }
+
+    public GameObject CreateLandMine(Vector2 startPos)
+    {
+        return Instantiate(landMine, startPos, Quaternion.identity);
     }
 }

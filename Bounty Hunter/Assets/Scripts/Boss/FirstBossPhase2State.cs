@@ -6,6 +6,7 @@ using UnityEngine;
 public class FirstBossPhase2State : BossStateBase
 {
     FirstBossAI boss;
+    
     bool isEnd;
 
     public FirstBossPhase2State(FirstBossAI _boss) : base(_boss.gameObject)
@@ -17,6 +18,7 @@ public class FirstBossPhase2State : BossStateBase
         boss.HandleCoroutine(jumpTime(boss.centerPoint.position));
         boss.endDialogueEvent += HandleEnd;
         isEnd = false;
+        boss.GetLineRenderer().enabled = false;
     }
 
     private void HandleEnd()
@@ -34,6 +36,7 @@ public class FirstBossPhase2State : BossStateBase
     {
         if (isEnd)
         {
+            boss.HandleCoroutine(SpawnLandMines(15));
             boss.states.Remove(typeof(FirstBossPhase2State));
             boss.ResetStateMachineStates(boss.states, 25f);
             return typeof(FirstBossIdleState);
@@ -43,6 +46,15 @@ public class FirstBossPhase2State : BossStateBase
             return null;
         }
 
+    }
+
+    IEnumerator SpawnLandMines(int mineAmount)
+    {
+        for(int i = 0; i < mineAmount; i++)
+        {
+            GameObject landMine = boss.CreateLandMine(new Vector2(UnityEngine.Random.Range(-7, 10), UnityEngine.Random.Range(-3, 6)));
+            yield return null;
+        }
     }
 
     IEnumerator jumpTime(Vector2 endPos)

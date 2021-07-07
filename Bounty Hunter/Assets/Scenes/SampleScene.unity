@@ -1097,6 +1097,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 320
   bullet: {fileID: 8528241465411945205, guid: a4544e3aba38648488e164f36cb90d99, type: 3}
+  landMine: {fileID: 1615450275390838181, guid: 0ab361cabb17325419b19c0ade475d2f, type: 3}
   bossLocations:
   - {fileID: 633579640}
   - {fileID: 1095249978}
@@ -1888,6 +1889,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5625233363827055226, guid: 524b11f5cd52352478c3a0f0b65ec100, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c045a0b43f8f2944a33fccf45e7081f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 524b11f5cd52352478c3a0f0b65ec100, type: 3}
 --- !u!1001 &963021914
