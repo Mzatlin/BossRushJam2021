@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovementController : MonoBehaviour
+public class PlayerMovementController : MonoBehaviour, IMoveDirection
 {
     [SerializeField] float moveSpeed = 30f;
     Vector2 movement;
     float verticalMovement;
     float horizontalMovement;
     Animator animate;
+    Vector2 lastMoveDir;
+    public Vector2 LastMovementDirection => lastMoveDir;
+
 
     IMovePhysics physics;
     IPlayerStats stats;
@@ -19,6 +22,7 @@ public class PlayerMovementController : MonoBehaviour
         physics = GetComponent<IMovePhysics>();
         stats = GetComponent<IPlayerStats>();
         animate = GetComponentInChildren<Animator>();
+        lastMoveDir = Vector2.right;
     }
 
     // Update is called once per frame
@@ -43,6 +47,7 @@ public class PlayerMovementController : MonoBehaviour
         animate.SetFloat("YInput", verticalMovement);
         movement = new Vector2(horizontalMovement, verticalMovement);
         movement = Vector2.ClampMagnitude(movement, 1f);
+        lastMoveDir = movement;
         physics.SetMoveVelocity(movement * moveSpeed);
 
     }
