@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4794873656596082456}
   - component: {fileID: 4794873656596082455}
-  - component: {fileID: 5715111941841508440}
+  - component: {fileID: 3222767524791689948}
   m_Layer: 7
   m_Name: DroneSprite
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5715111941841508440
+--- !u!95 &3222767524791689948
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -151,7 +151,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 2
   projectile: {fileID: 8528241465411945205, guid: a4544e3aba38648488e164f36cb90d99, type: 3}
-  player: {fileID: 0}
 --- !u!58 &4794873657077107499
 CircleCollider2D:
   m_ObjectHideFlags: 0

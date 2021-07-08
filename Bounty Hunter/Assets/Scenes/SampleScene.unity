@@ -1343,7 +1343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &812281382
 Transform:
   m_ObjectHideFlags: 0
@@ -1934,30 +1934,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4794873657077107500, guid: ec1d58660b6c92a459b9a8ca27244e28, type: 3}
   m_PrefabInstance: {fileID: 1658255645}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1368653236 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4794873657077107502, guid: ec1d58660b6c92a459b9a8ca27244e28, type: 3}
-  m_PrefabInstance: {fileID: 4794873656172833135}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1368653241
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368653236}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: de2b1793ff628724ebb08b8b0cdda18d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1369842957
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,6 +3006,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2274305537142250202, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274305537142250202, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: currentHealth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250203, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: healthSlider
       value: 
@@ -3122,7 +3106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4794873657077107502, guid: ec1d58660b6c92a459b9a8ca27244e28, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec1d58660b6c92a459b9a8ca27244e28, type: 3}

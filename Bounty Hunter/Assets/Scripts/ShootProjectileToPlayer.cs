@@ -2,13 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootProjectileToPlayer : MonoBehaviour
+public class ShootProjectileToPlayer : MonoBehaviour, IShootable
 {
-    public float fireRate = 1f;
-    float timeThreshold;
+    [SerializeField] float fireRate = 1f;
     [SerializeField] GameObject projectile;
+    float timeThreshold;
     GameObject player;
     Quaternion bulletAngle;
+    Animator animate;
+
+    public float FireRate => fireRate;
+
+    void Awake()
+    {
+        animate = GetComponentInChildren<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -16,22 +24,36 @@ public class ShootProjectileToPlayer : MonoBehaviour
         if (Time.time > timeThreshold)
         {
             timeThreshold = Time.time + fireRate;
+            WeaponChargeUp();
             FireWeapon();
         }
     }
 
-    void FireWeapon()
+    void WeaponChargeUp()
     {
+        if (animate)
+        {
+            //animate.SetTrigger("Shoot");
+        }
+    }
 
+   public void FireWeapon()
+    {
         if (projectile != null && player != null)
         {
             Vector2 direction = (player.transform.position - transform.position).normalized;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
             bulletAngle.eulerAngles = new Vector3(0, 0, angle);
-            Instantiate(projectile, transform.position, bulletAngle);
+            GameObject tempBullet = ObjectPooler.Instance.GetFromPool("Enemy Bullet 1");
+            if(tempBullet != null)
+            {
+                tempBullet.transform.position = transform.position;
+                tempBullet.transform.rotation = bulletAngle;
+            }
         }
     }
+
 
     public void SetPlayer(GameObject obj)
     {
