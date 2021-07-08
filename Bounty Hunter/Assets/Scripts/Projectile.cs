@@ -6,7 +6,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float projectileSpeed = 20f;
-    float lifetime = 5f;
+    public float lifetime = 2f;
     float currentTime;
     Rigidbody2D rb;
 
@@ -16,12 +16,17 @@ public class Projectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void OnEnable()
+    {
+        currentTime = Time.time + lifetime;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
         if(Time.time > currentTime)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {

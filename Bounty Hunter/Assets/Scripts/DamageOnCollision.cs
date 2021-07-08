@@ -26,7 +26,7 @@ public class DamageOnCollision : MonoBehaviour
             if (hit != null)
             {
                 hit.ProcessDamage(damage);
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
 

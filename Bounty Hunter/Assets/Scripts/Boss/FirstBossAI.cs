@@ -168,11 +168,22 @@ public class FirstBossAI : MonoBehaviour
 
     public GameObject CreateBullet(Vector3 startPos, Quaternion rotation)
     {
-        return Instantiate(bullet, startPos, rotation);
+        GameObject enemyBullet = ObjectPooler.Instance.GetFromPool("Enemy Bullet 1");
+        if(enemyBullet != null)
+        {
+            enemyBullet.transform.position = startPos;
+            enemyBullet.transform.rotation = rotation;
+        }
+        return enemyBullet;
     }
 
     public GameObject CreateLandMine(Vector2 startPos)
     {
-        return Instantiate(landMine, startPos, Quaternion.identity);
+        GameObject mine = ObjectPooler.Instance.GetFromPool("Enemy Mine");
+        if (mine != null)
+        {
+            mine.transform.position = startPos;
+        }
+        return mine;
     }
 }

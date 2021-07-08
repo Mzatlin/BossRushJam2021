@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1173295215114695284, guid: 6e662febbab3dc3428675149fc1e2864, type: 3}
+      propertyPath: m_TagString
+      value: Enemy Bullet 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1464790461255456692, guid: 6e662febbab3dc3428675149fc1e2864, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -90,6 +94,10 @@ PrefabInstance:
     - target: {fileID: 4185653220865636425, guid: 6e662febbab3dc3428675149fc1e2864, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213612359870505467, guid: 6e662febbab3dc3428675149fc1e2864, type: 3}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4213612359870505467, guid: 6e662febbab3dc3428675149fc1e2864, type: 3}
       propertyPath: projectileSpeed
