@@ -38,7 +38,7 @@ public class FirstBossPhase3State : BossStateBase
 
         if (isEnd)
         {
-            boss.HandleCoroutine(SpawnLandMines(15));
+            boss.HandleCoroutine(SpawnDrones(4));
             boss.states.Remove(typeof(FirstBossPhase3State));
             boss.ResetStateMachineStates(boss.states, 25f);
             return typeof(FirstBossIdleState);
@@ -49,11 +49,11 @@ public class FirstBossPhase3State : BossStateBase
         }
     }
 
-    IEnumerator SpawnLandMines(int mineAmount)
+    IEnumerator SpawnDrones(int mineAmount)
     {
         for (int i = 0; i < mineAmount; i++)
         {
-            GameObject landMine = boss.CreateLandMine(new Vector2(UnityEngine.Random.Range(-7, 10), UnityEngine.Random.Range(-3, 6)));
+            GameObject landMine = boss.CreateDrone(i < boss.bossLocations.Length ? boss.bossLocations[i].position : boss.bossLocations[0].position);
             yield return null;
         }
     }

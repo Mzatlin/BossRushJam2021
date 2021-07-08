@@ -186,4 +186,24 @@ public class FirstBossAI : MonoBehaviour
         }
         return mine;
     }
+
+    public GameObject CreateDrone(Vector2 startPos)
+    {
+        GameObject drone = ObjectPooler.Instance.GetFromPool("Enemy Drone");
+        if (drone != null)
+        {
+            drone.transform.position = startPos;
+            var shoot = drone.GetComponent<ShootProjectileToPlayer>();
+            if(startPos.x < 0)
+            {
+                SpriteRenderer render = drone.GetComponentInChildren<SpriteRenderer>();
+                render.flipX = true;
+            }
+            if(shoot != null)
+            {
+                shoot.SetPlayer(player);
+            }
+        }
+        return drone;
+    }
 }

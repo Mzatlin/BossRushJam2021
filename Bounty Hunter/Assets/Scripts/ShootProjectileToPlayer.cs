@@ -7,9 +7,8 @@ public class ShootProjectileToPlayer : MonoBehaviour
     public float fireRate = 1f;
     float timeThreshold;
     [SerializeField] GameObject projectile;
-    [SerializeField] GameObject player;
+    GameObject player;
     Quaternion bulletAngle;
-
 
     // Update is called once per frame
     void Update()
