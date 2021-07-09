@@ -70,7 +70,7 @@ public class BossCornerSpreadBulletPattern : BossStateBase
                 nextJumpTime = Time.time + fireRate;
                 startPoint = GetNextPosition().position;
                 angle = boss.bossPositions[lastPosition];
-                boss.HandleCoroutine(jumpTime(startPoint));
+                boss.HandleCoroutine(JumpTime(startPoint));
             }
             if (jumpAmount < 1)
             {
@@ -111,22 +111,11 @@ public class BossCornerSpreadBulletPattern : BossStateBase
         isAttacking = false;
     }
 
-    IEnumerator jumpTime(Vector2 endPos)
+    protected override IEnumerator JumpTime(Vector2 endPos)
     {
         isJumping = true;
         isShooting = true;
-        float lerpSpeed = 30f;
-        Vector2 startPos = boss.transform.position;
-        float totalDistance = Vector2.Distance(startPos, endPos);
-        float fractionOfJourney = 0;
-        float startTime = Time.time;
-
-        while (fractionOfJourney < 1)
-        {
-            fractionOfJourney = ((Time.time - startTime) * lerpSpeed) / totalDistance;
-            boss.transform.position = Vector3.Lerp(startPos, endPos, fractionOfJourney);
-            yield return null;
-        }
+        yield return base.JumpTime(endPos);
 
         isJumping = false;
         jumpAmount--;
@@ -140,19 +129,20 @@ public class BossCornerSpreadBulletPattern : BossStateBase
 
         for (int i = 0; i < projectileAmount; i++)
         {
+            //Direction vector of bullet
             float projectileDirectionX = startPoint.x + Mathf.Sin((angle * Mathf.PI) / 180f);
             float projectileDirectionY = startPoint.y + Mathf.Cos((angle * Mathf.PI) / 180f);
-
-
             Vector2 projectileVector = new Vector2(projectileDirectionX, projectileDirectionY);
             Vector2 projectileMoveDirection = (projectileVector - (Vector2)startPoint).normalized * projectileSpeed;
 
+            //Logic for determining how the bullet if fired
             GameObject tmpObj = boss.CreateBullet(startPoint, Quaternion.identity); //Instantiate(projectilePrefab, startPoint, Quaternion.identity); 
             float bulletangle = Mathf.Atan2(projectileMoveDirection.y, projectileMoveDirection.x) * Mathf.Rad2Deg;
-
             gunRotation.eulerAngles = new Vector3(0, 0, bulletangle);
             tmpObj.transform.rotation = gunRotation;
+
             yield return new WaitForSeconds(delay);
+
             angle += 10f;
         }
         isShooting = false;

@@ -22,7 +22,7 @@ public class FirstBossPhase3State : BossStateBase
 
     public override void BeginState()
     {
-        boss.HandleCoroutine(jumpTime(boss.centerPoint.position));
+        boss.HandleCoroutine(JumpTime(boss.centerPoint.position));
         boss.endDialogueEvent += HandleEnd;
         isEnd = false;
         boss.GetLineRenderer().enabled = false;
@@ -58,21 +58,9 @@ public class FirstBossPhase3State : BossStateBase
         }
     }
 
-    IEnumerator jumpTime(Vector2 endPos)
+    protected override IEnumerator JumpTime(Vector2 endPos)
     {
-
-        float lerpSpeed = 30f;
-        Vector2 startPos = boss.transform.position;
-        float totalDistance = Vector2.Distance(startPos, endPos);
-        float fractionOfJourney = 0;
-        float startTime = Time.time;
-
-        while (fractionOfJourney < 1)
-        {
-            fractionOfJourney = ((Time.time - startTime) * lerpSpeed) / totalDistance;
-            boss.transform.position = Vector3.Lerp(startPos, endPos, fractionOfJourney);
-            yield return null;
-        }
+        yield return base.JumpTime(endPos);
         boss.ActivateDialogue();
     }
 

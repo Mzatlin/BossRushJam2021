@@ -40,7 +40,7 @@ public class DashAndShootState : BossStateBase
             if (!isJumping && jumpAmount > 0 && isShooting == false)
             {
                 nextJumpTime = Time.time + jumpdelay;
-                boss.HandleCoroutine(jumpTime(GetRandomPosition()));
+                boss.HandleCoroutine(JumpTime(GetRandomPosition()));
             }
             if (jumpAmount < 1)
             {
@@ -66,22 +66,11 @@ public class DashAndShootState : BossStateBase
         }
     }
 
-    IEnumerator jumpTime(Vector2 endPos)
+    protected override IEnumerator JumpTime(Vector2 endPos)
     {
         isJumping = true;
         isShooting = true;
-        float lerpSpeed = 30f;
-        Vector2 startPos = boss.transform.position;
-        float totalDistance = Vector2.Distance(startPos, endPos);
-        float fractionOfJourney = 0;
-        float startTime = Time.time;
-
-        while (fractionOfJourney < 1)
-        {
-            fractionOfJourney = ((Time.time - startTime) * lerpSpeed) / totalDistance;
-            boss.transform.position = Vector3.Lerp(startPos, endPos, fractionOfJourney);
-            yield return null;
-        }
+        yield return base.JumpTime(endPos);
 
         isJumping = false;
         jumpAmount--;
@@ -93,13 +82,15 @@ public class DashAndShootState : BossStateBase
     {
         for (int i = 0; i < projectileAmount; i++)
         {
-
+            //Direction vector of bullet
             Vector2 direction = (boss.GetPlayer().transform.position - boss.transform.position).normalized;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
+            //Logic for determining how the bullet if fired
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             bulletAngle.eulerAngles = new Vector3(0, 0, angle);
             GameObject bullet = boss.CreateBullet(boss.transform.position, Quaternion.identity);
             bullet.transform.rotation = bulletAngle;
+
             yield return new WaitForSeconds(delay);
         }
         isShooting = false;
