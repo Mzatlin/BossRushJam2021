@@ -6,6 +6,7 @@ public class EnableBoardOnDialogueEnd : MonoBehaviour
 {
     [SerializeField] Canvas board;
     IDialogueEnd dialogue;
+    [SerializeField] PlayerStatsSO stats;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +31,10 @@ public class EnableBoardOnDialogueEnd : MonoBehaviour
 
     private void HandleDialogueEnd()
     {
-        if (board != null)
+        if (board != null && stats != null)
         {
             board.enabled = true;
+            stats.isReady = false;
         }
     }
 }

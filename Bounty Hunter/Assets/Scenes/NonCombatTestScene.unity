@@ -1315,9 +1315,9 @@ GameObject:
   - component: {fileID: 887986408}
   - component: {fileID: 887986407}
   - component: {fileID: 887986406}
-  - component: {fileID: 887986405}
-  - component: {fileID: 887986409}
   - component: {fileID: 887986410}
+  - component: {fileID: 887986409}
+  - component: {fileID: 887986405}
   m_Layer: 9
   m_Name: Slot Machine
   m_TagString: Untagged
@@ -1437,10 +1437,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 887986400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8514122bcc145184b94a0c67f5aa3bbe, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d73b60b7e9dfac4895183029e2611f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
+  playerStats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
 --- !u!114 &887986406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1496,10 +1496,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 887986400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: def68612e32ff3b47be87d7969d906ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 02a4012d73a934b4f916821e3a9e0348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   board: {fileID: 302698242}
+  stats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
 --- !u!114 &887986410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,6 +1513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30462b0853a7d23448e1229f89cde0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameCanvas: {fileID: 1418385840}
+  flavorText: {fileID: 2017499042}
+  text: '!'
 --- !u!1 &894120444
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,8 +2634,9 @@ GameObject:
   - component: {fileID: 1352037129}
   - component: {fileID: 1352037128}
   - component: {fileID: 1352037130}
+  - component: {fileID: 1352037131}
   m_Layer: 9
-  m_Name: Square (2)
+  m_Name: BountyBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2753,6 +2758,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1352037131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352037125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30462b0853a7d23448e1229f89cde0f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameCanvas: {fileID: 1418385840}
+  flavorText: {fileID: 2017499042}
+  text: '!'
 --- !u!1 &1394471090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,6 +2789,7 @@ GameObject:
   - component: {fileID: 1394471097}
   - component: {fileID: 1394471096}
   - component: {fileID: 1394471095}
+  - component: {fileID: 1394471099}
   m_Layer: 9
   m_Name: Square (3)
   m_TagString: Untagged
@@ -2873,7 +2894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394471090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46, y: 1.36, z: 0}
+  m_LocalPosition: {x: -1.02, y: 1.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2941,6 +2962,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d568995b68fc83145a9b61ed82544551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1394471099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394471090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30462b0853a7d23448e1229f89cde0f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameCanvas: {fileID: 1418385840}
+  flavorText: {fileID: 2017499042}
+  text: '!'
 --- !u!1 &1395850427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,7 +3285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3259,7 +3295,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1418385840
 Canvas:
   m_ObjectHideFlags: 0
@@ -3269,7 +3305,7 @@ Canvas:
   m_GameObject: {fileID: 1418385837}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -3279,7 +3315,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1418385841
 RectTransform:
@@ -3288,19 +3324,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418385837}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.585, y: 0.585, z: 0.585}
   m_Children:
   - {fileID: 2017499041}
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 1780555502}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.1, y: 1.18}
+  m_SizeDelta: {x: 5.5694, y: 1.926}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1662675543
 GameObject:
   m_ObjectHideFlags: 0
@@ -3721,6 +3757,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   interactionRange: 2
+--- !u!4 &1780555502 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2274305537142250193, guid: 970e2532a22c963418115466cb654078, type: 3}
+  m_PrefabInstance: {fileID: 1848073231}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1789192198
 GameObject:
   m_ObjectHideFlags: 0
@@ -4075,7 +4116,7 @@ GameObject:
   - component: {fileID: 2017499043}
   - component: {fileID: 2017499042}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Flavor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4120,9 +4161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Text
-
-'
+  m_text: '!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4131,8 +4170,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4149,15 +4188,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

@@ -46,9 +46,6 @@ public class FlavorTextController : MonoBehaviour
             flavorText.text = text;
             isShowingPlate = true;
         }
-
-
-
     }
 
     void HidePlate()
