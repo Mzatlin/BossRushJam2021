@@ -31,12 +31,28 @@ public class PlayerMovementController : MonoBehaviour, IMoveDirection
         if(stats != null && stats.GetPlayerReadiness())
         {
             CalculateMovement();
+            UpdateIdle();
         }
         else
         {
             physics.SetMoveVelocity(Vector2.zero);
+            animate.SetBool("IsMoving", false);
+            animate.SetFloat("XInput", 0);
+            animate.SetFloat("YInput", 0);
         }
 
+    }
+
+    void UpdateIdle()
+    {
+        if (Mathf.Abs(verticalMovement) < 0.1f && Mathf.Abs(horizontalMovement) < 0.1f)
+        {
+            animate.SetBool("IsMoving", false);
+        }
+        else
+        {
+            animate.SetBool("IsMoving", true);
+        }
     }
 
     void CalculateMovement()
