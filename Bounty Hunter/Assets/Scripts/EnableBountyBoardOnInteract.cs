@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnableBountyBoardOnInteract : MonoBehaviour
 {
     [SerializeField] Canvas board;
-    IInteract interact; 
+    IInteract interact;
     // Start is called before the first frame update
     void Start()
     {
