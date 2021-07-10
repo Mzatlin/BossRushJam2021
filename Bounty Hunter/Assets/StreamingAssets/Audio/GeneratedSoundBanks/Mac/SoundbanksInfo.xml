@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Wwise\BountyHunter_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Unity\Bounty Hunter\Bounty Hunter\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Wwise\BountyHunter_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="73300830" Language="SFX">
+			<ShortName>ncboss_drums_180bpm_4-4.wav</ShortName>
+			<Path>SFX\ncboss_drums_180bpm_4-4_9EDFC787.wem</Path>
+		</File>
+		<File Id="94506466" Language="SFX">
+			<ShortName>ncboss_movline_180bpm_4-4.wav</ShortName>
+			<Path>SFX\ncboss_movline_180bpm_4-4_9EDFC787.wem</Path>
+		</File>
+		<File Id="144436723" Language="SFX">
+			<ShortName>ncboss_bass_180bpm_4-4.wav</ShortName>
+			<Path>SFX\ncboss_bass_180bpm_4-4_9EDFC787.wem</Path>
+		</File>
+		<File Id="739883283" Language="SFX">
+			<ShortName>ncboss_chords_180bpm_4-4.wav</ShortName>
+			<Path>SFX\ncboss_chords_180bpm_4-4_9EDFC787.wem</Path>
+		</File>
+		<File Id="931186661" Language="SFX">
+			<ShortName>Wheatley.wav</ShortName>
+			<Path>SFX\Wheatley_9EDFC787.wem</Path>
+		</File>
+		<File Id="1016578576" Language="SFX">
+			<ShortName>ncboss_lead_180bpm_4-4.wav</ShortName>
+			<Path>SFX\ncboss_lead_180bpm_4-4_9EDFC787.wem</Path>
+		</File>
+	</StreamedFiles>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3029380580">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1647505162">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3955959628" Name="Play_Gunshot" ObjectPath="\Events\Default Work Unit\Play_Gunshot" DurationType="OneShot" DurationMin="0.469789" DurationMax="0.587237">
+					<IncludedMemoryFiles>
+						<File Id="70716937" Language="SFX">
+							<ShortName>sfx_gunshot2.wav</ShortName>
+							<Path>SFX\sfx_gunshot2_4D45C5BC.wem</Path>
+						</File>
+						<File Id="260209184" Language="SFX">
+							<ShortName>sfx_gunshot2.wav</ShortName>
+							<Path>SFX\sfx_gunshot2_30A5F908.wem</Path>
+						</File>
+						<File Id="334851619" Language="SFX">
+							<ShortName>sfx_gunshot2.wav</ShortName>
+							<Path>SFX\sfx_gunshot2_8053F740.wem</Path>
+						</File>
+						<File Id="406766129" Language="SFX">
+							<ShortName>sfx_gunshot2.wav</ShortName>
+							<Path>SFX\sfx_gunshot2_536B4A3E.wem</Path>
+						</File>
+						<File Id="743684716" Language="SFX">
+							<ShortName>sfx_gunshot2.wav</ShortName>
+							<Path>SFX\sfx_gunshot2_C57084EC.wem</Path>
+						</File>
+						<File Id="758719293" Language="SFX">
+							<ShortName>sfx_gunshot2.wav</ShortName>
+							<Path>SFX\sfx_gunshot2_10CE78AC.wem</Path>
+						</File>
+						<File Id="1008793128" Language="SFX">
+							<ShortName>sfx_gunshot2.wav</ShortName>
+							<Path>SFX\sfx_gunshot2_B9060FEE.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3754198327" Name="Play_NightClubBoss" ObjectPath="\Events\Default Work Unit\Play_NightClubBoss" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="73300830" Language="SFX">
+							<ShortName>ncboss_drums_180bpm_4-4.wav</ShortName>
+							<Path>SFX\ncboss_drums_180bpm_4-4_9EDFC787.wem</Path>
+						</File>
+						<File Id="94506466" Language="SFX">
+							<ShortName>ncboss_movline_180bpm_4-4.wav</ShortName>
+							<Path>SFX\ncboss_movline_180bpm_4-4_9EDFC787.wem</Path>
+						</File>
+						<File Id="144436723" Language="SFX">
+							<ShortName>ncboss_bass_180bpm_4-4.wav</ShortName>
+							<Path>SFX\ncboss_bass_180bpm_4-4_9EDFC787.wem</Path>
+						</File>
+						<File Id="739883283" Language="SFX">
+							<ShortName>ncboss_chords_180bpm_4-4.wav</ShortName>
+							<Path>SFX\ncboss_chords_180bpm_4-4_9EDFC787.wem</Path>
+						</File>
+						<File Id="1016578576" Language="SFX">
+							<ShortName>ncboss_lead_180bpm_4-4.wav</ShortName>
+							<Path>SFX\ncboss_lead_180bpm_4-4_9EDFC787.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="2872770759" Name="Play_TestMusic" ObjectPath="\Events\Default Work Unit\Play_TestMusic" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="931186661" Language="SFX">
+							<ShortName>Wheatley.wav</ShortName>
+							<Path>SFX\Wheatley_9EDFC787.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="1012531473" Name="Stop_NightClubBoss" ObjectPath="\Events\Default Work Unit\Stop_NightClubBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3991482221" Name="Stop_TestMusic" ObjectPath="\Events\Default Work Unit\Stop_TestMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

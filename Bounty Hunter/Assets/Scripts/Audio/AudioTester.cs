@@ -28,12 +28,12 @@ public class AudioTester : MonoBehaviour
             {
                 if (isPlaying)
                 {
-                    audioManager.PlayAudioByString("Stop_TestMusic", null);
+                    audioManager.PlayAudioByString("Stop_NightClubBoss", null);
                     isPlaying = false;
                 }
                 else
                 {
-                    audioManager.PlayAudioByString("Play_TestMusic", null);
+                    audioManager.PlayAudioByString("Play_NightClubBoss", null);
                     isPlaying = true;
                 }
             }

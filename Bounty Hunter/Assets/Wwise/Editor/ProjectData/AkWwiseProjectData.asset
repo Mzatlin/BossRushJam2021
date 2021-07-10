@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4b359dc9b5762647a6418822741ddfca
     GuidInternal: 
-    m_lastTime: -8585761065614775808
+    m_lastTime: -8585757539234775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 37e55b53d760014d8516d953638ebe43
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4b359dc9b5762647a6418822741ddfca
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 37e55b53d760014d8516d953638ebe43
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2ca3c2724c2d244384db17c3c57cf700
     GuidInternal: 
-    m_lastTime: -8585761059534775808
+    m_lastTime: -8585757538994775808
     List:
     - name: Main
       guid: fa820d8107e4c34a9137981c280ce2d5
@@ -94,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: abf8dde28daaaf4d80133a17a3ad065c
     GuidInternal: 
-    m_lastTime: -8585761062514775808
+    m_lastTime: -8585757538994775808
     List:
     - name: Play_Gunshot
       guid: 5cb6b947c1d21a4c930973e4bb52af5a
@@ -113,6 +130,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.587237
       minDuration: 0.469789
+    - name: Play_NightClubBoss
+      guid: fc77c1553f64024da1f29e1b4b395514
+      id: 3754198327
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Play_NightClubBoss
+        ObjectType: 3
+        guid: fc77c1553f64024da1f29e1b4b395514
+      Path: Events\Default Work Unit\Play_NightClubBoss
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_TestMusic
       guid: c55618870386c44888407d029d1d2cda
       id: 2872770759
@@ -130,6 +164,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_NightClubBoss
+      guid: 6655b9b07adb9446b8176a6b19ce9ba4
+      id: 1012531473
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Stop_NightClubBoss
+        ObjectType: 3
+        guid: 6655b9b07adb9446b8176a6b19ce9ba4
+      Path: Events\Default Work Unit\Stop_NightClubBoss
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_TestMusic
       guid: 365a144b1189c14b8bbefc36b0027379
       id: 3991482221
@@ -203,7 +254,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585761065614775808
     List: []
-  ExpandedFileSystemItemIds: 0b0000000c000000
+  ExpandedFileSystemItemIds: 02000000030000000b0000000c000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
