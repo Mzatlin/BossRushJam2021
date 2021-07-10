@@ -100,12 +100,11 @@ public class BossCornerSpreadBulletPattern : BossStateBase
             float projectileDirectionX = startPoint.x + Mathf.Sin((angle * Mathf.PI) / 180f);
             float projectileDirectionY = startPoint.y + Mathf.Cos((angle * Mathf.PI) / 180f);
             Vector2 projectileVector = new Vector2(projectileDirectionX, projectileDirectionY);
-            Vector2 projectileMoveDirection = (projectileVector - (Vector2)startPoint).normalized * projectileSpeed;
+            Vector2 projectileMoveDirection = (projectileVector - (Vector2)startPoint).normalized;
 
             //Logic for determining how the bullet if fired
             GameObject tmpObj = boss.CreateBullet(startPoint, Quaternion.identity); 
-            tmpObj.transform.rotation = boss.SetBulletRotation(projectileMoveDirection);
-
+            tmpObj.transform.rotation = boss.SetupBullet(tmpObj, projectileMoveDirection);
             yield return new WaitForSeconds(delay);
 
             angle += 10f;

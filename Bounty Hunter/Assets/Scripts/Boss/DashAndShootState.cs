@@ -86,7 +86,7 @@ public class DashAndShootState : BossStateBase
             Vector2 direction = (boss.GetPlayer().transform.position - boss.transform.position).normalized;
 
             GameObject bullet = boss.CreateBullet(boss.transform.position, Quaternion.identity);
-            bullet.transform.rotation = boss.SetBulletRotation(direction); ;
+            bullet.transform.rotation = boss.SetupBullet(bullet, direction);
 
             yield return new WaitForSeconds(delay);
         }

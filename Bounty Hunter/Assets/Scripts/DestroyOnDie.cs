@@ -26,6 +26,6 @@ public class DestroyOnDie : MonoBehaviour
 
     private void HandleDie()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

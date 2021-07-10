@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: collisionMasks.m_Bits
       value: 320
       objectReference: {fileID: 0}
+    - target: {fileID: 984970033956706736, guid: 6e662febbab3dc3428675149fc1e2864, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1173295215114695284, guid: 6e662febbab3dc3428675149fc1e2864, type: 3}
       propertyPath: m_Name
       value: BossBullet
