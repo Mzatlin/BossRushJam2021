@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e92b82a4179afa4a8e39f39e352e80a, type: 3}
+  m_Name: B0B95566-DB7A-4694-B817-6A6B19CE9BA4
+  m_EditorClassIdentifier: 
+  objectName: Stop_NightClubBoss
+  id: 1012531473
+  guid: B0B95566-DB7A-4694-B817-6A6B19CE9BA4

@@ -6,6 +6,7 @@ public class AudioTester : MonoBehaviour
 {
     AudioManager audioManager;
     bool isPlaying;
+    [SerializeField] AK.Wwise.Event[] audioEvents;
     
     private void Start()
     {
@@ -28,12 +29,12 @@ public class AudioTester : MonoBehaviour
             {
                 if (isPlaying)
                 {
-                    audioManager.PlayAudioByString("Stop_NightClubBoss", null);
+                    audioManager.PlayAudioByEvent(audioEvents[0], null);
                     isPlaying = false;
                 }
                 else
                 {
-                    audioManager.PlayAudioByString("Play_NightClubBoss", null);
+                    audioManager.PlayAudioWithCallback(audioEvents[1], null);
                     isPlaying = true;
                 }
             }
