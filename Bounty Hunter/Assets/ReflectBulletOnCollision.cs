@@ -17,19 +17,26 @@ public class ReflectBulletOnCollision : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if((1 << collision.gameObject.layer & reflectionMasks) != 0)
         {
             var rb = collision.gameObject.GetComponent<Rigidbody2D>();
-            ContactPoint2D contact = collision.contacts[0];
+            //ContactPoint2D contact = collision.contacts[0];
             if(rb != null)
             {
-                var reflect = -rb.velocity;
+                var reflect = new Vector2(-rb.velocity.x, -rb.velocity.y);
                 var projectile = collision.gameObject.GetComponent<Projectile>();
                 if (projectile != null)
                 {
-                    projectile.SetBulletDirection(Vector2.Reflect(rb.velocity,contact.normal));
+                    Vector2 direction = reflect;//Vector2.Reflect(-rb.velocity, contact.normal);
+                    Ray2D ray = new Ray2D(collision.transform.position, rb.velocity.normalized);
+                    RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 5f);
+                    if (hit)
+                    {
+                        direction = Vector2.Reflect(rb.velocity, hit.normal);
+                    }
+                    projectile.SetBulletDirection(direction.normalized);
                 }
                 //collision.transform.rotation = Quaternion.Inverse(collision.transform.rotation);
             }
