@@ -509,6 +509,7 @@ GameObject:
   - component: {fileID: 465725182}
   - component: {fileID: 465725184}
   - component: {fileID: 465725183}
+  - component: {fileID: 465725185}
   m_Layer: 7
   m_Name: Boss
   m_TagString: Untagged
@@ -833,6 +834,18 @@ MonoBehaviour:
   content:
   - "I really don\u2019t want to use up my merchandise, but you give me no choice."
   typingSpeed: 0.3
+--- !u!114 &465725185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465725171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3177ef719b0dd0429453f1f8bc654b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &515457900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,6 +1870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1305408496}
   - component: {fileID: 1305408497}
+  - component: {fileID: 1305408498}
   m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
@@ -1929,6 +1943,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1305408498
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305408495}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 912b8ce2d5adbf64b959432d68be361d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1335765013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4794873657077107500, guid: ec1d58660b6c92a459b9a8ca27244e28, type: 3}

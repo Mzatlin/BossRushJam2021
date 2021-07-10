@@ -7,6 +7,7 @@ public class FirstBossAI : MonoBehaviour
 {
     IHealth health => GetComponent<IHealth>();
     IDialogueEnd dialogueEnd => GetComponent<IDialogueEnd>();
+    IBossAnimate animate => GetComponent<IBossAnimate>();
     public float CurrentBossHealth => health.CurrentHealth;
     ActivateDialogueFromBossAI dialogue;
     public BossMechanicStateMachine StateMachine => GetComponent<BossMechanicStateMachine>();
@@ -206,4 +207,13 @@ public class FirstBossAI : MonoBehaviour
         }
         return drone;
     }
+
+    public void SetBossTrigger(string trigger)
+    {
+        if(animate != null)
+        {
+            animate.SetBossTrigger(trigger);
+        }
+    }
+
 }

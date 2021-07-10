@@ -95,7 +95,6 @@ public class BossChargeState : BossStateBase
 
     void ResetEnemy()
     {
-        //boss.transform.position = startPosition.position;
         if (chargeAmounts > 0 && !isAiming)
         {
             isAiming = true;
@@ -104,7 +103,6 @@ public class BossChargeState : BossStateBase
         }
         else
         {
-            Debug.Log("End Attack");
             boss.hitEvent -= HandleHit;
             isEnd = true;
         }
@@ -112,7 +110,6 @@ public class BossChargeState : BossStateBase
 
     IEnumerator ChargeDelay()
     {
-
         yield return new WaitForSeconds(chargeDelay);
         isCharging = true;
         isAiming = false;
