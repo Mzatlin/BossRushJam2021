@@ -85,11 +85,8 @@ public class DashAndShootState : BossStateBase
             //Direction vector of bullet
             Vector2 direction = (boss.GetPlayer().transform.position - boss.transform.position).normalized;
 
-            //Logic for determining how the bullet if fired
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            bulletAngle.eulerAngles = new Vector3(0, 0, angle);
             GameObject bullet = boss.CreateBullet(boss.transform.position, Quaternion.identity);
-            bullet.transform.rotation = bulletAngle;
+            bullet.transform.rotation = boss.SetBulletRotation(direction); ;
 
             yield return new WaitForSeconds(delay);
         }

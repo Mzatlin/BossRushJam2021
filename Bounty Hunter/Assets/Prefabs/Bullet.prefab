@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2611074720097285524}
   - component: {fileID: 3267881278316616215}
   - component: {fileID: 634700310069215981}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Player Bullet
   m_Icon: {fileID: 0}
@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 1000
+  lifetime: 2
 --- !u!50 &2611074720097285524
 Rigidbody2D:
   serializedVersion: 4
@@ -111,7 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 984970033956706736}
   - component: {fileID: 8471480169757796511}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

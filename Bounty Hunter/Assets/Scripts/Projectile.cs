@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(Time.time > currentTime)
+        if (Time.time > currentTime)
         {
             gameObject.SetActive(false);
         }
@@ -32,7 +32,6 @@ public class Projectile : MonoBehaviour
         {
             rb.velocity = transform.right * projectileSpeed * Time.fixedDeltaTime;
         }
-
-
     }
+
 }

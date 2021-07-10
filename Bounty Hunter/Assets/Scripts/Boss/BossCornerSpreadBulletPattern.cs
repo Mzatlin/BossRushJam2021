@@ -103,10 +103,8 @@ public class BossCornerSpreadBulletPattern : BossStateBase
             Vector2 projectileMoveDirection = (projectileVector - (Vector2)startPoint).normalized * projectileSpeed;
 
             //Logic for determining how the bullet if fired
-            GameObject tmpObj = boss.CreateBullet(startPoint, Quaternion.identity); //Instantiate(projectilePrefab, startPoint, Quaternion.identity); 
-            float bulletangle = Mathf.Atan2(projectileMoveDirection.y, projectileMoveDirection.x) * Mathf.Rad2Deg;
-            gunRotation.eulerAngles = new Vector3(0, 0, bulletangle);
-            tmpObj.transform.rotation = gunRotation;
+            GameObject tmpObj = boss.CreateBullet(startPoint, Quaternion.identity); 
+            tmpObj.transform.rotation = boss.SetBulletRotation(projectileMoveDirection);
 
             yield return new WaitForSeconds(delay);
 

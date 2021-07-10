@@ -20,6 +20,7 @@ public class FirstBossAI : MonoBehaviour
     public float currentPhaseThreshold = 50f;
 
     public int currentPhase = 1;
+    Quaternion gunRotation;
 
     [SerializeField] GameObject player;
     public Transform centerPoint;
@@ -214,6 +215,13 @@ public class FirstBossAI : MonoBehaviour
         {
             animate.SetBossTrigger(trigger);
         }
+    }
+
+    public Quaternion SetBulletRotation(Vector2 direction)
+    {
+        float bulletangle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        gunRotation.eulerAngles = new Vector3(0, 0, bulletangle);
+        return gunRotation;
     }
 
 }
