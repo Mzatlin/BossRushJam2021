@@ -42,14 +42,20 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
         if (projectile != null && player != null)
         {
             Vector2 direction = (player.transform.position - transform.position).normalized;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             bulletAngle.eulerAngles = new Vector3(0, 0, angle);
             GameObject tempBullet = ObjectPooler.Instance.GetFromPool("Enemy Bullet 1");
             if(tempBullet != null)
             {
                 tempBullet.transform.position = transform.position;
                 tempBullet.transform.rotation = bulletAngle;
+                var projectile = tempBullet.GetComponent<Projectile>();
+                if (projectile != null)
+                {
+                    Debug.Log("Player");
+                    projectile.SetBulletDirection(direction);
+                }
             }
         }
     }

@@ -30,7 +30,7 @@ public class FirstBossAI : MonoBehaviour
     public Transform[] bossLocations;
 
     public Dictionary<Type, IState> states;
-    public  Dictionary<Transform, float> bossPositions;
+    public Dictionary<Transform, float> bossPositions;
 
 
     // Start is called before the first frame update
@@ -40,7 +40,7 @@ public class FirstBossAI : MonoBehaviour
         lineRender = GetComponent<LineRenderer>();
         InitializeStateMachine();
         InitializeBossPositions();
-       if(dialogueEnd != null)
+        if (dialogueEnd != null)
         {
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
@@ -48,7 +48,7 @@ public class FirstBossAI : MonoBehaviour
 
     private void OnDestroy()
     {
-        if(dialogueEnd != null)
+        if (dialogueEnd != null)
         {
             dialogueEnd.OnDialogueEnd -= HandleDialogueEnd;
         }
@@ -68,7 +68,7 @@ public class FirstBossAI : MonoBehaviour
     {
         float angle = 90f;
         bossPositions = new Dictionary<Transform, float>();
-        foreach(Transform location in bossLocations)
+        foreach (Transform location in bossLocations)
         {
             if (!bossPositions.ContainsKey(location))
             {
@@ -114,7 +114,7 @@ public class FirstBossAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(CurrentBossHealth < 1f && currentPhase < 4)
+        if (CurrentBossHealth < 1f && currentPhase < 4)
         {
             currentPhase++;
             //Death Phase
@@ -123,7 +123,7 @@ public class FirstBossAI : MonoBehaviour
             StateMachine.SwitchToNewState(typeof(FirstBossDeathState));
         }
 
-        if(CurrentBossHealth < 25f && currentPhase < 3)
+        if (CurrentBossHealth < 25f && currentPhase < 3)
         {
             currentPhase++;
             //Add new initial phase to dictionary + intermediate attack
@@ -171,7 +171,7 @@ public class FirstBossAI : MonoBehaviour
     public GameObject CreateBullet(Vector3 startPos, Quaternion rotation)
     {
         GameObject enemyBullet = ObjectPooler.Instance.GetFromPool("Enemy Bullet 1");
-        if(enemyBullet != null)
+        if (enemyBullet != null)
         {
             enemyBullet.transform.position = startPos;
             enemyBullet.transform.rotation = rotation;
@@ -196,12 +196,12 @@ public class FirstBossAI : MonoBehaviour
         {
             drone.transform.position = startPos;
             var shoot = drone.GetComponent<ShootProjectileToPlayer>();
-            if(startPos.x < 0)
+            if (startPos.x < 0)
             {
                 SpriteRenderer render = drone.GetComponentInChildren<SpriteRenderer>();
                 render.flipX = true;
             }
-            if(shoot != null)
+            if (shoot != null)
             {
                 shoot.SetPlayer(player);
             }
@@ -211,17 +211,23 @@ public class FirstBossAI : MonoBehaviour
 
     public void SetBossTrigger(string trigger)
     {
-        if(animate != null)
+        if (animate != null)
         {
             animate.SetBossTrigger(trigger);
         }
     }
 
-    public Quaternion SetBulletRotation(Vector2 direction)
+    public Quaternion SetupBullet(GameObject bullet, Vector2 direction)
     {
         float bulletangle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         gunRotation.eulerAngles = new Vector3(0, 0, bulletangle);
+        var projectile = bullet.GetComponent<Projectile>();
+        if (projectile != null)
+        {
+            projectile.SetBulletDirection(direction);
+        }
         return gunRotation;
-    }
 
+
+    }
 }

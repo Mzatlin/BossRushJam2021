@@ -17,6 +17,12 @@ public class AutomaticWeaponController : MonoBehaviour, IShootable
         {
             bulletToSpawn.transform.position = firePoint.transform.position;
             bulletToSpawn.transform.rotation = firePoint.transform.rotation;
+            var projectile = bulletToSpawn.GetComponent<Projectile>();
+            if(projectile != null)
+            {
+                projectile.SetBulletDirection(firePoint.transform.right);
+            }
+
             bulletToSpawn.SetActive(true);
         }
 

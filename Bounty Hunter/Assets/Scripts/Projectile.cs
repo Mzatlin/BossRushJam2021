@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     public float lifetime = 2f;
     float currentTime;
     Rigidbody2D rb;
+    Vector2 bulletDirection;
 
     void Awake()
     {
@@ -30,8 +31,12 @@ public class Projectile : MonoBehaviour
         }
         else
         {
-            rb.velocity = transform.right * projectileSpeed * Time.fixedDeltaTime;
+            rb.velocity = bulletDirection * projectileSpeed * Time.fixedDeltaTime;
         }
     }
 
+    public void SetBulletDirection(Vector2 direction)
+    {
+        bulletDirection = direction;
+    }
 }
