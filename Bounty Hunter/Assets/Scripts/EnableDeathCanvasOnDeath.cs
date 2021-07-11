@@ -15,7 +15,10 @@ public class EnableDeathCanvasOnDeath : MonoBehaviour
         {
             health.OnDie += HandleDie;
         }
-        death.enabled = false;
+        if(death != null)
+        {
+            death.enabled = false;
+        }
     }
 
     private void OnDestroy()
@@ -28,7 +31,10 @@ public class EnableDeathCanvasOnDeath : MonoBehaviour
 
     private void HandleDie()
     {
-        death.enabled = true;
+        if(death != null)
+        {
+            death.enabled = true;
+        }
     }
 
 }
