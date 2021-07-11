@@ -21,6 +21,7 @@ public class FirstBossIdleState :BossStateBase
         Debug.Log("Entered Idle State");
         hasWaited = false;
         isJumping = false;
+        boss.SetGunVisibility(false);
         //currentState = GetRandomState();
     }
 

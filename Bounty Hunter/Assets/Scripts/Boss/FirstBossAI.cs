@@ -8,6 +8,7 @@ public class FirstBossAI : MonoBehaviour
     IHealth health => GetComponent<IHealth>();
     IDialogueEnd dialogueEnd => GetComponent<IDialogueEnd>();
     IBossAnimate animate => GetComponent<IBossAnimate>();
+    IGunRotate rotate => GetComponentInChildren<IGunRotate>();
     public float CurrentBossHealth => health.CurrentHealth;
     ActivateDialogueFromBossAI dialogue;
     public BossMechanicStateMachine StateMachine => GetComponent<BossMechanicStateMachine>();
@@ -21,12 +22,14 @@ public class FirstBossAI : MonoBehaviour
 
     public int currentPhase = 1;
     Quaternion gunRotation;
+    public Transform centerPoint;
 
     [SerializeField] GameObject player;
-    public Transform centerPoint;
     [SerializeField] LayerMask obstacleLayers;
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject landMine;
+    [SerializeField] GameObject bossGun;
+    [SerializeField] Transform bossFirePoint;
     public Transform[] bossLocations;
 
     public Dictionary<Type, IState> states;
@@ -226,8 +229,20 @@ public class FirstBossAI : MonoBehaviour
         {
             projectile.SetBulletDirection(direction);
         }
+        bossGun.transform.rotation = gunRotation;
+        if(rotate != null)
+        {
+            rotate.AdjustLocalScale(bulletangle);
+        }
         return gunRotation;
-
-
     }
+
+    public void SetGunVisibility(bool visibility)
+    {
+        if(bossGun != null)
+        {
+            bossGun.SetActive(visibility);
+        }
+    }
+
 }

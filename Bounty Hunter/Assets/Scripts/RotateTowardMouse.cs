@@ -2,18 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateTowardMouse : MonoBehaviour
+public class RotateTowardMouse : GunRotationBase
 {
-    Quaternion gunRotation;
-    SpriteRenderer render;
-    int sortOrder;
     Camera cam;
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
         cam = Camera.main;
-        render = GetComponentInChildren<SpriteRenderer>();
-        sortOrder = render.sortingOrder;
+        base.Start();
     }
 
     // Update is called once per frame
@@ -22,7 +18,7 @@ public class RotateTowardMouse : MonoBehaviour
         RotateGun();
     }
 
-    void RotateGun()
+    protected override void RotateGun()
     {
         //Find the displacement vector from the Object to where the mouse is in WorldSpace
         Vector2 direction = (cam.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
@@ -33,32 +29,5 @@ public class RotateTowardMouse : MonoBehaviour
         transform.rotation = gunRotation;
 
         AdjustLocalScale(angle);
-    }
-
-    void AdjustLocalScale(float angle)
-    {
-        //To ensure the rotating object never appears upside-down, the y scale is inverted based on its current rotation
-        Vector3 aimLocalScale = transform.localScale;
-        if (angle > 90 || angle < -90)
-        {
-            aimLocalScale.y = -1f;
-           
-        }
-        else
-        {
-            aimLocalScale.y = +1f;
-           
-        }
-        if(angle < 0)
-        {
-            render.sortingOrder = sortOrder;
-        }
-        else
-        {
-            render.sortingOrder -= 1;
-        }
-
-
-        transform.localScale = aimLocalScale;
     }
 }

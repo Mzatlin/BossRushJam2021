@@ -28,7 +28,6 @@ public class ReflectBulletOnCollision : MonoBehaviour
                     projectile.SetBulletDirection(direction.normalized);
                     projectile.SetBulletRotation(direction.normalized);
                 }
-
             }
         }
     }
