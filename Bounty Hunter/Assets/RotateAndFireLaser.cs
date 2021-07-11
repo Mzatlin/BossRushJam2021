@@ -25,7 +25,6 @@ public class RotateAndFireLaser : MonoBehaviour
         RaycastHit2D hit;
         lineRender.SetPosition(1, ray.direction);
         hit = Physics2D.Raycast(ray.origin, ray.direction, 10f, playerLayerMask);
-        //lineRender.SetPosition(1, transform.right * 3f);
         Debug.DrawRay(ray.origin, ray.direction);
         if (hit.collider)
         {
