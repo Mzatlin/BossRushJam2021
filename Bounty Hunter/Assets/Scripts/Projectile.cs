@@ -10,6 +10,7 @@ public class Projectile : MonoBehaviour
     float currentTime;
     Rigidbody2D rb;
     Vector2 bulletDirection;
+    Quaternion bulletRotation;
 
     void Awake()
     {
@@ -38,5 +39,12 @@ public class Projectile : MonoBehaviour
     public void SetBulletDirection(Vector2 direction)
     {
         bulletDirection = direction;
+    }
+
+    public void SetBulletRotation(Vector2 direction)
+    {
+        float bulletangle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        bulletRotation.eulerAngles = new Vector3(0, 0, bulletangle);
+        transform.rotation = bulletRotation;
     }
 }
