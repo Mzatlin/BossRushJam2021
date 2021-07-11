@@ -5,7 +5,7 @@ using UnityEngine;
 public class ReflectBulletOnCollision : MonoBehaviour
 {
     [SerializeField] LayerMask reflectionMasks;
-    [SerializeField] GameObject enemyBullet;
+    GameObject enemyBullet;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,7 +17,7 @@ public class ReflectBulletOnCollision : MonoBehaviour
             if (projectile != null && rb != null)
             {
                 Ray2D ray = new Ray2D(collision.transform.position, rb.velocity.normalized);
-                RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 1f);
+                RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 5f);
                 if (hit)
                 {
                     direction = Vector2.Reflect(rb.velocity, hit.normal);
@@ -25,16 +25,16 @@ public class ReflectBulletOnCollision : MonoBehaviour
                     {
                         ChangeBulletFaction(collision, direction);
                     }
+                    projectile.SetBulletDirection(direction.normalized);
+                    projectile.SetBulletRotation(direction.normalized);
                 }
-                projectile.SetBulletDirection(direction.normalized);
-                projectile.SetBulletRotation(direction.normalized);
+
             }
         }
     }
 
     void ChangeBulletFaction(Collider2D collision, Vector2 direction)
     {
-
         enemyBullet = ObjectPooler.Instance.GetFromPool("Enemy Bullet 1");
         var proj = enemyBullet.GetComponent<Projectile>();
         if (proj != null)
