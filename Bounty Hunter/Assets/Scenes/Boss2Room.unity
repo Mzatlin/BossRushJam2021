@@ -699,8 +699,9 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  turnSpeed: 50
+  turnSpeed: 28
   player: {fileID: 936041966}
+  renders: []
 --- !u!61 &1716554123
 BoxCollider2D:
   m_ObjectHideFlags: 0
