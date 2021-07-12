@@ -18,6 +18,10 @@ public abstract class GunRotationBase : MonoBehaviour, IGunRotate
 
     public void AdjustLocalScale(float angle)
     {
+        if(render == null)
+        {
+            return;
+        }
         //To ensure the rotating object never appears upside-down, the y scale is inverted based on its current rotation
         Vector3 aimLocalScale = transform.localScale;
         if (angle > 90 || angle < -90)

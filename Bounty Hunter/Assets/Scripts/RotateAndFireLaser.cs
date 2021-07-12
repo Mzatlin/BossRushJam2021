@@ -25,21 +25,30 @@ public class RotateAndFireLaser : MonoBehaviour
         RaycastHit2D hit;
         lineRender.SetPosition(1, ray.direction);
         hit = Physics2D.Raycast(ray.origin, ray.direction, 10f, playerLayerMask);
-        Debug.DrawRay(ray.origin, ray.direction);
         if (hit.collider)
         {
-            var damage = hit.collider.GetComponent<IHittablle>();
-            if (damage != null)
-            {
-                damage.ProcessDamage(1);
-            }
-            lineRender.SetPosition(1, hit.point);
+            DamageTarget(hit);
         }
         else
         {
             Vector3 dir = player.transform.position - transform.position;
             lineRender.SetPosition(1, ray.direction * 10f);
         }
+        Rotate();
+    }
+
+    void Rotate()
+    {
         transform.Rotate(0, 0, Time.deltaTime * turnSpeed);
+    }
+
+    void DamageTarget(RaycastHit2D hit)
+    {
+        var damage = hit.collider.GetComponent<IHittablle>();
+        if (damage != null)
+        {
+            damage.ProcessDamage(1);
+        }
+        lineRender.SetPosition(1, hit.point);
     }
 }
