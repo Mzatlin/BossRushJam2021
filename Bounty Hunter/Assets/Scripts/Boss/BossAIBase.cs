@@ -10,12 +10,14 @@ public abstract class BossAIBase : MonoBehaviour
     ActivateDialogueFromBossAI dialogue;
 
     [SerializeField] protected GameObject player;
+    [SerializeField] protected LayerMask obstacleLayers;
     protected Coroutine enemyCoroutine;
 
 
     protected virtual void Awake()
     {
         dialogue = GetComponent<ActivateDialogueFromBossAI>();
+        InitializeStateMachine();
     }
     // Start is called before the first frame update
     void Start()

@@ -14,8 +14,6 @@ public class FirstBossAI : BossAIBase
     public Transform[] bossLocations;
     public Dictionary<Transform, float> bossPositions;
 
-
-    [SerializeField] LayerMask obstacleLayers;
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject landMine;
     [SerializeField] GameObject bossGun;
@@ -34,7 +32,6 @@ public class FirstBossAI : BossAIBase
     {
         base.Awake();
         lineRender = GetComponent<LineRenderer>();
-        InitializeStateMachine();
         InitializeBossPositions();
         if (dialogueEnd != null)
         {
