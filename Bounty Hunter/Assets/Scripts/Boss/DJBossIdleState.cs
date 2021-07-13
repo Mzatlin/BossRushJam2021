@@ -26,7 +26,7 @@ public class DJBossIdleState : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        Debug.Log("End of Idle State");
     }
 
     public override Type Tick()

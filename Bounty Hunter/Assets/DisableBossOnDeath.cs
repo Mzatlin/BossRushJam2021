@@ -8,9 +8,11 @@ public class DisableBossOnDeath : MonoBehaviour
 {
     [SerializeField] Slider slider;
     IHealth health;
+    IStateMachine state;
     // Start is called before the first frame update
     void Start()
     {
+        state = GetComponent<IStateMachine>();
         health = GetComponent<IHealth>();
         if(health != null)
         {
@@ -28,9 +30,10 @@ public class DisableBossOnDeath : MonoBehaviour
 
     private void HandleDie()
     {
-        if(slider != null)
+        if(slider != null && state != null)
         {
             slider.gameObject.SetActive(false);
+            state.PauseStateMachine();
         }
     }
 }

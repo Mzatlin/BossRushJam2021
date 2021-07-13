@@ -24,7 +24,7 @@ public class LaserSpinState : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        SetLasersActive(false);
     }
 
     public override Type Tick()

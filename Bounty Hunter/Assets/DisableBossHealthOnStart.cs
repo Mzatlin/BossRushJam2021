@@ -8,6 +8,7 @@ public class DisableBossHealthOnStart : MonoBehaviour
     [SerializeField] Slider slider;
     [SerializeField] GameObject firstBoss;
     IHealth firstBossHealth;
+    IStateMachine stateMachine;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,17 @@ public class DisableBossHealthOnStart : MonoBehaviour
             firstBossHealth.OnDie += HandleDie;
         }
 
+        stateMachine = GetComponent<IStateMachine>();
+        TogglePause();
+    }
+
+    void TogglePause()
+    {
+        if (stateMachine != null)
+        {
+            stateMachine.PauseStateMachine();
+        }
+
     }
 
     private void OnDestroy()
@@ -40,6 +52,7 @@ public class DisableBossHealthOnStart : MonoBehaviour
         if (slider != null)
         {
             slider.gameObject.SetActive(true);
+            TogglePause();
         }
     }
 }
