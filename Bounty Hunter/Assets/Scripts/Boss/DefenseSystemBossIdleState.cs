@@ -1,18 +1,18 @@
-using System;
-using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Linq;
 
-public class DJBossIdleState : BossStateBase
+public class DefenseSystemBossIdleState : BossStateBase
 {
-    DJBossAI boss;
+    DefenseSystemBossAI boss;
     Type lastState;
     Type currentState;
     bool hasWaited = false;
     bool hasStartedWait = false;
 
-    public DJBossIdleState(DJBossAI _boss) : base(_boss.gameObject)
+    public DefenseSystemBossIdleState(DefenseSystemBossAI _boss) : base(_boss.gameObject)
     {
         boss = _boss;
     }
@@ -43,7 +43,7 @@ public class DJBossIdleState : BossStateBase
         }
         else
         {
-            return typeof(DJBossIdleState);
+            return typeof(LaserSpinState);
         }
     }
 

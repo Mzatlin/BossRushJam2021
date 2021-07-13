@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class DJBossAI : BossAIBase
+public class DefenseSystemBossAI : BossAIBase
 {
     public List<LineRenderer> lasers = new List<LineRenderer>();
 
@@ -11,7 +11,8 @@ public class DJBossAI : BossAIBase
     {
         states = new Dictionary<Type, IState>()
         {
-            {typeof(DJBossIdleState), new DJBossIdleState(this) },
+            {typeof(DefenseSystemBossIdleState), new DefenseSystemBossIdleState(this) },
+             {typeof(LaserSpinState), new LaserSpinState(this) }
         };
 
         ResetStateMachineStates(states, 50);
@@ -33,11 +34,6 @@ public class DJBossAI : BossAIBase
     public LayerMask GetObstacleMask()
     {
         return obstacleLayers;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame

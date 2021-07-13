@@ -5,19 +5,18 @@ using UnityEngine;
 
 public class LaserSpinState : BossStateBase
 {
-    DJBossAI boss;
-    float laserdelay = 5f;
+    DefenseSystemBossAI boss;
+    float laserdelay = 4.55f;
     bool isDoneSpinning = false;
     float turnSpeed = 30f;
     bool hasStartedWait = false;
 
-    public LaserSpinState(DJBossAI _boss) : base(_boss.gameObject)
+    public LaserSpinState(DefenseSystemBossAI _boss) : base(_boss.gameObject)
     {
         boss = _boss;
     }
     public override void BeginState()
     {
-        Debug.Log("Entered Laser State");
         isDoneSpinning = false;
         hasStartedWait = false;
         SetLasersActive(true);
@@ -44,14 +43,13 @@ public class LaserSpinState : BossStateBase
         else
         {
             SetLasersActive(false);
-            return typeof(DJBossIdleState);
+            return typeof(DefenseSystemBossIdleState);
         }
     }
     IEnumerator SpinDelay()
     {
         yield return new WaitForSeconds(laserdelay);
         isDoneSpinning = true;
-        Debug.Log("DoneSpinning set to true");
     }
 
     void SetLasersActive(bool toggle)
