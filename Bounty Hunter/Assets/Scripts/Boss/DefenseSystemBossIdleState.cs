@@ -26,7 +26,7 @@ public class DefenseSystemBossIdleState : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        Debug.Log("Exited Idle State");
     }
 
     public override Type Tick()

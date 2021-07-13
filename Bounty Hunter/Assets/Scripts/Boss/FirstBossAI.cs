@@ -5,7 +5,6 @@ using System;
 
 public class FirstBossAI : BossAIBase
 {
-    public float CurrentBossHealth => health.CurrentHealth;
     public event Action<Collider2D> hitEvent = delegate { };
     public event Action endDialogueEvent = delegate { };
     public float currentPhaseThreshold = 50f;
@@ -19,7 +18,6 @@ public class FirstBossAI : BossAIBase
     [SerializeField] GameObject bossGun;
     [SerializeField] Transform bossFirePoint;
 
-    IHealth health => GetComponent<IHealth>();
     IDialogueEnd dialogueEnd => GetComponent<IDialogueEnd>();
     IBossAnimate animate => GetComponent<IBossAnimate>();
     IGunRotate rotate => GetComponentInChildren<IGunRotate>();

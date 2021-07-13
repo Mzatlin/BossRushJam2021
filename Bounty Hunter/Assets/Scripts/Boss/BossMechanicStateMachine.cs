@@ -11,9 +11,6 @@ public class BossMechanicStateMachine : MonoBehaviour, IStateMachine
     private bool isPaused = false;
     public float phaseHealthThreshold = 50f;
     public event Action<IState> OnStateChanged = delegate { };
-    
-
-
 
     // Start is called before the first frame update
     void Start()

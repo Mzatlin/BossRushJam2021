@@ -6,7 +6,7 @@ using UnityEngine;
 public class LaserSpinState : BossStateBase
 {
     DefenseSystemBossAI boss;
-    float laserdelay = 4.55f;
+    float laserdelay = 4.5f;
     bool isDoneSpinning = false;
     float turnSpeed = 30f;
     bool hasStartedWait = false;
@@ -15,6 +15,7 @@ public class LaserSpinState : BossStateBase
     {
         boss = _boss;
     }
+
     public override void BeginState()
     {
         isDoneSpinning = false;

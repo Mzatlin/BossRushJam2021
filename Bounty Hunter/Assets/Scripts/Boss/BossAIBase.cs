@@ -8,7 +8,8 @@ public abstract class BossAIBase : MonoBehaviour
     public BossMechanicStateMachine StateMachine => GetComponent<BossMechanicStateMachine>();
     public Dictionary<Type, IState> states;
     ActivateDialogueFromBossAI dialogue;
-
+    protected IHealth health => GetComponent<IHealth>();
+    public float CurrentBossHealth => health.CurrentHealth;
     [SerializeField] protected GameObject player;
     [SerializeField] protected LayerMask obstacleLayers;
     protected Coroutine enemyCoroutine;

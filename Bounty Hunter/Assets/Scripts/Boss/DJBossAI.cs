@@ -6,7 +6,9 @@ using System;
 public class DJBossAI : BossAIBase
 {
     public List<LineRenderer> lasers = new List<LineRenderer>();
-
+    [SerializeField] GameObject firstBoss;
+    IStateMachine firstBossState;
+    bool isUnpaused = false;
     protected override void InitializeStateMachine()
     {
         states = new Dictionary<Type, IState>()
@@ -37,12 +39,19 @@ public class DJBossAI : BossAIBase
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(firstBoss != null)
+        {
+            firstBossState = firstBoss.GetComponent<IStateMachine>();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(CurrentBossHealth < 50 && firstBossState != null && !isUnpaused)
+        {
+            firstBossState.PauseStateMachine();
+            isUnpaused = true;
+        }
     }
 }
