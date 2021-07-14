@@ -8,7 +8,7 @@ public class FirstBossAI : BossAIBase
     public event Action<Collider2D> hitEvent = delegate { };
     public event Action endDialogueEvent = delegate { };
     public float currentPhaseThreshold = 50f;
-    public int currentPhase = 1;
+   
     public Transform centerPoint;
     public Transform[] bossLocations;
     public Dictionary<Transform, float> bossPositions;
@@ -141,16 +141,7 @@ public class FirstBossAI : BossAIBase
         }
     }
 
-    public GameObject CreateBullet(Vector3 startPos, Quaternion rotation)
-    {
-        GameObject enemyBullet = ObjectPooler.Instance.GetFromPool("Enemy Bullet 1");
-        if (enemyBullet != null)
-        {
-            enemyBullet.transform.position = startPos;
-            enemyBullet.transform.rotation = rotation;
-        }
-        return enemyBullet;
-    }
+
 
     public GameObject CreateLandMine(Vector2 startPos)
     {

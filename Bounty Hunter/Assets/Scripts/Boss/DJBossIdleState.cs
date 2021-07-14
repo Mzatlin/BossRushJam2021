@@ -38,7 +38,7 @@ public class DJBossIdleState : BossStateBase
             if (!hasStartedWait && randomJumpAmount >= 1)
             {
                 hasStartedWait = true;
-                Vector2 randomPos = boss.bossIdleLocations[UnityEngine.Random.Range(1, boss.bossIdleLocations.Length)].position;
+                Vector2 randomPos = boss.bossIdleLocations[UnityEngine.Random.Range(0, boss.bossIdleLocations.Length)].position;
                 Debug.Log("Boss Idle Moved to: "+randomPos);
                 boss.HandleCoroutine(JumpTime(randomPos));
             }
@@ -47,7 +47,7 @@ public class DJBossIdleState : BossStateBase
         }
         else
         {
-            return typeof(DJBossIdleState);
+            return typeof(WaveDiveState);
         }
     }
 

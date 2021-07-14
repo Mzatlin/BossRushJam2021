@@ -5,18 +5,21 @@ using System;
 
 public class DJBossAI : BossAIBase
 {
+    public event Action<Collider2D> hitEvent = delegate { };
     public List<LineRenderer> lasers = new List<LineRenderer>();
     public Transform[] bossLocations;
     public Transform[] bossIdleLocations;
-    [SerializeField] GameObject firstBoss;
+    public GameObject firstBoss;
     IStateMachine firstBossState;
+    Quaternion gunRotation;
 
-    bool isUnpaused = false; 
+    bool isUnpaused = false;
     protected override void InitializeStateMachine()
     {
         states = new Dictionary<Type, IState>()
         {
             {typeof(DJBossIdleState), new DJBossIdleState(this) },
+             {typeof(WaveDiveState), new WaveDiveState(this) },
         };
 
         ResetStateMachineStates(states, 50);
@@ -42,7 +45,7 @@ public class DJBossAI : BossAIBase
     // Start is called before the first frame update
     void Start()
     {
-        if(firstBoss != null)
+        if (firstBoss != null)
         {
             firstBossState = firstBoss.GetComponent<IStateMachine>();
         }
@@ -51,10 +54,22 @@ public class DJBossAI : BossAIBase
     // Update is called once per frame
     void Update()
     {
-        if(CurrentBossHealth < 50 && firstBossState != null && !isUnpaused)
+        if (CurrentBossHealth < 50 && firstBossState != null && !isUnpaused)
         {
             firstBossState.PauseStateMachine();
             isUnpaused = true;
         }
+    }
+
+    public Quaternion SetupBullet(GameObject bullet, Vector2 direction)
+    {
+        float bulletangle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        gunRotation.eulerAngles = new Vector3(0, 0, bulletangle);
+        var projectile = bullet.GetComponent<Projectile>();
+        if (projectile != null)
+        {
+            projectile.SetBulletDirection(direction);
+        }
+        return gunRotation;
     }
 }

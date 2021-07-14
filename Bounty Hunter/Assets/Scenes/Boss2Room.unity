@@ -816,6 +816,7 @@ MonoBehaviour:
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 320
+  currentPhase: 1
   lasers: []
 --- !u!114 &1030281239
 MonoBehaviour:
@@ -1511,7 +1512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.36
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_LocalPosition.z

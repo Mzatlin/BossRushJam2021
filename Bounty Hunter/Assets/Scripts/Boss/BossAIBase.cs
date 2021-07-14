@@ -4,7 +4,8 @@ using UnityEngine;
 using System;
 
 public abstract class BossAIBase : MonoBehaviour
-{
+{ 
+
     public BossMechanicStateMachine StateMachine => GetComponent<BossMechanicStateMachine>();
     public Dictionary<Type, IState> states;
     ActivateDialogueFromBossAI dialogue;
@@ -12,6 +13,7 @@ public abstract class BossAIBase : MonoBehaviour
     public float CurrentBossHealth => health.CurrentHealth;
     [SerializeField] protected GameObject player;
     [SerializeField] protected LayerMask obstacleLayers;
+    public int currentPhase = 1;
     protected Coroutine enemyCoroutine;
 
 
@@ -63,5 +65,16 @@ public abstract class BossAIBase : MonoBehaviour
     public void ActivateDialogue()
     {
         dialogue.ActivateDialogue();
+    }
+
+    public GameObject CreateBullet(Vector3 startPos, Quaternion rotation)
+    {
+        GameObject enemyBullet = ObjectPooler.Instance.GetFromPool("Enemy Bullet 1");
+        if (enemyBullet != null)
+        {
+            enemyBullet.transform.position = startPos;
+            enemyBullet.transform.rotation = rotation;
+        }
+        return enemyBullet;
     }
 }
