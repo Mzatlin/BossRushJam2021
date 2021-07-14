@@ -6,9 +6,12 @@ using System;
 public class DJBossAI : BossAIBase
 {
     public List<LineRenderer> lasers = new List<LineRenderer>();
+    public Transform[] bossLocations;
+    public Transform[] bossIdleLocations;
     [SerializeField] GameObject firstBoss;
     IStateMachine firstBossState;
-    bool isUnpaused = false;
+
+    bool isUnpaused = false; 
     protected override void InitializeStateMachine()
     {
         states = new Dictionary<Type, IState>()
