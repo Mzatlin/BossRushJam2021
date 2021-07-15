@@ -20,6 +20,7 @@ public class DJBossAI : BossAIBase
         {
             {typeof(DJBossIdleState), new DJBossIdleState(this) },
              {typeof(WaveDiveState), new WaveDiveState(this) },
+             {typeof(LaserSweepState), new LaserSweepState(this) }
         };
 
         ResetStateMachineStates(states, 50);

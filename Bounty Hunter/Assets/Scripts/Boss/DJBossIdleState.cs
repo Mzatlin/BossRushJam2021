@@ -31,6 +31,7 @@ public class DJBossIdleState : BossStateBase
         Debug.Log("End of Idle State");
     }
 
+
     public override Type Tick()
     {
         if (!hasWaited)
@@ -47,7 +48,7 @@ public class DJBossIdleState : BossStateBase
         }
         else
         {
-            return typeof(WaveDiveState);
+            return currentState;
         }
     }
 
@@ -66,12 +67,13 @@ public class DJBossIdleState : BossStateBase
     }
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         hasStartedWait = false;
         randomJumpAmount--;
         if(randomJumpAmount < 1)
         {
             hasWaited = true;
+            currentState = GetRandomState();
         }
     }
 
