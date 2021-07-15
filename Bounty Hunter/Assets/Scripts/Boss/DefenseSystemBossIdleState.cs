@@ -43,7 +43,7 @@ public class DefenseSystemBossIdleState : BossStateBase
         }
         else
         {
-            return typeof(LaserSpinState);
+            return currentState;
         }
     }
 
@@ -64,6 +64,6 @@ public class DefenseSystemBossIdleState : BossStateBase
     {
         yield return new WaitForSeconds(2f);
         hasWaited = true;
-        //currentState = GetRandomState();
+        currentState = GetRandomState();
     }
 }

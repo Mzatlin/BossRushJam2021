@@ -4,8 +4,7 @@ using UnityEngine;
 using System;
 
 public abstract class BossAIBase : MonoBehaviour
-{ 
-
+{
     public BossMechanicStateMachine StateMachine => GetComponent<BossMechanicStateMachine>();
     public Dictionary<Type, IState> states;
     ActivateDialogueFromBossAI dialogue;
@@ -13,6 +12,7 @@ public abstract class BossAIBase : MonoBehaviour
     public float CurrentBossHealth => health.CurrentHealth;
     [SerializeField] protected GameObject player;
     [SerializeField] protected LayerMask obstacleLayers;
+    protected Quaternion gunRotation;
     public int currentPhase = 1;
     protected Coroutine enemyCoroutine;
 

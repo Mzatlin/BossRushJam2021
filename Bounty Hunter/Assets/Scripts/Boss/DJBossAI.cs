@@ -11,7 +11,6 @@ public class DJBossAI : BossAIBase
     public Transform[] bossIdleLocations;
     public GameObject firstBoss;
     IStateMachine firstBossState;
-    Quaternion gunRotation;
 
     bool isUnpaused = false;
     protected override void InitializeStateMachine()
