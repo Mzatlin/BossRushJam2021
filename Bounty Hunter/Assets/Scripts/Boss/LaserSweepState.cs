@@ -10,6 +10,7 @@ public class LaserSweepState : BossStateBase
     bool isDoneSpinning = false;
     float turnSpeed = 30f;
     bool hasStartedWait = false;
+    bool canFire = false;
 
     public LaserSweepState(DJBossAI _boss) : base(_boss.gameObject)
     {
@@ -21,7 +22,7 @@ public class LaserSweepState : BossStateBase
         isDoneSpinning = false;
         hasStartedWait = false;
         turnSpeed = 35f;
-        SetLasersActive(true);
+        canFire = false;
     }
 
     public override void EndState()
@@ -36,9 +37,14 @@ public class LaserSweepState : BossStateBase
             if (!hasStartedWait)
             {
                 hasStartedWait = true;
-                boss.HandleCoroutine(SpinDelay());
+                Vector2 randomPos = boss.bossLocations[UnityEngine.Random.Range(0, boss.bossLocations.Length)].position;
+                boss.HandleCoroutine(JumpTime(randomPos));
             }
-            SetupRayDirection(-boss.transform.up, boss.lasers[0]);
+            if (canFire)
+            {
+                SetupRayDirection(boss.lasers[0]);
+            }
+
             return null;
         }
         else
@@ -48,6 +54,16 @@ public class LaserSweepState : BossStateBase
             return typeof(DJBossIdleState);
         }
     }
+
+    protected override IEnumerator JumpTime(Vector2 endPos)
+    {
+        yield return base.JumpTime(endPos);
+        yield return new WaitForSeconds(1f);
+        canFire = true;
+        SetLasersActive(true);
+        boss.HandleCoroutine(SpinDelay());
+    }
+
     IEnumerator SpinDelay()
     {
         yield return new WaitForSeconds(laserdelay);
@@ -62,13 +78,15 @@ public class LaserSweepState : BossStateBase
         }
     }
 
-    void SetupRayDirection(Vector2 direction, LineRenderer render)
+    void SetupRayDirection(LineRenderer render)
     {
+        Vector2 direction = boss.transform.position.x > 0 ? -boss.transform.right : boss.transform.right;
+
         render.SetPosition(0, boss.transform.localPosition);
         Ray2D ray = new Ray2D(boss.transform.position, direction);
         RaycastHit2D hit;
         render.SetPosition(1, ray.direction);
-        hit = Physics2D.Raycast(ray.origin, ray.direction, 10f, boss.GetObstacleMask());
+        hit = Physics2D.Raycast(ray.origin, ray.direction, 1000f, boss.GetObstacleMask());
         if (hit.collider)
         {
             DamageTarget(hit, render);

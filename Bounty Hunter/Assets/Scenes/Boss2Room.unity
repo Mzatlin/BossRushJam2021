@@ -615,6 +615,10 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 915843695}
+    - target: {fileID: 7009042956074380955, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 1876104696}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 970e2532a22c963418115466cb654078, type: 3}
 --- !u!1001 &417201095
@@ -857,7 +861,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1174709509
 Transform:
   m_ObjectHideFlags: 0
@@ -1311,7 +1315,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1749370420
 Transform:
   m_ObjectHideFlags: 0
@@ -1326,6 +1330,11 @@ Transform:
   m_Father: {fileID: 153579972}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1876104696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2274305536948999211, guid: 970e2532a22c963418115466cb654078, type: 3}
+  m_PrefabInstance: {fileID: 387527814}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1907035967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,20 +1585,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4553707096667725017, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: bossLocations.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4553707096667725017, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: bossLocations.Array.data[0]
       value: 
-      objectReference: {fileID: 1174709509}
+      objectReference: {fileID: 73898696}
     - target: {fileID: 4553707096667725017, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: bossLocations.Array.data[1]
       value: 
-      objectReference: {fileID: 73898696}
+      objectReference: {fileID: 1645839948}
     - target: {fileID: 4553707096667725017, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: bossLocations.Array.data[2]
       value: 
-      objectReference: {fileID: 1749370420}
+      objectReference: {fileID: 1645839948}
     - target: {fileID: 4553707096667725017, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: bossLocations.Array.data[3]
       value: 
@@ -1614,6 +1623,10 @@ PrefabInstance:
       propertyPath: bossIdleLocations.Array.data[3]
       value: 
       objectReference: {fileID: 97880525}
+    - target: {fileID: 5057775322578757370, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 7924706637296464176, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.334
