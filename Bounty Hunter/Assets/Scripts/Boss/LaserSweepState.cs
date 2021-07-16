@@ -86,6 +86,7 @@ public class LaserSweepState : BossStateBase
         Ray2D ray = new Ray2D(boss.transform.position, direction);
         RaycastHit2D hit;
         render.SetPosition(1, ray.direction);
+        Debug.DrawRay(ray.origin, ray.direction);
         hit = Physics2D.Raycast(ray.origin, ray.direction, 1000f, boss.GetObstacleMask());
         if (hit.collider)
         {

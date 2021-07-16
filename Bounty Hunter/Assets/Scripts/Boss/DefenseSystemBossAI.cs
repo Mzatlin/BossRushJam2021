@@ -6,6 +6,8 @@ using System;
 public class DefenseSystemBossAI : BossAIBase
 {
     public List<LineRenderer> lasers = new List<LineRenderer>();
+    public List<GameObject> laserPosts = new List<GameObject>();
+    public List<GameObject> segmentedLasers = new List<GameObject>();
 
     protected override void InitializeStateMachine()
     {
@@ -13,7 +15,7 @@ public class DefenseSystemBossAI : BossAIBase
         {
             {typeof(DefenseSystemBossIdleState), new DefenseSystemBossIdleState(this) },
              {typeof(LaserSpinState), new LaserSpinState(this) },
-              {typeof(CompleteCircleFirePatternState), new CompleteCircleFirePatternState(this) }
+              {typeof(CompleteCircleFirePatternState), new CompleteCircleFirePatternState(this) },
         };
 
         ResetStateMachineStates(states, 50);

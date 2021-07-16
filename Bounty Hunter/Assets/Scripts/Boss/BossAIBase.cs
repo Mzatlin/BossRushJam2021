@@ -5,10 +5,12 @@ using System;
 
 public abstract class BossAIBase : MonoBehaviour
 {
+    public event Action endDialogueEvent = delegate { };
     public BossMechanicStateMachine StateMachine => GetComponent<BossMechanicStateMachine>();
     public Dictionary<Type, IState> states;
     ActivateDialogueFromBossAI dialogue;
     protected IHealth health => GetComponent<IHealth>();
+    protected IDialogueEnd dialogueEnd => GetComponent<IDialogueEnd>();
     public float CurrentBossHealth => health.CurrentHealth;
     [SerializeField] protected GameObject player;
     [SerializeField] protected LayerMask obstacleLayers;
@@ -32,6 +34,14 @@ public abstract class BossAIBase : MonoBehaviour
     void Update()
     {
         
+    }
+
+    protected void OnDestroy()
+    {
+        if (dialogueEnd != null)
+        {
+            dialogueEnd.OnDialogueEnd -= HandleDialogueEnd;
+        }
     }
 
     protected abstract void InitializeStateMachine();
@@ -65,6 +75,11 @@ public abstract class BossAIBase : MonoBehaviour
     public void ActivateDialogue()
     {
         dialogue.ActivateDialogue();
+    }
+
+    public void HandleDialogueEnd()
+    {
+        endDialogueEvent();
     }
 
     public GameObject CreateBullet(Vector3 startPos, Quaternion rotation)

@@ -9,9 +9,11 @@ public class DisableBossHealthOnStart : MonoBehaviour
     [SerializeField] GameObject firstBoss;
     IHealth firstBossHealth;
     IStateMachine stateMachine;
+    DJBossAI DJ;
     // Start is called before the first frame update
     void Start()
     {
+        DJ = GetComponent<DJBossAI>();
         if(slider != null)
         {
             slider.gameObject.SetActive(false);
@@ -53,6 +55,10 @@ public class DisableBossHealthOnStart : MonoBehaviour
         {
             slider.gameObject.SetActive(true);
             TogglePause();
+            if(DJ != null)
+            {
+                DJ.StartDJBoss();
+            }
         }
     }
 }

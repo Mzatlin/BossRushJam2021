@@ -19,7 +19,6 @@ public class DefenseSystemBossIdleState : BossStateBase
 
     public override void BeginState()
     {
-        Debug.Log("Entered Idle State");
         hasWaited = false;
         hasStartedWait = false;
     }

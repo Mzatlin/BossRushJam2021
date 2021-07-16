@@ -17,7 +17,7 @@ public class DJBossAI : BossAIBase
     {
         states = new Dictionary<Type, IState>()
         {
-            {typeof(DJBossIdleState), new DJBossIdleState(this) },
+            { typeof(DJBossIdleState), new DJBossIdleState(this) },
              {typeof(WaveDiveState), new WaveDiveState(this) },
              {typeof(LaserSweepState), new LaserSweepState(this) }
         };
@@ -49,6 +49,10 @@ public class DJBossAI : BossAIBase
         {
             firstBossState = firstBoss.GetComponent<IStateMachine>();
         }
+        if (dialogueEnd != null)
+        {
+            dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
+        }
     }
 
     // Update is called once per frame
@@ -58,6 +62,9 @@ public class DJBossAI : BossAIBase
         {
             firstBossState.PauseStateMachine();
             isUnpaused = true;
+            states.Add(typeof(DJBossPhase2State), new DJBossPhase2State(this));
+            StateMachine.SetStates(states, 0f);
+            StateMachine.SwitchToNewState(typeof(DJBossPhase2State));
         }
     }
 
@@ -71,5 +78,12 @@ public class DJBossAI : BossAIBase
             projectile.SetBulletDirection(direction);
         }
         return gunRotation;
+    }
+
+    public void StartDJBoss()
+    {
+        states.Add(typeof(DJBossPhase2State), new DJBossPhase2State(this));
+        StateMachine.SetStates(states, 0f);
+        StateMachine.SwitchToNewState(typeof(DJBossPhase2State));
     }
 }

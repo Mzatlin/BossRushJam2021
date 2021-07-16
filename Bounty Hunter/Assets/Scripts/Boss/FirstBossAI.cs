@@ -6,7 +6,6 @@ using System;
 public class FirstBossAI : BossAIBase
 {
     public event Action<Collider2D> hitEvent = delegate { };
-    public event Action endDialogueEvent = delegate { };
     public float currentPhaseThreshold = 50f;
    
     public Transform centerPoint;
@@ -18,12 +17,10 @@ public class FirstBossAI : BossAIBase
     [SerializeField] GameObject bossGun;
     [SerializeField] Transform bossFirePoint;
 
-    IDialogueEnd dialogueEnd => GetComponent<IDialogueEnd>();
     IBossAnimate animate => GetComponent<IBossAnimate>();
     IGunRotate rotate => GetComponentInChildren<IGunRotate>();
 
     LineRenderer lineRender;
-    Quaternion gunRotation;
    
     // Awake is called before the first frame update
     protected override void Awake()
@@ -35,19 +32,6 @@ public class FirstBossAI : BossAIBase
         {
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
-    }
-
-    private void OnDestroy()
-    {
-        if (dialogueEnd != null)
-        {
-            dialogueEnd.OnDialogueEnd -= HandleDialogueEnd;
-        }
-    }
-
-    private void HandleDialogueEnd()
-    {
-        endDialogueEvent();
     }
 
     void InitializeBossPositions()
@@ -140,8 +124,6 @@ public class FirstBossAI : BossAIBase
             animate.SetBossTrigger(trigger);
         }
     }
-
-
 
     public GameObject CreateLandMine(Vector2 startPos)
     {
