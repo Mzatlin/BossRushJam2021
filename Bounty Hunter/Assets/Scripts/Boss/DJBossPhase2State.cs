@@ -19,13 +19,15 @@ public class DJBossPhase2State : BossStateBase
         //boss.HandleCoroutine(JumpTime(boss.centerPoint.position));
         boss.endDialogueEvent += HandleEnd;
         isEnd = false;
-        //boss.GetLineRenderer().enabled = false;
+        boss.SetLasersActive(false);
+        boss.transform.rotation = Quaternion.identity;
     }
 
     private void HandleEnd()
     {
         Debug.Log("Ended");
         boss.endDialogueEvent -= HandleEnd;
+        boss.SetLasersActive(false);
         isEnd = true;
     }
 

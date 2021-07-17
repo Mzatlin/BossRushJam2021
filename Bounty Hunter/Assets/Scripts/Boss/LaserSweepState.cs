@@ -27,7 +27,7 @@ public class LaserSweepState : BossStateBase
 
     public override void EndState()
     {
-        SetLasersActive(false);
+        boss.SetLasersActive(false);
     }
 
     public override Type Tick()
@@ -49,7 +49,7 @@ public class LaserSweepState : BossStateBase
         }
         else
         {
-            SetLasersActive(false);
+            boss.SetLasersActive(false);
             boss.transform.rotation = Quaternion.identity;
             return typeof(DJBossIdleState);
         }
@@ -60,7 +60,7 @@ public class LaserSweepState : BossStateBase
         yield return base.JumpTime(endPos);
         yield return new WaitForSeconds(1f);
         canFire = true;
-        SetLasersActive(true);
+        boss.SetLasersActive(true);
         boss.HandleCoroutine(SpinDelay());
     }
 
@@ -68,14 +68,6 @@ public class LaserSweepState : BossStateBase
     {
         yield return new WaitForSeconds(laserdelay);
         isDoneSpinning = true;
-    }
-
-    void SetLasersActive(bool toggle)
-    {
-        foreach (LineRenderer render in boss.lasers)
-        {
-            render.enabled = toggle;
-        }
     }
 
     void SetupRayDirection(LineRenderer render)

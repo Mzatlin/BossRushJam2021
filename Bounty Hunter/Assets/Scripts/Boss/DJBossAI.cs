@@ -38,6 +38,14 @@ public class DJBossAI : BossAIBase
         }
     }
 
+    public void SetLasersActive(bool toggle)
+    {
+        foreach (LineRenderer render in lasers)
+        {
+            render.enabled = toggle;
+        }
+    }
+
     public LayerMask GetObstacleMask()
     {
         return obstacleLayers;
@@ -60,11 +68,19 @@ public class DJBossAI : BossAIBase
     {
         if (CurrentBossHealth < 50 && firstBossState != null && !isUnpaused)
         {
-            firstBossState.PauseStateMachine();
             isUnpaused = true;
             states.Add(typeof(DJBossPhase2State), new DJBossPhase2State(this));
             StateMachine.SetStates(states, 0f);
             StateMachine.SwitchToNewState(typeof(DJBossPhase2State));
+        }
+    }
+
+    protected override void HandleDialogueEnd()
+    {
+        base.HandleDialogueEnd();
+        if(CurrentBossHealth < 50 && isUnpaused)
+        {
+            firstBossState.PauseStateMachine();
         }
     }
 

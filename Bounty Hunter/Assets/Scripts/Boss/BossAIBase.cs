@@ -77,7 +77,7 @@ public abstract class BossAIBase : MonoBehaviour
         dialogue.ActivateDialogue();
     }
 
-    public void HandleDialogueEnd()
+    protected virtual void HandleDialogueEnd()
     {
         endDialogueEvent();
     }

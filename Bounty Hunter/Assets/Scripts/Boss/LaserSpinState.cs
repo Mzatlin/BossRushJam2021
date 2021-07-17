@@ -26,6 +26,7 @@ public class LaserSpinState : BossStateBase
     public override void EndState()
     {
         SetLasersActive(false);
+        boss.transform.rotation = Quaternion.identity;
     }
 
     public override Type Tick()
@@ -44,6 +45,7 @@ public class LaserSpinState : BossStateBase
         else
         {
             SetLasersActive(false);
+            boss.transform.rotation = Quaternion.identity;
             return typeof(DefenseSystemBossIdleState);
         }
     }
