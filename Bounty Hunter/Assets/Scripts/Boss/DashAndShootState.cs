@@ -81,6 +81,7 @@ public class DashAndShootState : BossStateBase
     IEnumerator SpawnProjectile(int projectileAmount, float delay)
     {
         boss.SetGunVisibility(true);
+        yield return new WaitForSeconds(.5f);
         for (int i = 0; i < projectileAmount; i++)
         {
             //Direction vector of bullet
