@@ -7,29 +7,30 @@ public class MagicianBossAI : BossAIBase
 {
     public event Action<Collider2D> hitEvent = delegate { };
     public float currentPhaseThreshold = 50f;
-
+    public ParticleSystem explosionParticle;
     public Transform centerPoint;
     public Transform[] bossLocations;
     public Dictionary<Transform, float> bossPositions;
 
     public List<GameObject> Mirrors = new List<GameObject>();
 
-
     [SerializeField] GameObject bullet;
-    [SerializeField] GameObject landMine;
-    [SerializeField] GameObject bossGun;
-    [SerializeField] Transform bossFirePoint;
 
     IBossAnimate animate => GetComponent<IBossAnimate>();
     IGunRotate rotate => GetComponentInChildren<IGunRotate>();
 
     LineRenderer lineRender;
+    Collider2D bossCollider;
+    SpriteRenderer sprite;
 
     // Awake is called before the first frame update
     protected override void Awake()
     {
         base.Awake();
-        CloseMirrors(new Vector2(5,0),2f);
+        bossCollider = GetComponent<Collider2D>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
+
+        CloseMirrors(new Vector2(5, 0), 2f);
         lineRender = GetComponent<LineRenderer>();
         InitializeBossPositions();
         if (dialogueEnd != null)
@@ -40,10 +41,10 @@ public class MagicianBossAI : BossAIBase
 
     public void CloseMirrors(Vector2 offset, float speed)
     {
-        foreach(GameObject obj in Mirrors)
+        foreach (GameObject obj in Mirrors)
         {
             var move = obj.GetComponent<MoveObject>();
-            if(move != null)
+            if (move != null)
             {
                 move.MoveToPosition(offset, speed);
             }
@@ -70,6 +71,7 @@ public class MagicianBossAI : BossAIBase
         states = new Dictionary<Type, IState>()
         {
             {typeof(MagicianIdleState), new MagicianIdleState(this) },
+             {typeof(SneakAttackState), new SneakAttackState(this) },
         };
 
         ResetStateMachineStates(states, 50);
@@ -98,9 +100,9 @@ public class MagicianBossAI : BossAIBase
         {
             currentPhase++;
             //Death Phase
-          //  states.Add(typeof(FirstBossDeathState), new FirstBossDeathState(this));
-          //  StateMachine.SetStates(states, 0f);
-          //  StateMachine.SwitchToNewState(typeof(FirstBossDeathState));
+            //  states.Add(typeof(FirstBossDeathState), new FirstBossDeathState(this));
+            //  StateMachine.SetStates(states, 0f);
+            //  StateMachine.SwitchToNewState(typeof(FirstBossDeathState));
         }
 
         if (CurrentBossHealth < 25f && currentPhase < 3)
@@ -108,18 +110,18 @@ public class MagicianBossAI : BossAIBase
             currentPhase++;
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
-          //  states.Add(typeof(FirstBossPhase3State), new FirstBossPhase3State(this));
-          //  StateMachine.SetStates(states, 25f);
-          //  StateMachine.SwitchToNewState(typeof(FirstBossPhase3State));
+            //  states.Add(typeof(FirstBossPhase3State), new FirstBossPhase3State(this));
+            //  StateMachine.SetStates(states, 25f);
+            //  StateMachine.SwitchToNewState(typeof(FirstBossPhase3State));
         }
         else if (CurrentBossHealth < 50f && currentPhase < 2)
         {
             currentPhase++;
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
-           // states.Add(typeof(FirstBossPhase2State), new FirstBossPhase2State(this));
-           // StateMachine.SetStates(states, 25f);
-           // StateMachine.SwitchToNewState(typeof(FirstBossPhase2State));
+            // states.Add(typeof(FirstBossPhase2State), new FirstBossPhase2State(this));
+            // StateMachine.SetStates(states, 25f);
+            // StateMachine.SwitchToNewState(typeof(FirstBossPhase2State));
         }
     }
 
@@ -139,35 +141,20 @@ public class MagicianBossAI : BossAIBase
         }
     }
 
-    public GameObject CreateLandMine(Vector2 startPos)
+    public void EnableBoss(bool isEnabled)
     {
-        GameObject mine = ObjectPooler.Instance.GetFromPool("Enemy Mine");
-        if (mine != null)
+        if(sprite != null && bossCollider != null && explosionParticle != null)
         {
-            mine.transform.position = startPos;
+            sprite.enabled = isEnabled;
+            bossCollider.enabled = isEnabled;
+            explosionParticle.Play();
         }
-        return mine;
+        else
+        {
+            Debug.Log("Sprite Renderer or Collider not found");
+        }
     }
 
-    public GameObject CreateDrone(Vector2 startPos)
-    {
-        GameObject drone = ObjectPooler.Instance.GetFromPool("Enemy Drone");
-        if (drone != null)
-        {
-            drone.transform.position = startPos;
-            var shoot = drone.GetComponent<ShootProjectileToPlayer>();
-            if (startPos.x < 0)
-            {
-                SpriteRenderer render = drone.GetComponentInChildren<SpriteRenderer>();
-                render.flipX = true;
-            }
-            if (shoot != null)
-            {
-                shoot.SetPlayer(player);
-            }
-        }
-        return drone;
-    }
 
     public Quaternion SetupBullet(GameObject bullet, Vector2 direction)
     {
@@ -178,19 +165,10 @@ public class MagicianBossAI : BossAIBase
         {
             projectile.SetBulletDirection(direction);
         }
-        bossGun.transform.rotation = gunRotation;
         if (rotate != null)
         {
             rotate.AdjustLocalScale(bulletangle);
         }
         return gunRotation;
-    }
-
-    public void SetGunVisibility(bool visibility)
-    {
-        if (bossGun != null)
-        {
-            bossGun.SetActive(visibility);
-        }
     }
 }

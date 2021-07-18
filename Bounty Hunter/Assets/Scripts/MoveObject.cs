@@ -27,7 +27,6 @@ public class MoveObject : MonoBehaviour
         Vector2 endPos = originalPosition;
         Vector2 startPos = transform.position;
         endPos = startPos + offset;
-        Debug.Log(startPos + offset);
 
         float totalDistance = Vector2.Distance(startPos, endPos);
         float fractionOfJourney = 0;

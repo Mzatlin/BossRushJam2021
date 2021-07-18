@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 558794289200407791, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: dialogueCanvas
       value: 
-      objectReference: {fileID: 327711259}
+      objectReference: {fileID: 168983321}
     - target: {fileID: 558794289200407791, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: content.Array.data[0]
       value: My Dispenser! You're really killing the vibe, man! Time for my Solo!
@@ -302,6 +302,11 @@ PrefabInstance:
     - {fileID: 7924706637794982514, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
     - {fileID: 4553707096667725017, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+--- !u!223 &168983321 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 5625233363809031412, guid: 524b11f5cd52352478c3a0f0b65ec100, type: 3}
+  m_PrefabInstance: {fileID: 1620682939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &177771639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -753,7 +758,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -910,6 +915,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5688640561647790983, guid: 6f48574f7e6f8a549baacf72037a375a, type: 3}
   m_PrefabInstance: {fileID: 1107672877}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1262423534 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6998931892853080534, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+  m_PrefabInstance: {fileID: 1668947378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1287126843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -987,9 +997,10 @@ MonoBehaviour:
   player: {fileID: 572780338}
   obstacleLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 320
   currentPhase: 1
   currentPhaseThreshold: 50
+  explosionParticle: {fileID: 1262423534}
   centerPoint: {fileID: 0}
   bossLocations: []
   Mirrors:
@@ -998,9 +1009,11 @@ MonoBehaviour:
   - {fileID: 2078439809}
   - {fileID: 1982688381}
   bullet: {fileID: 0}
-  landMine: {fileID: 0}
-  bossGun: {fileID: 0}
-  bossFirePoint: {fileID: 0}
+--- !u!4 &1435368030 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+  m_PrefabInstance: {fileID: 3699375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1483358469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1435,6 +1448,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfc62a11f5a07c449990a4a07e6db374, type: 3}
+--- !u!1001 &1668947378
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1435368030}
+    m_Modifications:
+    - target: {fileID: 7989134015652972832, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_Name
+      value: Explosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102269158943598412, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 809160c92f0354a498ea4de9996e6e99, type: 3}
 --- !u!114 &1795792372 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5625233364272301978, guid: 524b11f5cd52352478c3a0f0b65ec100, type: 3}

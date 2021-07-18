@@ -45,7 +45,8 @@ public class MagicianIdleState : BossStateBase
         }
         else
         {
-            return currentState;
+            return typeof(SneakAttackState);
+            //return currentState;
         }
     }
 
@@ -67,6 +68,6 @@ public class MagicianIdleState : BossStateBase
         yield return new WaitForSeconds(1f);
         hasStartedWait = false;
         hasWaited = true;
-        currentState = GetRandomState();
+       // currentState = GetRandomState();
     }
 }
