@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 5688640561647790978}
   - component: {fileID: 5688640561647790981}
   - component: {fileID: 5688640561647790980}
+  - component: {fileID: 1569990050111356722}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Untagged
@@ -156,3 +157,15 @@ MonoBehaviour:
   reflectionMasks:
     serializedVersion: 2
     m_Bits: 1152
+--- !u!114 &1569990050111356722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688640561647790983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f620f689837406849abc3c30ac65d29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
