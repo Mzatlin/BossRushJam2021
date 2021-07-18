@@ -29,6 +29,7 @@ public class LaserSpinState : BossStateBase
     {
         SetLasersActive(false);
         boss.transform.rotation = Quaternion.identity;
+        boss.SetBossTrigger("Idle");
     }
 
     public override Type Tick()
@@ -58,7 +59,7 @@ public class LaserSpinState : BossStateBase
     IEnumerator SpinDelay()
     {
         yield return new WaitForSeconds(laserdelay);
-        boss.SetBossTrigger("Idle");
+        boss.SetBossTrigger("LaserCooldown");
         isDoneSpinning = true;
     }
 
