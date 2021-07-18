@@ -92,6 +92,7 @@ public class BossCornerSpreadBulletPattern : BossStateBase
 
     IEnumerator SpawnProjectile(int projectileAmount, float delay)
     {
+        boss.SetGunVisibility(true);
         float angleStep = 360f / projectileAmount;
 
         for (int i = 0; i < projectileAmount; i++)
@@ -110,6 +111,7 @@ public class BossCornerSpreadBulletPattern : BossStateBase
             angle += 10f;
         }
         isShooting = false;
+        boss.SetGunVisibility(false);
         yield return null;
     }
 

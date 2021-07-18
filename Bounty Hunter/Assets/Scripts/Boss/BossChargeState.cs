@@ -85,6 +85,7 @@ public class BossChargeState : BossStateBase
         if (isEnd)
         {
             render.enabled = false;
+            boss.SetBossTrigger("Idle");
             return typeof(FirstBossIdleState);
         }
         else
@@ -110,7 +111,10 @@ public class BossChargeState : BossStateBase
 
     IEnumerator ChargeDelay()
     {
+        boss.SetBossTrigger("ChargeUp");
         yield return new WaitForSeconds(chargeDelay);
+        boss.SetBossTrigger("ChargeEnd");
+        yield return new WaitForSeconds(0.5f);
         isCharging = true;
         isAiming = false;
     }
