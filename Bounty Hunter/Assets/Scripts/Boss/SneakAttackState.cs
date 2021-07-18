@@ -40,9 +40,8 @@ public class SneakAttackState : BossStateBase
         {
             if (!isJumping && jumpAmount > 0 && isShooting == false)
             {
-                boss.EnableBoss(false);
                 nextJumpTime = Time.time + jumpdelay;
-                boss.HandleCoroutine(JumpTime(GetRandomPosition()));
+                boss.HandleCoroutine(TeleportTime(GetRandomPosition()));
             }
             if (jumpAmount < 1)
             {
@@ -68,11 +67,13 @@ public class SneakAttackState : BossStateBase
         }
     }
 
-    protected override IEnumerator JumpTime(Vector2 endPos)
+    IEnumerator TeleportTime(Vector2 endPos)
     {
         isJumping = true;
         isShooting = true;
-        yield return base.JumpTime(endPos);
+        boss.EnableBoss(false);
+        yield return new WaitForSeconds(2f);
+        boss.transform.position = endPos;
 
         isJumping = false;
         jumpAmount--;

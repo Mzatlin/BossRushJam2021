@@ -10,6 +10,7 @@ public class LaserSpinState : BossStateBase
     bool isDoneSpinning = false;
     float turnSpeed = 30f;
     bool hasStartedWait = false;
+    bool isActive = false;
 
     public LaserSpinState(DefenseSystemBossAI _boss) : base(_boss.gameObject)
     {
@@ -20,7 +21,8 @@ public class LaserSpinState : BossStateBase
     {
         isDoneSpinning = false;
         hasStartedWait = false;
-        SetLasersActive(true);
+        isActive = false;
+        SetLasersActive(false);
     }
 
     public override void EndState()
@@ -36,10 +38,14 @@ public class LaserSpinState : BossStateBase
             if (!hasStartedWait)
             {
                 hasStartedWait = true;
+                boss.HandleCoroutine(ActiveDelay());
+            }
+            if (isActive)
+            {
+                SetupRayDirection(boss.transform.right, boss.lasers[0]);
+                SetupRayDirection(-boss.transform.right, boss.lasers[1]);
                 boss.HandleCoroutine(SpinDelay());
             }
-            SetupRayDirection(boss.transform.right, boss.lasers[0]);
-            SetupRayDirection(-boss.transform.right, boss.lasers[1]);
             return null;
         }
         else
@@ -52,8 +58,19 @@ public class LaserSpinState : BossStateBase
     IEnumerator SpinDelay()
     {
         yield return new WaitForSeconds(laserdelay);
+        boss.SetBossTrigger("Idle");
         isDoneSpinning = true;
     }
+
+    IEnumerator ActiveDelay()
+    {
+        boss.SetBossTrigger("LaserChargeUp");
+        yield return new WaitForSeconds(1f);
+        SetLasersActive(true);
+        boss.SetBossTrigger("LaserFire");
+        isActive = true;
+    }
+
 
     void SetLasersActive(bool toggle)
     {

@@ -11,6 +11,7 @@ public abstract class BossAIBase : MonoBehaviour
     ActivateDialogueFromBossAI dialogue;
     protected IHealth health => GetComponent<IHealth>();
     protected IDialogueEnd dialogueEnd => GetComponent<IDialogueEnd>();
+    IBossAnimate animate => GetComponent<IBossAnimate>();
     public float CurrentBossHealth => health.CurrentHealth;
     [SerializeField] protected GameObject player;
     [SerializeField] protected LayerMask obstacleLayers;
@@ -57,6 +58,14 @@ public abstract class BossAIBase : MonoBehaviour
     public GameObject GetPlayer()
     {
         return player;
+    }
+
+    public void SetBossTrigger(string trigger)
+    {
+        if (animate != null)
+        {
+            animate.SetBossTrigger(trigger);
+        }
     }
 
     public void ResetStateMachineStates(Dictionary<Type, IState> states, float healthThreshold)

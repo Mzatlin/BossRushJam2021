@@ -17,7 +17,6 @@ public class FirstBossAI : BossAIBase
     [SerializeField] GameObject bossGun;
     [SerializeField] Transform bossFirePoint;
 
-    IBossAnimate animate => GetComponent<IBossAnimate>();
     IGunRotate rotate => GetComponentInChildren<IGunRotate>();
 
     LineRenderer lineRender;
@@ -114,14 +113,6 @@ public class FirstBossAI : BossAIBase
         if ((1 << collision.gameObject.layer & obstacleLayers) != 0)
         {
             hitEvent(collision);
-        }
-    }
-
-    public void SetBossTrigger(string trigger)
-    {
-        if (animate != null)
-        {
-            animate.SetBossTrigger(trigger);
         }
     }
 
