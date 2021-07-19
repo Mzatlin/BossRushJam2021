@@ -73,6 +73,13 @@ public class DJBossAI : BossAIBase
             StateMachine.SetStates(states, 0f);
             StateMachine.SwitchToNewState(typeof(DJBossPhase2State));
         }
+
+        if(CurrentBossHealth < 1)
+        {
+            states.Add(typeof(DJBossDeathState), new DJBossDeathState(this));
+            StateMachine.SetStates(states, 0f);
+            StateMachine.SwitchToNewState(typeof(DJBossDeathState));
+        }
     }
 
     protected override void HandleDialogueEnd()
