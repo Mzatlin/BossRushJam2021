@@ -101,4 +101,9 @@ public abstract class BossAIBase : MonoBehaviour
         }
         return enemyBullet;
     }
+
+    public void SetPhase(int phaseNum)
+    {
+        currentPhase = phaseNum;
+    }
 }

@@ -81,6 +81,11 @@ public class DJBossAI : BossAIBase
         if(CurrentBossHealth < 50 && isUnpaused)
         {
             firstBossState.PauseStateMachine();
+            var phase = firstBoss.GetComponent<BossAIBase>();
+            if(phase != null)
+            {
+                phase.SetPhase(2);
+            }
         }
     }
 

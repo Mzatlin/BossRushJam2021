@@ -34,7 +34,7 @@ public class CompleteCircleFirePatternState : BossStateBase
     {
         projectileAmount = 50;
         projectileSpeed = 100f;
-        fireRate = 2f;
+        fireRate = 2f/boss.currentPhase;
         fireAmount = baseJumpAmount + boss.currentPhase;
     }
 
@@ -67,7 +67,9 @@ public class CompleteCircleFirePatternState : BossStateBase
     IEnumerator SpawnProjectile(int projectileAmount, float delay)
     {
         float angleStep = 360f / projectileAmount;
-
+        boss.SetBossTrigger("BulletCharge");
+        yield return new WaitForSeconds(0.5f);
+        boss.SetBossTrigger("BulletCool");
         for (int i = 0; i < projectileAmount; i++)
         {
             //Direction vector of bullet
