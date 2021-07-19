@@ -35,5 +35,8 @@ public class AudioManager : MonoBehaviour
     private void BackgroundColorChanger(object in_cookie, AkCallbackType in_type, object in_info)
     {
         background.color = Random.ColorHSV();
+        var imageAlpha = background.color;
+        imageAlpha.a = 0.3f;
+        background.color = imageAlpha;
     }
 }

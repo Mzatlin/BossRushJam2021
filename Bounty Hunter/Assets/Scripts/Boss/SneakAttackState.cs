@@ -83,6 +83,8 @@ public class SneakAttackState : BossStateBase
 
     IEnumerator SpawnProjectile(int projectileAmount, float delay)
     {
+        float angleStep = 360f / projectileAmount;
+
         yield return new WaitForSeconds(.5f);
         for (int i = 0; i < projectileAmount; i++)
         {
@@ -97,5 +99,25 @@ public class SneakAttackState : BossStateBase
         yield return new WaitForSeconds(1f);
         isShooting = false;
         yield return null;
+    }
+
+    Vector2 GetRandomDirection()
+    {
+        Vector2 direction = Vector2.zero;
+        int randomNum = UnityEngine.Random.Range(0, 2);
+        if (randomNum < 1)
+        {
+            direction = (boss.GetPlayer().transform.position - boss.transform.position).normalized;
+        }
+        else
+        {
+            float angle = 0f;
+            float projectileDirectionX = boss.transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180f);
+            float projectileDirectionY = boss.transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180f);
+            Vector2 projectileVector = new Vector2(projectileDirectionX, projectileDirectionY);
+            direction = (projectileVector - (Vector2)boss.transform.position).normalized;
+        }
+
+        return direction;
     }
 }

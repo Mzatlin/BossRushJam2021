@@ -11,6 +11,7 @@ public class AudioTester : MonoBehaviour
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
+        audioManager.PlayAudioWithCallback(audioEvents[1], null);
     }
 
     void Update()
