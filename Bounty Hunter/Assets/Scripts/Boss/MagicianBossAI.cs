@@ -30,7 +30,7 @@ public class MagicianBossAI : BossAIBase
         bossCollider = GetComponent<Collider2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
 
-        CloseMirrors(new Vector2(5, 0), 2f);
+        //CloseMirrors(new Vector2(5, 0), 2f);
         lineRender = GetComponent<LineRenderer>();
         InitializeBossPositions();
         if (dialogueEnd != null)
