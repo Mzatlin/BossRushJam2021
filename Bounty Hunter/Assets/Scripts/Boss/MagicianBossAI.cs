@@ -10,6 +10,7 @@ public class MagicianBossAI : BossAIBase
     public ParticleSystem explosionParticle;
     public Transform centerPoint;
     public Transform[] bossLocations;
+    public Transform[] cannonPositions;
 
     public List<GameObject> Mirrors = new List<GameObject>();
 

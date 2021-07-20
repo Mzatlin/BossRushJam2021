@@ -18,7 +18,7 @@ public class DoubleMirrorBarrageState : BossStateBase
     bool isAttacking = false;
     float angle = 90f;
     float nextFireTime = 0f;
-    float fireDelay = .5f;
+    float fireDelay = 3.5f;
     Transform lastPosition;
 
 
@@ -64,35 +64,34 @@ public class DoubleMirrorBarrageState : BossStateBase
 
     public override Type Tick()
     {
-
-        if (Time.time > nextJumpTime)
+        if (jumpAmount < 1)
         {
-            if (!isJumping && jumpAmount > 0)
-            {
-                HandleJumping();
-               // HandleFiring();
-            }
-            if (jumpAmount < 1)
-            {
-                return typeof(MagicianIdleState);
-            }
+            return typeof(MagicianIdleState);
         }
+        HandleJumping();
+        HandleFiring();
+
         return null;
     }
 
     void HandleJumping()
     {
-        nextJumpTime = Time.time + fireRate;
-        angle = 0;
+        if (Time.time > nextJumpTime && !isJumping && jumpAmount > 0)
+        {
+            nextJumpTime = Time.time + fireRate;
+            angle = 0;
 
-        startPoint = GetNextPosition().position;
-        boss.HandleCoroutine(TeleportTime(startPoint));
+            startPoint = GetNextPosition().position;
+            boss.HandleCoroutine(TeleportTime(startPoint));
+        }
     }
 
     void HandleFiring()
     {
-        if(Time.time > nextFireTime)
+        if (!isShooting && Time.time > nextFireTime)
         {
+            isShooting = true;
+            SpawnProjectile(15);
             nextFireTime = Time.time + fireDelay;
 
         }
@@ -110,30 +109,38 @@ public class DoubleMirrorBarrageState : BossStateBase
         isJumping = false;
         jumpAmount--;
 
-      //  boss.HandleCoroutine(SpawnProjectile(projectileAmount, 0.1f));
+
     }
 
-    IEnumerator SpawnProjectile(int projectileAmount, float delay)
+    void SpawnProjectile(int projectileAmount)
     {
-        float angleStep = 360f / projectileAmount;
+        int randomNum = UnityEngine.Random.Range(0, boss.cannonPositions.Length);
+        float angleStep = 180f / projectileAmount;
+        if (randomNum <= (boss.cannonPositions.Length / 2) - 1)
+        {
+            angleStep *= -1;
+        }
+
+        angle = 0f;
+
+        Vector2 CannonPoint = boss.cannonPositions[randomNum].position;
 
         for (int i = 0; i < projectileAmount; i++)
         {
             //Direction vector of bullet
-            float projectileDirectionX = startPoint.x + Mathf.Sin((angle * Mathf.PI) / 180f);
-            float projectileDirectionY = startPoint.y + Mathf.Cos((angle * Mathf.PI) / 180f);
+            float projectileDirectionX = CannonPoint.x + Mathf.Sin((angle * Mathf.PI) / 180f);
+            float projectileDirectionY = CannonPoint.y + Mathf.Cos((angle * Mathf.PI) / 180f);
             Vector2 projectileVector = new Vector2(projectileDirectionX, projectileDirectionY);
-            Vector2 projectileMoveDirection = (projectileVector - (Vector2)startPoint).normalized;
+            Vector2 projectileMoveDirection = (projectileVector - CannonPoint).normalized;
 
             //Logic for determining how the bullet if fired
-            GameObject tmpObj = boss.CreateBullet(startPoint, Quaternion.identity);
+            GameObject tmpObj = boss.CreateBullet(CannonPoint, Quaternion.identity);
             tmpObj.transform.rotation = boss.SetupBullet(tmpObj, projectileMoveDirection);
-            yield return new WaitForSeconds(delay);
 
-            angle += 10f;
+
+            angle += angleStep;
         }
         isShooting = false;
-        yield return null;
     }
 
 }

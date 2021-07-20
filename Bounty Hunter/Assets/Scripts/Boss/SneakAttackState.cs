@@ -73,10 +73,10 @@ public class SneakAttackState : BossStateBase
         isJumping = true;
         isShooting = true;
         boss.EnableBoss(false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         boss.transform.position = endPos;
         boss.EnableBoss(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.75f);
         boss.HandleCoroutine(SpawnProjectile(20, 0.1f));
     }
 
