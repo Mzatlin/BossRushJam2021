@@ -14,6 +14,7 @@ public class SneakAttackState : BossStateBase
     float nextJumpTime = 0f;
     bool isJumping = false;
     bool isShooting = false;
+    float angle = 0f;
     Quaternion bulletAngle;
     Vector2 lastPosition;
     List<Vector2> possiblePositions = new List<Vector2> { new Vector2(-5, 0), new Vector2(5, 0), new Vector2(0, 3) };
@@ -76,7 +77,7 @@ public class SneakAttackState : BossStateBase
         boss.transform.position = endPos;
         boss.EnableBoss(true);
         yield return new WaitForSeconds(1f);
-        boss.HandleCoroutine(SpawnProjectile(10, 0.1f));
+        boss.HandleCoroutine(SpawnProjectile(20, 0.1f));
         isJumping = false;
         jumpAmount--;
     }
@@ -84,12 +85,14 @@ public class SneakAttackState : BossStateBase
     IEnumerator SpawnProjectile(int projectileAmount, float delay)
     {
         float angleStep = 360f / projectileAmount;
+        int randomNum = UnityEngine.Random.Range(0, 2);
+        angle = 0;
 
         yield return new WaitForSeconds(.5f);
         for (int i = 0; i < projectileAmount; i++)
         {
             //Direction vector of bullet
-            Vector2 direction = (boss.GetPlayer().transform.position - boss.transform.position).normalized;
+            Vector2 direction = GetRandomDirection(angleStep, randomNum);
 
             GameObject bullet = boss.CreateBullet(boss.transform.position, Quaternion.identity);
             bullet.transform.rotation = boss.SetupBullet(bullet, direction);
@@ -101,21 +104,21 @@ public class SneakAttackState : BossStateBase
         yield return null;
     }
 
-    Vector2 GetRandomDirection()
+    Vector2 GetRandomDirection(float angleStep, int randomNum)
     {
         Vector2 direction = Vector2.zero;
-        int randomNum = UnityEngine.Random.Range(0, 2);
+      
         if (randomNum < 1)
         {
             direction = (boss.GetPlayer().transform.position - boss.transform.position).normalized;
         }
         else
         {
-            float angle = 0f;
             float projectileDirectionX = boss.transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180f);
             float projectileDirectionY = boss.transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180f);
             Vector2 projectileVector = new Vector2(projectileDirectionX, projectileDirectionY);
             direction = (projectileVector - (Vector2)boss.transform.position).normalized;
+            angle += angleStep;
         }
 
         return direction;
