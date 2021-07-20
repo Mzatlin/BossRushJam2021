@@ -78,8 +78,6 @@ public class SneakAttackState : BossStateBase
         boss.EnableBoss(true);
         yield return new WaitForSeconds(1f);
         boss.HandleCoroutine(SpawnProjectile(20, 0.1f));
-        isJumping = false;
-        jumpAmount--;
     }
 
     IEnumerator SpawnProjectile(int projectileAmount, float delay)
@@ -101,6 +99,8 @@ public class SneakAttackState : BossStateBase
         }
         yield return new WaitForSeconds(1f);
         isShooting = false;
+        isJumping = false;
+        jumpAmount--;
         yield return null;
     }
 
