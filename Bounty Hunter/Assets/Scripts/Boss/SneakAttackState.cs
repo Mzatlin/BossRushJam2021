@@ -41,7 +41,7 @@ public class SneakAttackState : BossStateBase
             if (!isJumping && jumpAmount > 0 && isShooting == false)
             {
                 nextJumpTime = Time.time + jumpdelay;
-                boss.HandleCoroutine(TeleportTime(new Vector2(UnityEngine.Random.Range(-7, 10), UnityEngine.Random.Range(-3, 6))));//GetRandomPosition()));
+                boss.HandleCoroutine(TeleportTime(new Vector2(UnityEngine.Random.Range(-7, 7), UnityEngine.Random.Range(-3, 3.5f))));//GetRandomPosition()));
             }
             if (jumpAmount < 1)
             {
@@ -74,11 +74,11 @@ public class SneakAttackState : BossStateBase
         boss.EnableBoss(false);
         yield return new WaitForSeconds(2f);
         boss.transform.position = endPos;
-
+        boss.EnableBoss(true);
+        yield return new WaitForSeconds(1f);
+        boss.HandleCoroutine(SpawnProjectile(10, 0.1f));
         isJumping = false;
         jumpAmount--;
-        boss.EnableBoss(true);
-        boss.HandleCoroutine(SpawnProjectile(10, 0.1f));
     }
 
     IEnumerator SpawnProjectile(int projectileAmount, float delay)

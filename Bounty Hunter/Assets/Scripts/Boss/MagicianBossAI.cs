@@ -10,7 +10,6 @@ public class MagicianBossAI : BossAIBase
     public ParticleSystem explosionParticle;
     public Transform centerPoint;
     public Transform[] bossLocations;
-    public Dictionary<Transform, float> bossPositions;
 
     public List<GameObject> Mirrors = new List<GameObject>();
 
@@ -32,7 +31,6 @@ public class MagicianBossAI : BossAIBase
 
         //CloseMirrors(new Vector2(5, 0), 2f);
         lineRender = GetComponent<LineRenderer>();
-        InitializeBossPositions();
         if (dialogueEnd != null)
         {
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
@@ -51,27 +49,13 @@ public class MagicianBossAI : BossAIBase
         }
     }
 
-
-    void InitializeBossPositions()
-    {
-        float angle = 90f;
-        bossPositions = new Dictionary<Transform, float>();
-        foreach (Transform location in bossLocations)
-        {
-            if (!bossPositions.ContainsKey(location))
-            {
-                bossPositions.Add(location, angle);
-                angle += 90f;
-            }
-        }
-    }
-
     protected override void InitializeStateMachine()
     {
         states = new Dictionary<Type, IState>()
         {
             {typeof(MagicianIdleState), new MagicianIdleState(this) },
-             {typeof(SneakAttackState), new SneakAttackState(this) },
+            {typeof(SneakAttackState), new SneakAttackState(this) },
+            {typeof(DoubleMirrorBarrageState), new DoubleMirrorBarrageState(this)},
         };
 
         ResetStateMachineStates(states, 50);
