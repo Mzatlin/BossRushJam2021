@@ -76,7 +76,6 @@ public class SneakAttackState : BossStateBase
         yield return new WaitForSeconds(1f);
         boss.transform.position = endPos;
         boss.EnableBoss(true);
-        yield return new WaitForSeconds(.75f);
         boss.HandleCoroutine(SpawnProjectile(20, 0.1f));
     }
 
@@ -86,7 +85,7 @@ public class SneakAttackState : BossStateBase
         int randomNum = UnityEngine.Random.Range(0, 2);
         angle = 0;
 
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1f);
         for (int i = 0; i < projectileAmount; i++)
         {
             //Direction vector of bullet
@@ -97,7 +96,7 @@ public class SneakAttackState : BossStateBase
 
             yield return new WaitForSeconds(delay);
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         isShooting = false;
         isJumping = false;
         jumpAmount--;

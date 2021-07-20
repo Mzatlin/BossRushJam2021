@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &31199785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5625233363827055226, guid: 524b11f5cd52352478c3a0f0b65ec100, type: 3}
+  m_PrefabInstance: {fileID: 2125480463}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &73898695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,6 +1865,30 @@ Transform:
   m_Father: {fileID: 366208484}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &835344008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2692382652907258643, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+  m_PrefabInstance: {fileID: 2088839196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &835344010
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835344008}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3a97e7800edcc56429c706f38e6da7cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &857237704
 GameObject:
   m_ObjectHideFlags: 0
@@ -5483,6 +5518,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 229507009}
   firstBoss: {fileID: 1030281227}
+--- !u!114 &1726308876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726308863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accb347b189df1b41b31647b80fb1864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 31199785}
+  sprites:
+  - {fileID: 21300000, guid: b4028cfc7a62d3f47832b46f9a27659a, type: 3}
 --- !u!1 &1749370419
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,19 +6090,19 @@ PrefabInstance:
       objectReference: {fileID: 229507009}
     - target: {fileID: 558794289200407831, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_Size.x
-      value: 1.0021334
+      value: 0.555047
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407831, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_Size.y
-      value: 0.9997296
+      value: 1.2530785
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407831, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_Offset.x
-      value: 0.0011373758
+      value: 0.045845985
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407831, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_Offset.y
-      value: -0.002685219
+      value: 0.0047659874
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_RootOrder
@@ -6106,6 +6156,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2235804574433692162, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3547809371990315218, guid: 018323f30aa179f409d331eca6bcaed4, type: 3}
     - target: {fileID: 2235804574433692162, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_SortingOrder
       value: 2

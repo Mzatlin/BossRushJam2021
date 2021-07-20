@@ -25,10 +25,10 @@ public class DJBossPhase2State : BossStateBase
 
     private void HandleEnd()
     {
-        Debug.Log("Ended");
         boss.endDialogueEvent -= HandleEnd;
+        boss.SetBossTrigger("StartFlight");
         boss.SetLasersActive(false);
-        isEnd = true;
+        boss.HandleCoroutine(Delay());
     }
 
     public override void EndState()
@@ -49,6 +49,12 @@ public class DJBossPhase2State : BossStateBase
             return null;
         }
 
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(2f);
+        isEnd = true;
     }
 
     protected override IEnumerator JumpTime(Vector2 endPos)
