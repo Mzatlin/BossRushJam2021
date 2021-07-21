@@ -30,22 +30,25 @@ public class MagicianBossAI : BossAIBase
         bossCollider = GetComponent<Collider2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
 
-        //CloseMirrors(new Vector2(5, 0), 2f);
         lineRender = GetComponent<LineRenderer>();
         if (dialogueEnd != null)
         {
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
     }
+    void Start()
+    {
+        CloseMirrors();
+    }
 
-    public void CloseMirrors(Vector2 offset, float speed)
+    public void CloseMirrors()
     {
         foreach (GameObject obj in Mirrors)
         {
-            var move = obj.GetComponent<MoveObject>();
+            var move = obj.GetComponent<FireMirrorBullet>();
             if (move != null)
             {
-                move.MoveToPosition(offset, speed);
+                move.LaunchMirrorBullet();
             }
         }
     }
@@ -118,13 +121,6 @@ public class MagicianBossAI : BossAIBase
         }
     }
 
-    public void SetBossTrigger(string trigger)
-    {
-        if (animate != null)
-        {
-            animate.SetBossTrigger(trigger);
-        }
-    }
 
     public void EnableBoss(bool isEnabled)
     {

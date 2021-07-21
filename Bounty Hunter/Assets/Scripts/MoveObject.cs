@@ -5,8 +5,8 @@ using UnityEngine;
 public class MoveObject : MonoBehaviour
 {
     Coroutine movement = null;
-    [SerializeField] Vector2 originalPosition;
-    [SerializeField] Vector2 endPos;
+    Vector2 originalPosition;
+    Vector2 endPos;
     Vector2 currentPos;
     float moveSpeed = 3f;
     Vector2 leftPosition;
@@ -49,10 +49,10 @@ public class MoveObject : MonoBehaviour
 
     private void Update()
     {
-       
+
         float step = moveSpeed * Time.deltaTime; // calculate distance to move
 
-        if(Vector2.Distance(transform.position, leftPosition) < 2f)
+        if (Vector2.Distance(transform.position, leftPosition) < 2f)
         {
             currentPos = rightPosition;
         }

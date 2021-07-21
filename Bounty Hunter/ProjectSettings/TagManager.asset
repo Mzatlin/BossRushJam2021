@@ -8,6 +8,7 @@ TagManager:
   - Enemy Bullet 1
   - Enemy Drone
   - Enemy Mine
+  - Mirror
   layers:
   - Default
   - TransparentFX
