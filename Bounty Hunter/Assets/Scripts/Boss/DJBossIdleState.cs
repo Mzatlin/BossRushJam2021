@@ -20,6 +20,7 @@ public class DJBossIdleState : BossStateBase
 
     public override void BeginState()
     {
+        boss.SetBossTrigger("DJFloat");
         Debug.Log("Entered Idle State");
         hasWaited = false;
         hasStartedWait = false;

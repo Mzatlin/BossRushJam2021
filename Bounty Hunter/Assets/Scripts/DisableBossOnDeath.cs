@@ -34,6 +34,11 @@ public class DisableBossOnDeath : MonoBehaviour
         {
             slider.gameObject.SetActive(false);
             state.PauseStateMachine();
+            var boss = GetComponent<BossAIBase>();
+            if(boss != null)
+            {
+                boss.SetBossTrigger("Death");
+            }
         }
     }
 }

@@ -91,6 +91,7 @@ public class DJBossAI : BossAIBase
             var phase = firstBoss.GetComponent<BossAIBase>();
             if(phase != null)
             {
+                phase.SetBossTrigger("PowerOn");
                 phase.SetPhase(2);
             }
         }
