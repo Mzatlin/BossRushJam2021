@@ -38,6 +38,7 @@ public class MagicianBossPhase2State : BossStateBase
         {
             boss.states.Remove(typeof(MagicianBossPhase2State));
             boss.ResetStateMachineStates(boss.states, 25f);
+            boss.FireAllMirrors();
             return typeof(MagicianIdleState);
         }
         else

@@ -98,9 +98,9 @@ public class MagicianBossAI : BossAIBase
         {
             currentPhase++;
             //Death Phase
-            //  states.Add(typeof(FirstBossDeathState), new FirstBossDeathState(this));
-            //  StateMachine.SetStates(states, 0f);
-            //  StateMachine.SwitchToNewState(typeof(FirstBossDeathState));
+            states.Add(typeof(MagicianDeathPhase), new MagicianDeathPhase(this));
+            StateMachine.SetStates(states, 0f);
+            StateMachine.SwitchToNewState(typeof(MagicianDeathPhase));
         }
 
         if (CurrentBossHealth < 25f && currentPhase < 3)
