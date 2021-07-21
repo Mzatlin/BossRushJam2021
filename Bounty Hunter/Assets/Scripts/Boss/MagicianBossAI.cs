@@ -10,6 +10,7 @@ public class MagicianBossAI : BossAIBase
     public ParticleSystem explosionParticle;
     public Transform centerPoint;
     public Transform[] bossLocations;
+    public Transform[] sideBossLocations;
     public Transform[] cannonPositions;
 
     public List<GameObject> Mirrors = new List<GameObject>();
@@ -36,12 +37,9 @@ public class MagicianBossAI : BossAIBase
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
     }
-    void Start()
-    {
-        CloseMirrors();
-    }
 
-    public void CloseMirrors()
+
+    public void FireAllMirrors()
     {
         foreach (GameObject obj in Mirrors)
         {
@@ -53,6 +51,17 @@ public class MagicianBossAI : BossAIBase
         }
     }
 
+    public void FireRandomMirror()
+    {
+        int index = UnityEngine.Random.Range(0, Mirrors.Count);
+        var move = Mirrors[index].GetComponent<FireMirrorBullet>();
+        if (move != null)
+        {
+            move.LaunchMirrorBullet();
+        }
+    }
+
+
     protected override void InitializeStateMachine()
     {
         states = new Dictionary<Type, IState>()
@@ -60,6 +69,7 @@ public class MagicianBossAI : BossAIBase
             {typeof(MagicianIdleState), new MagicianIdleState(this) },
             {typeof(SneakAttackState), new SneakAttackState(this) },
             {typeof(DoubleMirrorBarrageState), new DoubleMirrorBarrageState(this)},
+            {typeof(MirrorAttackState), new MirrorAttackState(this)},
         };
 
         ResetStateMachineStates(states, 50);

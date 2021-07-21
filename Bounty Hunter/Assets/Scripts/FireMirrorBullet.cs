@@ -11,7 +11,8 @@ public class FireMirrorBullet : MonoBehaviour
         for(int i = 0; i <= 4; i++)
         {
             GameObject bullet = CreateBullet((Vector2)transform.position+new Vector2(offset,0), Quaternion.identity);
-            bullet.transform.rotation = SetupBullet(bullet, -transform.right);
+            Vector2 direction = transform.position.y < 0 ? transform.right: -transform.right;
+            bullet.transform.rotation = SetupBullet(bullet, direction);
             offset += 0.5f;
         }
     }
