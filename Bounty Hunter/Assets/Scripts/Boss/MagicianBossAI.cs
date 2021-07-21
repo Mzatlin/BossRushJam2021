@@ -117,9 +117,9 @@ public class MagicianBossAI : BossAIBase
             currentPhase++;
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
-            // states.Add(typeof(FirstBossPhase2State), new FirstBossPhase2State(this));
-            // StateMachine.SetStates(states, 25f);
-            // StateMachine.SwitchToNewState(typeof(FirstBossPhase2State));
+            states.Add(typeof(MagicianBossPhase2State), new MagicianBossPhase2State(this));
+            StateMachine.SetStates(states, 25f);
+            StateMachine.SwitchToNewState(typeof(MagicianBossPhase2State));
         }
     }
 
