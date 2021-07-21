@@ -45,7 +45,7 @@ public class MagicianIdleState : BossStateBase
         }
         else
         {
-           return currentState;
+            return currentState;
         }
     }
 

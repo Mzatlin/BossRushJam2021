@@ -5,13 +5,28 @@ using UnityEngine;
 public class FireMirrorBullet : MonoBehaviour
 {
     Quaternion gunRotation;
+    Animator animate;
+    private void Start()
+    {
+        animate = GetComponentInChildren<Animator>();
+    }
     public void LaunchMirrorBullet()
     {
-        float offset = -1f;
-        for(int i = 0; i <= 4; i++)
+        StartCoroutine(Delay());
+    }
+
+    IEnumerator Delay()
+    {
+        if (animate != null)
         {
-            GameObject bullet = CreateBullet((Vector2)transform.position+new Vector2(offset,0), Quaternion.identity);
-            Vector2 direction = transform.position.y < 0 ? transform.right: -transform.right;
+            animate.SetTrigger("Charge");
+        }
+        yield return new WaitForSeconds(0.5f);
+        float offset = -1f;
+        for (int i = 0; i <= 4; i++)
+        {
+            GameObject bullet = CreateBullet((Vector2)transform.position + new Vector2(offset, 0), Quaternion.identity);
+            Vector2 direction = transform.position.y < 0 ? transform.right : -transform.right;
             bullet.transform.rotation = SetupBullet(bullet, direction);
             offset += 0.5f;
         }
