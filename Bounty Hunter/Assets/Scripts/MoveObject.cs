@@ -11,40 +11,33 @@ public class MoveObject : MonoBehaviour
     float moveSpeed = 3f;
     Vector2 leftPosition;
     Vector2 rightPosition;
-    // Start is called before the first frame update
-    void Start()
+    bool isMoving;
+
+
+    public void ResetMirror()
     {
+        transform.position = originalPosition;
+    }
+
+    public void SetMirrorStatus(bool setBool)
+    {
+        SetMovement(setBool);
+        gameObject.SetActive(setBool);
+    }
+
+    public void SetMovement(bool setBool)
+    {
+        isMoving = setBool;
+    }
+
+    // Start is called before the first frame update
+    void Awake()
+    {
+        isMoving = true;
         originalPosition = transform.position;
         leftPosition = originalPosition + new Vector2(5, 0);
         rightPosition = originalPosition + new Vector2(-5, 0);
         currentPos = leftPosition;
-    }
-
-    public void MoveToPosition(Vector2 offset, float lerpSpeed)
-    {
-        if (movement != null)
-        {
-            StopCoroutine(movement);
-        }
-        movement = StartCoroutine(MoveTime(offset, lerpSpeed));
-    }
-
-    protected virtual IEnumerator MoveTime(Vector2 offset, float lerpSpeed)
-    {
-        Vector2 endPos = originalPosition;
-        Vector2 startPos = transform.position;
-        endPos = startPos + offset;
-
-        float totalDistance = Vector2.Distance(startPos, endPos);
-        float fractionOfJourney = 0;
-        float startTime = Time.time;
-
-        while (fractionOfJourney < 1)
-        {
-            fractionOfJourney = ((Time.time - startTime) * lerpSpeed) / totalDistance;
-            transform.position = Vector2.Lerp(startPos, endPos, fractionOfJourney);
-            yield return null;
-        }
     }
 
     private void Update()
@@ -61,7 +54,9 @@ public class MoveObject : MonoBehaviour
             currentPos = leftPosition;
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, currentPos, step);
-
+        if (isMoving)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, currentPos, step);
+        }
     }
 }

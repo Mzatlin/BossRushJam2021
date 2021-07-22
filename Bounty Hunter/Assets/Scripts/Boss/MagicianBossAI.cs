@@ -36,8 +36,35 @@ public class MagicianBossAI : BossAIBase
         {
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
+        SetHalfMirrorsActive(false);
     }
 
+    public void ResetMirrors()
+    {
+        foreach (GameObject obj in Mirrors)
+        {
+            var move = obj.GetComponent<MoveObject>();
+            if (move != null)
+            {
+                move.ResetMirror();
+                move.SetMirrorStatus(true);
+            }
+        }
+    }
+
+    public void SetHalfMirrorsActive(bool isActive)
+    {
+        int i = 0;
+        while (i < Mirrors.Count)
+        {
+            var move = Mirrors[i].GetComponent<MoveObject>();
+            i += 2;
+            if (move != null)
+            {
+                move.SetMirrorStatus(isActive);
+            }
+        }
+    }
 
     public void FireAllMirrors()
     {

@@ -18,7 +18,6 @@ public class MagicianBossPhase2State : BossStateBase
         boss.HandleCoroutine(RespawnTime());
         boss.endDialogueEvent += HandleEnd;
         isEnd = false;
-        boss.GetLineRenderer().enabled = false;
     }
 
     private void HandleEnd()
@@ -38,7 +37,9 @@ public class MagicianBossPhase2State : BossStateBase
         {
             boss.states.Remove(typeof(MagicianBossPhase2State));
             boss.ResetStateMachineStates(boss.states, 25f);
-            boss.FireAllMirrors();
+            boss.SetHalfMirrorsActive(true);
+            boss.ResetMirrors();
+            //boss.FireAllMirrors();
             return typeof(MagicianIdleState);
         }
         else
