@@ -12,6 +12,7 @@ public class MagicianBossAI : BossAIBase
     public Transform[] bossLocations;
     public Transform[] sideBossLocations;
     public Transform[] cannonPositions;
+    public GameObject[] cannons;
 
     public List<GameObject> Mirrors = new List<GameObject>();
 

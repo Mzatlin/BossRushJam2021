@@ -20,7 +20,9 @@ public class DoubleMirrorBarrageState : BossStateBase
     float nextFireTime = 0f;
     float fireDelay = 3.5f;
     Transform lastPosition;
-
+    Animator animate;
+    int randomNum = -1;
+    bool isTriggered = false;
 
     Vector3 startPoint;
     const float radius = 1F;
@@ -92,10 +94,20 @@ public class DoubleMirrorBarrageState : BossStateBase
         if (!isShooting && Time.time > nextFireTime)
         {
             isShooting = true;
-            SpawnProjectile(15);
-            nextFireTime = Time.time + fireDelay;
 
+            boss.HandleCoroutine(SpawnProjectile(15, randomNum));
+            nextFireTime = Time.time + fireDelay;
         }
+      /*  else
+        {
+            randomNum = UnityEngine.Random.Range(0, boss.cannonPositions.Length);
+            animate = boss.cannons[randomNum].GetComponent<Animator>();
+            if (animate != null && !isTriggered)
+            {
+                animate.SetTrigger("Loading");
+                isTriggered = true;
+            }
+        }*/
     }
 
 
@@ -113,9 +125,20 @@ public class DoubleMirrorBarrageState : BossStateBase
 
     }
 
-    void SpawnProjectile(int projectileAmount)
+    IEnumerator SpawnProjectile(int projectileAmount, int randomNum)
     {
-        int randomNum = UnityEngine.Random.Range(0, boss.cannonPositions.Length);
+        randomNum = UnityEngine.Random.Range(0, boss.cannonPositions.Length);
+        animate = boss.cannons[randomNum].GetComponent<Animator>();
+        if (animate != null && !isTriggered)
+        {
+            animate.SetTrigger("Loading");
+            isTriggered = true;
+        }
+        yield return new WaitForSeconds(1f);
+        if (animate != null)
+        {
+            animate.SetTrigger("Fired");
+        }
         float angleStep = 180f / projectileAmount;
         if (randomNum <= (boss.cannonPositions.Length / 2) - 1)
         {
@@ -142,6 +165,7 @@ public class DoubleMirrorBarrageState : BossStateBase
             angle += angleStep;
         }
         isShooting = false;
+        isTriggered = false;
     }
 
 }
