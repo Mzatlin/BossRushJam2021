@@ -98,16 +98,6 @@ public class DoubleMirrorBarrageState : BossStateBase
             boss.HandleCoroutine(SpawnProjectile(15, randomNum));
             nextFireTime = Time.time + fireDelay;
         }
-      /*  else
-        {
-            randomNum = UnityEngine.Random.Range(0, boss.cannonPositions.Length);
-            animate = boss.cannons[randomNum].GetComponent<Animator>();
-            if (animate != null && !isTriggered)
-            {
-                animate.SetTrigger("Loading");
-                isTriggered = true;
-            }
-        }*/
     }
 
 

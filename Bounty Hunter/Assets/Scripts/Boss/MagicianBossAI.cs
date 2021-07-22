@@ -87,11 +87,19 @@ public class MagicianBossAI : BossAIBase
     public void FireRandomMirror()
     {
         int index = UnityEngine.Random.Range(0, Mirrors.Count);
-        var move = Mirrors[index].GetComponent<FireMirrorBullet>();
-        if (move != null)
+        if (!Mirrors[index].activeInHierarchy)
         {
-            move.LaunchMirrorBullet();
+            FireRandomMirror();
         }
+        else
+        {
+            var move = Mirrors[index].GetComponent<FireMirrorBullet>();
+            if (move != null)
+            {
+                move.LaunchMirrorBullet();
+            }
+        }
+
     }
 
 
