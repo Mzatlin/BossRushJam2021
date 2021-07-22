@@ -17,6 +17,7 @@ public class MoveObject : MonoBehaviour
     public void ResetMirror()
     {
         transform.position = originalPosition;
+        SetupMirror();
     }
 
     public void SetMirrorStatus(bool setBool)
@@ -35,6 +36,11 @@ public class MoveObject : MonoBehaviour
     {
         isMoving = true;
         originalPosition = transform.position;
+        SetupMirror();
+    }
+
+    void SetupMirror()
+    {
         leftPosition = originalPosition + new Vector2(5, 0);
         rightPosition = originalPosition + new Vector2(-5, 0);
         currentPos = leftPosition;

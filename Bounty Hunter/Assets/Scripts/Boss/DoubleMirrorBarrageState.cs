@@ -39,6 +39,7 @@ public class DoubleMirrorBarrageState : BossStateBase
         projectileSpeed = 100f;
         fireRate = 2f;
         jumpAmount = baseJumpAmount + boss.currentPhase;
+        nextFireTime = Time.time + fireDelay;
     }
 
     Transform GetNextPosition()

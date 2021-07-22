@@ -36,6 +36,11 @@ public class MagicianBossAI : BossAIBase
         {
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
+
+    }
+
+    void Start()
+    {
         SetHalfMirrorsActive(false);
     }
 
@@ -135,9 +140,9 @@ public class MagicianBossAI : BossAIBase
             currentPhase++;
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
-            //  states.Add(typeof(FirstBossPhase3State), new FirstBossPhase3State(this));
-            //  StateMachine.SetStates(states, 25f);
-            //  StateMachine.SwitchToNewState(typeof(FirstBossPhase3State));
+            states.Add(typeof(MagicianBossPhase3), new MagicianBossPhase3(this));
+            StateMachine.SetStates(states, 25f);
+            StateMachine.SwitchToNewState(typeof(MagicianBossPhase3));
         }
         else if (CurrentBossHealth < 50f && currentPhase < 2)
         {
@@ -161,7 +166,7 @@ public class MagicianBossAI : BossAIBase
 
     public void EnableBoss(bool isEnabled)
     {
-        if(sprite != null && bossCollider != null && explosionParticle != null)
+        if (sprite != null && bossCollider != null && explosionParticle != null)
         {
             sprite.enabled = isEnabled;
             bossCollider.enabled = isEnabled;

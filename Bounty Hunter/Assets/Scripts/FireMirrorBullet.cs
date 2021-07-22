@@ -21,7 +21,7 @@ public class FireMirrorBullet : MonoBehaviour
         {
             animate.SetTrigger("Charge");
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         float offset = -1f;
         for (int i = 0; i <= 4; i++)
         {
