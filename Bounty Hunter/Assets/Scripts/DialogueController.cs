@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DialogueController : MonoBehaviour, IDialogueEnd
+public class DialogueController : MonoBehaviour, IDialogueEnd, IDialogueSet
 {
     public Canvas dialogueCanvas;
     public PlayerStatsSO playerStats;
@@ -66,6 +66,12 @@ public class DialogueController : MonoBehaviour, IDialogueEnd
     public void SetContentText(string _content)
     {
         content[index] = _content;
+    }
+
+    public void SetContentText(List<string> _content)
+    {
+        content = _content;
+        index = 0;
     }
 
     void HandleActivateDialogue()

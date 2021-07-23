@@ -1774,6 +1774,40 @@ MonoBehaviour:
   - {fileID: 1878313952}
   - {fileID: 2061208625}
   bullet: {fileID: 275546416092995153, guid: 6cd3e54d10ac2a641a967f592dfa95e4, type: 3}
+--- !u!114 &1435368021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435368019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accb347b189df1b41b31647b80fb1864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 1620682940}
+  sprites:
+  - {fileID: 21300000, guid: 2ebb1e6533e5285409f93ac8a8737298, type: 3}
+--- !u!114 &1435368022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435368019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2897798fd8dfe0741816ebd54d40b016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstPhaseDialogue:
+  - 'My My! You''re quite the audience. '
+  - The show has only just begun!
+  secondPhaseDialogue:
+  - Time for the Grand Finale!
+  thirdphaseDialogue:
+  - The show... must... go on...
 --- !u!4 &1435368030 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
@@ -2141,6 +2175,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 524b11f5cd52352478c3a0f0b65ec100, type: 3}
+--- !u!114 &1620682940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5625233363827055226, guid: 524b11f5cd52352478c3a0f0b65ec100, type: 3}
+  m_PrefabInstance: {fileID: 1620682939}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1635777853
 PrefabInstance:
   m_ObjectHideFlags: 0

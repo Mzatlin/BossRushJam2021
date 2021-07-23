@@ -11,6 +11,7 @@ public abstract class BossAIBase : MonoBehaviour
     ActivateDialogueFromBossAI dialogue;
     protected IHealth health => GetComponent<IHealth>();
     protected IDialogueEnd dialogueEnd => GetComponent<IDialogueEnd>();
+    BossDialogueManager bossDialogue => GetComponent<BossDialogueManager>();
     IBossAnimate animate => GetComponent<IBossAnimate>();
     public float CurrentBossHealth => health.CurrentHealth;
     [SerializeField] protected GameObject player;
@@ -83,6 +84,10 @@ public abstract class BossAIBase : MonoBehaviour
 
     public void ActivateDialogue()
     {
+        if(bossDialogue != null)
+        {
+            bossDialogue.SetNextDialogue();
+        }
         dialogue.ActivateDialogue();
     }
 
