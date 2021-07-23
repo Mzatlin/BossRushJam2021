@@ -5504,6 +5504,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 558794289200407836, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
   m_PrefabInstance: {fileID: 2088839196}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1726308864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726308863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2897798fd8dfe0741816ebd54d40b016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstPhaseDialogue:
+  - My Dispenser! You're really killing the vibe, man! Time for my Solo
+  secondPhaseDialogue:
+  - Get ready for the drop, little man!
+  thirdphaseDialogue: []
+  bossDialogue: {fileID: 0}
 --- !u!114 &1726308875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5533,6 +5551,7 @@ MonoBehaviour:
   portrait: {fileID: 31199785}
   sprites:
   - {fileID: 21300000, guid: b4028cfc7a62d3f47832b46f9a27659a, type: 3}
+  - {fileID: 21300000, guid: 53c47c581d6db4640a674fe4708f2f67, type: 3}
 --- !u!1 &1749370419
 GameObject:
   m_ObjectHideFlags: 0
