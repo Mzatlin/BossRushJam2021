@@ -195,21 +195,37 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 55a24c6debf999647836e75a5dbdd1db, type: 2}
     m_Threshold: 0
-    m_Position: {x: 1, y: 0}
+    m_Position: {x: 0.1, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: XInput
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 9ce5aa70327a1a4498d9e8b00e39d01d, type: 2}
+    m_Threshold: 0.33333334
+    m_Position: {x: -0.1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: XInput
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 55a24c6debf999647836e75a5dbdd1db, type: 2}
-    m_Threshold: 1
-    m_Position: {x: -1, y: 0}
+    m_Threshold: 0.6666667
+    m_Position: {x: 0, y: 0.1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: XInput
     m_Mirror: 0
-  m_BlendParameter: XInput
-  m_BlendParameterY: YInput
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 9ce5aa70327a1a4498d9e8b00e39d01d, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: -0.1}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: XInput
+    m_Mirror: 0
+  m_BlendParameter: LastDirX
+  m_BlendParameterY: LastDirX
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -350,6 +366,12 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: IsMoving
     m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: LastDirX
+    m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0

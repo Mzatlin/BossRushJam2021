@@ -28,18 +28,16 @@ public class PlayerMovementController : MonoBehaviour, IMoveDirection
     // Update is called once per frame
     void Update()
     {
-        if(stats != null && stats.GetPlayerReadiness())
+        if (stats != null && stats.GetPlayerReadiness())
         {
             CalculateMovement();
-            UpdateIdle();
         }
         else
         {
             physics.SetMoveVelocity(Vector2.zero);
             animate.SetBool("IsMoving", false);
-            animate.SetFloat("XInput", 0);
-            animate.SetFloat("YInput", 0);
         }
+        UpdateIdle();
 
     }
 
@@ -51,6 +49,8 @@ public class PlayerMovementController : MonoBehaviour, IMoveDirection
         }
         else
         {
+            lastMoveDir = movement;
+            animate.SetFloat("LastDirX", lastMoveDir.x);
             animate.SetBool("IsMoving", true);
         }
     }
@@ -63,7 +63,6 @@ public class PlayerMovementController : MonoBehaviour, IMoveDirection
         animate.SetFloat("YInput", verticalMovement);
         movement = new Vector2(horizontalMovement, verticalMovement);
         movement = Vector2.ClampMagnitude(movement, 1f);
-        lastMoveDir = movement;
         physics.SetMoveVelocity(movement * moveSpeed);
 
     }
