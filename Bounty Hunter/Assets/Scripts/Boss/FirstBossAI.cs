@@ -17,6 +17,8 @@ public class FirstBossAI : BossAIBase
     [SerializeField] GameObject bossGun;
     [SerializeField] Transform bossFirePoint;
 
+    Rigidbody2D rb;
+
     IGunRotate rotate => GetComponentInChildren<IGunRotate>();
 
     LineRenderer lineRender;
@@ -31,6 +33,7 @@ public class FirstBossAI : BossAIBase
         {
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void InitializeBossPositions()
@@ -60,6 +63,10 @@ public class FirstBossAI : BossAIBase
         ResetStateMachineStates(states, 50);
     }
 
+    public Rigidbody2D GetRigidBody()
+    {
+        return rb;
+    }
 
     public LineRenderer GetLineRenderer()
     {
@@ -74,6 +81,11 @@ public class FirstBossAI : BossAIBase
     // Update is called once per frame
     void Update()
     {
+        if(rb != null)
+        {
+            SetBossFloat("XMovement", rb.velocity.x);
+        }
+
         CheckPhase();
     }
 

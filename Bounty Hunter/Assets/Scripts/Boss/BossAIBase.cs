@@ -68,8 +68,15 @@ public abstract class BossAIBase : MonoBehaviour
             animate.SetBossTrigger(trigger);
         }
     }
+    public void SetBossFloat(string param, float amount)
+    {
+        if (animate != null)
+        {
+            animate.SetBossFloat(param, amount);
+        }
+    }
 
-    public void ResetStateMachineStates(Dictionary<Type, IState> states, float healthThreshold)
+        public void ResetStateMachineStates(Dictionary<Type, IState> states, float healthThreshold)
     {
         StateMachine.SetStates(states, healthThreshold);
     }

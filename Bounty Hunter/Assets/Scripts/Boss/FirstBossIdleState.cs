@@ -9,6 +9,7 @@ public class FirstBossIdleState : BossStateBase
     FirstBossAI boss;
     Type lastState;
     Type currentState;
+    Rigidbody2D rb;
     bool hasWaited = false;
     bool isJumping = false;
     public FirstBossIdleState(FirstBossAI _boss) : base(_boss.gameObject)
@@ -19,6 +20,7 @@ public class FirstBossIdleState : BossStateBase
     public override void BeginState()
     {
         Debug.Log("Entered Idle State");
+        rb = boss.GetRigidBody();
         hasWaited = false;
         isJumping = false;
         boss.SetGunVisibility(false);
@@ -72,6 +74,10 @@ public class FirstBossIdleState : BossStateBase
 
     protected override IEnumerator JumpTime(Vector2 endPos)
     {
+        if (Mathf.Abs(rb.velocity.x) > 0.1f)
+        {
+            boss.SetBossTrigger("Dash");
+        }
         yield return base.JumpTime(endPos);
         boss.HandleCoroutine(Delay());
     }

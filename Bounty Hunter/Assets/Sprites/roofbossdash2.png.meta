@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: bf7ebb4cd5477644f99ed2ec118fc103
+guid: 4e20ca1c0a387344fa60f741722944ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 930822839514569040
-    second: roofbossdash_0
+      213: 3386457636216927811
+    second: roofbossdash2_0
   - first:
-      213: 3431274517578859265
-    second: roofbossdash_1
+      213: 3585488335827254071
+    second: roofbossdash2_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,43 +133,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roofbossdash_0
+      name: roofbossdash2_0
       rect:
         serializedVersion: 2
-        x: 14
+        x: 3
         y: 0
-        width: 46
-        height: 55
+        width: 47
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 059161ad072faec00800000000000000
-      internalID: 930822839514569040
+      spriteID: 3467e95274d1ffe20800000000000000
+      internalID: 3386457636216927811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roofbossdash_1
+      name: roofbossdash2_1
       rect:
         serializedVersion: 2
-        x: 78
+        x: 68
         y: 0
-        width: 47
-        height: 53
+        width: 46
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 103432b7ef55e9f20800000000000000
-      internalID: 3431274517578859265
+      spriteID: 73b3a4b05a632c130800000000000000
+      internalID: 3585488335827254071
       vertices: []
       indices: 
       edges: []

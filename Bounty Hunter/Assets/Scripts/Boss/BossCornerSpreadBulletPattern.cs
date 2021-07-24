@@ -82,6 +82,7 @@ public class BossCornerSpreadBulletPattern : BossStateBase
     protected override IEnumerator JumpTime(Vector2 endPos)
     {
         isJumping = true;
+        boss.SetBossTrigger("Dash");
         yield return base.JumpTime(endPos);
         isJumping = false;
         jumpAmount--;

@@ -70,6 +70,7 @@ public class DashAndShootState : BossStateBase
     {
         isJumping = true;
         isShooting = true;
+        boss.SetBossTrigger("Dash");
         yield return base.JumpTime(endPos);
 
         isJumping = false;
