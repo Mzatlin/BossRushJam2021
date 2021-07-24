@@ -1,9 +1,8 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class LoadLevelOnClick : MonoBehaviour
+public class LoadLevelOnClick : MonoBehaviour, ISetLevel
 {
-    AudioManager audio => FindObjectOfType<AudioManager>();
     Camera cam => Camera.main;
     [SerializeField] string levelName;
     public void LoadLevel()
@@ -14,5 +13,10 @@ public class LoadLevelOnClick : MonoBehaviour
     public void LoadTitle()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void SetLevel(string _levelName)
+    {
+        levelName = _levelName;
     }
 }

@@ -84,6 +84,7 @@ public class FirstBossAI : BossAIBase
         if(rb != null)
         {
             SetBossFloat("XMovement", rb.velocity.x);
+            SetBossFloat("YMovement", rb.velocity.y);
         }
 
         CheckPhase();
