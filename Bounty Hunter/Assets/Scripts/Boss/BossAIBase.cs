@@ -16,6 +16,7 @@ public abstract class BossAIBase : MonoBehaviour
     public float CurrentBossHealth => health.CurrentHealth;
     [SerializeField] protected GameObject player;
     [SerializeField] protected LayerMask obstacleLayers;
+    [SerializeField] protected CurrentDaySO day;
     protected Quaternion gunRotation;
     public int currentPhase = 1;
     protected Coroutine enemyCoroutine;
@@ -36,6 +37,14 @@ public abstract class BossAIBase : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void IncrementCurrentDay()
+    {
+        if(day != null)
+        {
+            day.IncrementDayCount();
+        }
     }
 
     protected void OnDestroy()

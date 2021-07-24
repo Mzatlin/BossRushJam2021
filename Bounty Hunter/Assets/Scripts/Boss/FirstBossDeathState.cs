@@ -13,12 +13,19 @@ public class FirstBossDeathState : BossStateBase
     }
     public override void BeginState()
     {
-        SceneManager.LoadScene(0);
+        boss.HandleCoroutine(Delay());
     }
 
     public override void EndState()
     {
         throw new NotImplementedException();
+    }
+
+    IEnumerator Delay()
+    {
+        boss.IncrementCurrentDay();
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(1);
     }
 
     public override Type Tick()

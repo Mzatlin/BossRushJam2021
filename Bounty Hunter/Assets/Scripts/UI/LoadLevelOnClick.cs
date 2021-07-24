@@ -15,6 +15,11 @@ public class LoadLevelOnClick : MonoBehaviour, ISetLevel
         SceneManager.LoadScene(0);
     }
 
+    public void LoadCasinoLevel()
+    {
+        SceneManager.LoadScene("NonCombatTestScene");
+    }
+
     public void SetLevel(string _levelName)
     {
         levelName = _levelName;
