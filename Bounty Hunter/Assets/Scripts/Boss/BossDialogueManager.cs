@@ -43,6 +43,7 @@ public class BossDialogueManager : MonoBehaviour
     {
         if(setDialogue != null)
         {
+            Debug.Log(index);
             setDialogue.SetContentText(phaseDialogue[index]);
             index++;
         }
