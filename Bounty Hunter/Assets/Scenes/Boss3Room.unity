@@ -156,19 +156,19 @@ PrefabInstance:
       objectReference: {fileID: 204486029}
     - target: {fileID: 558794289200407831, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_Size.x
-      value: 1.0021334
+      value: 0.82811195
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407831, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_Size.y
-      value: 0.9997296
+      value: 1.7952557
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407831, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_Offset.x
-      value: 0.0011373758
+      value: 0.050857812
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407831, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_Offset.y
-      value: -0.002685219
+      value: -0.00268507
       objectReference: {fileID: 0}
     - target: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_RootOrder
@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2235804574433692162, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2597705236784678240, guid: b0485b5ef1f2bf245a58a80a9e636fbd, type: 3}
     - target: {fileID: 2235804574433692162, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -419,6 +423,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2274305536948999211, guid: 970e2532a22c963418115466cb654078, type: 3}
   m_PrefabInstance: {fileID: 2080981237}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &346029660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2692382652907258643, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+  m_PrefabInstance: {fileID: 3699375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &346029662
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346029660}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fbfc9f7c9ce34dd4cb98dcb46e55ad9a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &403229182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1744,6 +1772,8 @@ MonoBehaviour:
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 320
+  day: {fileID: 0}
+  bossDialogueCheck: {fileID: 0}
   currentPhase: 1
   currentPhaseThreshold: 50
   explosionParticle: {fileID: 1262423534}
@@ -1808,6 +1838,7 @@ MonoBehaviour:
   - Time for the Grand Finale!
   thirdphaseDialogue:
   - The show... must... go on...
+  bossDialogue: {fileID: 0}
 --- !u!4 &1435368030 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
