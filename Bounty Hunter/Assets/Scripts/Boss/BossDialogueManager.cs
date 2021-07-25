@@ -25,6 +25,10 @@ public class BossDialogueManager : MonoBehaviour
         {
             index = 1;
         }
+        else
+        {
+            index = 0;
+        }
         InitializeListOfDialogue();
     }
 

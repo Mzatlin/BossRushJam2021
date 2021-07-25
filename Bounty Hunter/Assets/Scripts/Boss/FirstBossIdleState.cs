@@ -9,9 +9,9 @@ public class FirstBossIdleState : BossStateBase
     FirstBossAI boss;
     Type lastState;
     Type currentState;
-    Rigidbody2D rb;
     bool hasWaited = false;
     bool isJumping = false;
+    bool isOpening = false;
     public FirstBossIdleState(FirstBossAI _boss) : base(_boss.gameObject)
     {
         boss = _boss;
@@ -20,11 +20,17 @@ public class FirstBossIdleState : BossStateBase
     public override void BeginState()
     {
         Debug.Log("Entered Idle State");
-        rb = boss.GetRigidBody();
         hasWaited = false;
         isJumping = false;
         boss.SetGunVisibility(false);
-        //currentState = GetRandomState();
+        if (!boss.GetOpeningStats())
+        {
+            isOpening = true;
+        }
+        else
+        {
+            isOpening = false;
+        }
     }
 
     Type GetRandomState()
@@ -48,6 +54,10 @@ public class FirstBossIdleState : BossStateBase
 
     public override Type Tick()
     {
+        if (isOpening)
+        {
+            return typeof(FirstBossOpeningState);
+        }
         if (isJumping == false)
         {
             isJumping = true;
@@ -74,7 +84,7 @@ public class FirstBossIdleState : BossStateBase
 
     protected override IEnumerator JumpTime(Vector2 endPos)
     {
-        if (Mathf.Abs(rb.velocity.x) > 0.1f)
+        if (Mathf.Abs(boss.GetRigidBody().velocity.x) > 0.1f)
         {
             boss.SetBossTrigger("Dash");
         }

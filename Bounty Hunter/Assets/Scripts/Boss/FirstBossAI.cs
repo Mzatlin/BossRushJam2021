@@ -27,6 +27,7 @@ public class FirstBossAI : BossAIBase
     protected override void Awake()
     {
         base.Awake();
+        CheckBossDialogue();
         lineRender = GetComponent<LineRenderer>();
         InitializeBossPositions();
         if (dialogueEnd != null)
@@ -63,6 +64,17 @@ public class FirstBossAI : BossAIBase
         ResetStateMachineStates(states, 50);
     }
 
+    void CheckBossDialogue()
+    {
+        if(bossDialogueCheck != null && bossDialogueCheck.isOpeningSet == false)
+        {
+            states.Add(typeof(FirstBossOpeningState), new FirstBossOpeningState(this));
+            StateMachine.SetStates(states, 25f);
+            StateMachine.SwitchToNewState(typeof(FirstBossOpeningState));
+            ResetStateMachineStates(states, 50);
+        }
+    }
+
     public Rigidbody2D GetRigidBody()
     {
         return rb;
@@ -76,6 +88,16 @@ public class FirstBossAI : BossAIBase
     public Transform GetCenterPosition()
     {
         return centerPoint;
+    }
+
+    public bool GetOpeningStats()
+    {
+        return bossDialogueCheck.isOpeningSet;
+    }
+
+    public void SetOpeningStats(bool isActive)
+    {
+        bossDialogueCheck.isOpeningSet = isActive;
     }
 
     // Update is called once per frame

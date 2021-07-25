@@ -17,6 +17,7 @@ public abstract class BossAIBase : MonoBehaviour
     [SerializeField] protected GameObject player;
     [SerializeField] protected LayerMask obstacleLayers;
     [SerializeField] protected CurrentDaySO day;
+    [SerializeField] protected BossDialogueSO bossDialogueCheck;
     protected Quaternion gunRotation;
     public int currentPhase = 1;
     protected Coroutine enemyCoroutine;
@@ -30,18 +31,18 @@ public abstract class BossAIBase : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void IncrementCurrentDay()
     {
-        if(day != null)
+        if (day != null)
         {
             day.IncrementDayCount();
         }
@@ -85,7 +86,7 @@ public abstract class BossAIBase : MonoBehaviour
         }
     }
 
-        public void ResetStateMachineStates(Dictionary<Type, IState> states, float healthThreshold)
+    public void ResetStateMachineStates(Dictionary<Type, IState> states, float healthThreshold)
     {
         StateMachine.SetStates(states, healthThreshold);
     }
@@ -100,7 +101,7 @@ public abstract class BossAIBase : MonoBehaviour
 
     public void ActivateDialogue()
     {
-        if(bossDialogue != null)
+        if (bossDialogue != null)
         {
             bossDialogue.SetNextDialogue();
         }
