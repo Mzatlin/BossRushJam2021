@@ -2748,9 +2748,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8681987441206896304, guid: 507ff70b6d89f3b46a300c6b4cb98911, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 15.599998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681987441206896304, guid: 507ff70b6d89f3b46a300c6b4cb98911, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.39999962
+      objectReference: {fileID: 0}
     - target: {fileID: 8681987441910014802, guid: 507ff70b6d89f3b46a300c6b4cb98911, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681987442420528914, guid: 507ff70b6d89f3b46a300c6b4cb98911, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.9912033
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 507ff70b6d89f3b46a300c6b4cb98911, type: 3}
