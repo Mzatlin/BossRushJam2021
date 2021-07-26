@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 51209949}
   - component: {fileID: 51209948}
   - component: {fileID: 51209951}
+  - component: {fileID: 51209952}
   m_Layer: 0
   m_Name: Cutscene Dialogue
   m_TagString: Untagged
@@ -305,6 +306,10 @@ MonoBehaviour:
   dialoguewriter: {fileID: 11400000, guid: 6d5b279ba8252264694dcac375bd5b11, type: 2}
   content:
   - 'Testing 123
+
+'
+  - 'Testing 456
+
 
 '
   typingSpeed: 0.3
@@ -346,6 +351,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f1864a1c486fa41bb93193cfc16bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &51209952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51209947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d73b60b7e9dfac4895183029e2611f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
 --- !u!1001 &105394398
 PrefabInstance:
   m_ObjectHideFlags: 0
