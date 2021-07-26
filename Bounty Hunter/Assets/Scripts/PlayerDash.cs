@@ -13,6 +13,7 @@ public class PlayerDash : MonoBehaviour
     IMovePhysics physics;
     IPlayerStats stats;
     [SerializeField] float maxDashSpeed = 100f;
+    [SerializeField] LayerMask layer;
     float timeThreshold = 0.4f;
     float dashDelay;
     // Start is called before the first frame update
@@ -28,8 +29,8 @@ public class PlayerDash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-        if(Time.time > dashDelay)
+
+        if (Time.time > dashDelay)
         {
             canDash = true;
         }
@@ -65,10 +66,20 @@ public class PlayerDash : MonoBehaviour
         }
         else
         {
-            //physics.SetMoveVelocity(dashDirection * dashSpeed);
             transform.position += (Vector3)(dashDirection * dashSpeed * Time.deltaTime);
             dashSpeed -= dashSpeed * 10f * Time.deltaTime;
         }
+    }
+
+    bool IsColliding()
+    {
+        Ray2D ray = new Ray2D(transform.position, dashDirection);
+        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 5f, layer);
+        if (hit)
+        {
+            return false;
+        }
+        return true;
     }
 
     void AttemptDash()
@@ -79,11 +90,11 @@ public class PlayerDash : MonoBehaviour
             dashDirection = (mousePos - (Vector2)transform.position).normalized;
             isdashing = true;
             canDash = false;
-            if(stats != null)
+            if (stats != null)
             {
                 stats.SetPlayerReadiness(false);
             }
-            if(playerCollider != null)
+            if (playerCollider != null)
             {
                 playerCollider.enabled = false;
             }

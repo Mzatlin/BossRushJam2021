@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 7009042956074380955}
   - component: {fileID: 8467784627679370729}
   - component: {fileID: 4387547566236507882}
+  - component: {fileID: 4022594672653185334}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -222,6 +223,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDashSpeed: 100
+  layer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &2274305537142250205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +345,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   death: {fileID: 0}
+--- !u!114 &4022594672653185334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274305537142250194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5195dc5c3c5483a478613ca1ea16ce0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2274305537264689052
 GameObject:
   m_ObjectHideFlags: 0
