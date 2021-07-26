@@ -13,7 +13,7 @@ public class DJBossDeathState : BossStateBase
     }
     public override void BeginState()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public override void EndState()
