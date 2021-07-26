@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2ca3c2724c2d244384db17c3c57cf700
     GuidInternal: 
-    m_lastTime: -8585757538994775808
+    m_lastTime: -8585742995614775808
     List:
     - name: Main
       guid: fa820d8107e4c34a9137981c280ce2d5
@@ -111,8 +111,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: abf8dde28daaaf4d80133a17a3ad065c
     GuidInternal: 
-    m_lastTime: -8585757538994775808
+    m_lastTime: -8585742986554775808
     List:
+    - name: Play_Button_Click
+      guid: 400657559ee921468f7496e62e0f9d6b
+      id: 1149159311
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Play_Button_Click
+        ObjectType: 3
+        guid: 400657559ee921468f7496e62e0f9d6b
+      Path: Events\Default Work Unit\Play_Button_Click
+      maxAttenuation: 0
+      maxDuration: 0.625
+      minDuration: 0.625
+    - name: Play_Button_Hover
+      guid: 7bfd7edf3465b34c9ed2b0bffa30d9e6
+      id: 4021863785
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Play_Button_Hover
+        ObjectType: 3
+        guid: 7bfd7edf3465b34c9ed2b0bffa30d9e6
+      Path: Events\Default Work Unit\Play_Button_Hover
+      maxAttenuation: 0
+      maxDuration: 0.253191
+      minDuration: 0.253191
+    - name: Play_GunDealerBoss
+      guid: 387e20f6f0c3e34fa044892b5dc8dc98
+      id: 4231704596
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Play_GunDealerBoss
+        ObjectType: 3
+        guid: 387e20f6f0c3e34fa044892b5dc8dc98
+      Path: Events\Default Work Unit\Play_GunDealerBoss
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Gunshot
       guid: 5cb6b947c1d21a4c930973e4bb52af5a
       id: 3955959628
@@ -127,9 +178,43 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5cb6b947c1d21a4c930973e4bb52af5a
       Path: Events\Default Work Unit\Play_Gunshot
+      maxAttenuation: 100
+      maxDuration: 0.659151
+      minDuration: 0.418535
+    - name: Play_MagicianBoss
+      guid: d11e2487d00fbb4fa9df4e357e859fc3
+      id: 4189198966
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Play_MagicianBoss
+        ObjectType: 3
+        guid: d11e2487d00fbb4fa9df4e357e859fc3
+      Path: Events\Default Work Unit\Play_MagicianBoss
       maxAttenuation: 0
-      maxDuration: 0.587237
-      minDuration: 0.469789
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MainMusic
+      guid: c55618870386c44888407d029d1d2cda
+      id: 1346240278
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Play_MainMusic
+        ObjectType: 3
+        guid: c55618870386c44888407d029d1d2cda
+      Path: Events\Default Work Unit\Play_MainMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_NightClubBoss
       guid: fc77c1553f64024da1f29e1b4b395514
       id: 3754198327
@@ -147,9 +232,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_TestMusic
-      guid: c55618870386c44888407d029d1d2cda
-      id: 2872770759
+    - name: Stop_All
+      guid: 0c139bc273f21f42ace6ea6fc691515a
+      id: 452547817
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -157,13 +242,64 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: abf8dde28daaaf4d80133a17a3ad065c
-      - ElementName: Play_TestMusic
+      - ElementName: Stop_All
         ObjectType: 3
-        guid: c55618870386c44888407d029d1d2cda
-      Path: Events\Default Work Unit\Play_TestMusic
+        guid: 0c139bc273f21f42ace6ea6fc691515a
+      Path: Events\Default Work Unit\Stop_All
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_GunDealerBoss
+      guid: 3bdbe411182d764290a84b268443c9a2
+      id: 1518393738
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Stop_GunDealerBoss
+        ObjectType: 3
+        guid: 3bdbe411182d764290a84b268443c9a2
+      Path: Events\Default Work Unit\Stop_GunDealerBoss
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MagicianBoss
+      guid: 2fd072e10d9ab149abb146ea910c6d88
+      id: 2887379872
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Stop_MagicianBoss
+        ObjectType: 3
+        guid: 2fd072e10d9ab149abb146ea910c6d88
+      Path: Events\Default Work Unit\Stop_MagicianBoss
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MainMusic
+      guid: 365a144b1189c14b8bbefc36b0027379
+      id: 665673276
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Stop_MainMusic
+        ObjectType: 3
+        guid: 365a144b1189c14b8bbefc36b0027379
+      Path: Events\Default Work Unit\Stop_MainMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_NightClubBoss
       guid: 6655b9b07adb9446b8176a6b19ce9ba4
       id: 1012531473
@@ -178,23 +314,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6655b9b07adb9446b8176a6b19ce9ba4
       Path: Events\Default Work Unit\Stop_NightClubBoss
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Stop_TestMusic
-      guid: 365a144b1189c14b8bbefc36b0027379
-      id: 3991482221
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: abf8dde28daaaf4d80133a17a3ad065c
-      - ElementName: Stop_TestMusic
-        ObjectType: 3
-        guid: 365a144b1189c14b8bbefc36b0027379
-      Path: Events\Default Work Unit\Stop_TestMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -254,7 +373,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585761065614775808
     List: []
-  ExpandedFileSystemItemIds: 02000000030000000b0000000c000000
+  ExpandedFileSystemItemIds: 020000000300000004000000050000000b0000000c0000000d0000000e000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

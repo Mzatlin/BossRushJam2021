@@ -1,24 +1,39 @@
 Event	ID	Name			Wwise Object Path	Notes
+	452547817	Stop_All			\Default Work Unit\Stop_All	
+	665673276	Stop_MainMusic			\Default Work Unit\Stop_MainMusic	
 	1012531473	Stop_NightClubBoss			\Default Work Unit\Stop_NightClubBoss	
-	2872770759	Play_TestMusic			\Default Work Unit\Play_TestMusic	
+	1149159311	Play_Button_Click			\Default Work Unit\Play_Button_Click	
+	1346240278	Play_MainMusic			\Default Work Unit\Play_MainMusic	
+	1518393738	Stop_GunDealerBoss			\Default Work Unit\Stop_GunDealerBoss	
+	2887379872	Stop_MagicianBoss			\Default Work Unit\Stop_MagicianBoss	
 	3754198327	Play_NightClubBoss			\Default Work Unit\Play_NightClubBoss	
 	3955959628	Play_Gunshot			\Default Work Unit\Play_Gunshot	
-	3991482221	Stop_TestMusic			\Default Work Unit\Stop_TestMusic	
+	4021863785	Play_Button_Hover			\Default Work Unit\Play_Button_Hover	
+	4189198966	Play_MagicianBoss			\Default Work Unit\Play_MagicianBoss	
+	4231704596	Play_GunDealerBoss			\Default Work Unit\Play_GunDealerBoss	
+
+Effect plug-ins	ID	Name	Type				Notes
+	363051006	Wwise Time Stretch (Custom)	Wwise Time Stretch			
+	819943492	Fear_no_Evil	Wwise Harmonizer			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	70716937	gunshot_07	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\sfx_gunshot2_4D45C5BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gunshot\gunshot_07		7912
 	260209184	gunshot_06	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\sfx_gunshot2_30A5F908.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gunshot\gunshot_06		7723
 	334851619	gunshot_04	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\sfx_gunshot2_8053F740.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gunshot\gunshot_04		8154
 	406766129	gunshot_03	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\sfx_gunshot2_536B4A3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gunshot\gunshot_03		6998
+	609877968	Button Click	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\Bluezone_BC0268_switch_button_click_ignition_002_03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Button Click		8299
 	743684716	gunshot_01	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\sfx_gunshot2_C57084EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gunshot\gunshot_01		8705
 	758719293	gunshot_02	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\sfx_gunshot2_10CE78AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gunshot\gunshot_02		8421
+	832403430	Button Hover	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\Bluezone_BC0268_switch_button_click_high_tech_interface_001_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Button Hover		6196
 	1008793128	gunshot_05	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\sfx_gunshot2_B9060FEE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gunshot\gunshot_05		7959
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	73300830	ncboss_drums_180bpm_4-4	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\ncboss_drums_180bpm_4-4_9EDFC787.wem	73300830.wem	\Interactive Music Hierarchy\Default Work Unit\NightClubBoss\Introduction\ncboss_drums_180bpm_4-4	
 	94506466	ncboss_movline_180bpm_4-4	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\ncboss_movline_180bpm_4-4_9EDFC787.wem	94506466.wem	\Interactive Music Hierarchy\Default Work Unit\NightClubBoss\Introduction\ncboss_movline_180bpm_4-4	
+	101220921	bossbattle3_180bpm_4-4	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\bossbattle3_180bpm_4-4_9EDFC787.wem	101220921.wem	\Interactive Music Hierarchy\Default Work Unit\GunDealerBoss\bossbattle3_180bpm_4-4\bossbattle3_180bpm_4-4	
 	144436723	ncboss_bass_180bpm_4-4	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\ncboss_bass_180bpm_4-4_9EDFC787.wem	144436723.wem	\Interactive Music Hierarchy\Default Work Unit\NightClubBoss\Introduction\ncboss_bass_180bpm_4-4	
 	739883283	ncboss_chords_180bpm_4-4	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\ncboss_chords_180bpm_4-4_9EDFC787.wem	739883283.wem	\Interactive Music Hierarchy\Default Work Unit\NightClubBoss\Introduction\ncboss_chords_180bpm_4-4	
-	931186661	Wheatley	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\Wheatley_9EDFC787.wem	931186661.wem	\Interactive Music Hierarchy\Default Work Unit\TestMusic\Wheatley\Wheatley	
+	762350907	bossbattle2_180bpm_4-4	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\bossbattle2_180bpm_4-4_9EDFC787.wem	762350907.wem	\Interactive Music Hierarchy\Default Work Unit\MagicianBoss\bossbattle2_180bpm_4-4\bossbattle2_180bpm_4-4	
+	931186661	Wheatley	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\Wheatley_9EDFC787.wem	931186661.wem	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Wheatley\Wheatley	
 	1016578576	ncboss_lead_180bpm_4-4	D:\Wwise\BountyHunter_WwiseProject\.cache\Mac\SFX\ncboss_lead_180bpm_4-4_9EDFC787.wem	1016578576.wem	\Interactive Music Hierarchy\Default Work Unit\NightClubBoss\Introduction\ncboss_lead_180bpm_4-4	
 

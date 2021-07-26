@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e92b82a4179afa4a8e39f39e352e80a, type: 3}
-  m_Name: 4B145A36-8911-4BC1-8BBE-FC36B0027379
+  m_Name: E172D02F-9A0D-49B1-ABB1-46EA910C6D88
   m_EditorClassIdentifier: 
-  objectName: Stop_MainMusic
-  id: 665673276
-  guid: 4B145A36-8911-4BC1-8BBE-FC36B0027379
+  objectName: Stop_MagicianBoss
+  id: 2887379872
+  guid: E172D02F-9A0D-49B1-ABB1-46EA910C6D88

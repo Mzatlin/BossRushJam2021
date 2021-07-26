@@ -7,6 +7,24 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] GameObject player;
     [SerializeField] Image background;
+    [SerializeField] AK.Wwise.Event[] PlayOnStart;
+    [SerializeField] AK.Wwise.Event[] StopOnDestroy;
+
+    private void Start()
+    {
+        for (int i = 0; i < PlayOnStart.Length; i++)
+        {
+            if(PlayOnStart[i] != null) { PlayOnStart[i].Post(player); }
+        }
+    }
+
+    private void OnDestroy()
+    {
+        for (int i = 0; i < StopOnDestroy.Length; i++)
+        {
+            if (StopOnDestroy[i] != null) { StopOnDestroy[i].Post(player); }
+        }
+    }
 
     public void PlayAudioByEvent(AK.Wwise.Event eventName, GameObject location)
     {
@@ -34,9 +52,12 @@ public class AudioManager : MonoBehaviour
 
     private void BackgroundColorChanger(object in_cookie, AkCallbackType in_type, object in_info)
     {
-        background.color = Random.ColorHSV();
-        var imageAlpha = background.color;
-        imageAlpha.a = 0.3f;
-        background.color = imageAlpha;
+        if(background)
+        {
+            background.color = Random.ColorHSV();
+            var imageAlpha = background.color;
+            imageAlpha.a = 0.3f;
+            background.color = imageAlpha;
+        }
     }
 }
