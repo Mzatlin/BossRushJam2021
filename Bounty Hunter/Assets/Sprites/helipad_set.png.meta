@@ -1,0 +1,4992 @@
+fileFormatVersion: 2
+guid: 2273c3a4b2adc9c4782ada4cd0653e09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6667166966658846654
+    second: helipad_set_0
+  - first:
+      213: 2068810307239309762
+    second: helipad_set_1
+  - first:
+      213: 1549479719489696625
+    second: helipad_set_2
+  - first:
+      213: 2901901867752583985
+    second: helipad_set_3
+  - first:
+      213: -4484550187039575020
+    second: helipad_set_4
+  - first:
+      213: -1612450113774017981
+    second: helipad_set_5
+  - first:
+      213: 6387323261253701554
+    second: helipad_set_6
+  - first:
+      213: 4833131519984815323
+    second: helipad_set_7
+  - first:
+      213: 2445093428067565484
+    second: helipad_set_8
+  - first:
+      213: -8082393887731845744
+    second: helipad_set_9
+  - first:
+      213: 2474182698219390613
+    second: helipad_set_10
+  - first:
+      213: -1780900976742649532
+    second: helipad_set_11
+  - first:
+      213: 1634072260068968560
+    second: helipad_set_12
+  - first:
+      213: -1084025489542951358
+    second: helipad_set_13
+  - first:
+      213: 8585966413315454029
+    second: helipad_set_14
+  - first:
+      213: -4369231215170675913
+    second: helipad_set_15
+  - first:
+      213: 5339764151469909195
+    second: helipad_set_16
+  - first:
+      213: 3319976902466684563
+    second: helipad_set_17
+  - first:
+      213: 7051139399807599167
+    second: helipad_set_18
+  - first:
+      213: -7474021107474145669
+    second: helipad_set_19
+  - first:
+      213: 2057046711830329171
+    second: helipad_set_20
+  - first:
+      213: 6575518579181099620
+    second: helipad_set_21
+  - first:
+      213: 3673972851435572200
+    second: helipad_set_22
+  - first:
+      213: 892430741922520660
+    second: helipad_set_23
+  - first:
+      213: -4000702610093228896
+    second: helipad_set_24
+  - first:
+      213: -2700671618812256328
+    second: helipad_set_25
+  - first:
+      213: -7488072893736315645
+    second: helipad_set_26
+  - first:
+      213: 7882858767866179032
+    second: helipad_set_27
+  - first:
+      213: 650290401070310405
+    second: helipad_set_28
+  - first:
+      213: 1370057704645571468
+    second: helipad_set_29
+  - first:
+      213: -1855575695135633747
+    second: helipad_set_30
+  - first:
+      213: 2775524889601354310
+    second: helipad_set_31
+  - first:
+      213: -9217059628031628636
+    second: helipad_set_32
+  - first:
+      213: -2887965225211046340
+    second: helipad_set_33
+  - first:
+      213: 2324056320651250405
+    second: helipad_set_34
+  - first:
+      213: 8401927843749626249
+    second: helipad_set_35
+  - first:
+      213: 1666637602508561270
+    second: helipad_set_36
+  - first:
+      213: 4610684631159352035
+    second: helipad_set_37
+  - first:
+      213: 2299414303892621954
+    second: helipad_set_38
+  - first:
+      213: 1157092246623195287
+    second: helipad_set_39
+  - first:
+      213: 1068584481469905917
+    second: helipad_set_40
+  - first:
+      213: -3820000074260703384
+    second: helipad_set_41
+  - first:
+      213: 4249330801466213927
+    second: helipad_set_42
+  - first:
+      213: 1988236710490972529
+    second: helipad_set_43
+  - first:
+      213: 5572721674063892192
+    second: helipad_set_44
+  - first:
+      213: 3327876377928662590
+    second: helipad_set_45
+  - first:
+      213: -1076044513299053970
+    second: helipad_set_46
+  - first:
+      213: -4885938760887928126
+    second: helipad_set_47
+  - first:
+      213: 7167061729328937009
+    second: helipad_set_48
+  - first:
+      213: -6039333412839558800
+    second: helipad_set_49
+  - first:
+      213: -2684562404760876352
+    second: helipad_set_50
+  - first:
+      213: -8272820433016119067
+    second: helipad_set_51
+  - first:
+      213: -8396148858647388443
+    second: helipad_set_52
+  - first:
+      213: 3994557741694795220
+    second: helipad_set_53
+  - first:
+      213: 68927457903671093
+    second: helipad_set_54
+  - first:
+      213: -7003329686004752839
+    second: helipad_set_55
+  - first:
+      213: -5518427261052292844
+    second: helipad_set_56
+  - first:
+      213: -91313361039416031
+    second: helipad_set_57
+  - first:
+      213: -7864684704228560074
+    second: helipad_set_58
+  - first:
+      213: 7960521778859096486
+    second: helipad_set_59
+  - first:
+      213: -6766121504413179101
+    second: helipad_set_60
+  - first:
+      213: -1588986453300774590
+    second: helipad_set_61
+  - first:
+      213: -2847911076510870162
+    second: helipad_set_62
+  - first:
+      213: -8397644647187953376
+    second: helipad_set_63
+  - first:
+      213: -2582720900753947653
+    second: helipad_set_64
+  - first:
+      213: 3348606423878730729
+    second: helipad_set_65
+  - first:
+      213: -7976203042554289350
+    second: helipad_set_66
+  - first:
+      213: 6281119860816149294
+    second: helipad_set_67
+  - first:
+      213: -6693707730015803399
+    second: helipad_set_68
+  - first:
+      213: 4765698685668975634
+    second: helipad_set_69
+  - first:
+      213: -6182205135854059253
+    second: helipad_set_70
+  - first:
+      213: -2957599927276811314
+    second: helipad_set_71
+  - first:
+      213: 3277973548774607003
+    second: helipad_set_72
+  - first:
+      213: 8488256607443980853
+    second: helipad_set_73
+  - first:
+      213: 4180138359480739175
+    second: helipad_set_74
+  - first:
+      213: 6303195002665418023
+    second: helipad_set_75
+  - first:
+      213: 3228556713310647641
+    second: helipad_set_76
+  - first:
+      213: -6103863382894238653
+    second: helipad_set_77
+  - first:
+      213: -4273624790663871661
+    second: helipad_set_78
+  - first:
+      213: 1739798824934244025
+    second: helipad_set_79
+  - first:
+      213: -1350838556137277201
+    second: helipad_set_80
+  - first:
+      213: 89755454385155460
+    second: helipad_set_81
+  - first:
+      213: -8283773321335795233
+    second: helipad_set_82
+  - first:
+      213: -7969304659932924800
+    second: helipad_set_83
+  - first:
+      213: 4950073950226048120
+    second: helipad_set_84
+  - first:
+      213: 5944611135509846136
+    second: helipad_set_85
+  - first:
+      213: -3460129316170097549
+    second: helipad_set_86
+  - first:
+      213: -8173235986579497498
+    second: helipad_set_87
+  - first:
+      213: -3272520565908327757
+    second: helipad_set_88
+  - first:
+      213: 2232573191364989250
+    second: helipad_set_89
+  - first:
+      213: -6697050717894533533
+    second: helipad_set_90
+  - first:
+      213: 3058163220906637791
+    second: helipad_set_91
+  - first:
+      213: 3517244923930133517
+    second: helipad_set_92
+  - first:
+      213: -8274787393666212663
+    second: helipad_set_93
+  - first:
+      213: 4822435344078214328
+    second: helipad_set_94
+  - first:
+      213: -2073763046113438019
+    second: helipad_set_95
+  - first:
+      213: 655138235937930997
+    second: helipad_set_96
+  - first:
+      213: -7772894145804083725
+    second: helipad_set_97
+  - first:
+      213: 2916026920667064374
+    second: helipad_set_98
+  - first:
+      213: -5173113021869470663
+    second: helipad_set_99
+  - first:
+      213: -2786905697594871545
+    second: helipad_set_100
+  - first:
+      213: 399080830034409348
+    second: helipad_set_101
+  - first:
+      213: -7708944058088484888
+    second: helipad_set_102
+  - first:
+      213: 4571950602306976050
+    second: helipad_set_103
+  - first:
+      213: 2537169377322692302
+    second: helipad_set_104
+  - first:
+      213: 7883393663193574764
+    second: helipad_set_105
+  - first:
+      213: 6047153531358215886
+    second: helipad_set_106
+  - first:
+      213: 3495694551880613184
+    second: helipad_set_107
+  - first:
+      213: -3762021380700166096
+    second: helipad_set_108
+  - first:
+      213: 3888776927188828681
+    second: helipad_set_109
+  - first:
+      213: -7685856538650549038
+    second: helipad_set_110
+  - first:
+      213: 4119907260803393861
+    second: helipad_set_111
+  - first:
+      213: 6993813060213576631
+    second: helipad_set_112
+  - first:
+      213: 4613507131259453422
+    second: helipad_set_113
+  - first:
+      213: 3043574910975415932
+    second: helipad_set_114
+  - first:
+      213: 6763848769221937793
+    second: helipad_set_115
+  - first:
+      213: 2173086361258524136
+    second: helipad_set_116
+  - first:
+      213: 6194537882479186155
+    second: helipad_set_117
+  - first:
+      213: 6401715168277776346
+    second: helipad_set_118
+  - first:
+      213: -8598568409617204193
+    second: helipad_set_119
+  - first:
+      213: 6544448735893483890
+    second: helipad_set_120
+  - first:
+      213: -4707325408281379302
+    second: helipad_set_121
+  - first:
+      213: 7590646120822510422
+    second: helipad_set_122
+  - first:
+      213: 1777191766621264404
+    second: helipad_set_123
+  - first:
+      213: 4029204664182252055
+    second: helipad_set_124
+  - first:
+      213: -7825609905753895725
+    second: helipad_set_125
+  - first:
+      213: 7183726336526254249
+    second: helipad_set_126
+  - first:
+      213: -8490263049104070966
+    second: helipad_set_127
+  - first:
+      213: -491144393251506519
+    second: helipad_set_128
+  - first:
+      213: 1661398728519169246
+    second: helipad_set_129
+  - first:
+      213: -34735195287697555
+    second: helipad_set_130
+  - first:
+      213: 8419589815449975605
+    second: helipad_set_131
+  - first:
+      213: 2314104217232490640
+    second: helipad_set_132
+  - first:
+      213: -1294168432785794129
+    second: helipad_set_133
+  - first:
+      213: 7460500339339162571
+    second: helipad_set_134
+  - first:
+      213: -1942722047007929970
+    second: helipad_set_135
+  - first:
+      213: 7933057995779196438
+    second: helipad_set_136
+  - first:
+      213: 1202358255540718995
+    second: helipad_set_137
+  - first:
+      213: -6252957072234395506
+    second: helipad_set_138
+  - first:
+      213: -66673791470971512
+    second: helipad_set_139
+  - first:
+      213: 7387810060983328057
+    second: helipad_set_140
+  - first:
+      213: 5481044580936776537
+    second: helipad_set_141
+  - first:
+      213: 1192361817084553279
+    second: helipad_set_142
+  - first:
+      213: 8178531471317822291
+    second: helipad_set_143
+  - first:
+      213: -3583504118277134653
+    second: helipad_set_144
+  - first:
+      213: -141310147163796248
+    second: helipad_set_145
+  - first:
+      213: -8795011004501833314
+    second: helipad_set_146
+  - first:
+      213: -3263347973409717599
+    second: helipad_set_147
+  - first:
+      213: 8534960550542130330
+    second: helipad_set_148
+  - first:
+      213: -3698101631714412176
+    second: helipad_set_149
+  - first:
+      213: 427977471556142838
+    second: helipad_set_150
+  - first:
+      213: -1968909396804449751
+    second: helipad_set_151
+  - first:
+      213: 2573833373509900652
+    second: helipad_set_152
+  - first:
+      213: -222260446635510549
+    second: helipad_set_153
+  - first:
+      213: 2391847116251865262
+    second: helipad_set_154
+  - first:
+      213: -2078716662430643503
+    second: helipad_set_155
+  - first:
+      213: 7841112716017253957
+    second: helipad_set_156
+  - first:
+      213: -3059997924030475267
+    second: helipad_set_157
+  - first:
+      213: -2842464975181883358
+    second: helipad_set_158
+  - first:
+      213: -3268310885133854334
+    second: helipad_set_159
+  - first:
+      213: -3731046338190672392
+    second: helipad_set_160
+  - first:
+      213: -7685157536778835930
+    second: helipad_set_161
+  - first:
+      213: -6768100832721693247
+    second: helipad_set_162
+  - first:
+      213: 4046647945251536233
+    second: helipad_set_163
+  - first:
+      213: -5530684743907513244
+    second: helipad_set_164
+  - first:
+      213: -8845524678562719467
+    second: helipad_set_165
+  - first:
+      213: 6919416104002596665
+    second: helipad_set_166
+  - first:
+      213: -2061779213688081859
+    second: helipad_set_167
+  - first:
+      213: -8160790233796207825
+    second: helipad_set_168
+  - first:
+      213: 8782321387665175553
+    second: helipad_set_169
+  - first:
+      213: 2540541668878747611
+    second: helipad_set_170
+  - first:
+      213: 1523021816610923118
+    second: helipad_set_171
+  - first:
+      213: -8468745990392366032
+    second: helipad_set_172
+  - first:
+      213: 5224171760293228185
+    second: helipad_set_173
+  - first:
+      213: -2251860006764390888
+    second: helipad_set_174
+  - first:
+      213: 2254504798419646275
+    second: helipad_set_175
+  - first:
+      213: -4837255704027279403
+    second: helipad_set_176
+  - first:
+      213: 302141292001167732
+    second: helipad_set_177
+  - first:
+      213: -693053392411489796
+    second: helipad_set_178
+  - first:
+      213: -2936608383109219610
+    second: helipad_set_179
+  - first:
+      213: -1906730600239010469
+    second: helipad_set_180
+  - first:
+      213: -897502161384566267
+    second: helipad_set_181
+  - first:
+      213: 6551149455374755148
+    second: helipad_set_182
+  - first:
+      213: 2714439532477454736
+    second: helipad_set_183
+  - first:
+      213: -2665539048006739798
+    second: helipad_set_184
+  - first:
+      213: 3095361708284234512
+    second: helipad_set_185
+  - first:
+      213: 7881832803379300592
+    second: helipad_set_186
+  - first:
+      213: -5476439559129567353
+    second: helipad_set_187
+  - first:
+      213: -491878883603154041
+    second: helipad_set_188
+  - first:
+      213: -4684703428135392509
+    second: helipad_set_189
+  - first:
+      213: -4173275810456671325
+    second: helipad_set_190
+  - first:
+      213: 8667429543550348797
+    second: helipad_set_191
+  - first:
+      213: -1979041959652152142
+    second: helipad_set_192
+  - first:
+      213: -1777034877207035519
+    second: helipad_set_193
+  - first:
+      213: 4686174005455795592
+    second: helipad_set_194
+  - first:
+      213: -5399134531840867434
+    second: helipad_set_195
+  - first:
+      213: -2641604095266794757
+    second: helipad_set_196
+  - first:
+      213: 2104064875417782603
+    second: helipad_set_197
+  - first:
+      213: -7301321897744699794
+    second: helipad_set_198
+  - first:
+      213: -1365258357052227998
+    second: helipad_set_199
+  - first:
+      213: -3436497716509775093
+    second: helipad_set_200
+  - first:
+      213: 2411575864591496814
+    second: helipad_set_201
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: helipad_set_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 561
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240b41ec7f67973a0800000000000000
+      internalID: -6667166966658846654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 561
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c17aae6304e5bc10800000000000000
+      internalID: 2068810307239309762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 561
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173fada689bd08510800000000000000
+      internalID: 1549479719489696625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 561
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1337f60bf50a54820800000000000000
+      internalID: 2901901867752583985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_4
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 561
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41438147d5da3c1c0800000000000000
+      internalID: -4484550187039575020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 561
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34226762a2d6f99e0800000000000000
+      internalID: -1612450113774017981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_6
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 561
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfcd942aa454a850800000000000000
+      internalID: 6387323261253701554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_7
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 561
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc4079a28bb21340800000000000000
+      internalID: 4833131519984815323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_8
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 561
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caffb96a487bee120800000000000000
+      internalID: 2445093428067565484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_9
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 561
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09574fad49195df80800000000000000
+      internalID: -8082393887731845744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_10
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 561
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596c8c42e00165220800000000000000
+      internalID: 2474182698219390613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_11
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 561
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441bb1d4ff7f847e0800000000000000
+      internalID: -1780900976742649532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_12
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 561
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0780bb610146da610800000000000000
+      internalID: 1634072260068968560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_13
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 561
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ec2588f84c4f0f0800000000000000
+      internalID: -1084025489542951358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_14
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 561
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d443a1766fa772770800000000000000
+      internalID: 8585966413315454029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b1436eb5f5d53c0800000000000000
+      internalID: -4369231215170675913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_16
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4aab85437aa1a40800000000000000
+      internalID: 5339764151469909195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_17
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396470e176de21e20800000000000000
+      internalID: 3319976902466684563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_18
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f320b43fcedaad160800000000000000
+      internalID: 7051139399807599167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_19
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e5b3dd661f64890800000000000000
+      internalID: -7474021107474145669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_20
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3573801f5191c8c10800000000000000
+      internalID: 2057046711830329171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_21
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a12162f4fe04b50800000000000000
+      internalID: 6575518579181099620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_22
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb0f34c7d29cf230800000000000000
+      internalID: 3673972851435572200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_23
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e1eee080d826c00800000000000000
+      internalID: 892430741922520660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_24
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac3a693c26aa78c0800000000000000
+      internalID: -4000702610093228896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_25
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf57b1b879458ad0800000000000000
+      internalID: -2700671618812256328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_26
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3059d9c6065051890800000000000000
+      internalID: -7488072893736315645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_27
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddac31c84a856d60800000000000000
+      internalID: 7882858767866179032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_28
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50464a4acab460900800000000000000
+      internalID: 650290401070310405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_29
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83bf27393c630310800000000000000
+      internalID: 1370057704645571468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_30
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 511
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae879d8cbbaf36e0800000000000000
+      internalID: -1855575695135633747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_31
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 511
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64aa1f58e25a48620800000000000000
+      internalID: 2775524889601354310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aaa4953a1d661080800000000000000
+      internalID: -9217059628031628636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_33
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c365d93cde2ebe7d0800000000000000
+      internalID: -2887965225211046340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_34
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea4b6609e4b04020800000000000000
+      internalID: 2324056320651250405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_35
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981092bcbd4a99470800000000000000
+      internalID: 8401927843749626249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_36
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bd4dab116112710800000000000000
+      internalID: 1666637602508561270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_37
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea2b9b5e317cff30800000000000000
+      internalID: 4610684631159352035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_38
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ac8f6602929ef10800000000000000
+      internalID: 2299414303892621954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_39
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790955c8441de0010800000000000000
+      internalID: 1157092246623195287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_40
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb328e9cef54de00800000000000000
+      internalID: 1068584481469905917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_41
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86799b3fb22acfac0800000000000000
+      internalID: -3820000074260703384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_42
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726058a99d7a8fa30800000000000000
+      internalID: 4249330801466213927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_43
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171a43a01c2a79b10800000000000000
+      internalID: 1988236710490972529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_44
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eec2b646d8465d40800000000000000
+      internalID: 5572721674063892192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_45
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ef9d21fedfe2e20800000000000000
+      internalID: 3327876377928662590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_46
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e624d4e573f1111f0800000000000000
+      internalID: -1076044513299053970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_47
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca76f27598a13cb0800000000000000
+      internalID: -4885938760887928126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_48
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 461
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138b2fb8ba4867360800000000000000
+      internalID: 7167061729328937009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071fc8f324aff2ca0800000000000000
+      internalID: -6039333412839558800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_50
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca0cde57b48ebad0800000000000000
+      internalID: -2684562404760876352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_51
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e02b7fb5a9013d80800000000000000
+      internalID: -8272820433016119067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_52
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee55070913ea7b80800000000000000
+      internalID: -8396148858647388443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_53
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd318c1a158f6730800000000000000
+      internalID: 3994557741694795220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_54
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5377e936821e4f000800000000000000
+      internalID: 68927457903671093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_55
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e1dbc71cc2fce90800000000000000
+      internalID: -7003329686004752839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_56
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411752ad4ab9a63b0800000000000000
+      internalID: -5518427261052292844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_57
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125afff5bf69bbef0800000000000000
+      internalID: -91313361039416031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_58
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633320e2ee60bd290800000000000000
+      internalID: -7864684704228560074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_59
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a938a79164797e60800000000000000
+      internalID: 7960521778859096486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_60
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32322561758e912a0800000000000000
+      internalID: -6766121504413179101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_61
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24979125d39c2f9e0800000000000000
+      internalID: -1588986453300774590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_62
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e655bacf6ff2a78d0800000000000000
+      internalID: -2847911076510870162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_63
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029c66e9fa2957b80800000000000000
+      internalID: -8397644647187953376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_64
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3859c4605582cd0800000000000000
+      internalID: -2582720900753947653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_65
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 410
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e302e30dc3a87e20800000000000000
+      internalID: 3348606423878730729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a336920b795de4190800000000000000
+      internalID: -7976203042554289350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_67
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bf89f0c350b2750800000000000000
+      internalID: 6281119860816149294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_68
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f72f1ac84c2b13a0800000000000000
+      internalID: -6693707730015803399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_69
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21468d174b9232240800000000000000
+      internalID: 4765698685668975634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_70
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01c2d40f25643aa0800000000000000
+      internalID: -6182205135854059253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_71
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbc1f2498e74f6d0800000000000000
+      internalID: -2957599927276811314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_72
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9846dd3393bd7d20800000000000000
+      internalID: 3277973548774607003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_73
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5329f0969685cc570800000000000000
+      internalID: 8488256607443980853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_74
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76565dcc0b5d20a30800000000000000
+      internalID: 4180138359480739175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_75
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72db3eb8572797750800000000000000
+      internalID: 6303195002665418023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_76
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9557512a9332ecc20800000000000000
+      internalID: 3228556713310647641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_77
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3442319c798ba4ba0800000000000000
+      internalID: -6103863382894238653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_78
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3534d2145e801b4c0800000000000000
+      internalID: -4273624790663871661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_79
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bef8dc30d1052810800000000000000
+      internalID: 1739798824934244025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_80
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe839808d7bd04de0800000000000000
+      internalID: -1350838556137277201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_81
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 358
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48de7473c10ee3100800000000000000
+      internalID: 89755454385155460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_82
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 358
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd11ce5bd002a0d80800000000000000
+      internalID: -8283773321335795233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08435dd82a7576190800000000000000
+      internalID: -7969304659932924800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_84
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8746327f70232b440800000000000000
+      internalID: 4950073950226048120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_85
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87855e3f4508f7250800000000000000
+      internalID: 5944611135509846136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_86
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c14c038b62bffc0800000000000000
+      internalID: -3460129316170097549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_87
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed5d728c25d29e80800000000000000
+      internalID: -8173235986579497498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_88
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2bfd442eba592d0800000000000000
+      internalID: -3272520565908327757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_89
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241de562d71bbfe10800000000000000
+      internalID: 2232573191364989250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_90
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e1f15cadb4f03a0800000000000000
+      internalID: -6697050717894533533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_91
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9fd4f1f37c07a20800000000000000
+      internalID: 3058163220906637791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_92
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04c6e68f93cfc030800000000000000
+      internalID: 3517244923930133517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_93
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc15a805bc0a2d80800000000000000
+      internalID: -8274787393666212663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_94
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b41214256bbce240800000000000000
+      internalID: 4822435344078214328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_95
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db693103f738833e0800000000000000
+      internalID: -2073763046113438019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_96
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe3bd721c4871900800000000000000
+      internalID: 655138235937930997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_97
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd52aaf4f1212490800000000000000
+      internalID: -7772894145804083725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_98
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 307
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63826d9d80fc77820800000000000000
+      internalID: 2916026920667064374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_99
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 307
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cc58c6d196538b0800000000000000
+      internalID: -5173113021869470663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7017850a80ce259d0800000000000000
+      internalID: -2786905697594871545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_101
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4877ed686e1d98500800000000000000
+      internalID: 399080830034409348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_102
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 256
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef07401934540590800000000000000
+      internalID: -7708944058088484888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_103
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 256
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239f32d79d4d27f30800000000000000
+      internalID: 4571950602306976050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_104
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece615e2b16d53320800000000000000
+      internalID: 2537169377322692302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_105
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6de737c4c0776d60800000000000000
+      internalID: 7883393663193574764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_106
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecefadaf81ecbe350800000000000000
+      internalID: 6047153531358215886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_107
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dbc188ca3338030800000000000000
+      internalID: 3495694551880613184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_108
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03821fd7c7d9acbc0800000000000000
+      internalID: -3762021380700166096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_109
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90243dbf206b7f530800000000000000
+      internalID: 3888776927188828681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_110
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4ee13133a565590800000000000000
+      internalID: -7685856538650549038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_111
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5492db353d9dc2930800000000000000
+      internalID: 4119907260803393861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_112
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b394876ce30f0160800000000000000
+      internalID: 6993813060213576631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_113
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef737fda48760040800000000000000
+      internalID: 4613507131259453422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_114
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 255
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c761bf78143fc3a20800000000000000
+      internalID: 3043574910975415932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_115
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 255
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18acfe38e940edd50800000000000000
+      internalID: 6763848769221937793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_116
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 255
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed7f05388a582e10800000000000000
+      internalID: 2173086361258524136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be05fd0526b67f550800000000000000
+      internalID: 6194537882479186155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_118
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad74d6e170677d850800000000000000
+      internalID: 6401715168277776346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_119
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cfedfa69fbba880800000000000000
+      internalID: -8598568409617204193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_120
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2717fa9837d82da50800000000000000
+      internalID: 6544448735893483890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_121
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1eb73d4b783caeb0800000000000000
+      internalID: -4707325408281379302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_122
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653925f0e64675960800000000000000
+      internalID: 7590646120822510422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_123
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a953bee7ad9a810800000000000000
+      internalID: 1777191766621264404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_124
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7122eef5b4c9ae730800000000000000
+      internalID: 4029204664182252055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_125
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcc2c8a049d56390800000000000000
+      internalID: -7825609905753895725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_126
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a00444ca09b1b360800000000000000
+      internalID: 7183726336526254249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_127
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6e68c7db68c2a80800000000000000
+      internalID: -8490263049104070966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_128
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6b1dac6ca1f29f0800000000000000
+      internalID: -491144393251506519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_129
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4bba357597e0710800000000000000
+      internalID: 1661398728519169246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_130
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d674caf1688948ff0800000000000000
+      internalID: -34735195287697555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_131
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b7468045468d470800000000000000
+      internalID: 8419589815449975605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_132
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 205
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090406166895d1020800000000000000
+      internalID: 2314104217232490640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_133
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 205
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab574ccaa03a0ee0800000000000000
+      internalID: -1294168432785794129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_134
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 154
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3fdfcf785098760800000000000000
+      internalID: 7460500339339162571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_135
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 154
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89c5ca57901a05e0800000000000000
+      internalID: -1942722047007929970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_136
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 154
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616cdfc4732e71e60800000000000000
+      internalID: 7933057995779196438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_137
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 154
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d434a8672afa010800000000000000
+      internalID: 1202358255540718995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_138
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 154
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88c3b12ca80939a0800000000000000
+      internalID: -6252957072234395506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_139
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 154
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8855b873a80231ff0800000000000000
+      internalID: -66673791470971512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_140
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 154
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93dd7f0bb16c68660800000000000000
+      internalID: 7387810060983328057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_141
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 154
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bf0dca105901c40800000000000000
+      internalID: 5481044580936776537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_142
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 154
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38601751ce1c8010800000000000000
+      internalID: 1192361817084553279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_143
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 155
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b604c9a0bff7170800000000000000
+      internalID: 8178531471317822291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_144
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 155
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c621fa9df5d44ec0800000000000000
+      internalID: -3583504118277134653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_145
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 155
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecc42b7b27f90ef0800000000000000
+      internalID: -141310147163796248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_146
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 155
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e994401e618d1f580800000000000000
+      internalID: -8795011004501833314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_147
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 155
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a24c62ee4246b2d0800000000000000
+      internalID: -3263347973409717599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_148
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 155
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c390b8665427670800000000000000
+      internalID: 8534960550542130330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_149
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 155
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079be5ac824bdacc0800000000000000
+      internalID: -3698101631714412176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_150
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 155
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f649fb2e3b70f500800000000000000
+      internalID: 427977471556142838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_151
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92aca88d5570da4e0800000000000000
+      internalID: -1968909396804449751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_152
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c695a1301d718b320800000000000000
+      internalID: 2573833373509900652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_153
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4bba62d4f5aecf0800000000000000
+      internalID: -222260446635510549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_154
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea02c39974c813120800000000000000
+      internalID: 2391847116251865262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_155
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dac223853ae623e0800000000000000
+      internalID: -2078716662430643503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_156
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54eb102a87a31dc60800000000000000
+      internalID: 7841112716017253957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_157
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df31bb4c914b885d0800000000000000
+      internalID: -3059997924030475267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_158
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2285bc34a298d88d0800000000000000
+      internalID: -2842464975181883358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_159
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289dd04f090a4a2d0800000000000000
+      internalID: -3268310885133854334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_160
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd7f939f19a83cc0800000000000000
+      internalID: -3731046338190672392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_161
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628a16120f5d85590800000000000000
+      internalID: -7685157536778835930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_162
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5199dc620e212a0800000000000000
+      internalID: -6768100832721693247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_163
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d38cbbdd4982830800000000000000
+      internalID: 4046647945251536233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_164
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c68ba378f0f33b0800000000000000
+      internalID: -5530684743907513244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_165
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5195152ab226e3580800000000000000
+      internalID: -8845524678562719467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_166
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 103
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f21343944b60060800000000000000
+      internalID: 6919416104002596665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_167
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 102
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3276da9ab61363e0800000000000000
+      internalID: -2061779213688081859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b9914258c0fbe80800000000000000
+      internalID: -8160790233796207825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_169
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104391775c211e970800000000000000
+      internalID: 8782321387665175553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_170
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7889eff21d14320800000000000000
+      internalID: 2540541668878747611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_171
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62a34cd54cd22510800000000000000
+      internalID: 1523021816610923118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_172
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c36ad1468f87a80800000000000000
+      internalID: -8468745990392366032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_173
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ea7e1898cff7840800000000000000
+      internalID: 5224171760293228185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_174
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81656e43149cfb0e0800000000000000
+      internalID: -2251860006764390888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_175
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34777365b2c994f10800000000000000
+      internalID: 2254504798419646275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_176
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfc8b9e09d9edcb0800000000000000
+      internalID: -4837255704027279403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_177
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47905bd77eb613400800000000000000
+      internalID: 302141292001167732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_178
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf90fee8c97c166f0800000000000000
+      internalID: -693053392411489796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_179
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea37500c321f37d0800000000000000
+      internalID: -2936608383109219610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_180
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5de2621f9ee985e0800000000000000
+      internalID: -1906730600239010469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_181
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50217851a8e6b83f0800000000000000
+      internalID: -897502161384566267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_182
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c452b1e58bb5aea50800000000000000
+      internalID: 6551149455374755148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_183
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 51
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09998918f50aba520800000000000000
+      internalID: 2714439532477454736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_184
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 51
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa810a4cb5a120bd0800000000000000
+      internalID: -2665539048006739798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_185
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bc0a1e21fe4fa20800000000000000
+      internalID: 3095361708284234512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_186
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8c178cc25e16d60800000000000000
+      internalID: 7881832803379300592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_187
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f6f248c37cff3b0800000000000000
+      internalID: -5476439559129567353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_188
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b715ee2ce7c29f0800000000000000
+      internalID: -491878883603154041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_189
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b6fef7d079cfeb0800000000000000
+      internalID: -4684703428135392509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_190
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abeff7e2cb8516c0800000000000000
+      internalID: -4173275810456671325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_191
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd6b037f35e84870800000000000000
+      internalID: 8667429543550348797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_192
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc2757b2d70984e0800000000000000
+      internalID: -1979041959652152142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_193
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181489eb134b657e0800000000000000
+      internalID: -1777034877207035519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_194
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885bcd6fd62a80140800000000000000
+      internalID: 4686174005455795592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_195
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6938417cfbb6215b0800000000000000
+      internalID: -5399134531840867434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_196
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2d7683213275bd0800000000000000
+      internalID: -2641604095266794757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_197
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4947ab3bd3233d10800000000000000
+      internalID: 2104064875417782603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_198
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e65260b6e7caa90800000000000000
+      internalID: -7301321897744699794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_199
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26eb449f1c0ad0de0800000000000000
+      internalID: -1365258357052227998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_200
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b6effb88b1f40d0800000000000000
+      internalID: -3436497716509775093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: helipad_set_201
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 0
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66b1e5c873a77120800000000000000
+      internalID: 2411575864591496814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
