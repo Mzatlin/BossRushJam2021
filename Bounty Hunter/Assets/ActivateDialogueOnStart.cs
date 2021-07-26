@@ -6,7 +6,6 @@ using System;
 
 public class ActivateDialogueOnStart : MonoBehaviour, IDialogueActivate
 {
-   
     public event Action OnDialogueStart = delegate { };
 
     // Start is called before the first frame update
