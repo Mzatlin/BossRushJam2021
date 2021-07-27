@@ -1719,13 +1719,13 @@ MonoBehaviour:
   boardLevelButton: {fileID: 81174422}
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
   boardEntries:
-  - bossImage: {fileID: 21300000, guid: 1ffac247558514041a81b925f9b3db84, type: 3}
+  - bossImage: {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
     bossName: The Weapons Dealer
     sceneName: SampleScene
-  - bossImage: {fileID: -3547809371990315218, guid: 018323f30aa179f409d331eca6bcaed4, type: 3}
+  - bossImage: {fileID: 21300000, guid: 7a136d868294e02498bf41b789e4ca70, type: 3}
     bossName: The DJ
     sceneName: Boss2Room
-  - bossImage: {fileID: 21300000, guid: a5018cf495db8224b93aa39f615bb3b1, type: 3}
+  - bossImage: {fileID: 21300000, guid: 16be187bbbd07934cb3b4e868f5611df, type: 3}
     bossName: The Magician
     sceneName: Boss3Room
 --- !u!4 &864362956
@@ -4695,7 +4695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1ffac247558514041a81b925f9b3db84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
