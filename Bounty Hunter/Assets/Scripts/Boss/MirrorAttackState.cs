@@ -139,6 +139,7 @@ public class MirrorAttackState : BossStateBase
             yield return new WaitForSeconds(.2f);
 
         }
+        boss.SetBossTrigger("Idle");
         isShooting = false;
     }
 

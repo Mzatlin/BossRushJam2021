@@ -102,6 +102,7 @@ public class SneakAttackState : BossStateBase
 
             yield return new WaitForSeconds(delay);
         }
+        boss.SetBossTrigger("Idle");
         yield return new WaitForSeconds(.5f);
         isShooting = false;
         isJumping = false;
