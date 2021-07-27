@@ -127,7 +127,6 @@ public class MirrorAttackState : BossStateBase
         int randomNum = UnityEngine.Random.Range(0, boss.cannonPositions.Length);
 
         Vector2 projectileVector = boss.transform.position.x < 0 ? boss.transform.right : -boss.transform.right;
-
         for (int i = 0; i < projectileAmount; i++)
         {
            
@@ -137,9 +136,8 @@ public class MirrorAttackState : BossStateBase
             GameObject tmpObj = boss.CreateBullet(boss.transform.position, Quaternion.identity);
             tmpObj.transform.rotation = boss.SetupBullet(tmpObj, projectileMoveDirection);
             yield return new WaitForSeconds(.2f);
-
         }
-        boss.SetBossTrigger("Idle");
+
         isShooting = false;
     }
 
