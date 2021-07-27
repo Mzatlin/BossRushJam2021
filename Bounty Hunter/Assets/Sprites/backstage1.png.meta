@@ -1,0 +1,2280 @@
+fileFormatVersion: 2
+guid: a4a6e7db92dea684d8c32c1ffdde3ecc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3908867441397886311
+    second: backstage1_0
+  - first:
+      213: 4691540794314136104
+    second: backstage1_1
+  - first:
+      213: 1840582422662117158
+    second: backstage1_2
+  - first:
+      213: -9049132471746758255
+    second: backstage1_3
+  - first:
+      213: 4974665868632161844
+    second: backstage1_4
+  - first:
+      213: 6196734091731201300
+    second: backstage1_5
+  - first:
+      213: -4611650976126370151
+    second: backstage1_6
+  - first:
+      213: 4929702293209156259
+    second: backstage1_7
+  - first:
+      213: 8823480947098741007
+    second: backstage1_8
+  - first:
+      213: -3432613303995926966
+    second: backstage1_9
+  - first:
+      213: 1577318453391628293
+    second: backstage1_10
+  - first:
+      213: -2336024790238969336
+    second: backstage1_11
+  - first:
+      213: -2417769091620357521
+    second: backstage1_12
+  - first:
+      213: -7950934686230549837
+    second: backstage1_13
+  - first:
+      213: 4968647155153118457
+    second: backstage1_14
+  - first:
+      213: -4895790219400573237
+    second: backstage1_15
+  - first:
+      213: 6308554493765017249
+    second: backstage1_16
+  - first:
+      213: 4033614385558827668
+    second: backstage1_17
+  - first:
+      213: 1150203687016751491
+    second: backstage1_18
+  - first:
+      213: 6749237306475552397
+    second: backstage1_19
+  - first:
+      213: -7687460364755696196
+    second: backstage1_20
+  - first:
+      213: -1200628577988067584
+    second: backstage1_21
+  - first:
+      213: 9015362464651252409
+    second: backstage1_22
+  - first:
+      213: -7517116102617030160
+    second: backstage1_23
+  - first:
+      213: 4621171966804058635
+    second: backstage1_24
+  - first:
+      213: -5651917253486176925
+    second: backstage1_25
+  - first:
+      213: 1293903111279962984
+    second: backstage1_26
+  - first:
+      213: 8904391441537010022
+    second: backstage1_27
+  - first:
+      213: -4992561965774271972
+    second: backstage1_28
+  - first:
+      213: 1953461192616642931
+    second: backstage1_29
+  - first:
+      213: -8352382747230661
+    second: backstage1_30
+  - first:
+      213: 5296345123095312112
+    second: backstage1_31
+  - first:
+      213: -5701068371536183426
+    second: backstage1_32
+  - first:
+      213: -2766875625761953130
+    second: backstage1_33
+  - first:
+      213: 1214001543725339198
+    second: backstage1_34
+  - first:
+      213: -4288226202010650703
+    second: backstage1_35
+  - first:
+      213: -3893088669325265064
+    second: backstage1_36
+  - first:
+      213: 826025339142637731
+    second: backstage1_37
+  - first:
+      213: 1247307484314509784
+    second: backstage1_38
+  - first:
+      213: -5999383890962815369
+    second: backstage1_39
+  - first:
+      213: 6357075727017367685
+    second: backstage1_40
+  - first:
+      213: 3364873701094331890
+    second: backstage1_41
+  - first:
+      213: -3943421416298029498
+    second: backstage1_42
+  - first:
+      213: -2920720379636060486
+    second: backstage1_43
+  - first:
+      213: 1898497682549991391
+    second: backstage1_44
+  - first:
+      213: 2587412948835534860
+    second: backstage1_45
+  - first:
+      213: 6191839651742303485
+    second: backstage1_46
+  - first:
+      213: -5395863857660713570
+    second: backstage1_47
+  - first:
+      213: 7179092168917657648
+    second: backstage1_48
+  - first:
+      213: 9187389428516476517
+    second: backstage1_49
+  - first:
+      213: 7667617900470784309
+    second: backstage1_50
+  - first:
+      213: 5181456901007794032
+    second: backstage1_51
+  - first:
+      213: -1886829397222080631
+    second: backstage1_52
+  - first:
+      213: 6060023357785130725
+    second: backstage1_53
+  - first:
+      213: -4116847868498063971
+    second: backstage1_54
+  - first:
+      213: 2376012945347009150
+    second: backstage1_55
+  - first:
+      213: -3731693386101747128
+    second: backstage1_56
+  - first:
+      213: 8309859364654878340
+    second: backstage1_57
+  - first:
+      213: 2721018551354746339
+    second: backstage1_58
+  - first:
+      213: -2846904674202571136
+    second: backstage1_59
+  - first:
+      213: 751145389169742181
+    second: backstage1_60
+  - first:
+      213: -4248115666329141096
+    second: backstage1_61
+  - first:
+      213: 871655443989737855
+    second: backstage1_62
+  - first:
+      213: -340089118647664564
+    second: backstage1_63
+  - first:
+      213: 5767215022815847541
+    second: backstage1_64
+  - first:
+      213: -3648970742718295368
+    second: backstage1_65
+  - first:
+      213: 7389296132426727674
+    second: backstage1_66
+  - first:
+      213: 8302043097038892724
+    second: backstage1_67
+  - first:
+      213: 383089298620279287
+    second: backstage1_68
+  - first:
+      213: 3244149455938201721
+    second: backstage1_69
+  - first:
+      213: -7072835653693664851
+    second: backstage1_70
+  - first:
+      213: -1087302398081675106
+    second: backstage1_71
+  - first:
+      213: 1013021441603647910
+    second: backstage1_72
+  - first:
+      213: -7509934917424727962
+    second: backstage1_73
+  - first:
+      213: 3287307853187770059
+    second: backstage1_74
+  - first:
+      213: -76451609931368991
+    second: backstage1_75
+  - first:
+      213: -7407201775063784751
+    second: backstage1_76
+  - first:
+      213: 4369207833144875992
+    second: backstage1_77
+  - first:
+      213: 7583106225505267183
+    second: backstage1_78
+  - first:
+      213: 1954987023867958927
+    second: backstage1_79
+  - first:
+      213: -3617296723993204554
+    second: backstage1_80
+  - first:
+      213: 2381942047036810074
+    second: backstage1_81
+  - first:
+      213: -69601643338394293
+    second: backstage1_82
+  - first:
+      213: 2177858261176286706
+    second: backstage1_83
+  - first:
+      213: -8975799756060416921
+    second: backstage1_84
+  - first:
+      213: 4119378752359890666
+    second: backstage1_85
+  - first:
+      213: 5501312418475669705
+    second: backstage1_86
+  - first:
+      213: -1068526412668874800
+    second: backstage1_87
+  - first:
+      213: -5943434008285176860
+    second: backstage1_88
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: backstage1_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 538
+        width: 70
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d6c965a361f3630800000000000000
+      internalID: 3908867441397886311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 526
+        width: 70
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a195ede73bb1140800000000000000
+      internalID: 4691540794314136104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 483
+        width: 74
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6277a9a26ff0b8910800000000000000
+      internalID: 1840582422662117158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 503
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199f41816f50b6280800000000000000
+      internalID: -9049132471746758255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_4
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 502
+        width: 94
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e74182040990540800000000000000
+      internalID: 4974665868632161844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_5
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 489
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41de03123d83ff550800000000000000
+      internalID: 6196734091731201300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_6
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 489
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e77ebeedf1000c0800000000000000
+      internalID: -4611650976126370151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 513
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa0923fd12d96440800000000000000
+      internalID: 4929702293209156259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 497
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f096f3e2c2d437a70800000000000000
+      internalID: 8823480947098741007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 477
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46fa040368ec50d0800000000000000
+      internalID: -3432613303995926966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_10
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 454
+        width: 60
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5089310c6c2c3e510800000000000000
+      internalID: 1577318453391628293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 445
+        width: 36
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802cc4f74d5c49fd0800000000000000
+      internalID: -2336024790238969336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_12
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 494
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6abc0132db527ed0800000000000000
+      internalID: -2417769091620357521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 481
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba65ea570b98a190800000000000000
+      internalID: -7950934686230549837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_14
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 469
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f42829334e24f440800000000000000
+      internalID: 4968647155153118457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_15
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 450
+        width: 94
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce0cc50cb8ae0cb0800000000000000
+      internalID: -4895790219400573237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 453
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aede0f43ec7c8750800000000000000
+      internalID: 6308554493765017249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_17
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 487
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492b324a9e64af730800000000000000
+      internalID: 4033614385558827668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_18
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 443
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3816af7c82856ff00800000000000000
+      internalID: 1150203687016751491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_19
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 461
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e1a4d329b1aad50800000000000000
+      internalID: 6749237306475552397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 468
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb587d53787a05590800000000000000
+      internalID: -7687460364755696196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 439
+        width: 13
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fb6d56ba2865fe0800000000000000
+      internalID: -1200628577988067584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_22
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 439
+        width: 13
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b29dea65600d1d70800000000000000
+      internalID: 9015362464651252409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_23
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 439
+        width: 13
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1a4286bb6dda790800000000000000
+      internalID: -7517116102617030160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_24
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 434
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0269577b63b12040800000000000000
+      internalID: 4621171966804058635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_25
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 450
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3651e0ef33b5091b0800000000000000
+      internalID: -5651917253486176925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_26
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 462
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b6d99360ed4f110800000000000000
+      internalID: 1293903111279962984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_27
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 463
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66987dda6d0c29b70800000000000000
+      internalID: 8904391441537010022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_28
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 458
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a06e6085bd6bab0800000000000000
+      internalID: -4992561965774271972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_29
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 459
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3790d64da961c1b10800000000000000
+      internalID: 1953461192616642931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_30
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 433
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3eb2595d8352eff0800000000000000
+      internalID: -8352382747230661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_31
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 447
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6f7f504d5608940800000000000000
+      internalID: 5296345123095312112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_32
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 444
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ffe5a858cb1e0b0800000000000000
+      internalID: -5701068371536183426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_33
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 434
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69aa5c427451a99d0800000000000000
+      internalID: -2766875625761953130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_34
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 329
+        width: 20
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e325682d8fff8d010800000000000000
+      internalID: 1214001543725339198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_35
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 429
+        width: 31
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7f1a04df82d74c0800000000000000
+      internalID: -4288226202010650703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_36
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 331
+        width: 47
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857f4c15b78f8f9c0800000000000000
+      internalID: -3893088669325265064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_37
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 331
+        width: 69
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a881136ba1a67b00800000000000000
+      internalID: 826025339142637731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_38
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 331
+        width: 48
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1a0486c835f4110800000000000000
+      internalID: 1247307484314509784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_39
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 331
+        width: 12
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776e5f32328edbca0800000000000000
+      internalID: -5999383890962815369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_40
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 331
+        width: 48
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588d02741bed83850800000000000000
+      internalID: 6357075727017367685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_41
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 331
+        width: 48
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f518c3adce62be20800000000000000
+      internalID: 3364873701094331890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_42
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 305
+        width: 62
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e53e17d172649c0800000000000000
+      internalID: -3943421416298029498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_43
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 330
+        width: 47
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe6c831a448777d0800000000000000
+      internalID: -2920720379636060486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_44
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 365
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd76b476591d85a10800000000000000
+      internalID: 1898497682549991391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_45
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 321
+        width: 8
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0886964e5658e320800000000000000
+      internalID: 2587412948835534860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_46
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 321
+        width: 8
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df447448b55dde550800000000000000
+      internalID: 6191839651742303485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_47
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 330
+        width: 47
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95a3c3f86a0e15b0800000000000000
+      internalID: -5395863857660713570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_48
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 331
+        width: 47
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038202a8a4241a360800000000000000
+      internalID: 7179092168917657648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_49
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 373
+        width: 89
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56657e3220a208f70800000000000000
+      internalID: 9187389428516476517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_50
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 288
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531dcfe0bd9d86a60800000000000000
+      internalID: 7667617900470784309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_51
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 287
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fd093599b38e740800000000000000
+      internalID: 5181456901007794032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_52
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f30daf8a2a0d5e0800000000000000
+      internalID: -1886829397222080631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e64a53f227891450800000000000000
+      internalID: 6060023357785130725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_54
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 315
+        width: 95
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d49d3fca40ed6c0800000000000000
+      internalID: -4116847868498063971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_55
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 222
+        width: 47
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a53256f2b49f020800000000000000
+      internalID: 2376012945347009150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_56
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 312
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8421bbef2ac563cc0800000000000000
+      internalID: -3731693386101747128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_57
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 228
+        width: 47
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e05bb801d825370800000000000000
+      internalID: 8309859364654878340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_58
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 231
+        width: 47
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e56fb4b4fff2c520800000000000000
+      internalID: 2721018551354746339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_59
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 315
+        width: 89
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ea1c84843cd78d0800000000000000
+      internalID: -2846904674202571136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_60
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 277
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561922070ca9c6a00800000000000000
+      internalID: 751145389169742181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_61
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 289
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8900ea71f49ab05c0800000000000000
+      internalID: -4248115666329141096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_62
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 264
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f713b81120eb81c00800000000000000
+      internalID: 871655443989737855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_63
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 277
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40c70b9fb2c74bf0800000000000000
+      internalID: -340089118647664564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_64
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 172
+        width: 62
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5742c3ad183490050800000000000000
+      internalID: 5767215022815847541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_65
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 267
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b29b7c41704c5dc0800000000000000
+      internalID: -3648970742718295368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_66
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 252
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af08679aead0c8660800000000000000
+      internalID: 7389296132426727674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4beacfce538c63370800000000000000
+      internalID: 8302043097038892724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_68
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 214
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9e389ffa1015500800000000000000
+      internalID: 383089298620279287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 214
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978297fedb8850d20800000000000000
+      internalID: 3244149455938201721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_70
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 214
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da11fda427d38dd90800000000000000
+      internalID: -7072835653693664851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_71
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 163
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9059eeca3029e0f0800000000000000
+      internalID: -1087302398081675106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_72
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 178
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9b3a842a9fe0e00800000000000000
+      internalID: 1013021441603647910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_73
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 191
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668b8906bf957c790800000000000000
+      internalID: -7509934917424727962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_74
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 205
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6eb98531dde9d20800000000000000
+      internalID: 3287307853187770059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_75
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 190
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5b8837aa360fef0800000000000000
+      internalID: -76451609931368991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_76
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 164
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d22ea90b35543990800000000000000
+      internalID: -7407201775063784751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_77
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 163
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db547c006b82ac30800000000000000
+      internalID: 4369207833144875992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_78
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 164
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed6b416fea9c3960800000000000000
+      internalID: 7583106225505267183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_79
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 165
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86d52a1752812b10800000000000000
+      internalID: 1954987023867958927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_80
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 188
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b863377bc7cccdc0800000000000000
+      internalID: -3617296723993204554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_81
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 178
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a532235fbab5e0120800000000000000
+      internalID: 2381942047036810074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_82
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 87
+        width: 81
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4518059ca9b80ff0800000000000000
+      internalID: -69601643338394293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_83
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 82
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdff8cbc8e493e10800000000000000
+      internalID: 2177858261176286706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_84
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 48
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7642bfc7dad8f6380800000000000000
+      internalID: -8975799756060416921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_85
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 48
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeef3bd5629fa2930800000000000000
+      internalID: 4119378752359890666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_86
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 48
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8ffa55f76985c40800000000000000
+      internalID: 5501312418475669705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_87
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 0
+        width: 48
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfcfb393e4db21f0800000000000000
+      internalID: -1068526412668874800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backstage1_88
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1
+        width: 106
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb9f26524ea48da0800000000000000
+      internalID: -5943434008285176860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
