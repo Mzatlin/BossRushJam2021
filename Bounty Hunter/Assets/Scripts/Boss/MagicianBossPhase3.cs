@@ -46,6 +46,8 @@ public class MagicianBossPhase3 : BossStateBase
 
     IEnumerator Delay()
     {
+        boss.SetBossTrigger("WarpOut");
+        yield return new WaitForSeconds(0.35f);
         boss.EnableBoss(false);
         boss.states.Remove(typeof(MagicianBossPhase3));
         boss.ResetStateMachineStates(boss.states, 25f);
@@ -59,7 +61,8 @@ public class MagicianBossPhase3 : BossStateBase
     IEnumerator RespawnTime()
     {
         boss.EnableBoss(true);
-        yield return new WaitForSeconds(0.3f);
+        boss.SetBossTrigger("WarpIn");
+        yield return new WaitForSeconds(0.65f);
         boss.ActivateDialogue();
     }
 }
