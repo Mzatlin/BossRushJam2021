@@ -38,7 +38,6 @@ public class PlayerMovementController : MonoBehaviour, IMoveDirection
             animate.SetBool("IsMoving", false);
         }
         UpdateIdle();
-
     }
 
     void UpdateIdle()

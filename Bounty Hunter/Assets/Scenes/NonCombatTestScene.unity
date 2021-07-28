@@ -4429,8 +4429,16 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250204, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: dashSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274305537142250204, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274305537142250204, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: dashDuration
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250205, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_Enabled

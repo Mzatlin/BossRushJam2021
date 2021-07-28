@@ -222,7 +222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35679e0b5f2daa43a820d1fe2b52062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDashSpeed: 100
+  dashSpeed: 35
+  dashDuration: 0.15
   layer:
     serializedVersion: 2
     m_Bits: 256
@@ -287,7 +288,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2274305537142250194}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7037c33b90170040851247837dc9620, type: 3}
   m_Name: 
@@ -352,11 +353,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2274305537142250194}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5195dc5c3c5483a478613ca1ea16ce0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftBorder: 0
+  rightBorder: 0
+  topBorder: 0
+  bottomBorder: 0
 --- !u!1 &2274305537264689052
 GameObject:
   m_ObjectHideFlags: 0

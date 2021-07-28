@@ -1,5 +1,5 @@
 using UnityEngine;
-[RequireComponent(typeof(Rigidbody2D))]
+
 public class PlayerDash : MonoBehaviour
 {
     IMovePhysics physics;
@@ -8,7 +8,7 @@ public class PlayerDash : MonoBehaviour
 
     Vector2 dashDirection = Vector2.zero;
     Collider2D playerCollider;
-    [SerializeField] Rigidbody2D rb;
+    Rigidbody2D rb;
 
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashDuration = 0.5f;
@@ -45,9 +45,7 @@ public class PlayerDash : MonoBehaviour
         {
             HandleDash();
         }
-        Ray2D ray = new Ray2D(transform.position, dashDirection);
-        Debug.DrawRay(ray.origin, ray.direction, Color.red);
-
+     
     }
 
     void HandleDash()
@@ -56,13 +54,13 @@ public class PlayerDash : MonoBehaviour
         {
             SetPlayerState(false);
             remainingDashTime -= Time.deltaTime;
-            transform.position += (Vector3)(dashDirection * dashSpeed * Time.deltaTime);
+            transform.position += (Vector3)(direction.LastMovementDirection.normalized * dashSpeed * Time.deltaTime);
             // rb.MovePosition(rb.position + (dashDirection * dashSpeed * Time.deltaTime));
-            // rb.velocity = dashDirection * dashSpeed;
-            //rb.velocity = Vector2.left * dashSpeed;
+           // rb.velocity = direction.LastMovementDirection * dashSpeed;
+            Debug.Log(rb.velocity);
         }
 
-        if (remainingDashTime <= 0 || IsColliding())
+        if (remainingDashTime <= 0 || !IsColliding())
         {
             isdashing = false;
             SetPlayerState(true);
@@ -100,11 +98,10 @@ public class PlayerDash : MonoBehaviour
     bool IsColliding()
     {
         Ray2D ray = new Ray2D(transform.position, dashDirection);
-        Debug.DrawRay(ray.origin, ray.direction, Color.red);
+        //Debug.DrawRay(ray.origin, ray.direction, Color.red);
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 2f, layer);
         if (hit)
         {
-            Debug.Log("Hit");
             return false;
         }
         return true;

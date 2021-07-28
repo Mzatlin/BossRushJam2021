@@ -20136,11 +20136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250193, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.32
+      value: -8.82
       objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250193, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.52
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250193, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20192,7 +20192,11 @@ PrefabInstance:
       objectReference: {fileID: 515457902}
     - target: {fileID: 2274305537142250204, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: dashSpeed
-      value: 100
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274305537142250204, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250204, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: maxDashSpeed
@@ -20230,6 +20234,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ef9ac2f37b12999499f9c559866bd1e7, type: 3}
+    - target: {fileID: 4022594672653185334, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: topBorder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022594672653185334, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: leftBorder
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022594672653185334, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: rightBorder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022594672653185334, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: bottomBorder
+      value: -6
+      objectReference: {fileID: 0}
     - target: {fileID: 4387547566236507882, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: death
       value: 
