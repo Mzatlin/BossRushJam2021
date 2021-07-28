@@ -9,6 +9,7 @@ public class PlayerDash : MonoBehaviour
     Vector2 dashDirection = Vector2.zero;
     Collider2D playerCollider;
     Rigidbody2D rb;
+    Animator animate;
 
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashDuration = 0.5f;
@@ -28,6 +29,7 @@ public class PlayerDash : MonoBehaviour
         direction = GetComponent<IMoveDirection>();
         playerCollider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
+        animate = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -45,7 +47,7 @@ public class PlayerDash : MonoBehaviour
         {
             HandleDash();
         }
-     
+        animate.SetBool("IsDashing", isdashing);
     }
 
     void HandleDash()
