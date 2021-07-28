@@ -101,7 +101,7 @@ public class PlayerDash : MonoBehaviour
     {
         Ray2D ray = new Ray2D(transform.position, dashDirection);
         //Debug.DrawRay(ray.origin, ray.direction, Color.red);
-        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 2f, layer);
+        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 1f, layer);
         if (hit)
         {
             return false;
