@@ -6,4 +6,5 @@ public class PlayerStatsSO : ScriptableObject
 {
     public bool isReady = true;
     public bool isDead = false;
+    public bool isInDialogue = false;
 }

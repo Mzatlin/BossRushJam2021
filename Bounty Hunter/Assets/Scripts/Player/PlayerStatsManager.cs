@@ -8,7 +8,7 @@ public class PlayerStatsManager : MonoBehaviour, IPlayerStats
 
     public bool GetPlayerReadiness()
     {
-        return stats.isReady && !stats.isDead;
+        return stats.isReady && !stats.isDead && !stats.isInDialogue; 
     }
 
     public void SetPlayerReadiness(bool isready)
@@ -18,5 +18,9 @@ public class PlayerStatsManager : MonoBehaviour, IPlayerStats
     public void SetPlayerDeath(bool isdead)
     {
         stats.isDead = isdead;
+    }
+    public void SetPlayerDialogue(bool isInDialogue)
+    {
+        stats.isInDialogue = isInDialogue;
     }
 }
