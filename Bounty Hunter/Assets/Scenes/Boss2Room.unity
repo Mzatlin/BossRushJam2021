@@ -592,7 +592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.40000916, y: -0.19999933}
+  m_AnchoredPosition: {x: 0.40000916, y: -0.19999981}
   m_SizeDelta: {x: 0, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &130991282
@@ -1824,6 +1824,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 764632979}
   m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &319501318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319501319}
+  m_Layer: 7
+  m_Name: BossPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &319501319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319501318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.042, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1726308877}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &342353139
 GameObject:
@@ -9348,6 +9378,11 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: b4028cfc7a62d3f47832b46f9a27659a, type: 3}
   - {fileID: 21300000, guid: 53c47c581d6db4640a674fe4708f2f67, type: 3}
+--- !u!4 &1726308877 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+  m_PrefabInstance: {fileID: 2088839196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1749370419
 GameObject:
   m_ObjectHideFlags: 0
@@ -10393,6 +10428,10 @@ PrefabInstance:
       propertyPath: day
       value: 
       objectReference: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
+    - target: {fileID: 4553707096667725017, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+      propertyPath: pivot
+      value: 
+      objectReference: {fileID: 319501318}
     - target: {fileID: 4553707096667725017, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: player
       value: 

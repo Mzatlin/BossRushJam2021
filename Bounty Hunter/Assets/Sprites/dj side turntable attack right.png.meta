@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: c110825a48c98014d9adfe38f99f4a53
+guid: b2dc7e07fd7749141989d3d14f89702b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6051611700968787185
-    second: dj side turntable attack_0
+      213: 6434113003949495139
+    second: dj side turntable attack right_0
   - first:
-      213: -2778576258350235160
-    second: dj side turntable attack_1
+      213: 2848186730347349895
+    second: dj side turntable attack right_1
   - first:
-      213: 6267139566775492898
-    second: dj side turntable attack_2
+      213: -2475332704870509302
+    second: dj side turntable attack right_2
   - first:
-      213: 924075117562959351
-    second: dj side turntable attack_3
+      213: -5250798106882087520
+    second: dj side turntable attack right_3
   - first:
-      213: -6185314626996019721
-    second: dj side turntable attack_4
+      213: -9023830902390810227
+    second: dj side turntable attack right_4
   - first:
-      213: -5373068832095019439
-    second: dj side turntable attack_5
+      213: -8769201273011499319
+    second: dj side turntable attack right_5
   - first:
-      213: 3162740656089506115
-    second: dj side turntable attack_6
+      213: -2678321702409481783
+    second: dj side turntable attack right_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,10 +148,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dj side turntable attack_0
+      name: dj side turntable attack right_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 11
         y: 0
         width: 19
         height: 42
@@ -162,17 +162,80 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f037825883b540ca0800000000000000
-      internalID: -6051611700968787185
+      spriteID: 363912d00bf8a4950800000000000000
+      internalID: 6434113003949495139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dj side turntable attack_1
+      name: dj side turntable attack right_1
       rect:
         serializedVersion: 2
-        x: 54
+        x: 53
+        y: 0
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787c55cadbac68720800000000000000
+      internalID: 2848186730347349895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dj side turntable attack right_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a055941150ad5add0800000000000000
+      internalID: -2475332704870509302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dj side turntable attack right_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5eff311fa6127b0800000000000000
+      internalID: -5250798106882087520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dj side turntable attack right_4
+      rect:
+        serializedVersion: 2
+        x: 179
         y: 1
         width: 19
         height: 41
@@ -183,17 +246,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e143b35d938079d0800000000000000
-      internalID: -2778576258350235160
+      spriteID: d899dc5ca99e4c280800000000000000
+      internalID: -9023830902390810227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dj side turntable attack_2
+      name: dj side turntable attack right_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 221
         y: 1
         width: 19
         height: 41
@@ -204,17 +267,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 221e2733b3a59f650800000000000000
-      internalID: 6267139566775492898
+      spriteID: 9ce0f3647e98d4680800000000000000
+      internalID: -8769201273011499319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dj side turntable attack_3
+      name: dj side turntable attack right_6
       rect:
         serializedVersion: 2
-        x: 138
+        x: 263
         y: 0
         width: 19
         height: 42
@@ -225,71 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f51e186c69f2dc00800000000000000
-      internalID: 924075117562959351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dj side turntable attack_4
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 0
-        width: 19
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fddfd13e19592aa0800000000000000
-      internalID: -6185314626996019721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dj side turntable attack_5
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 0
-        width: 19
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15ed04d6d560f65b0800000000000000
-      internalID: -5373068832095019439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dj side turntable attack_6
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 0
-        width: 19
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 341a6eaaedf44eb20800000000000000
-      internalID: 3162740656089506115
+      spriteID: 9c1d9ad1a90b4dad0800000000000000
+      internalID: -2678321702409481783
       vertices: []
       indices: 
       edges: []

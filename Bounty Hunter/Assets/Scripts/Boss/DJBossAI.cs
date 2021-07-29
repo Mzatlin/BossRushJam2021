@@ -9,6 +9,7 @@ public class DJBossAI : BossAIBase
     public List<LineRenderer> lasers = new List<LineRenderer>();
     public Transform[] bossLocations;
     public Transform[] bossIdleLocations;
+    public GameObject pivot;
     public GameObject firstBoss;
     IStateMachine firstBossState;
 

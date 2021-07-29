@@ -25,6 +25,7 @@ public class DJBossIdleState : BossStateBase
         hasWaited = false;
         hasStartedWait = false;
         randomJumpAmount = UnityEngine.Random.Range(2, 4);
+        boss.SetLasersActive(false);
     }
 
     public override void EndState()
