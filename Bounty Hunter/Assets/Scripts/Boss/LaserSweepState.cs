@@ -64,7 +64,10 @@ public class LaserSweepState : BossStateBase
     {
         yield return base.JumpTime(endPos);
         direction = GetDirection();
-        yield return new WaitForSeconds(1f);
+        boss.ActivateParticle(true, direction);
+        yield return new WaitForSeconds(0.5f);
+        boss.ActivateParticle(false, direction);
+        yield return new WaitForSeconds(0.5f);
         canFire = true;
         boss.SetLasersActive(true);
         boss.HandleCoroutine(SpinDelay());

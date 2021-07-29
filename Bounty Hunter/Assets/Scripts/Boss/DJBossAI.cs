@@ -11,6 +11,7 @@ public class DJBossAI : BossAIBase
     public Transform[] bossIdleLocations;
     public GameObject pivot;
     public GameObject firstBoss;
+    public ParticleSystem particle;
     IStateMachine firstBossState;
 
     bool isUnpaused = false;
@@ -25,6 +26,27 @@ public class DJBossAI : BossAIBase
 
         ResetStateMachineStates(states, 50);
         SetupLineRenderers();
+    }
+
+    public void ActivateParticle(bool isActive, Vector2 direction)
+    {
+        if(particle != null)
+        {
+            var main = particle.main;
+            main.simulationSpace = ParticleSystemSimulationSpace.Local;
+            if (isActive)
+            {
+                float particleAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                gunRotation.eulerAngles = new Vector3(particleAngle, 90, particleAngle);
+                particle.transform.rotation = gunRotation;
+                particle.Play();
+            }
+            else
+            {
+                particle.Stop();
+            }
+        }
+
     }
 
     void SetupLineRenderers()
