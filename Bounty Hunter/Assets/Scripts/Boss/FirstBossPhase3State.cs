@@ -46,6 +46,7 @@ public class FirstBossPhase3State : BossStateBase
         }
         else
         {
+            ObjectPooler.Instance.ClearPool("Enemy Bullet 1");
             return null;
         }
     }

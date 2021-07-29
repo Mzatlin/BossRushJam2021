@@ -7129,8 +7129,8 @@ MonoBehaviour:
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 320
-  day: {fileID: 0}
-  bossDialogueCheck: {fileID: 0}
+  day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
+  bossDialogueCheck: {fileID: 11400000, guid: e5022d5d251e7c949b275e5e1d5ad4c1, type: 2}
   currentPhase: 1
   currentPhaseThreshold: 50
   explosionParticle: {fileID: 1262423534}

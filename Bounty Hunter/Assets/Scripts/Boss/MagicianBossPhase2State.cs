@@ -39,6 +39,7 @@ public class MagicianBossPhase2State : BossStateBase
         }
         else
         {
+            ObjectPooler.Instance.ClearPool("Enemy Bullet 1");
             return null;
         }
 

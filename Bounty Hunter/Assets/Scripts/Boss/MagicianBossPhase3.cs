@@ -8,6 +8,7 @@ public class MagicianBossPhase3 : BossStateBase
     MagicianBossAI boss;
 
     bool isEnd;
+    bool isAttack = false;
 
     public MagicianBossPhase3(MagicianBossAI _boss) : base(_boss.gameObject)
     {
@@ -18,6 +19,7 @@ public class MagicianBossPhase3 : BossStateBase
         boss.HandleCoroutine(RespawnTime());
         boss.endDialogueEvent += HandleEnd;
         isEnd = false;
+        isAttack = false;
     }
 
     private void HandleEnd()
@@ -39,6 +41,10 @@ public class MagicianBossPhase3 : BossStateBase
         }
         else
         {
+            if (!isAttack)
+            {
+                ObjectPooler.Instance.ClearPool("Enemy Bullet 1");
+            }
             return null;
         }
 
@@ -51,6 +57,7 @@ public class MagicianBossPhase3 : BossStateBase
         boss.EnableBoss(false);
         boss.states.Remove(typeof(MagicianBossPhase3));
         boss.ResetStateMachineStates(boss.states, 25f);
+        isAttack = true;
         boss.SetHalfMirrorsActive(true);
         boss.ResetMirrors();
         boss.FireAllMirrors();

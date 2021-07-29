@@ -30,7 +30,8 @@ public class DisableBossOnDeath : MonoBehaviour
 
     private void HandleDie()
     {
-        if(slider != null && state != null)
+        ObjectPooler.Instance.ClearPool("Enemy Bullet 1");
+        if (slider != null && state != null)
         {
             slider.gameObject.SetActive(false);
             state.PauseStateMachine();

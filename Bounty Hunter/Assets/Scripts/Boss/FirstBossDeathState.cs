@@ -13,6 +13,7 @@ public class FirstBossDeathState : BossStateBase
     }
     public override void BeginState()
     {
+        ObjectPooler.Instance.ClearPool("Enemy Bullet 1");
         boss.HandleCoroutine(Delay());
     }
 

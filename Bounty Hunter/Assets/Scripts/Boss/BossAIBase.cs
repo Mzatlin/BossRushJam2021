@@ -135,4 +135,9 @@ public abstract class BossAIBase : MonoBehaviour
     {
         currentPhase = phaseNum;
     }
+
+    protected void ClearBullets(string tag)
+    {
+        ObjectPooler.Instance.ClearPool(tag);
+    }
 }
