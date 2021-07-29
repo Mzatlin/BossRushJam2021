@@ -28,11 +28,11 @@ public class PlayerBounds : MonoBehaviour
         }
         if (transform.position.y <= bottomBorder)
         {
-            transform.position = new Vector2(bottomBorder, transform.position.y);
+            transform.position = new Vector2(transform.position.x, bottomBorder);
         }
         if (transform.position.y >= topBorder)
         {
-            transform.position = new Vector2(topBorder, transform.position.y);
+            transform.position = new Vector2(transform.position.x, topBorder);
         }
     }
 }

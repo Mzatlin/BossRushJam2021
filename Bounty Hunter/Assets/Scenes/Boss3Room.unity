@@ -14012,11 +14012,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250193, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7
+      value: 4.72
       objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250193, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.53
+      value: -2.66
       objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250193, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14066,6 +14066,26 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1916339018}
+    - target: {fileID: 4022594672653185334, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022594672653185334, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: topBorder
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022594672653185334, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: leftBorder
+      value: -9.302788
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022594672653185334, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: rightBorder
+      value: 8.262786
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022594672653185334, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: bottomBorder
+      value: -3.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4387547566236507882, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: death
       value: 
