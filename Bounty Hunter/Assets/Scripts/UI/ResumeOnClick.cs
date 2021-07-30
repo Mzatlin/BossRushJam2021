@@ -11,7 +11,6 @@ public class ResumeOnClick : MonoBehaviour
     {
         Time.timeScale = 1;
         pauseCanvas.enabled = false;
-        Cursor.visible = false;
 
         if (player != null && playerState != null)
         {

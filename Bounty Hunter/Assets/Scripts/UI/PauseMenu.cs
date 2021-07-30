@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour, IPause
         if (pauseCanavs != null)
         {
             pauseCanavs.enabled = false;
+            Cursor.visible = true;
         }
     }
 
