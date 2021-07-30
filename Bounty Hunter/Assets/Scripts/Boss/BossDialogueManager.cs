@@ -2,26 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossDialogueManager : MonoBehaviour
+public class BossDialogueManager : SetNewDialogueBase
 {
     IDialogueSet setDialogue => GetComponent<IDialogueSet>();
+    public BossDialogueSO bossDialogue;
     [TextArea(2, 3)]
     public List<string> firstPhaseDialogue;
     [TextArea(2, 3)]
     public List<string> secondPhaseDialogue;
     [TextArea(2, 3)]
     public List<string> thirdphaseDialogue;
-    List<List<string>> phaseDialogue = new List<List<string>>();
-
-    public BossDialogueSO bossDialogue;
-
-    int index = 0;
-
+  
 
     // Start is called before the first frame update
-    void Awake()
+    protected override void Awake()
     {
-        if(bossDialogue != null && bossDialogue.isOpeningSet)
+        if (bossDialogue != null && bossDialogue.isOpeningSet)
         {
             index = 1;
         }
@@ -29,10 +25,10 @@ public class BossDialogueManager : MonoBehaviour
         {
             index = 0;
         }
-        InitializeListOfDialogue();
+        base.Awake();
     }
 
-    void InitializeListOfDialogue()
+    protected override void InitializeListOfDialogue()
     {
         phaseDialogue.Add(firstPhaseDialogue);
         phaseDialogue.Add(secondPhaseDialogue);
@@ -43,7 +39,6 @@ public class BossDialogueManager : MonoBehaviour
     {
         if(setDialogue != null)
         {
-            Debug.Log(index);
             setDialogue.SetContentText(phaseDialogue[index]);
             index++;
         }

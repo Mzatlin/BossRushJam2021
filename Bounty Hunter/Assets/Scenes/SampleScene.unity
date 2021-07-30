@@ -5256,6 +5256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2897798fd8dfe0741816ebd54d40b016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossDialogue: {fileID: 11400000, guid: d819a72b0a94da546b913494a00004bd, type: 2}
   firstPhaseDialogue:
   - Are you here to buy something?
   - No. I'm here to take you in.
@@ -5263,8 +5264,7 @@ MonoBehaviour:
   secondPhaseDialogue:
   - "I really don\u2019t want to use up my merchandise, but you give me no choice."
   thirdphaseDialogue:
-  - Why don't we make a deal? Whatever they're paying you, I'll double it!
-  bossDialogue: {fileID: 11400000, guid: d819a72b0a94da546b913494a00004bd, type: 2}
+  - 'Why don''t we make a deal? Whatever they''re paying you, I''ll double it! '
 --- !u!114 &625295129
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 51209948}
   - component: {fileID: 51209951}
   - component: {fileID: 51209952}
+  - component: {fileID: 51209953}
   m_Layer: 0
   m_Name: Cutscene Dialogue
   m_TagString: Untagged
@@ -305,8 +306,7 @@ MonoBehaviour:
   textDialogue: {fileID: 583342182}
   dialoguewriter: {fileID: 11400000, guid: 6d5b279ba8252264694dcac375bd5b11, type: 2}
   content:
-  - I fucked myself over really badly
-  - This is my story
+  - I used to be this city's best bounty hunter.
   typingSpeed: 0.3
 --- !u!114 &51209949
 MonoBehaviour:
@@ -359,6 +359,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
+--- !u!114 &51209953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51209947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3689a383b7e470642b54002a3e77b7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
+  firstDayDialogue:
+  - I used to be this city's best bounty hunter.
+  - Now? Well..let's just say it'st been a...gamble..
+  secondDayDialogue:
+  - I had completed my mission and have more than enough cash to pay off the debt.
+  - But...
+  - If I were to run the slots for a bit... I could be more than out of debt!
+  - Here goes nothing...
+  thirdDayDialogue:
+  - I had the money. Everything was set...
+  - ..but I just couldn't help myself...
+  - Why do I keep doing this to myself?
+  - Am I going to be stuck in this loop forever?
+  - No! I have to change...starting today.
+  - 'One. More. Bounty. '
 --- !u!1001 &105394398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -629,7 +657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5625233364272301978, guid: 524b11f5cd52352478c3a0f0b65ec100, type: 3}
       propertyPath: m_margin.z
-      value: -409.83847
+      value: -201.09076
       objectReference: {fileID: 0}
     - target: {fileID: 5625233364272301979, guid: 524b11f5cd52352478c3a0f0b65ec100, type: 3}
       propertyPath: m_AnchoredPosition.x
