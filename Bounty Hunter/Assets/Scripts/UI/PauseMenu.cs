@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu : MonoBehaviour, IPause
 {
     public Canvas pauseCanavs;
     public List<Canvas> subCanvases = new List<Canvas>();
@@ -36,7 +36,7 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 1;
             isPaused = false;
             pauseCanavs.enabled = false;
-            Cursor.visible = false;
+           // Cursor.visible = false;
             player.SetPlayerPaused(false);
             DisableSubMenus();
         }
@@ -45,7 +45,7 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 0;
             isPaused = true;
             pauseCanavs.enabled = true;
-            Cursor.visible = true;
+           // Cursor.visible = true;
             player.SetPlayerPaused(true);
         }
     }
@@ -70,6 +70,5 @@ public class PauseMenu : MonoBehaviour
     public void SetPause()
     {
         isPaused = false;
-        HandlePause();
     }
 }

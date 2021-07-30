@@ -5966,6 +5966,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 865115757815473676, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1461383957}
+    - target: {fileID: 2745590477484762482, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745590477484762482, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.781213
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745590477484762482, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745590477484762482, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.781213
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745590477484762482, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745590477484762482, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.6072006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5267250462868182717, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5267250463034669219, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: m_Name
       value: PauseMenu
