@@ -21,7 +21,7 @@ public class RotateTowardMouse : GunRotationBase
     protected override void RotateGun()
     {
         //Find the displacement vector from the Object to where the mouse is in WorldSpace
-        Vector2 direction = (cam.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+        Vector2 direction = (cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, cam.transform.position.z)) - transform.position).normalized;
         //Using the magic of polar coordinates, we take the previous vector and convert it to an angle of rotation in Euler Angles
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         //Set the rotation of the object to this quaterntion rotation along the Z axis (any other rotation will look weird in 2D)
