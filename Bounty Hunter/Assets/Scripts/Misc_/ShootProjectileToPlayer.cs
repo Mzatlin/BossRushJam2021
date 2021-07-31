@@ -33,7 +33,7 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
     {
         if (animate)
         {
-            //animate.SetTrigger("Shoot");
+            animate.SetTrigger("Shoot");
         }
     }
 

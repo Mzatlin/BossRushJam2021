@@ -10,6 +10,7 @@ public class FirstBossAI : BossAIBase
    
     public Transform centerPoint;
     public Transform[] bossLocations;
+    public Transform[] droneLocations;
     public Dictionary<Transform, float> bossPositions;
 
     [SerializeField] GameObject bullet;
