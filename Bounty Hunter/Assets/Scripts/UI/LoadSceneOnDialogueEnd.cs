@@ -27,7 +27,7 @@ public class LoadSceneOnDialogueEnd : MonoBehaviour
 
     private void HandleDialogueEnd()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
     }
 
 }

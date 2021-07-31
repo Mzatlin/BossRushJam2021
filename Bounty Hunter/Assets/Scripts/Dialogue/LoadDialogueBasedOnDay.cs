@@ -12,6 +12,8 @@ public class LoadDialogueBasedOnDay : SetNewDialogueBase
     public List<string> secondDayDialogue;
     [TextArea(2, 3)]
     public List<string> thirdDayDialogue;
+    [TextArea(2, 3)]
+    public List<string> finalDayDialogue;
     // Start is called before the first frame update
     protected override void Awake()
     {
@@ -24,6 +26,7 @@ public class LoadDialogueBasedOnDay : SetNewDialogueBase
         phaseDialogue.Add(firstDayDialogue);
         phaseDialogue.Add(secondDayDialogue);
         phaseDialogue.Add(thirdDayDialogue);
+        phaseDialogue.Add(finalDayDialogue);
     }
 
     public void SetNextDialogue()
