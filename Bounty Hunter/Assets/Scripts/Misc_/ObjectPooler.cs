@@ -42,22 +42,33 @@ public class ObjectPooler : MonoBehaviour
 
     public GameObject GetFromPool(string tag)
     {
-        for(int i = 0; i < itemPoolObjects.Count; i++)
+        for (int i = 0; i < itemPoolObjects.Count; i++)
         {
-            if(itemPoolObjects[i].CompareTag(tag) && !itemPoolObjects[i].activeInHierarchy)
+            if (itemPoolObjects[i].CompareTag(tag) && !itemPoolObjects[i].activeInHierarchy)
             {
                 itemPoolObjects[i].SetActive(true);
                 return itemPoolObjects[i];
             }
         }
-        foreach(ObjectPoolItem item in objectsToPool)
+        foreach (ObjectPoolItem item in objectsToPool)
         {
-            if(item.objectToPool.tag == tag)
+            if (item.objectToPool.tag == tag)
             {
                 IncreasePoolSize(item.objectToPool, item.amountToPool);
                 return GetFromPool(tag);
             }
         }
         return null;
+    }
+
+    public void ClearPool(string tag)
+    {
+        for (int i = 0; i < itemPoolObjects.Count; i++)
+        {
+            if (itemPoolObjects[i].CompareTag(tag) && itemPoolObjects[i].activeInHierarchy)
+            {
+                itemPoolObjects[i].SetActive(false);
+            }
+        }
     }
 }

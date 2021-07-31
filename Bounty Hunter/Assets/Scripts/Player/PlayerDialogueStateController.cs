@@ -31,10 +31,11 @@ public class PlayerDialogueStateController : MonoBehaviour
     }
     private void HandleActivation()
     {
-        playerStats.isReady = false;
+        playerStats.isInDialogue = true;
     }
     private void HandleEnd()
     {
+        playerStats.isInDialogue = false;
         playerStats.isReady = true;
     }
 

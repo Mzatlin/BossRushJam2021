@@ -6,6 +6,7 @@ using System;
 public class LaserSweepState : BossStateBase
 {
     DJBossAI boss;
+    Vector2 direction;
     float laserdelay = 4.5f;
     bool isDoneSpinning = false;
     float turnSpeed = 30f;
@@ -45,12 +46,16 @@ public class LaserSweepState : BossStateBase
                 SetupRayDirection(boss.lasers[0]);
             }
 
+            boss.SetBossBool("IsFiring", true);
+            boss.SetBossFloat("DJDirection", direction.x);
+
             return null;
         }
         else
         {
+            boss.SetBossBool("IsFiring", false);
             boss.SetLasersActive(false);
-            boss.transform.rotation = Quaternion.identity;
+            boss.pivot.transform.rotation = Quaternion.identity;
             return typeof(DJBossIdleState);
         }
     }
@@ -58,7 +63,11 @@ public class LaserSweepState : BossStateBase
     protected override IEnumerator JumpTime(Vector2 endPos)
     {
         yield return base.JumpTime(endPos);
-        yield return new WaitForSeconds(1f);
+        direction = GetDirection();
+        boss.ActivateParticle(true, direction);
+        yield return new WaitForSeconds(0.5f);
+        boss.ActivateParticle(false, direction);
+        yield return new WaitForSeconds(0.5f);
         canFire = true;
         boss.SetLasersActive(true);
         boss.HandleCoroutine(SpinDelay());
@@ -70,12 +79,17 @@ public class LaserSweepState : BossStateBase
         isDoneSpinning = true;
     }
 
+    Vector2 GetDirection()
+    {
+        return boss.pivot.transform.position.x > 0 ? -boss.pivot.transform.right : boss.pivot.transform.right;
+    }
+
     void SetupRayDirection(LineRenderer render)
     {
-        Vector2 direction = boss.transform.position.x > 0 ? -boss.transform.right : boss.transform.right;
+        direction = GetDirection();
 
-        render.SetPosition(0, boss.transform.localPosition);
-        Ray2D ray = new Ray2D(boss.transform.position, direction);
+        render.SetPosition(0, boss.pivot.transform.position);
+        Ray2D ray = new Ray2D(boss.pivot.transform.position, direction);
         RaycastHit2D hit;
         render.SetPosition(1, ray.direction);
         Debug.DrawRay(ray.origin, ray.direction);
@@ -86,7 +100,7 @@ public class LaserSweepState : BossStateBase
         }
         else
         {
-            Vector3 dir = boss.GetPlayer().transform.position - boss.transform.position;
+            Vector3 dir = boss.GetPlayer().transform.position - boss.pivot.transform.position;
             render.SetPosition(1, ray.direction * 10f);
         }
         Rotate();
@@ -94,7 +108,7 @@ public class LaserSweepState : BossStateBase
 
     void Rotate()
     {
-        boss.transform.Rotate(0, 0, Time.deltaTime * turnSpeed);
+        boss.pivot.transform.Rotate(0, 0, Time.deltaTime * turnSpeed);
     }
 
     void DamageTarget(RaycastHit2D hit, LineRenderer render)

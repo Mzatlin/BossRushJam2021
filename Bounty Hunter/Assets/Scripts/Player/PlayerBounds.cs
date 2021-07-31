@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerBounds : MonoBehaviour
 {
+    public float leftBorder;
+    public float rightBorder;
+    public float topBorder;
+    public float bottomBorder;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,13 +18,21 @@ public class PlayerBounds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.x <= -10f)
+        if(transform.position.x <= leftBorder)
         {
-          //  transform.position = new Vector2(-10f, transform.position.y);
+          transform.position = new Vector2(leftBorder, transform.position.y);
         }
-        if(transform.position.x >= 9f)
+        if(transform.position.x >= rightBorder)
         {
-           // transform.position = new Vector2(9f, transform.position.y);
+           transform.position = new Vector2(rightBorder, transform.position.y);
+        }
+        if (transform.position.y <= bottomBorder)
+        {
+            transform.position = new Vector2(transform.position.x, bottomBorder);
+        }
+        if (transform.position.y >= topBorder)
+        {
+            transform.position = new Vector2(transform.position.x, topBorder);
         }
     }
 }

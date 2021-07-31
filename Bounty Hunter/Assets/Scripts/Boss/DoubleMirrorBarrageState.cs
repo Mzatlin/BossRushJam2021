@@ -104,11 +104,14 @@ public class DoubleMirrorBarrageState : BossStateBase
     IEnumerator TeleportTime(Vector2 endPos)
     {
         isJumping = true;
+        boss.SetBossTrigger("WarpOut");
+        yield return new WaitForSeconds(0.35f);
         boss.EnableBoss(false);
         yield return new WaitForSeconds(2f);
         boss.transform.position = endPos;
         boss.EnableBoss(true);
-        yield return new WaitForSeconds(2f);
+        boss.SetBossTrigger("WarpIn");
+        yield return new WaitForSeconds(2.35f);
         isJumping = false;
         jumpAmount--;
 

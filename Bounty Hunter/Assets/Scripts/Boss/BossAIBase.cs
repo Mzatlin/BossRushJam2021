@@ -85,6 +85,13 @@ public abstract class BossAIBase : MonoBehaviour
             animate.SetBossFloat(param, amount);
         }
     }
+    public void SetBossBool(string param, bool trigger)
+    {
+        if (animate != null)
+        {
+            animate.SetBossBool(param, trigger);
+        }
+    }
 
     public void ResetStateMachineStates(Dictionary<Type, IState> states, float healthThreshold)
     {
@@ -127,5 +134,10 @@ public abstract class BossAIBase : MonoBehaviour
     public void SetPhase(int phaseNum)
     {
         currentPhase = phaseNum;
+    }
+
+    protected void ClearBullets(string tag)
+    {
+        ObjectPooler.Instance.ClearPool(tag);
     }
 }

@@ -116,7 +116,7 @@ public class DialogueController : MonoBehaviour, IDialogueEnd, IDialogueSet
 
     void EndDialogueOnInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && playerStats != null && !playerStats.isReady)
+        if (Input.GetKeyDown(KeyCode.Space) && playerStats != null && !playerStats.isPaused && playerStats.isInDialogue)
         {
             if (IsTextFinished())
             {

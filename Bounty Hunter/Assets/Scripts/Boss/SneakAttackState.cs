@@ -72,10 +72,14 @@ public class SneakAttackState : BossStateBase
     {
         isJumping = true;
         isShooting = true;
+        boss.SetBossTrigger("WarpOut");
+        yield return new WaitForSeconds(0.35f);
         boss.EnableBoss(false);
         yield return new WaitForSeconds(1f);
         boss.transform.position = endPos;
         boss.EnableBoss(true);
+        boss.SetBossTrigger("WarpIn");
+        yield return new WaitForSeconds(0.35f);
         boss.HandleCoroutine(SpawnProjectile(20, 0.1f));
     }
 
@@ -86,6 +90,8 @@ public class SneakAttackState : BossStateBase
         angle = 0;
 
         yield return new WaitForSeconds(1f);
+        boss.SetBossTrigger("Attack");
+        yield return new WaitForSeconds(.35f);
         for (int i = 0; i < projectileAmount; i++)
         {
             //Direction vector of bullet
@@ -96,6 +102,7 @@ public class SneakAttackState : BossStateBase
 
             yield return new WaitForSeconds(delay);
         }
+        boss.SetBossTrigger("Idle");
         yield return new WaitForSeconds(.5f);
         isShooting = false;
         isJumping = false;

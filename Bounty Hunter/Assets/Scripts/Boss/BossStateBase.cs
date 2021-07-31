@@ -17,7 +17,6 @@ public abstract class BossStateBase : IState
 
     protected virtual IEnumerator JumpTime(Vector2 endPos)
     {
-
         float lerpSpeed = 30f;
         Vector2 startPos = bossGameObject.transform.position;
         float totalDistance = Vector2.Distance(startPos, endPos);

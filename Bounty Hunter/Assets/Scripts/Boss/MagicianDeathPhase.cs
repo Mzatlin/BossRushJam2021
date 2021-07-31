@@ -13,8 +13,17 @@ public class MagicianDeathPhase : BossStateBase
     }
     public override void BeginState()
     {
-        SceneManager.LoadScene(0);
+        ObjectPooler.Instance.ClearPool("Enemy Bullet 1");
+        boss.HandleCoroutine(Delay());
     }
+
+    IEnumerator Delay()
+    {
+        boss.IncrementCurrentDay();
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(1);
+    }
+
 
     public override void EndState()
     {

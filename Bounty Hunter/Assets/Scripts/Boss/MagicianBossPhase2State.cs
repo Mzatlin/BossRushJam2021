@@ -23,7 +23,7 @@ public class MagicianBossPhase2State : BossStateBase
     private void HandleEnd()
     {
         boss.endDialogueEvent -= HandleEnd;
-        isEnd = true;
+        boss.HandleCoroutine(Delay());
     }
 
     public override void EndState()
@@ -35,20 +35,28 @@ public class MagicianBossPhase2State : BossStateBase
     {
         if (isEnd)
         {
-            boss.states.Remove(typeof(MagicianBossPhase2State));
-            boss.ResetStateMachineStates(boss.states, 25f);
-            boss.SetHalfMirrorsActive(true);
-            boss.ResetMirrors();
-            //boss.FireAllMirrors();
             return typeof(MagicianIdleState);
         }
         else
         {
+            ObjectPooler.Instance.ClearPool("Enemy Bullet 1");
             return null;
         }
 
     }
 
+    IEnumerator Delay()
+    {
+        boss.SetBossTrigger("WarpOut");
+        yield return new WaitForSeconds(0.35f);
+        boss.EnableBoss(false);
+        boss.states.Remove(typeof(MagicianBossPhase2State));
+        boss.ResetStateMachineStates(boss.states, 25f);
+        boss.SetHalfMirrorsActive(true);
+        boss.ResetMirrors();
+        //boss.FireAllMirrors();
+        isEnd = true;
+    }
 
     IEnumerator RespawnTime()
     {

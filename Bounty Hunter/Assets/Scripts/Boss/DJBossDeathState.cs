@@ -13,6 +13,15 @@ public class DJBossDeathState : BossStateBase
     }
     public override void BeginState()
     {
+        ObjectPooler.Instance.ClearPool("Enemy Bullet 1");
+        boss.HandleCoroutine(Delay());
+    }
+
+
+    IEnumerator Delay()
+    {
+        boss.IncrementCurrentDay();
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(1);
     }
 
