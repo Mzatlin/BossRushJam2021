@@ -37,6 +37,10 @@
 			<ShortName>Wheatley.wav</ShortName>
 			<Path>SFX\Wheatley_9EDFC787.wem</Path>
 		</File>
+		<File Id="992704016" Language="SFX">
+			<ShortName>dib_120bpm_35b.wav</ShortName>
+			<Path>SFX\dib_120bpm_35b_9EDFC787.wem</Path>
+		</File>
 		<File Id="1016578576" Language="SFX">
 			<ShortName>ncboss_lead_180bpm_4-4.wav</ShortName>
 			<Path>SFX\ncboss_lead_180bpm_4-4_9EDFC787.wem</Path>
@@ -44,17 +48,17 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="152534494">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3029380580">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="966137214">
+		<SoundBank Id="3161908922" Language="SFX" Hash="424124671">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1149159311" Name="Play_Button_Click" ObjectPath="\Events\Default Work Unit\Play_Button_Click" DurationType="OneShot" DurationMin="0.625000" DurationMax="0.625000">
+				<Event Id="1149159311" Name="Play_Button_Click" ObjectPath="\Events\Default Work Unit\Other\Play_Button_Click" DurationType="OneShot" DurationMin="0.625000" DurationMax="0.625000">
 					<IncludedMemoryFiles>
 						<File Id="609877968" Language="SFX">
 							<ShortName>Bluezone_BC0268_switch_button_click_ignition_002_03.wav</ShortName>
@@ -62,7 +66,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4021863785" Name="Play_Button_Hover" ObjectPath="\Events\Default Work Unit\Play_Button_Hover" DurationType="OneShot" DurationMin="0.253191" DurationMax="0.253191">
+				<Event Id="4021863785" Name="Play_Button_Hover" ObjectPath="\Events\Default Work Unit\Other\Play_Button_Hover" DurationType="OneShot" DurationMin="0.253191" DurationMax="0.253191">
 					<IncludedMemoryFiles>
 						<File Id="832403430" Language="SFX">
 							<ShortName>Bluezone_BC0268_switch_button_click_high_tech_interface_001.wav</ShortName>
@@ -70,7 +74,23 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4231704596" Name="Play_GunDealerBoss" ObjectPath="\Events\Default Work Unit\Play_GunDealerBoss" DurationType="Infinite">
+				<Event Id="3541099811" Name="Play_ContinuousAttack" ObjectPath="\Events\Default Work Unit\Enemy\Play_ContinuousAttack" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="364615397" Language="SFX">
+							<ShortName>Bluezone_BC0266_radio_transmission_frequency_selection_002_03.wav</ShortName>
+							<Path>SFX\Bluezone_BC0266_radio_transmission_frequency_selection_002_03_52B4D525.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1531451671" Name="Play_CutsceneMusic" ObjectPath="\Events\Default Work Unit\Music\Play_CutsceneMusic" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="992704016" Language="SFX">
+							<ShortName>dib_120bpm_35b.wav</ShortName>
+							<Path>SFX\dib_120bpm_35b_9EDFC787.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="4231704596" Name="Play_GunDealerBoss" ObjectPath="\Events\Default Work Unit\Music\Play_GunDealerBoss" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="101220921" Language="SFX">
 							<ShortName>bossbattle3_180bpm_4-4.wav</ShortName>
@@ -78,39 +98,15 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="3955959628" Name="Play_Gunshot" ObjectPath="\Events\Default Work Unit\Play_Gunshot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.418535" DurationMax="0.659151">
+				<Event Id="3955959628" Name="Play_Gunshot" ObjectPath="\Events\Default Work Unit\Player\Play_Gunshot" DurationType="OneShot" DurationMin="1.722148" DurationMax="3.068519">
 					<IncludedMemoryFiles>
-						<File Id="70716937" Language="SFX">
-							<ShortName>sfx_gunshot2.wav</ShortName>
-							<Path>SFX\sfx_gunshot2_4D45C5BC.wem</Path>
-						</File>
-						<File Id="260209184" Language="SFX">
-							<ShortName>sfx_gunshot2.wav</ShortName>
-							<Path>SFX\sfx_gunshot2_30A5F908.wem</Path>
-						</File>
-						<File Id="334851619" Language="SFX">
-							<ShortName>sfx_gunshot2.wav</ShortName>
-							<Path>SFX\sfx_gunshot2_8053F740.wem</Path>
-						</File>
-						<File Id="406766129" Language="SFX">
-							<ShortName>sfx_gunshot2.wav</ShortName>
-							<Path>SFX\sfx_gunshot2_536B4A3E.wem</Path>
-						</File>
-						<File Id="743684716" Language="SFX">
-							<ShortName>sfx_gunshot2.wav</ShortName>
-							<Path>SFX\sfx_gunshot2_C57084EC.wem</Path>
-						</File>
-						<File Id="758719293" Language="SFX">
-							<ShortName>sfx_gunshot2.wav</ShortName>
-							<Path>SFX\sfx_gunshot2_10CE78AC.wem</Path>
-						</File>
-						<File Id="1008793128" Language="SFX">
-							<ShortName>sfx_gunshot2.wav</ShortName>
-							<Path>SFX\sfx_gunshot2_B9060FEE.wem</Path>
+						<File Id="399239848" Language="SFX">
+							<ShortName>Blast Laser 2.wav</ShortName>
+							<Path>SFX\Blast Laser 2_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4189198966" Name="Play_MagicianBoss" ObjectPath="\Events\Default Work Unit\Play_MagicianBoss" DurationType="Infinite">
+				<Event Id="4189198966" Name="Play_MagicianBoss" ObjectPath="\Events\Default Work Unit\Music\Play_MagicianBoss" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="762350907" Language="SFX">
 							<ShortName>bossbattle2_180bpm_4-4.wav</ShortName>
@@ -118,7 +114,7 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="1346240278" Name="Play_MainMusic" ObjectPath="\Events\Default Work Unit\Play_MainMusic" DurationType="Infinite">
+				<Event Id="1346240278" Name="Play_MainMusic" ObjectPath="\Events\Default Work Unit\Music\Play_MainMusic" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="931186661" Language="SFX">
 							<ShortName>Wheatley.wav</ShortName>
@@ -126,7 +122,7 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="3754198327" Name="Play_NightClubBoss" ObjectPath="\Events\Default Work Unit\Play_NightClubBoss" DurationType="Infinite">
+				<Event Id="3754198327" Name="Play_NightClubBoss" ObjectPath="\Events\Default Work Unit\Music\Play_NightClubBoss" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="73300830" Language="SFX">
 							<ShortName>ncboss_drums_180bpm_4-4.wav</ShortName>
@@ -150,11 +146,13 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1518393738" Name="Stop_GunDealerBoss" ObjectPath="\Events\Default Work Unit\Stop_GunDealerBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2887379872" Name="Stop_MagicianBoss" ObjectPath="\Events\Default Work Unit\Stop_MagicianBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="665673276" Name="Stop_MainMusic" ObjectPath="\Events\Default Work Unit\Stop_MainMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1012531473" Name="Stop_NightClubBoss" ObjectPath="\Events\Default Work Unit\Stop_NightClubBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Other\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4172806753" Name="Stop_ContinuousAttack" ObjectPath="\Events\Default Work Unit\Enemy\Stop_ContinuousAttack" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2652171585" Name="Stop_CutsceneMusic" ObjectPath="\Events\Default Work Unit\Music\Stop_CutsceneMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1518393738" Name="Stop_GunDealerBoss" ObjectPath="\Events\Default Work Unit\Music\Stop_GunDealerBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2887379872" Name="Stop_MagicianBoss" ObjectPath="\Events\Default Work Unit\Music\Stop_MagicianBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="665673276" Name="Stop_MainMusic" ObjectPath="\Events\Default Work Unit\Music\Stop_MainMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1012531473" Name="Stop_NightClubBoss" ObjectPath="\Events\Default Work Unit\Music\Stop_NightClubBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

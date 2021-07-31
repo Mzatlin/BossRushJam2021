@@ -15,12 +15,16 @@ namespace AK
     {
         static const AkUniqueID PLAY_BUTTON_CLICK = 1149159311U;
         static const AkUniqueID PLAY_BUTTON_HOVER = 4021863785U;
+        static const AkUniqueID PLAY_CONTINUOUSATTACK = 3541099811U;
+        static const AkUniqueID PLAY_CUTSCENEMUSIC = 1531451671U;
         static const AkUniqueID PLAY_GUNDEALERBOSS = 4231704596U;
         static const AkUniqueID PLAY_GUNSHOT = 3955959628U;
         static const AkUniqueID PLAY_MAGICIANBOSS = 4189198966U;
         static const AkUniqueID PLAY_MAINMUSIC = 1346240278U;
         static const AkUniqueID PLAY_NIGHTCLUBBOSS = 3754198327U;
         static const AkUniqueID STOP_ALL = 452547817U;
+        static const AkUniqueID STOP_CONTINUOUSATTACK = 4172806753U;
+        static const AkUniqueID STOP_CUTSCENEMUSIC = 2652171585U;
         static const AkUniqueID STOP_GUNDEALERBOSS = 1518393738U;
         static const AkUniqueID STOP_MAGICIANBOSS = 2887379872U;
         static const AkUniqueID STOP_MAINMUSIC = 665673276U;
