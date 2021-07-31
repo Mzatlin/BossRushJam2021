@@ -26,7 +26,9 @@ public class BossDialogueManager : SetNewDialogueBase
             index = 0;
         }
         base.Awake();
+        
     }
+
 
     protected override void InitializeListOfDialogue()
     {

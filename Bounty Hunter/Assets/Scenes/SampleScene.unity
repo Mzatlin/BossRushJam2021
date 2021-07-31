@@ -20174,6 +20174,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1055078450279038353, guid: e6ef518a951054049a6b32d67310be3c, type: 3}
+      propertyPath: bossDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: d819a72b0a94da546b913494a00004bd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6ef518a951054049a6b32d67310be3c, type: 3}
 --- !u!1001 &2274305537090009270
@@ -20740,7 +20744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8681987441206896304, guid: 507ff70b6d89f3b46a300c6b4cb98911, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.0000076
+      value: -2.0000153
       objectReference: {fileID: 0}
     - target: {fileID: 8681987441206896304, guid: 507ff70b6d89f3b46a300c6b4cb98911, type: 3}
       propertyPath: m_AnchoredPosition.y

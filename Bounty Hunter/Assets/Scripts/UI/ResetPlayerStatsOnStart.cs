@@ -5,10 +5,20 @@ using UnityEngine;
 public class ResetPlayerStatsOnStart : MonoBehaviour
 {
     [SerializeField] PlayerStatsSO stats;
+    [SerializeField] BossDialogueSO bossDialogue;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        stats.ResetPlayerStats();
+        if(bossDialogue != null && !bossDialogue.isOpeningSet)
+        {
+            stats.isInDialogue = true;
+            stats.isReady = false;
+        }
+        else
+        {
+            stats.ResetPlayerStats();
+        }
+
     }
 
 }

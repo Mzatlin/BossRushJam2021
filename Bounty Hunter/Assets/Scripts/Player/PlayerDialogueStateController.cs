@@ -36,6 +36,7 @@ public class PlayerDialogueStateController : MonoBehaviour
     private void HandleEnd()
     {
         playerStats.isInDialogue = false;
+        playerStats.isReady = true;
     }
 
 }
