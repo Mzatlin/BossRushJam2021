@@ -15,6 +15,7 @@ public class FirstBossPhase2State : BossStateBase
     }
     public override void BeginState()
     {
+        boss.SetBossBool("IsFiring", false);
         boss.HandleCoroutine(JumpTime(boss.centerPoint.position));
         boss.endDialogueEvent += HandleEnd;
         isEnd = false;

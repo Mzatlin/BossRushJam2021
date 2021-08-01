@@ -7,7 +7,7 @@ public class WaveDiveState : BossStateBase
 {
     //values that adjust based on Phase
     float chargeSpeed = 10f;
-    float chargeDelay = 3f;
+    float chargeDelay = 1f;
 
     //values fetched from the master AI controller
     GameObject player;
@@ -78,11 +78,11 @@ public class WaveDiveState : BossStateBase
             boss.transform.position += (Vector3)(moveDirection * chargeSpeed * Time.deltaTime);
         }
 
-        if (boss.transform.position.y < -9 || boss.transform.position.y > 4)
+        if (boss.transform.position.y < -7 || boss.transform.position.y > 4)
         {
             return typeof(DJBossIdleState);
         }
-        if (boss.transform.position.x < -7 || boss.transform.position.x > 8)
+        if (boss.transform.position.x < -11 || boss.transform.position.x > 11)
         {
             return typeof(DJBossIdleState);
         }
