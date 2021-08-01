@@ -5249,6 +5249,7 @@ GameObject:
   - component: {fileID: 1030851730}
   - component: {fileID: 1030851729}
   - component: {fileID: 1030851728}
+  - component: {fileID: 1030851734}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5398,6 +5399,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1030851734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030851727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af34bfff32ab69e4db2a893fed9e0d33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!223 &1034015336 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 5267250463034669228, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
@@ -7420,6 +7433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2897798fd8dfe0741816ebd54d40b016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossDialogue: {fileID: 0}
   firstPhaseDialogue:
   - 'My My! You''re quite the audience. '
   - The show has only just begun!
@@ -7427,7 +7441,6 @@ MonoBehaviour:
   - Time for the Grand Finale!
   thirdphaseDialogue:
   - The show... must... go on...
-  bossDialogue: {fileID: 0}
 --- !u!4 &1435368030 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
@@ -14249,6 +14262,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2274305537142250182, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: hitDelay
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250193, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_RootOrder
       value: 10
