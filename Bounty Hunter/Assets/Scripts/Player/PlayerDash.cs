@@ -57,8 +57,6 @@ public class PlayerDash : MonoBehaviour
             SetPlayerState(false);
             remainingDashTime -= Time.deltaTime;
             transform.position += (Vector3)(direction.LastMovementDirection.normalized * dashSpeed * Time.deltaTime);
-            // rb.MovePosition(rb.position + (dashDirection * dashSpeed * Time.deltaTime));
-           // rb.velocity = direction.LastMovementDirection * dashSpeed;
         }
 
         if (remainingDashTime <= 0 || !IsColliding())
@@ -93,7 +91,7 @@ public class PlayerDash : MonoBehaviour
 
     void GetDashDirection()
     {
-        dashDirection = direction.LastMovementDirection;// - (Vector2)transform.position).normalized;//(mousePos - (Vector2)transform.position).normalized;
+        dashDirection = direction.LastMovementDirection;
     }
 
     bool IsColliding()

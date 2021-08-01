@@ -7,6 +7,7 @@ public class PlayerInvulnerabiltyTime : MonoBehaviour
 {
     IHittablle hit;
     IHealth health;
+    SpriteRenderer sprite;
     [SerializeField] float hitDelay = 1f;
     Coroutine invunlerability;
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class PlayerInvulnerabiltyTime : MonoBehaviour
             hit.OnHit += HandleHit;
         }
         health = GetComponent<IHealth>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     void OnDestroy()
@@ -36,8 +38,17 @@ public class PlayerInvulnerabiltyTime : MonoBehaviour
 
     IEnumerator InvulnerabilityTime()
     {
-        yield return new WaitForSeconds(hitDelay);
+        float timeDelay = Time.time + hitDelay;
+        while (Time.time < timeDelay)
+        {
+            sprite.enabled = false;
+            yield return new WaitForSeconds(0.05f);
+            sprite.enabled = true;
+            yield return new WaitForSeconds(0.05f);
+        }
+        sprite.enabled = true;
         hit.CanHit = true;
+        yield return null;
     }
 
 }

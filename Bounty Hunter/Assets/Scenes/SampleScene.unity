@@ -20253,6 +20253,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.014
       objectReference: {fileID: 0}
+    - target: {fileID: 2274305537142250182, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: hitDelay
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2274305537142250193, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: m_RootOrder
       value: 2
