@@ -12,6 +12,9 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
     Animator animate;
 
     public float FireRate => fireRate;
+    float chargupTime;
+    float chargeThreshold = 0;
+    bool isCharging;
 
     void Awake()
     {
@@ -21,10 +24,10 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > timeThreshold)
+        if (Time.time > timeThreshold && !isCharging)
         {
+            isCharging = true;
             timeThreshold = Time.time + fireRate;
-            WeaponChargeUp();
             FireWeapon();
         }
     }
@@ -39,6 +42,13 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
 
    public void FireWeapon()
     {
+        StartCoroutine(Delay());
+    }
+
+    IEnumerator Delay()
+    {
+        WeaponChargeUp();
+        yield return new WaitForSeconds(0.45f);
         if (projectile != null && player != null)
         {
             Vector2 direction = (player.transform.position - transform.position).normalized;
@@ -46,7 +56,7 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             bulletAngle.eulerAngles = new Vector3(0, 0, angle);
             GameObject tempBullet = ObjectPooler.Instance.GetFromPool("Enemy Bullet 1");
-            if(tempBullet != null)
+            if (tempBullet != null)
             {
                 tempBullet.transform.position = transform.position;
                 tempBullet.transform.rotation = bulletAngle;
@@ -58,8 +68,9 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
                 }
             }
         }
+        isCharging = false;
+        yield return null;
     }
-
 
     public void SetPlayer(GameObject obj)
     {
