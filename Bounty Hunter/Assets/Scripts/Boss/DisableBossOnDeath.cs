@@ -39,6 +39,7 @@ public class DisableBossOnDeath : MonoBehaviour
             if(boss != null)
             {
                 boss.SetBossTrigger("Death");
+                boss.SetLasers(false);
             }
         }
     }

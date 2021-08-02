@@ -28,17 +28,6 @@ public abstract class BossAIBase : MonoBehaviour
         dialogue = GetComponent<ActivateDialogueFromBossAI>();
         InitializeStateMachine();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void IncrementCurrentDay()
     {
@@ -139,5 +128,12 @@ public abstract class BossAIBase : MonoBehaviour
     protected void ClearBullets(string tag)
     {
         ObjectPooler.Instance.ClearPool(tag);
+    }
+
+    protected virtual void SetLasersActive(bool isActive){}
+
+    public void SetLasers(bool toggle)
+    {
+        SetLasersActive(toggle);
     }
 }

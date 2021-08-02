@@ -51,9 +51,12 @@ public class DefenseSystemBossAI : BossAIBase
         return gunRotation;
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void SetLasersActive(bool toggle)
     {
-        
+        foreach (LineRenderer render in lasers)
+        {
+            render.enabled = toggle;
+        }
     }
+
 }

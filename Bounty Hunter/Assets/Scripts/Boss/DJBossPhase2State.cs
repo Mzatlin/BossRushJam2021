@@ -16,10 +16,10 @@ public class DJBossPhase2State : BossStateBase
     public override void BeginState()
     {
         boss.ActivateDialogue();
-        //boss.HandleCoroutine(JumpTime(boss.centerPoint.position));
+        boss.SetBossBool("IsFiring", false);
         boss.endDialogueEvent += HandleEnd;
         isEnd = false;
-        boss.SetLasersActive(false);
+        boss.SetLasers(false);
         boss.transform.rotation = Quaternion.identity;
     }
 
@@ -27,7 +27,7 @@ public class DJBossPhase2State : BossStateBase
     {
         boss.endDialogueEvent -= HandleEnd;
         boss.SetBossTrigger("StartFlight");
-        boss.SetLasersActive(false);
+        boss.SetLasers(false);
         boss.HandleCoroutine(Delay());
     }
 

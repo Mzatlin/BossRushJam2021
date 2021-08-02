@@ -22,12 +22,12 @@ public class LaserSpinState : BossStateBase
         isDoneSpinning = false;
         hasStartedWait = false;
         isActive = false;
-        SetLasersActive(false);
+        boss.SetLasers(false);
     }
 
     public override void EndState()
     {
-        SetLasersActive(false);
+        boss.SetLasers(false);
         boss.transform.rotation = Quaternion.identity;
         boss.SetBossTrigger("Idle");
     }
@@ -51,7 +51,7 @@ public class LaserSpinState : BossStateBase
         }
         else
         {
-            SetLasersActive(false);
+            boss.SetLasers(false);
             boss.transform.rotation = Quaternion.identity;
             return typeof(DefenseSystemBossIdleState);
         }
@@ -67,18 +67,9 @@ public class LaserSpinState : BossStateBase
     {
         boss.SetBossTrigger("LaserChargeUp");
         yield return new WaitForSeconds(1f);
-        SetLasersActive(true);
+        boss.SetLasers(true);
         boss.SetBossTrigger("LaserFire");
         isActive = true;
-    }
-
-
-    void SetLasersActive(bool toggle)
-    {
-        foreach(LineRenderer render in boss.lasers)
-        {
-            render.enabled = toggle;
-        }
     }
 
     void SetupRayDirection(Vector2 direction, LineRenderer render)

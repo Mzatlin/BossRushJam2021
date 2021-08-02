@@ -20,12 +20,13 @@ public class DJBossIdleState : BossStateBase
 
     public override void BeginState()
     {
+        boss.SetBossBool("IsFiring", false);
         boss.SetBossTrigger("DJFloat");
         Debug.Log("Entered Idle State");
         hasWaited = false;
         hasStartedWait = false;
         randomJumpAmount = UnityEngine.Random.Range(2, 4);
-        boss.SetLasersActive(false);
+        boss.SetLasers(false);
     }
 
     public override void EndState()

@@ -48,7 +48,6 @@ public class CameraShake : MonoBehaviour, ICameraShake
             transform.position += new Vector3(x, y, 0);
             elapsedTime += Time.deltaTime;
             yield return null;
-            Debug.Log("Shake");
         }
         transform.position = orignalPosition;
         isShaking = false;

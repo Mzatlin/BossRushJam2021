@@ -7,7 +7,7 @@ public class LaserSweepState : BossStateBase
 {
     DJBossAI boss;
     Vector2 direction;
-    float laserdelay = 4.5f;
+    float laserdelay = 3.5f;
     bool isDoneSpinning = false;
     float turnSpeed = 30f;
     bool hasStartedWait = false;
@@ -28,7 +28,7 @@ public class LaserSweepState : BossStateBase
 
     public override void EndState()
     {
-        boss.SetLasersActive(false);
+        boss.SetLasers(false);
     }
 
     public override Type Tick()
@@ -54,7 +54,7 @@ public class LaserSweepState : BossStateBase
         else
         {
             boss.SetBossBool("IsFiring", false);
-            boss.SetLasersActive(false);
+            boss.SetLasers(false);
             boss.pivot.transform.rotation = Quaternion.identity;
             return typeof(DJBossIdleState);
         }
@@ -69,7 +69,7 @@ public class LaserSweepState : BossStateBase
         boss.ActivateParticle(false, direction);
         yield return new WaitForSeconds(0.5f);
         canFire = true;
-        boss.SetLasersActive(true);
+        boss.SetLasers(true);
         boss.HandleCoroutine(SpinDelay());
     }
 
@@ -120,4 +120,5 @@ public class LaserSweepState : BossStateBase
         }
         render.SetPosition(1, hit.point);
     }
+
 }

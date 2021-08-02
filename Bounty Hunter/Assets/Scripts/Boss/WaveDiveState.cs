@@ -23,6 +23,7 @@ public class WaveDiveState : BossStateBase
 
     float timeDelay = .2f;
     float timeThreshold = 0f;
+    float jumpAmount = 2f;
 
 
     DJBossAI boss;
@@ -33,6 +34,7 @@ public class WaveDiveState : BossStateBase
 
     public override void BeginState()
     {
+        jumpAmount = 2f;
         player = boss.GetPlayer();
         startLocation = boss.firstBoss.transform;
         boss.hitEvent += HandleHit;
@@ -47,7 +49,6 @@ public class WaveDiveState : BossStateBase
         {
             hit.ProcessDamage(chargeDamage);
         }
-       // isCharging = false;
     }
 
     public override void EndState()
@@ -57,6 +58,10 @@ public class WaveDiveState : BossStateBase
 
     public override Type Tick()
     {
+        if (jumpAmount < 1)
+        {
+            return typeof(DJBossIdleState);
+        }
         if (!isCharging)
         {
             moveDirection = (startLocation.position - boss.transform.position).normalized;
@@ -80,10 +85,15 @@ public class WaveDiveState : BossStateBase
 
         if (boss.transform.position.y < -7 || boss.transform.position.y > 4)
         {
+            jumpAmount--;
+            moveDirection *= -1;
             return typeof(DJBossIdleState);
+
         }
         if (boss.transform.position.x < -11 || boss.transform.position.x > 11)
         {
+            jumpAmount--;
+            moveDirection *= -1;
             return typeof(DJBossIdleState);
         }
         return null;

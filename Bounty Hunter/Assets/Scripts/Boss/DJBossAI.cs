@@ -61,7 +61,7 @@ public class DJBossAI : BossAIBase
         }
     }
 
-    public void SetLasersActive(bool toggle)
+    protected override void SetLasersActive(bool toggle)
     {
         foreach (LineRenderer render in lasers)
         {
