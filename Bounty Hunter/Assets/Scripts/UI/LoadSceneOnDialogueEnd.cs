@@ -28,7 +28,13 @@ public class LoadSceneOnDialogueEnd : MonoBehaviour
 
     private void HandleDialogueEnd()
     {
-        if(day != null && day.currentDay >= 3)
+        StartCoroutine(Delay());
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(2f);
+        if (day != null && day.currentDay >= 3)
         {
             SceneManager.LoadScene(0);
         }
@@ -36,7 +42,5 @@ public class LoadSceneOnDialogueEnd : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
-
     }
-
 }
