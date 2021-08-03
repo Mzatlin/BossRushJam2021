@@ -5,6 +5,7 @@ using UnityEngine;
 public class FadeOutOnDialogueEnd : MonoBehaviour
 {
     [SerializeField] GameObject fadeObject;
+    [SerializeField] float fadeDelay = 2f;
     Animator fadeAnimator;
     IDialogueEnd end => GetComponent<IDialogueEnd>();
     // Start is called before the first frame update
@@ -30,6 +31,12 @@ public class FadeOutOnDialogueEnd : MonoBehaviour
 
     void HandleDialogueEnd()
     {
+        StartCoroutine(Delay());
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(fadeDelay);
         if (fadeAnimator != null)
         {
             fadeAnimator.SetTrigger("FadeOut");

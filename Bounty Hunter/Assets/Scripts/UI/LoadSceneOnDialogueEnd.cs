@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class LoadSceneOnDialogueEnd : MonoBehaviour
 {
     IDialogueEnd dialogueEnd;
+    public float loadDelay = 6f;
     [SerializeField] CurrentDaySO day;
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,7 @@ public class LoadSceneOnDialogueEnd : MonoBehaviour
 
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(loadDelay);
         if (day != null && day.currentDay >= 3)
         {
             SceneManager.LoadScene(0);
