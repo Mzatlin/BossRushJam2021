@@ -6,13 +6,15 @@ using UnityEngine;
 public class PlaySlotAnimationOnDialogueEnd : MonoBehaviour
 {
 
-    Animator animate;
+    Animator animate, storyboardAnimate;
     IDialogueEnd end => GetComponent<IDialogueEnd>();
     [SerializeField] GameObject slot;
+    [SerializeField] GameObject storyboard;
     // Start is called before the first frame update
     void Start()
     {
         animate = slot.GetComponent<Animator>();
+        storyboardAnimate = storyboard.GetComponent<Animator>();
         if (end != null)
         {
             end.OnDialogueEnd += HandleDialogueEnd;
@@ -21,11 +23,22 @@ public class PlaySlotAnimationOnDialogueEnd : MonoBehaviour
 
     private void HandleDialogueEnd()
     {
-        if(animate != null)
+        if(storyboardAnimate != null)
+        {
+            storyboardAnimate.SetTrigger("Activate");
+            StartCoroutine(Delay());
+        }
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(2f);
+        if (animate != null)
         {
             animate.SetTrigger("Activate");
         }
-    }
+
+        }
 
     private void OnDestroy()
     {

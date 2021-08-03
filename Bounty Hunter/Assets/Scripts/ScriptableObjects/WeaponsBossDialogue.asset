@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30dc3c602af168b4da81090e5398fe26, type: 3}
   m_Name: WeaponsBossDialogue
   m_EditorClassIdentifier: 
-  isOpeningSet: 0
+  isOpeningSet: 1

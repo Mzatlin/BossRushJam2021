@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f1864a1c486fa41bb93193cfc16bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadDelay: 6
+  loadDelay: 8
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
 --- !u!114 &51209952
 MonoBehaviour:
@@ -364,6 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
+  boss: {fileID: 0}
 --- !u!114 &51209953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeObject: {fileID: 2027049779}
-  fadeDelay: 4
+  fadeDelay: 6
 --- !u!114 &51209955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,6 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slot: {fileID: 331163367}
+  storyboard: {fileID: 1208332603}
 --- !u!1001 &105394398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1195,13 +1197,14 @@ GameObject:
   - component: {fileID: 1208332605}
   - component: {fileID: 1208332604}
   - component: {fileID: 1208332608}
+  - component: {fileID: 1208332609}
   m_Layer: 5
   m_Name: FadeCanvasGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1208332604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1296,6 +1299,25 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!95 &1208332609
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208332603}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a72f2a8cb64dc840890261f24fea698, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1378860358
 GameObject:
   m_ObjectHideFlags: 0
