@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerDialogueStateController : MonoBehaviour
 {
     [SerializeField] PlayerStatsSO playerStats;
+    [SerializeField] BossDialogueSO boss;
     IDialogueActivate activate;
     IDialogueEnd end;
     // Start is called before the first frame update
@@ -35,8 +36,11 @@ public class PlayerDialogueStateController : MonoBehaviour
     }
     private void HandleEnd()
     {
-        playerStats.isInDialogue = false;
-        playerStats.isReady = true;
+        if(boss == null || boss.isOpeningSet)
+        {
+            playerStats.isInDialogue = false;
+            playerStats.isReady = true;
+        }
     }
 
 }

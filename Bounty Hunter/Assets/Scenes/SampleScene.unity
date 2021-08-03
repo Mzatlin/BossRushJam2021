@@ -20883,6 +20883,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 300d9e0a7a83bb744ac22426125933a3, type: 2}
+    - target: {fileID: 3249029561788674689, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 11400000, guid: d819a72b0a94da546b913494a00004bd, type: 2}
     - target: {fileID: 3249029561788674690, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
       propertyPath: day
       value: 

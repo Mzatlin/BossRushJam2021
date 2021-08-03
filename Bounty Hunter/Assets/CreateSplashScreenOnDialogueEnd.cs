@@ -56,6 +56,7 @@ public class CreateSplashScreenOnDialogueEnd : MonoBehaviour
         if (stats != null)
         {
             stats.isInDialogue = false;
+            stats.isReady = true;
         }
     }
 
