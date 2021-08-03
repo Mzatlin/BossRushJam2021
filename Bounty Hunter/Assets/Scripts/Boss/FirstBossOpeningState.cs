@@ -21,14 +21,18 @@ public class FirstBossOpeningState : BossStateBase
 
     private void HandleEnd()
     {
-        Debug.Log("End");
         boss.endDialogueEvent -= HandleEnd;
-        isEnd = true;
+        boss.HandleCoroutine(EndDelay());
     }
 
     public override void EndState()
     {
         throw new NotImplementedException();
+    }
+    IEnumerator EndDelay()
+    {
+        yield return new WaitForSeconds(3f);
+        isEnd = true;
     }
 
     IEnumerator Delay()
