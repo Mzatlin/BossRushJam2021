@@ -285,6 +285,8 @@ GameObject:
   - component: {fileID: 51209954}
   - component: {fileID: 51209955}
   - component: {fileID: 51209956}
+  - component: {fileID: 51209957}
+  - component: {fileID: 51209958}
   m_Layer: 0
   m_Name: Cutscene Manager
   m_TagString: Untagged
@@ -438,6 +440,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slot: {fileID: 331163367}
   storyboard: {fileID: 1208332603}
+--- !u!114 &51209957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51209947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accb347b189df1b41b31647b80fb1864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 1960120392}
+  sprites:
+  - {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
+  - {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
+  - {fileID: 21300000, guid: 7a136d868294e02498bf41b789e4ca70, type: 3}
+--- !u!114 &51209958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51209947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b4a7baf3911474899311fbf62172b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &105394398
 PrefabInstance:
   m_ObjectHideFlags: 0

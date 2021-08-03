@@ -30,6 +30,7 @@ public class SetDialoguePortrait : MonoBehaviour, IPortrait
     void Start()
     {
         lastPortrait = sprites[0];
+        SetPortrait(0);
         if(portrait == null)
         {
             Debug.Log("No Image Assigned!");
