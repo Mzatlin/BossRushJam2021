@@ -15,4 +15,4 @@ MonoBehaviour:
   isReady: 1
   isDead: 0
   isInDialogue: 0
-  isPaused: 1
+  isPaused: 0

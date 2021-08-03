@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boss3Room.unity
     guid: 2e86bee150405e241bf5d1607139d836
+  - enabled: 1
+    path: Assets/Scenes/BountyCompleteCutscene.unity
+    guid: 0fb0181ac8032bd438fc31492da3d32d
   m_configObjects: {}
