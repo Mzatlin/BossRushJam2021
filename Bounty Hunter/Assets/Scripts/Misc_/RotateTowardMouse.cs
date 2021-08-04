@@ -5,6 +5,7 @@ using UnityEngine;
 public class RotateTowardMouse : GunRotationBase
 {
     Camera cam;
+    [SerializeField] PlayerStatsSO playerStats;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -15,7 +16,10 @@ public class RotateTowardMouse : GunRotationBase
     // Update is called once per frame
     void Update()
     {
-        RotateGun();
+        if(playerStats != null && playerStats.GetPlayerReadiness())
+        {
+            RotateGun();
+        }
     }
 
     protected override void RotateGun()

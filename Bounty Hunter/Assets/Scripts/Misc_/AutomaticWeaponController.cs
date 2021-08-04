@@ -8,9 +8,16 @@ public class AutomaticWeaponController : MonoBehaviour, IShootable
     public float FireRate => fireRate;
     [SerializeField] GameObject firePoint;
     [SerializeField] GameObject bullet;
+    [SerializeField] PlayerStatsSO stats;
 
     public void FireWeapon()
     {
+
+        if (stats != null && !stats.GetPlayerReadiness())
+        {
+            return;
+        }
+
         //Instantiate(bullet, firePoint.transform.position, firePoint.transform.rotation);
         GameObject bulletToSpawn = ObjectPooler.Instance.GetFromPool("Player Bullet");
         if(bulletToSpawn != null)

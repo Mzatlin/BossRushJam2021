@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 3249029561788674942}
   - component: {fileID: 3249029561788674689}
   - component: {fileID: 3249029561788674943}
+  - component: {fileID: 8033604449054746184}
   m_Layer: 7
   m_Name: Boss
   m_TagString: Untagged
@@ -350,17 +351,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  currentPhaseThreshold: 50
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 320
+  day: {fileID: 0}
+  bossDialogueCheck: {fileID: 0}
   currentPhase: 1
+  currentPhaseThreshold: 50
   centerPoint: {fileID: 0}
   bossLocations:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  obstacleLayers:
-    serializedVersion: 2
-    m_Bits: 320
+  droneLocations: []
   bullet: {fileID: 8528241465411945205, guid: a4544e3aba38648488e164f36cb90d99, type: 3}
   landMine: {fileID: 1615450275390838181, guid: 0ab361cabb17325419b19c0ade475d2f, type: 3}
   bossGun: {fileID: 3249029562594375231}
@@ -422,6 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
+  boss: {fileID: 0}
 --- !u!114 &3249029561788674943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,6 +439,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3177ef719b0dd0429453f1f8bc654b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8033604449054746184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249029561788674701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826c0044a81ec624491cf562c6916039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splashScreen: {fileID: 0}
+  flashScreen: {fileID: 0}
+  bossDialogue: {fileID: 11400000, guid: d819a72b0a94da546b913494a00004bd, type: 2}
+  stats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
 --- !u!1 &3249029562493085585
 GameObject:
   m_ObjectHideFlags: 0

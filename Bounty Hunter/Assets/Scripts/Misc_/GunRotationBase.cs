@@ -7,11 +7,13 @@ public abstract class GunRotationBase : MonoBehaviour, IGunRotate
     protected Quaternion gunRotation;
     protected SpriteRenderer render;
     protected int sortOrder;
+    int underOrder;
     // Start is called before the first frame update
     protected virtual void Start()
     {
         render = GetComponentInChildren<SpriteRenderer>();
         sortOrder = render.sortingOrder;
+        underOrder = sortOrder - sortOrder;
     }
 
     protected abstract void RotateGun();
@@ -40,7 +42,7 @@ public abstract class GunRotationBase : MonoBehaviour, IGunRotate
         }
         else
         {
-            render.sortingOrder -= 1;
+            render.sortingOrder = underOrder;
         }
 
 
