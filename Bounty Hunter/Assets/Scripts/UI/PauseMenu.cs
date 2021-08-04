@@ -4,17 +4,31 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour, IPause
 {
-    public Canvas pauseCanavs;
-    public List<Canvas> subCanvases = new List<Canvas>();
+    public Canvas pauseCanvas;
+    public List<GameObject> subCanvases = new List<GameObject>();
     IPlayerStats player => GetComponent<IPlayerStats>();
     bool isPaused;
+    GameObject mainPanel;
     // Start is called before the first frame update
     void Start()
     {
-        if (pauseCanavs != null)
+        if (pauseCanvas != null)
         {
-            pauseCanavs.enabled = false;
-            Cursor.visible = true;
+            pauseCanvas.enabled = false;
+            Cursor.visible = true; //change the cursor
+            SetupCanvases();
+        }
+    }
+
+    void SetupCanvases()
+    {
+        if(subCanvases.Count >= 1)
+        {
+            mainPanel = subCanvases[0];
+        }
+        for (int i = 1; i < subCanvases.Count; i++)
+        {
+            subCanvases[i].SetActive(false);
         }
     }
 
@@ -36,7 +50,7 @@ public class PauseMenu : MonoBehaviour, IPause
         {
             Time.timeScale = 1;
             isPaused = false;
-            pauseCanavs.enabled = false;
+            pauseCanvas.enabled = false;
            // Cursor.visible = false;
             player.SetPlayerPaused(false);
             DisableSubMenus();
@@ -45,9 +59,13 @@ public class PauseMenu : MonoBehaviour, IPause
         {
             Time.timeScale = 0;
             isPaused = true;
-            pauseCanavs.enabled = true;
+            pauseCanvas.enabled = true;
            // Cursor.visible = true;
             player.SetPlayerPaused(true);
+            if(mainPanel != null)
+            {
+                mainPanel.SetActive(true);
+            }
         }
     }
     IEnumerator Delay()
@@ -60,9 +78,9 @@ public class PauseMenu : MonoBehaviour, IPause
     {
         if (subCanvases.Count > 0)
         {
-            foreach (Canvas can in subCanvases)
+            foreach (GameObject can in subCanvases)
             {
-                can.enabled = false;
+                can.SetActive(false);
             }
         }
     }

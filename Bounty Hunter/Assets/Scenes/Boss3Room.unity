@@ -2297,6 +2297,11 @@ Transform:
   m_Father: {fileID: 1291951295}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &491869913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5267250462907852040, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+  m_PrefabInstance: {fileID: 28466104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &494662516
 GameObject:
   m_ObjectHideFlags: 0
@@ -7647,6 +7652,11 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
   m_PrefabInstance: {fileID: 3699375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1463614295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8281380630848718390, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+  m_PrefabInstance: {fileID: 28466104}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1478278108
 GameObject:
@@ -14556,6 +14566,22 @@ PrefabInstance:
       propertyPath: pauseCanavs
       value: 
       objectReference: {fileID: 1034015336}
+    - target: {fileID: 6870264207655078761, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: pauseCanvas
+      value: 
+      objectReference: {fileID: 1034015336}
+    - target: {fileID: 6870264207655078761, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: subCanvases.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870264207655078761, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: subCanvases.Array.data[0]
+      value: 
+      objectReference: {fileID: 491869913}
+    - target: {fileID: 6870264207655078761, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: subCanvases.Array.data[1]
+      value: 
+      objectReference: {fileID: 1463614295}
     - target: {fileID: 7009042956074380955, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: gun
       value: 
