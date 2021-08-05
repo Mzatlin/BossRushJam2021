@@ -71,7 +71,6 @@ public class FirstBossAI : BossAIBase
         {
             states.Add(typeof(FirstBossOpeningState), new FirstBossOpeningState(this));
             StateMachine.SetStates(states, 25f);
-           // StateMachine.SwitchToNewState(typeof(FirstBossOpeningState));
             ResetStateMachineStates(states, 50);
         }
     }

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isReady: 1
   isDead: 0
-  isInDialogue: 0
+  isInDialogue: 1
   isPaused: 0

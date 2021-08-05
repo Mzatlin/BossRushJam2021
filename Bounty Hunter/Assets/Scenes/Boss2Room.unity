@@ -9478,8 +9478,8 @@ MonoBehaviour:
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 320
-  day: {fileID: 0}
-  bossDialogueCheck: {fileID: 0}
+  day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
+  bossDialogueCheck: {fileID: 11400000, guid: c684ef5302caa534b8e0a61bea469ae0, type: 2}
   currentPhase: 1
   lasers: []
   laserPosts:
@@ -9490,6 +9490,27 @@ MonoBehaviour:
   segmentedLasers:
   - {fileID: 1907035967}
   - {fileID: 2142778843}
+--- !u!114 &1030281229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030281227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2897798fd8dfe0741816ebd54d40b016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossDialogue: {fileID: 11400000, guid: c684ef5302caa534b8e0a61bea469ae0, type: 2}
+  firstPhaseDialogue:
+  - Uh... dude? The Show's not on yet?
+  - No. I'm here to take you in.
+  - Oh man. That's a bummer. Do you know how many people you'd let down?
+  secondPhaseDialogue:
+  - "I really don\u2019t want to use up my merchandise, but you give me no choice."
+  thirdphaseDialogue:
+  - 'Why don''t we make a deal? Whatever they''re paying you, I''ll double it! '
 --- !u!4 &1030281238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
@@ -10351,6 +10372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1055078450279038353, guid: e6ef518a951054049a6b32d67310be3c, type: 3}
+      propertyPath: bossDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: c684ef5302caa534b8e0a61bea469ae0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6ef518a951054049a6b32d67310be3c, type: 3}
 --- !u!1 &1356331984
@@ -15139,12 +15164,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2897798fd8dfe0741816ebd54d40b016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossDialogue: {fileID: 0}
+  bossDialogue: {fileID: 11400000, guid: c684ef5302caa534b8e0a61bea469ae0, type: 2}
   firstPhaseDialogue:
-  - My Dispenser! You're really killing the vibe, man! Time for my Solo
+  - Uh...Dude, the show isn't today
   secondPhaseDialogue:
+  - My Dispenser! You're really killing the vibe, man! Time for my Solo
+  thirdphaseDialogue:
   - Get ready for the drop, little man!
-  thirdphaseDialogue: []
 --- !u!114 &1726308875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16365,8 +16391,12 @@ PrefabInstance:
       objectReference: {fileID: 2137456287}
     - target: {fileID: 558794289200407791, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: content.Array.data[0]
-      value: My Dispenser! You're really killing the vibe, man! Time for my Solo!
+      value: ...1234...
       objectReference: {fileID: 0}
+    - target: {fileID: 558794289200407824, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 11400000, guid: c684ef5302caa534b8e0a61bea469ae0, type: 2}
     - target: {fileID: 558794289200407830, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: healthSlider
       value: 
@@ -17037,6 +17067,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 2137456287}
+    - target: {fileID: 558794289200407824, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 558794289200407830, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: healthSlider
       value: 
