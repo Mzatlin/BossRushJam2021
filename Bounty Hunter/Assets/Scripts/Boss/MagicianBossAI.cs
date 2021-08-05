@@ -29,6 +29,7 @@ public class MagicianBossAI : BossAIBase
     protected override void Awake()
     {
         base.Awake();
+        CheckBossDialogue();
         bossCollider = GetComponent<Collider2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
 
@@ -38,6 +39,25 @@ public class MagicianBossAI : BossAIBase
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
 
+    }
+
+    void CheckBossDialogue()
+    {
+        if (bossDialogueCheck != null && bossDialogueCheck.isOpeningSet == false)
+        {
+            states.Add(typeof(ThirdBossOpeningState), new ThirdBossOpeningState(this));
+            StateMachine.SetStates(states, 25f);
+            ResetStateMachineStates(states, 50);
+        }
+    }
+
+    public bool GetOpeningStats()
+    {
+        return bossDialogueCheck.isOpeningSet;
+    }
+    public void SetOpeningStats(bool isActive)
+    {
+        bossDialogueCheck.isOpeningSet = isActive;
     }
 
     void Start()

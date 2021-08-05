@@ -232,6 +232,10 @@ PrefabInstance:
       propertyPath: content.Array.data[1]
       value: The show has only just begun!
       objectReference: {fileID: 0}
+    - target: {fileID: 558794289200407824, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 11400000, guid: e5022d5d251e7c949b275e5e1d5ad4c1, type: 2}
     - target: {fileID: 558794289200407830, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
       propertyPath: healthSlider
       value: 
@@ -513,6 +517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5267250463034669228, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5267250463034669231, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -523,7 +531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5267250463034669231, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: m_RootOrder
-      value: 127
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 5267250463034669231, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1082,6 +1090,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &103916148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4440267872569765271, guid: d143b185d7932c94e9be3a36e2ce3a60, type: 3}
+  m_PrefabInstance: {fileID: 989361777}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &104118082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,7 +1929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1610952924840032147, guid: 6db034b6c14478d4ba140e837334e592, type: 3}
       propertyPath: m_RootOrder
-      value: 126
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 1610952924840032147, guid: 6db034b6c14478d4ba140e837334e592, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1996,7 +2009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1610952924840032233, guid: 6db034b6c14478d4ba140e837334e592, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6db034b6c14478d4ba140e837334e592, type: 3}
@@ -4508,6 +4521,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &941492490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1610952924840032233, guid: 6db034b6c14478d4ba140e837334e592, type: 3}
+  m_PrefabInstance: {fileID: 420949034}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &942499609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4996,7 +5014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4440267872569765271, guid: d143b185d7932c94e9be3a36e2ce3a60, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4440267872569765275, guid: d143b185d7932c94e9be3a36e2ce3a60, type: 3}
       propertyPath: m_Pivot.x
@@ -5008,7 +5026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4440267872569765275, guid: d143b185d7932c94e9be3a36e2ce3a60, type: 3}
       propertyPath: m_RootOrder
-      value: 125
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 4440267872569765275, guid: d143b185d7932c94e9be3a36e2ce3a60, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5082,6 +5100,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4440267872760511193, guid: d143b185d7932c94e9be3a36e2ce3a60, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd9b5c4c8097deb49a297e89ba75e5da, type: 3}
+    - target: {fileID: 4440267872760511195, guid: d143b185d7932c94e9be3a36e2ce3a60, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1fdb8c3b4c42cef4087fcdb0712477fe, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d143b185d7932c94e9be3a36e2ce3a60, type: 3}
 --- !u!1 &1011097677
@@ -5760,6 +5786,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1055078450279038353, guid: e6ef518a951054049a6b32d67310be3c, type: 3}
+      propertyPath: bossDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: e5022d5d251e7c949b275e5e1d5ad4c1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6ef518a951054049a6b32d67310be3c, type: 3}
 --- !u!1 &1067457345
@@ -7640,14 +7670,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2897798fd8dfe0741816ebd54d40b016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossDialogue: {fileID: 0}
+  bossDialogue: {fileID: 11400000, guid: e5022d5d251e7c949b275e5e1d5ad4c1, type: 2}
   firstPhaseDialogue:
+  - 'An audience! '
+  - Welcome to the greatest show of your life!
+  secondPhaseDialogue:
   - 'My My! You''re quite the audience. '
   - The show has only just begun!
-  secondPhaseDialogue:
-  - Time for the Grand Finale!
   thirdphaseDialogue:
   - The show... must... go on...
+--- !u!114 &1435368023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435368019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826c0044a81ec624491cf562c6916039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splashScreen: {fileID: 103916148}
+  flashScreen: {fileID: 941492490}
+  bossDialogue: {fileID: 11400000, guid: e5022d5d251e7c949b275e5e1d5ad4c1, type: 2}
+  stats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
 --- !u!4 &1435368030 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
@@ -8494,7 +8541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8933102825063549091, guid: dfc62a11f5a07c449990a4a07e6db374, type: 3}
       propertyPath: m_SortingOrder
-      value: 4
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8933102825063549100, guid: dfc62a11f5a07c449990a4a07e6db374, type: 3}
       propertyPath: m_Name

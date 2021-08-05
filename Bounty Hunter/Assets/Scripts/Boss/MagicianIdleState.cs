@@ -12,6 +12,7 @@ public class MagicianIdleState : BossStateBase
     bool hasWaited = false;
     bool isJumping = false;
     bool hasStartedWait = false;
+    bool isOpening = false;
     public MagicianIdleState(MagicianBossAI _boss) : base(_boss.gameObject)
     {
         boss = _boss;
@@ -22,6 +23,14 @@ public class MagicianIdleState : BossStateBase
         Debug.Log("Entered Idle State");
         hasWaited = false;
         hasStartedWait = false;
+        if (!boss.GetOpeningStats())
+        {
+            isOpening = true;
+        }
+        else
+        {
+            isOpening = false;
+        }
     }
 
     public override void EndState()
@@ -32,6 +41,10 @@ public class MagicianIdleState : BossStateBase
 
     public override Type Tick()
     {
+        if (isOpening)
+        {
+            return typeof(ThirdBossOpeningState);
+        }
         if (!hasWaited)
         {
             if (!hasStartedWait)
