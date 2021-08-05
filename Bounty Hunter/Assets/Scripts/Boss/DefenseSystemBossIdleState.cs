@@ -11,6 +11,7 @@ public class DefenseSystemBossIdleState : BossStateBase
     Type currentState;
     bool hasWaited = false;
     bool hasStartedWait = false;
+    bool isOpening = false;
 
     public DefenseSystemBossIdleState(DefenseSystemBossAI _boss) : base(_boss.gameObject)
     {
@@ -21,6 +22,14 @@ public class DefenseSystemBossIdleState : BossStateBase
     {
         hasWaited = false;
         hasStartedWait = false;
+        if (!boss.GetOpeningStats())
+        {
+            isOpening = true;
+        }
+        else
+        {
+            isOpening = false;
+        }
     }
 
     public override void EndState()
@@ -30,6 +39,10 @@ public class DefenseSystemBossIdleState : BossStateBase
 
     public override Type Tick()
     {
+        if (isOpening)
+        {
+            return typeof(SecondBossOpeningState);
+        }
         if (!hasWaited)
         {
             if (!hasStartedWait)
