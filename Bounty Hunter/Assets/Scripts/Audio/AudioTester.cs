@@ -17,13 +17,13 @@ public class AudioTester : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+       /* if(Input.GetKeyDown(KeyCode.Space))
         {
             if(audioManager)
             {
                 audioManager.PlayAudioByString("Play_Gunshot", null);
             }
-        }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.P))
         {

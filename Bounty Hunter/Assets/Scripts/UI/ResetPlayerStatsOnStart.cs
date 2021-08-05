@@ -11,6 +11,7 @@ public class ResetPlayerStatsOnStart : MonoBehaviour
     {
         if(bossDialogue != null && !bossDialogue.isOpeningSet)
         {
+            stats.ResetPlayerStats();
             stats.isInDialogue = true;
             stats.isReady = false;
         }

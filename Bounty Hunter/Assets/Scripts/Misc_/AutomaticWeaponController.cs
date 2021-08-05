@@ -9,6 +9,12 @@ public class AutomaticWeaponController : MonoBehaviour, IShootable
     [SerializeField] GameObject firePoint;
     [SerializeField] GameObject bullet;
     [SerializeField] PlayerStatsSO stats;
+    AudioManager audioManager;
+
+    void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+    }
 
     public void FireWeapon()
     {
@@ -31,6 +37,10 @@ public class AutomaticWeaponController : MonoBehaviour, IShootable
             }
 
             bulletToSpawn.SetActive(true);
+            if(audioManager != null)
+            {
+                audioManager.PlayAudioByString("Play_Gunshot", null);
+            }
         }
 
     }
