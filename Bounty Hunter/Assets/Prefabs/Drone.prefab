@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 4794873657077107498}
   - component: {fileID: 4794873657077107497}
   - component: {fileID: 5803953759479336906}
+  - component: {fileID: -5257576221281793497}
   m_Layer: 7
   m_Name: Drone
   m_TagString: Enemy Drone
@@ -207,3 +208,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd58fcce99eb244f969a196578bde1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5257576221281793497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4794873657077107502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534e5af112743e0419915d99d0aa8a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0, b: 0, a: 1}

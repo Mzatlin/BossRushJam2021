@@ -9544,6 +9544,19 @@ MonoBehaviour:
   flashScreen: {fileID: 1233187444}
   bossDialogue: {fileID: 11400000, guid: e5022d5d251e7c949b275e5e1d5ad4c1, type: 2}
   stats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
+--- !u!114 &1030281231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030281227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534e5af112743e0419915d99d0aa8a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!4 &1030281238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 558794289200407833, guid: 4256dbfa46759b741989f6b53076ed3b, type: 3}
@@ -15427,6 +15440,19 @@ MonoBehaviour:
   - Get ready for the drop, little man!
   thirdphaseDialogue:
   - Show ain't over yet!
+--- !u!114 &1726308865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726308863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534e5af112743e0419915d99d0aa8a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &1726308875
 MonoBehaviour:
   m_ObjectHideFlags: 0

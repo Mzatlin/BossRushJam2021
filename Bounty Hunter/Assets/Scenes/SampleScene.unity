@@ -5281,6 +5281,19 @@ MonoBehaviour:
   - "I really don\u2019t want to use up my merchandise, but you give me no choice."
   thirdphaseDialogue:
   - 'Why don''t we make a deal? Whatever they''re paying you, I''ll double it! '
+--- !u!114 &625295117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625295115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534e5af112743e0419915d99d0aa8a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &625295129
 MonoBehaviour:
   m_ObjectHideFlags: 0
