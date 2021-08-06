@@ -21,6 +21,7 @@ public class FirstBossAI : BossAIBase
     Rigidbody2D rb;
 
     IGunRotate rotate => GetComponentInChildren<IGunRotate>();
+  
 
     LineRenderer lineRender;
    

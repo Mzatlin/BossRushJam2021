@@ -48,6 +48,7 @@ public class MagicianBossPhase2State : BossStateBase
     IEnumerator Delay()
     {
         boss.SetBossTrigger("WarpOut");
+        boss.SetFlashAnimation();
         yield return new WaitForSeconds(0.35f);
         boss.EnableBoss(false);
         boss.states.Remove(typeof(MagicianBossPhase2State));

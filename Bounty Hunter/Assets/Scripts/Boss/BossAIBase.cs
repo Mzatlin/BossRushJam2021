@@ -22,6 +22,7 @@ public abstract class BossAIBase : MonoBehaviour
     public int currentPhase = 1;
     protected Coroutine enemyCoroutine;
     AudioManager audio;
+    IFlash flash => GetComponent<IFlash>();
 
 
     protected virtual void Awake()
@@ -152,5 +153,10 @@ public abstract class BossAIBase : MonoBehaviour
     public void SetLasers(bool toggle)
     {
         SetLasersActive(toggle);
+    }
+
+    public void SetFlashAnimation()
+    {
+        flash.ActivateFlash();
     }
 }

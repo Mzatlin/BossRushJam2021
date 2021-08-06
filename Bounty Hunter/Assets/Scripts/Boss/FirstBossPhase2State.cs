@@ -39,6 +39,7 @@ public class FirstBossPhase2State : BossStateBase
             boss.SetBossTrigger("SpawnLandMine");
             boss.HandleCoroutine(SpawnLandMines(15));
             boss.states.Remove(typeof(FirstBossPhase2State));
+            boss.SetFlashAnimation();
             boss.ResetStateMachineStates(boss.states, 25f);
             return typeof(FirstBossIdleState);
         }

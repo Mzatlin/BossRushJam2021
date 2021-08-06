@@ -1,0 +1,4 @@
+﻿interface IFlash
+{
+    void ActivateFlash();
+}
