@@ -9,6 +9,7 @@ TagManager:
   - Enemy Drone
   - Enemy Mine
   - Mirror
+  - AfterImage
   layers:
   - Default
   - TransparentFX

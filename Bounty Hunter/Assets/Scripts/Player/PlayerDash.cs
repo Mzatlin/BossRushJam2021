@@ -10,6 +10,8 @@ public class PlayerDash : MonoBehaviour
     Collider2D playerCollider;
     Rigidbody2D rb;
     Animator animate;
+    Vector2 imagePos = Vector2.zero;
+    float distanceBetweenImages = 0.5f;
 
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashDuration = 0.5f;
@@ -57,6 +59,11 @@ public class PlayerDash : MonoBehaviour
             SetPlayerState(false);
             remainingDashTime -= Time.deltaTime;
             transform.position += (Vector3)(direction.LastMovementDirection.normalized * dashSpeed * Time.deltaTime);
+            if(Vector2.Distance(transform.position,imagePos) > distanceBetweenImages)
+            {
+                GameObject instance = ObjectPooler.Instance.GetFromPool("AfterImage");
+                imagePos = transform.position;
+            }
         }
 
         if (remainingDashTime <= 0 || !IsColliding())

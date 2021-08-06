@@ -2472,6 +2472,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectPoolManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4681525332229647855, guid: 0463590186c219e48874325e66762be4, type: 3}
+      propertyPath: objectsToPool.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681525332229647855, guid: 0463590186c219e48874325e66762be4, type: 3}
+      propertyPath: objectsToPool.Array.data[4].amountToPool
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681525332229647855, guid: 0463590186c219e48874325e66762be4, type: 3}
+      propertyPath: objectsToPool.Array.data[4].objectToPool
+      value: 
+      objectReference: {fileID: 8852969709885814600, guid: 49e71af86a743774cbdebbd7ba978d4f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0463590186c219e48874325e66762be4, type: 3}
 --- !u!1 &435028371
