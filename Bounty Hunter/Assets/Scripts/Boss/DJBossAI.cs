@@ -63,6 +63,7 @@ public class DJBossAI : BossAIBase
 
     protected override void SetLasersActive(bool toggle)
     {
+        base.SetLasersActive(toggle);
         foreach (LineRenderer render in lasers)
         {
             render.enabled = toggle;

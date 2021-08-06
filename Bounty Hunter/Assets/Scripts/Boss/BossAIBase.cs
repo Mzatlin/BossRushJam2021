@@ -21,12 +21,14 @@ public abstract class BossAIBase : MonoBehaviour
     protected Quaternion gunRotation;
     public int currentPhase = 1;
     protected Coroutine enemyCoroutine;
+    AudioManager audio;
 
 
     protected virtual void Awake()
     {
         dialogue = GetComponent<ActivateDialogueFromBossAI>();
         InitializeStateMachine();
+        audio = FindObjectOfType<AudioManager>();
     }
 
     public void IncrementCurrentDay()
@@ -130,7 +132,22 @@ public abstract class BossAIBase : MonoBehaviour
         ObjectPooler.Instance.ClearPool(tag);
     }
 
-    protected virtual void SetLasersActive(bool isActive){}
+    protected virtual void SetLasersActive(bool isActive) {
+        if (isActive)
+        {
+            if (audio != null)
+            {
+                audio.PlayAudioByString("Play_ContinuousAttack", null);
+            }
+        }
+        else
+        {
+            if (audio != null)
+            {
+                audio.PlayAudioByString("Stop_ContinuousAttack", null);
+            }
+        }
+    }
 
     public void SetLasers(bool toggle)
     {
