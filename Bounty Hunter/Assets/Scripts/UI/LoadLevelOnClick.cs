@@ -16,7 +16,7 @@ public class LoadLevelOnClick : MonoBehaviour, ISetLevel
     {
         AkSoundEngine.PostEvent("Stop_All", cam.gameObject);
         AkSoundEngine.PostEvent("Play_Button_Click", cam.gameObject);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void LoadCasinoLevel()

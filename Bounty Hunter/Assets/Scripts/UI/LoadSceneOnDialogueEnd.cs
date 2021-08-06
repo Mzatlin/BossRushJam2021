@@ -37,11 +37,11 @@ public class LoadSceneOnDialogueEnd : MonoBehaviour
         yield return new WaitForSeconds(loadDelay);
         if (day != null && day.currentDay >= 3)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(8);
         }
         else
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 }

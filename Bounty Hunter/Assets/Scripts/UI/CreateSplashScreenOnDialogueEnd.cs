@@ -32,14 +32,17 @@ public class CreateSplashScreenOnDialogueEnd : MonoBehaviour
 
     private void HandleDialogueEnd()
     {
-        if (stats != null)
+        if(bossDialogue != null && !bossDialogue.isOpeningSet)
         {
-            stats.isInDialogue = true;
-        }
-        if (flashAnimator != null)
-        {
-            flashAnimator.SetTrigger("Activate");
-            StartCoroutine(Delay());
+            if (stats != null)
+            {
+                stats.isInDialogue = true;
+            }
+            if (flashAnimator != null)
+            {
+                flashAnimator.SetTrigger("Activate");
+                StartCoroutine(Delay());
+            }
         }
     }
 

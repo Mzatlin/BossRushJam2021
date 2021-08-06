@@ -11,7 +11,7 @@ public class FlashOnHit : MonoBehaviour
     IHittablle hit;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         hit = GetComponent<IHittablle>();
         hit.OnHit += HandleHit;
