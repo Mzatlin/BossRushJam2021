@@ -8,6 +8,8 @@ public class PauseMenu : MonoBehaviour, IPause
     public List<GameObject> subCanvases = new List<GameObject>();
     IPlayerStats player => GetComponent<IPlayerStats>();
     bool isPaused;
+    [SerializeField] Texture2D cursorTex;
+    [SerializeField] Texture2D reticalTex;
     GameObject mainPanel;
     // Start is called before the first frame update
     void Start()
@@ -51,18 +53,18 @@ public class PauseMenu : MonoBehaviour, IPause
             Time.timeScale = 1;
             isPaused = false;
             pauseCanvas.enabled = false;
-           // Cursor.visible = false;
             player.SetPlayerPaused(false);
             DisableSubMenus();
+            Cursor.SetCursor(reticalTex, Vector2.zero, CursorMode.Auto);
         }
         else
         {
             Time.timeScale = 0;
             isPaused = true;
             pauseCanvas.enabled = true;
-           // Cursor.visible = true;
             player.SetPlayerPaused(true);
-            if(mainPanel != null)
+            Cursor.SetCursor(cursorTex, Vector2.zero, CursorMode.Auto);
+            if (mainPanel != null)
             {
                 mainPanel.SetActive(true);
             }
@@ -89,5 +91,6 @@ public class PauseMenu : MonoBehaviour, IPause
     public void SetPause()
     {
         isPaused = false;
+        Cursor.SetCursor(reticalTex, Vector2.zero, CursorMode.Auto);
     }
 }

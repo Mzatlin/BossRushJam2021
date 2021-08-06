@@ -314,6 +314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6276941151377952301, guid: c6dac09bb83e0a240aa50cfc4b9ae9bb, type: 3}
+      propertyPath: cursorTex
+      value: 
+      objectReference: {fileID: 2800000, guid: 85ccdead1a869ff4a90d3dffc3f035c5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6dac09bb83e0a240aa50cfc4b9ae9bb, type: 3}
 --- !u!1 &405884642
