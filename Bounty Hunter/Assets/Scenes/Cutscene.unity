@@ -453,9 +453,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 1960120392}
   sprites:
-  - {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
-  - {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
-  - {fileID: 21300000, guid: 7a136d868294e02498bf41b789e4ca70, type: 3}
+  - {fileID: 21300000, guid: ee795695afd4e4242bf0eb06a58f1fe7, type: 3}
+  - {fileID: 21300000, guid: 0ff41877909360a40a8240a9b6c3abe7, type: 3}
+  - {fileID: 21300000, guid: 5ebdcfa403c980349927cb1ce9e9e0a8, type: 3}
 --- !u!1001 &105394398
 PrefabInstance:
   m_ObjectHideFlags: 0
