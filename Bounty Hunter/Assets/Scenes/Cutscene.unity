@@ -924,10 +924,7 @@ MonoBehaviour:
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1edf5fca732673f46b7705238799fe19, type: 2}
-  StopOnDestroy:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5d33400668da52e42a3bd30520fef9b8, type: 2}
+  StopOnDestroy: []
 --- !u!4 &868950441
 Transform:
   m_ObjectHideFlags: 0
