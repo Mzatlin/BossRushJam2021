@@ -8,6 +8,7 @@ public class LoadSceneOnDialogueEnd : MonoBehaviour
 {
     IDialogueEnd dialogueEnd;
     public float loadDelay = 6f;
+    [SerializeField] int levelIndex = 3;
     [SerializeField] CurrentDaySO day;
     // Start is called before the first frame update
     void Start()
@@ -41,7 +42,7 @@ public class LoadSceneOnDialogueEnd : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(levelIndex);
         }
     }
 }

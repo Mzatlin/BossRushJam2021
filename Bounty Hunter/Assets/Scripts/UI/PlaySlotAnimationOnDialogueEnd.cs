@@ -23,7 +23,7 @@ public class PlaySlotAnimationOnDialogueEnd : MonoBehaviour
 
     private void HandleDialogueEnd()
     {
-        if(storyboardAnimate != null)
+        if (storyboardAnimate != null)
         {
             storyboardAnimate.SetTrigger("Activate");
             StartCoroutine(Delay());
@@ -38,7 +38,7 @@ public class PlaySlotAnimationOnDialogueEnd : MonoBehaviour
             animate.SetTrigger("Activate");
         }
 
-        }
+    }
 
     private void OnDestroy()
     {
