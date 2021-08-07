@@ -48,12 +48,12 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1221444646">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1065497513">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="424124671">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3500496807">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -74,11 +74,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3541099811" Name="Play_ContinuousAttack" ObjectPath="\Events\Default Work Unit\Enemy\Play_ContinuousAttack" DurationType="Infinite">
+				<Event Id="3541099811" Name="Play_ContinuousAttack" ObjectPath="\Events\Default Work Unit\Enemy\Play_ContinuousAttack" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="364615397" Language="SFX">
 							<ShortName>Bluezone_BC0266_radio_transmission_frequency_selection_002_03.wav</ShortName>
-							<Path>SFX\Bluezone_BC0266_radio_transmission_frequency_selection_002_03_52B4D525.wem</Path>
+							<Path>SFX\Bluezone_BC0266_radio_transmission_frequency_selection_002_03_CB078A88.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -90,6 +90,9 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
+				<Event Id="778733838" Name="Play_EnemyCharge" ObjectPath="\Events\Default Work Unit\Play_EnemyCharge" MaxAttenuation="100.000000" DurationType="Unknown"/>
+				<Event Id="480628718" Name="Play_EnemyDash" ObjectPath="\Events\Default Work Unit\Play_EnemyDash" MaxAttenuation="100.000000" DurationType="Unknown"/>
+				<Event Id="1942342396" Name="Play_Flash" ObjectPath="\Events\Default Work Unit\Other\Play_Flash" DurationType="Unknown"/>
 				<Event Id="4231704596" Name="Play_GunDealerBoss" ObjectPath="\Events\Default Work Unit\Music\Play_GunDealerBoss" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="101220921" Language="SFX">
@@ -98,11 +101,11 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="3955959628" Name="Play_Gunshot" ObjectPath="\Events\Default Work Unit\Player\Play_Gunshot" DurationType="OneShot" DurationMin="1.722148" DurationMax="3.068519">
+				<Event Id="3955959628" Name="Play_Gunshot" ObjectPath="\Events\Default Work Unit\Player\Play_Gunshot" DurationType="OneShot" DurationMin="0.815495" DurationMax="1.453047">
 					<IncludedMemoryFiles>
 						<File Id="399239848" Language="SFX">
 							<ShortName>Blast Laser 2.wav</ShortName>
-							<Path>SFX\Blast Laser 2_3F75BDB9.wem</Path>
+							<Path>SFX\Blast Laser 2_B2545812.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -146,14 +149,22 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
+				<Event Id="2301987285" Name="Play_Player_Damaged" ObjectPath="\Events\Default Work Unit\Player\Play_Player_Damaged" DurationType="Unknown"/>
+				<Event Id="1927031969" Name="Play_PlayerDash" ObjectPath="\Events\Default Work Unit\Play_PlayerDash" DurationType="Unknown"/>
+				<Event Id="314344222" Name="Play_SingleAttack" ObjectPath="\Events\Default Work Unit\Enemy\Play_SingleAttack" MaxAttenuation="100.000000" DurationType="Unknown"/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Other\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4172806753" Name="Stop_ContinuousAttack" ObjectPath="\Events\Default Work Unit\Enemy\Stop_ContinuousAttack" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2652171585" Name="Stop_CutsceneMusic" ObjectPath="\Events\Default Work Unit\Music\Stop_CutsceneMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1309469456" Name="Stop_EnemyCharge" ObjectPath="\Events\Default Work Unit\Stop_EnemyCharge" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3939643430" Name="Stop_Flash" ObjectPath="\Events\Default Work Unit\Other\Stop_Flash" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1518393738" Name="Stop_GunDealerBoss" ObjectPath="\Events\Default Work Unit\Music\Stop_GunDealerBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2887379872" Name="Stop_MagicianBoss" ObjectPath="\Events\Default Work Unit\Music\Stop_MagicianBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="665673276" Name="Stop_MainMusic" ObjectPath="\Events\Default Work Unit\Music\Stop_MainMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1012531473" Name="Stop_NightClubBoss" ObjectPath="\Events\Default Work Unit\Music\Stop_NightClubBoss" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

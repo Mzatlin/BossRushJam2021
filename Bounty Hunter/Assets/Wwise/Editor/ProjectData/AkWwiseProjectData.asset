@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2ca3c2724c2d244384db17c3c57cf700
     GuidInternal: 
-    m_lastTime: -8585738592414775808
+    m_lastTime: -8585732663294775808
     List:
     - name: Main
       guid: fa820d8107e4c34a9137981c280ce2d5
@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: abf8dde28daaaf4d80133a17a3ad065c
     GuidInternal: 
-    m_lastTime: -8585738592094775808
+    m_lastTime: -8585732664954775808
     List:
     - name: Enemy
       guid: 662b57f05f7aeb4d833c5ed560b8825b
@@ -221,7 +221,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e921d9c5ef2805438fc30dc7f97d75f9
       Path: Events\Default Work Unit\Enemy\Play_ContinuousAttack
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: Play_CutsceneMusic
@@ -281,7 +281,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5cb6b947c1d21a4c930973e4bb52af5a
       Path: Events\Default Work Unit\Player\Play_Gunshot
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: 3.068519
       minDuration: 1.722148
     - name: Play_MagicianBoss
@@ -342,6 +342,23 @@ MonoBehaviour:
         guid: fc77c1553f64024da1f29e1b4b395514
       Path: Events\Default Work Unit\Music\Play_NightClubBoss
       maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SingleAttack
+      guid: 6503ed07474187458ce58cf8944971b6
+      id: 314344222
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abf8dde28daaaf4d80133a17a3ad065c
+      - ElementName: Play_SingleAttack
+        ObjectType: 3
+        guid: 6503ed07474187458ce58cf8944971b6
+      Path: Events\Default Work Unit\Play_SingleAttack
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: Player

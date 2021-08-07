@@ -17,14 +17,22 @@ namespace AK
         static const AkUniqueID PLAY_BUTTON_HOVER = 4021863785U;
         static const AkUniqueID PLAY_CONTINUOUSATTACK = 3541099811U;
         static const AkUniqueID PLAY_CUTSCENEMUSIC = 1531451671U;
+        static const AkUniqueID PLAY_ENEMYCHARGE = 778733838U;
+        static const AkUniqueID PLAY_ENEMYDASH = 480628718U;
+        static const AkUniqueID PLAY_FLASH = 1942342396U;
         static const AkUniqueID PLAY_GUNDEALERBOSS = 4231704596U;
         static const AkUniqueID PLAY_GUNSHOT = 3955959628U;
         static const AkUniqueID PLAY_MAGICIANBOSS = 4189198966U;
         static const AkUniqueID PLAY_MAINMUSIC = 1346240278U;
         static const AkUniqueID PLAY_NIGHTCLUBBOSS = 3754198327U;
+        static const AkUniqueID PLAY_PLAYER_DAMAGED = 2301987285U;
+        static const AkUniqueID PLAY_PLAYERDASH = 1927031969U;
+        static const AkUniqueID PLAY_SINGLEATTACK = 314344222U;
         static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID STOP_CONTINUOUSATTACK = 4172806753U;
         static const AkUniqueID STOP_CUTSCENEMUSIC = 2652171585U;
+        static const AkUniqueID STOP_ENEMYCHARGE = 1309469456U;
+        static const AkUniqueID STOP_FLASH = 3939643430U;
         static const AkUniqueID STOP_GUNDEALERBOSS = 1518393738U;
         static const AkUniqueID STOP_MAGICIANBOSS = 2887379872U;
         static const AkUniqueID STOP_MAINMUSIC = 665673276U;
@@ -41,6 +49,7 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

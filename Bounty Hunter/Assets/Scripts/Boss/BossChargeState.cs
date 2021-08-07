@@ -12,6 +12,7 @@ public class BossChargeState : BossStateBase
 
     //values fetched from the master AI controller
     GameObject player;
+    AudioManager bossAudio;
     Transform startPosition;
     LayerMask obstacleLayers;
     LineRenderer render;
@@ -35,6 +36,7 @@ public class BossChargeState : BossStateBase
         render.enabled = false;
         player = boss.GetPlayer();
         startPosition = boss.GetCenterPosition();
+        bossAudio = boss.GetAudioManager();
         boss.hitEvent += HandleHit;
         chargeAmounts = 1;
         isEnd = false;
@@ -48,6 +50,7 @@ public class BossChargeState : BossStateBase
         if (hit != null && isCharging)
         {
             hit.ProcessDamage(chargeDamage);
+            if (bossAudio != null) { bossAudio.PlayAudioByString("Play_Player_Damaged", player); }
         }
         isCharging = false;
         boss.HandleCoroutine(ResetDelay());
@@ -111,10 +114,13 @@ public class BossChargeState : BossStateBase
 
     IEnumerator ChargeDelay()
     {
+        PlayBossAudio("Play_EnemyCharge");
         boss.SetBossTrigger("ChargeUp");
         yield return new WaitForSeconds(chargeDelay);
         boss.SetBossTrigger("ChargeEnd");
         yield return new WaitForSeconds(0.5f);
+        PlayBossAudio("Stop_EnemyCharge");
+        PlayBossAudio("Play_EnemyDash"); 
         isCharging = true;
         isAiming = false;
     }
@@ -123,6 +129,15 @@ public class BossChargeState : BossStateBase
     {
         yield return new WaitForSeconds(chargeDelay / 1.5f);
         ResetEnemy();
+    }
+
+    void PlayBossAudio(string eventName)
+    {
+        if (bossAudio != null)
+        {
+            bossAudio.PlayAudioByString(eventName, boss.gameObject);
+        }
+        
     }
 
 }

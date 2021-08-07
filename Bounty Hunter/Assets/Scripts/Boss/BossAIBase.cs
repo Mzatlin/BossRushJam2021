@@ -21,7 +21,7 @@ public abstract class BossAIBase : MonoBehaviour
     protected Quaternion gunRotation;
     public int currentPhase = 1;
     protected Coroutine enemyCoroutine;
-    AudioManager audio;
+    public AudioManager audio;
     IFlash flash => GetComponent<IFlash>();
 
 
@@ -120,6 +120,12 @@ public abstract class BossAIBase : MonoBehaviour
             enemyBullet.transform.position = startPos;
             enemyBullet.transform.rotation = rotation;
         }
+
+        if (audio != null)
+        {
+            audio.PlayAudioByString("Play_SingleAttack", enemyBullet);
+        }        
+        
         return enemyBullet;
     }
 

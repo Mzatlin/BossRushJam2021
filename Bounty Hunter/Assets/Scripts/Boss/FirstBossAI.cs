@@ -37,6 +37,7 @@ public class FirstBossAI : BossAIBase
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
         rb = GetComponent<Rigidbody2D>();
+        audio = FindObjectOfType<AudioManager>();
     }
 
     void InitializeBossPositions()
@@ -96,10 +97,15 @@ public class FirstBossAI : BossAIBase
         return bossDialogueCheck.isOpeningSet;
     }
 
+    public AudioManager GetAudioManager()
+    {
+        return audio;
+    }
+
     public void SetOpeningStats(bool isActive)
     {
         bossDialogueCheck.isOpeningSet = isActive;
-    }
+    }   
 
     // Update is called once per frame
     void Update()

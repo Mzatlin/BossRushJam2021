@@ -1,24 +1,67 @@
 Event	ID	Name			Wwise Object Path	Notes
+	314344222	Play_SingleAttack			\Default Work Unit\Enemy\Play_SingleAttack	
 	452547817	Stop_All			\Default Work Unit\Other\Stop_All	
+	480628718	Play_EnemyDash			\Default Work Unit\Play_EnemyDash	
 	665673276	Stop_MainMusic			\Default Work Unit\Music\Stop_MainMusic	
+	778733838	Play_EnemyCharge			\Default Work Unit\Play_EnemyCharge	
 	1012531473	Stop_NightClubBoss			\Default Work Unit\Music\Stop_NightClubBoss	
 	1149159311	Play_Button_Click			\Default Work Unit\Other\Play_Button_Click	
+	1309469456	Stop_EnemyCharge			\Default Work Unit\Stop_EnemyCharge	
 	1346240278	Play_MainMusic			\Default Work Unit\Music\Play_MainMusic	
 	1518393738	Stop_GunDealerBoss			\Default Work Unit\Music\Stop_GunDealerBoss	
 	1531451671	Play_CutsceneMusic			\Default Work Unit\Music\Play_CutsceneMusic	
+	1927031969	Play_PlayerDash			\Default Work Unit\Play_PlayerDash	
+	1942342396	Play_Flash			\Default Work Unit\Other\Play_Flash	
+	2301987285	Play_Player_Damaged			\Default Work Unit\Player\Play_Player_Damaged	
 	2652171585	Stop_CutsceneMusic			\Default Work Unit\Music\Stop_CutsceneMusic	
 	2887379872	Stop_MagicianBoss			\Default Work Unit\Music\Stop_MagicianBoss	
 	3541099811	Play_ContinuousAttack			\Default Work Unit\Enemy\Play_ContinuousAttack	
 	3754198327	Play_NightClubBoss			\Default Work Unit\Music\Play_NightClubBoss	
+	3939643430	Stop_Flash			\Default Work Unit\Other\Stop_Flash	
 	3955959628	Play_Gunshot			\Default Work Unit\Player\Play_Gunshot	
 	4021863785	Play_Button_Hover			\Default Work Unit\Other\Play_Button_Hover	
 	4172806753	Stop_ContinuousAttack			\Default Work Unit\Enemy\Stop_ContinuousAttack	
 	4189198966	Play_MagicianBoss			\Default Work Unit\Music\Play_MagicianBoss	
 	4231704596	Play_GunDealerBoss			\Default Work Unit\Music\Play_GunDealerBoss	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	129	MIDI note velocity			\MIDI note velocity	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	70591491	Modulator LFO (Custom)				
+	97573840	Modulator LFO (Custom)				
+	172372270	Modulator LFO (Custom)				
+	288313808	LFO OVERTURE 02 (Custom)				
+	484068167	LFO RND (Custom)				
+	524441700	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	143454900	Modulator Envelope (Custom)				
+	186421682	Modulator Envelope (Custom)				
+	230741745	Modulator Envelope (Custom)				
+	245790458	Modulator Envelope (Custom)				
+	250695507	Modulator Envelope (Custom)				
+	310089700	Modulator Envelope (Custom)				
+	407405358	Modulator Envelope (Custom)				
+	496056754	Modulator Envelope (Custom)				
+	546687762	Modulator Envelope (Custom)				
+	726523268	Modulator Envelope (Custom)				
+	820863639	Modulator Envelope (Custom)				
+	912469318	Modulator Envelope (Custom)				
+	932301856	Modulator Envelope (Custom)				
+	1000102778	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	306218878	MAGIC 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyCharge\MAGIC 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	674839812	WOOSH 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\EnemyDash\WOOSH 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	675871848	DENIED 03	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Damaged\DENIED 03	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	732691908	CONFIRM 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\SingleAttack\CONFIRM 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	879918494	WOOSH 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerDash\WOOSH 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+	1007429662	DOWNLOAD 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\UI\Flash\DOWNLOAD 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	364615397	ContinuousAttack	D:\Wwise\BountyHunter_WwiseProject\.cache\Windows\SFX\Bluezone_BC0266_radio_transmission_frequency_selection_002_03_52B4D525.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\ContinuousAttack		57448
-	399239848	Blast Laser 2	D:\Wwise\BountyHunter_WwiseProject\.cache\Windows\SFX\Blast Laser 2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Gunshot\Blast Laser 2		25286
+	364615397	ContinuousAttack	D:\Wwise\BountyHunter_WwiseProject\.cache\Windows\SFX\Bluezone_BC0266_radio_transmission_frequency_selection_002_03_CB078A88.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\ContinuousAttack		57448
+	399239848	Blast Laser 2	D:\Wwise\BountyHunter_WwiseProject\.cache\Windows\SFX\Blast Laser 2_B2545812.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Gunshot\Blast Laser 2		16920
 	609877968	Button Click	D:\Wwise\BountyHunter_WwiseProject\.cache\Windows\SFX\Bluezone_BC0268_switch_button_click_ignition_002_03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Button Click		8299
 	832403430	Button Hover	D:\Wwise\BountyHunter_WwiseProject\.cache\Windows\SFX\Bluezone_BC0268_switch_button_click_high_tech_interface_001_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Button Hover		6196
 
