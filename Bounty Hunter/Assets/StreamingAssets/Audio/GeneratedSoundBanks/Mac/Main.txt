@@ -1,18 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
-	284218230	Play_BombBeep			\Default Work Unit\Play_BombBeep	
+	284218230	Play_BombBeep			\Default Work Unit\Other\Play_BombBeep	
 	314344222	Play_SingleAttack			\Default Work Unit\Enemy\Play_SingleAttack	
 	452547817	Stop_All			\Default Work Unit\Other\Stop_All	
-	480628718	Play_EnemyDash			\Default Work Unit\Play_EnemyDash	
+	480628718	Play_EnemyDash			\Default Work Unit\Enemy\Play_EnemyDash	
 	665673276	Stop_MainMusic			\Default Work Unit\Music\Stop_MainMusic	
-	778733838	Play_EnemyCharge			\Default Work Unit\Play_EnemyCharge	
+	778733838	Play_EnemyCharge			\Default Work Unit\Enemy\Play_EnemyCharge	
 	1012531473	Stop_NightClubBoss			\Default Work Unit\Music\Stop_NightClubBoss	
 	1149159311	Play_Button_Click			\Default Work Unit\Other\Play_Button_Click	
-	1309469456	Stop_EnemyCharge			\Default Work Unit\Stop_EnemyCharge	
+	1309469456	Stop_EnemyCharge			\Default Work Unit\Enemy\Stop_EnemyCharge	
 	1346240278	Play_MainMusic			\Default Work Unit\Music\Play_MainMusic	
 	1518393738	Stop_GunDealerBoss			\Default Work Unit\Music\Stop_GunDealerBoss	
 	1531451671	Play_CutsceneMusic			\Default Work Unit\Music\Play_CutsceneMusic	
-	1736868111	Play_BombExplosion			\Default Work Unit\Play_BombExplosion	
-	1927031969	Play_PlayerDash			\Default Work Unit\Play_PlayerDash	
+	1736868111	Play_BombExplosion			\Default Work Unit\Other\Play_BombExplosion	
+	1927031969	Play_PlayerDash			\Default Work Unit\Player\Play_PlayerDash	
 	1942342396	Play_Flash			\Default Work Unit\Other\Play_Flash	
 	2301987285	Play_Player_Damaged			\Default Work Unit\Player\Play_Player_Damaged	
 	2652171585	Stop_CutsceneMusic			\Default Work Unit\Music\Stop_CutsceneMusic	

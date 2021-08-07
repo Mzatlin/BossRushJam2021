@@ -60,4 +60,9 @@ public class AudioManager : MonoBehaviour
             background.color = imageAlpha;
         }
     }
+
+    public void SetAudioParameter(string parameter, float value)
+    {
+        AkSoundEngine.SetRTPCValue(parameter, value);
+    }
 }
