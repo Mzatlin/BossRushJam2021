@@ -6,6 +6,7 @@ public class DisableBoardOnClick : MonoBehaviour
 {
     [SerializeField] Canvas board;
     [SerializeField] PlayerStatsSO player;
+    [SerializeField] Texture2D retTex;
     IInteract interact;
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class DisableBoardOnClick : MonoBehaviour
         {
             board.enabled = false;
             player.isReady = true;
+            Cursor.SetCursor(retTex, Vector2.zero, CursorMode.Auto);
         }
 
     }

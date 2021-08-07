@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnableBountyBoardOnInteract : MonoBehaviour
 {
     [SerializeField] Canvas board;
+    [SerializeField] Texture2D cursorTex;
     IInteract interact;
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class EnableBountyBoardOnInteract : MonoBehaviour
     {
         if(board != null)
         {
+            Cursor.SetCursor(cursorTex, Vector2.zero, CursorMode.Auto);
             board.enabled = true;
         }
     }

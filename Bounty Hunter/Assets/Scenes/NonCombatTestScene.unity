@@ -1403,6 +1403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   board: {fileID: 302698242}
+  cursorTex: {fileID: 0}
 --- !u!1 &308399101
 GameObject:
   m_ObjectHideFlags: 0
@@ -5365,7 +5366,7 @@ MonoBehaviour:
   textDialogue: {fileID: 461370291}
   dialoguewriter: {fileID: 11400000, guid: 6d5b279ba8252264694dcac375bd5b11, type: 2}
   content:
-  - Guess I'll try my luck again.
+  - I've done more than enough gambling today.
   typingSpeed: 0.3
 --- !u!114 &887986408
 MonoBehaviour:
@@ -5386,7 +5387,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887986400}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02a4012d73a934b4f916821e3a9e0348, type: 3}
   m_Name: 
@@ -5932,7 +5933,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996046064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.082675576, y: 3.6212826, z: 0}
+  m_LocalPosition: {x: 0.03, y: 3.6212826, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7391,7 +7392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 788352178313820995, guid: 89115ac99507d1c499eeee00918c326e, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3324676853574810496, guid: 89115ac99507d1c499eeee00918c326e, type: 3}
       propertyPath: m_Pivot.x
@@ -7578,6 +7579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   board: {fileID: 1090201566}
+  cursorTex: {fileID: 2800000, guid: 85ccdead1a869ff4a90d3dffc3f035c5, type: 3}
 --- !u!114 &1352037129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7890,6 +7892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   board: {fileID: 1090201566}
   player: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
+  retTex: {fileID: 2800000, guid: 5cdc08eee5c13154e80fc681e4a5ba29, type: 3}
 --- !u!114 &1395850430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8961,6 +8964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   board: {fileID: 302698242}
   player: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
+  retTex: {fileID: 0}
 --- !u!114 &1729405319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10388,7 +10392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e154836586380e4aa134e4fd3879d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTex: {fileID: 0}
+  cursorTex: {fileID: 2800000, guid: 5cdc08eee5c13154e80fc681e4a5ba29, type: 3}
 --- !u!4 &2036504401
 Transform:
   m_ObjectHideFlags: 0
