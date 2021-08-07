@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BOMBBEEP = 284218230U;
+        static const AkUniqueID PLAY_BOMBEXPLOSION = 1736868111U;
         static const AkUniqueID PLAY_BUTTON_CLICK = 1149159311U;
         static const AkUniqueID PLAY_BUTTON_HOVER = 4021863785U;
         static const AkUniqueID PLAY_CONTINUOUSATTACK = 3541099811U;

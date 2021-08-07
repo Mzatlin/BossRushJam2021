@@ -8,6 +8,7 @@ public class DamageOnDetonate : MonoBehaviour
     IDetonate detonate;
     SpriteRenderer sprite;
     ParticleSystem explosionParticle;
+    AudioManager audio;
     [SerializeField] float explosionDelay;
     [SerializeField] float attackRange;
     [SerializeField] LayerMask damageLayer;
@@ -16,6 +17,7 @@ public class DamageOnDetonate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audio = FindObjectOfType<AudioManager>();
         detonate = GetComponent<IDetonate>();   
         if(detonate != null)
         {
@@ -74,6 +76,10 @@ public class DamageOnDetonate : MonoBehaviour
         if(explosionParticle != null)
         {
             explosionParticle.Play();
+        }
+        if(audio != null)
+        {
+            audio.PlayAudioByString("Play_BombExplosion", gameObject);
         }
         DamageOnExplosion();
         StartCoroutine(DeactivateDelay());

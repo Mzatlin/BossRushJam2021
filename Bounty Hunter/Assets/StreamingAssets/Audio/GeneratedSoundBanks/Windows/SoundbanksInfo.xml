@@ -53,11 +53,13 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3500496807">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2674223041">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="284218230" Name="Play_BombBeep" ObjectPath="\Events\Default Work Unit\Play_BombBeep" MaxAttenuation="100.000000" DurationType="Unknown"/>
+				<Event Id="1736868111" Name="Play_BombExplosion" ObjectPath="\Events\Default Work Unit\Play_BombExplosion" MaxAttenuation="100.000000" DurationType="Unknown"/>
 				<Event Id="1149159311" Name="Play_Button_Click" ObjectPath="\Events\Default Work Unit\Other\Play_Button_Click" DurationType="OneShot" DurationMin="0.625000" DurationMax="0.625000">
 					<IncludedMemoryFiles>
 						<File Id="609877968" Language="SFX">
@@ -105,7 +107,7 @@
 					<IncludedMemoryFiles>
 						<File Id="399239848" Language="SFX">
 							<ShortName>Blast Laser 2.wav</ShortName>
-							<Path>SFX\Blast Laser 2_B2545812.wem</Path>
+							<Path>SFX\Blast Laser 2_CA9287A2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
