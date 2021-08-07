@@ -261,9 +261,9 @@ RectTransform:
   m_Father: {fileID: 2103590198}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: 3.875}
+  m_AnchorMin: {x: 0.5, y: 0.5911125}
+  m_AnchorMax: {x: 0.5, y: 0.5911125}
+  m_AnchoredPosition: {x: 4, y: -7}
   m_SizeDelta: {x: 422, y: 231.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &367205537
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 742115110}
   - component: {fileID: 742115109}
   - component: {fileID: 742115108}
-  - component: {fileID: 742115107}
+  - component: {fileID: 742115115}
   m_Layer: 0
   m_Name: Cutscene Manager
   m_TagString: Untagged
@@ -472,18 +472,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &742115107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 742115105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7b6e6e8b7c20424bbb671ed6f5d2236, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &742115108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,25 +500,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
   firstDayDialogue:
-  - I used to be this city's best bounty hunter.
-  - I felt like I was on top of the world.
-  - Now? Well... let's just say I had a few to many rounds at the casino.
-  - Speaking of which...
+  - Looks like his sales have hit rock bottom.
   secondDayDialogue:
-  - I had completed my mission and have more than enough cash to pay off the debt.
-  - But...
-  - If I were to run the slots for a bit... I could be more than out of debt!
-  - Here goes nothing...
+  - Looks like his sales have hit rock bottom.
   thirdDayDialogue:
-  - I had the money. Everything was set...
-  - ..but I just couldn't help myself...
-  - Why do I keep doing this to myself?
-  - Am I going to be stuck in this loop forever?
-  - No! I have to change...starting today.
-  - 'One. More. Bounty. '
+  - Your music sucked
   finalDayDialogue:
-  - When I said one more bounty.
-  - I meant it.
+  - Show's over.
 --- !u!114 &742115110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +580,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &742115115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742115105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5abe5da1de3389e4ca323064f9ab48a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 367205537}
+  day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
+  firstDeath:
+  - {fileID: 21300000, guid: f9216dfd1d0ca4b4daba6e72ff8b9339, type: 3}
+  secondDeath:
+  - {fileID: 21300000, guid: 7a136d868294e02498bf41b789e4ca70, type: 3}
+  thirdDeath:
+  - {fileID: 21300000, guid: 16be187bbbd07934cb3b4e868f5611df, type: 3}
 --- !u!1 &1065407519
 GameObject:
   m_ObjectHideFlags: 0
