@@ -83,7 +83,7 @@ public class WaveDiveState : BossStateBase
             boss.transform.position += (Vector3)(moveDirection * chargeSpeed * Time.deltaTime);
         }
 
-        if (boss.transform.position.y < -7 || boss.transform.position.y > 4)
+        if (boss.transform.position.y < -11 || boss.transform.position.y > 4)
         {
             jumpAmount--;
             moveDirection *= -1;
@@ -113,6 +113,9 @@ public class WaveDiveState : BossStateBase
     IEnumerator ChargeDelay()
     {
         yield return new WaitForSeconds(chargeDelay);
+        boss.ActivateParticle(true, moveDirection);
+        yield return new WaitForSeconds(0.5f);
+        boss.ActivateParticle(false, moveDirection);
         isCharging = true;
     }
 }

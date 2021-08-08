@@ -93,9 +93,9 @@ public class BossCornerSpreadBulletPattern : BossStateBase
 
     IEnumerator SpawnProjectile(int projectileAmount, float delay)
     {
-        boss.SetGunVisibility(true);
         float angleStep = 360f / projectileAmount;
-
+        yield return new WaitForSeconds(0.6f / boss.currentPhase);
+        boss.SetGunVisibility(true);
         for (int i = 0; i < projectileAmount; i++)
         {
             //Direction vector of bullet
