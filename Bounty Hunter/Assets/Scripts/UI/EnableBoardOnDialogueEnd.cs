@@ -7,6 +7,7 @@ public class EnableBoardOnDialogueEnd : MonoBehaviour
     [SerializeField] Canvas board;
     IDialogueEnd dialogue;
     [SerializeField] PlayerStatsSO stats;
+    [SerializeField] Texture2D cursorTex;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +34,16 @@ public class EnableBoardOnDialogueEnd : MonoBehaviour
     {
         if (board != null && stats != null)
         {
+            Cursor.SetCursor(cursorTex, Vector2.zero, CursorMode.Auto);
             board.enabled = true;
-            stats.isReady = false;
+            StartCoroutine(StopDelay());
+          
         }
     }
+    IEnumerator StopDelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        stats.isReady = false;
+    }
+
 }

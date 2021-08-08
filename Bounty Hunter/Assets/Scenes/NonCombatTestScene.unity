@@ -5448,6 +5448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   board: {fileID: 302698242}
   stats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
+  cursorTex: {fileID: 0}
 --- !u!114 &887986410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7002,7 +7003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215778025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.7728224, y: 1.8135538, z: 0}
+  m_LocalPosition: {x: 4.26, y: 1.8135538, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7618,7 +7619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1352037126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7768,6 +7769,8 @@ GameObject:
   - component: {fileID: 1394471096}
   - component: {fileID: 1394471095}
   - component: {fileID: 1394471099}
+  - component: {fileID: 1394471100}
+  - component: {fileID: 1394471101}
   m_Layer: 9
   m_Name: CasinoMan
   m_TagString: Untagged
@@ -7906,6 +7909,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 733752638}
   sprites:
+  - {fileID: 21300000, guid: e9f542e790ee19140ae0964a1bb23d9e, type: 3}
+  - {fileID: 21300000, guid: a5018cf495db8224b93aa39f615bb3b1, type: 3}
+  - {fileID: 21300000, guid: e9f542e790ee19140ae0964a1bb23d9e, type: 3}
   - {fileID: 21300000, guid: a5018cf495db8224b93aa39f615bb3b1, type: 3}
   - {fileID: 21300000, guid: e9f542e790ee19140ae0964a1bb23d9e, type: 3}
 --- !u!114 &1394471097
@@ -7925,9 +7931,7 @@ MonoBehaviour:
   textDialogue: {fileID: 461370291}
   dialoguewriter: {fileID: 11400000, guid: 6d5b279ba8252264694dcac375bd5b11, type: 2}
   content:
-  - Any good bounties?
-  - Uh... no. None at all.
-  - Now scram!
+  - Bounty Board coming right up!
   typingSpeed: 0.3
 --- !u!114 &1394471098
 MonoBehaviour:
@@ -7956,6 +7960,53 @@ MonoBehaviour:
   nameCanvas: {fileID: 178368227}
   flavorText: {fileID: 2057312508}
   text: '!'
+--- !u!114 &1394471100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394471090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3689a383b7e470642b54002a3e77b7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
+  firstDayDialogue:
+  - Looking for a game of poker?
+  - No. I'm going to accept today's bounty.
+  - Really? Good Luck. This target has a lot of tricks up his sleeve, so be careful.
+  - Thanks, I'll keep that in mind.
+  - Bounty Board coming up!
+  secondDayDialogue:
+  - Back for seconds?
+  - Yeah... unfortunately.
+  - You're helping a lot of people doing this. Might as well, right?
+  thirdDayDialogue:
+  - Yes.
+  - 
+  - 
+  finalDayDialogue:
+  - Yes.
+  - 
+  - 
+  - 
+--- !u!114 &1394471101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394471090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a4012d73a934b4f916821e3a9e0348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 1090201566}
+  stats: {fileID: 11400000, guid: 88beb45a890adb64fa79c352c77e8cd7, type: 2}
+  cursorTex: {fileID: 2800000, guid: 85ccdead1a869ff4a90d3dffc3f035c5, type: 3}
 --- !u!1 &1395850427
 GameObject:
   m_ObjectHideFlags: 0
