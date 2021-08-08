@@ -497,10 +497,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 724067308637334891, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 724067308637334891, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 865115757815473676, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 572780338}
+    - target: {fileID: 2314659648727111440, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314659648727111440, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314659648727111440, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238472919376554528, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238472919376554528, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355686761647950342, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355686761647950342, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355686761647950342, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406724575132126751, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: volumeSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4919b29e7de337943b7f1e457abbddb4, type: 2}
+    - target: {fileID: 4784484075738043844, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784484075738043844, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5197060316871577878, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -603,6 +655,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5267250463034669231, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315750285977075642, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315750285977075642, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315750285977075642, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3200,6 +3264,7 @@ MonoBehaviour:
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 230431ef40646664581df7dbf4da9681, type: 2}
+  volume: {fileID: 11400000, guid: 4919b29e7de337943b7f1e457abbddb4, type: 2}
 --- !u!4 &710559716
 Transform:
   m_ObjectHideFlags: 0
@@ -7622,6 +7687,7 @@ MonoBehaviour:
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
   bossDialogueCheck: {fileID: 11400000, guid: e5022d5d251e7c949b275e5e1d5ad4c1, type: 2}
   currentPhase: 1
+  audio: {fileID: 0}
   currentPhaseThreshold: 50
   explosionParticle: {fileID: 1262423534}
   centerPoint: {fileID: 0}

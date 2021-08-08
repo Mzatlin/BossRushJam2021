@@ -351,6 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadDelay: 8
+  levelIndex: 3
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
 --- !u!114 &51209952
 MonoBehaviour:
@@ -425,6 +426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b6e6e8b7c20424bbb671ed6f5d2236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
+  startingPortraits: 
 --- !u!114 &51209956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -925,6 +928,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1edf5fca732673f46b7705238799fe19, type: 2}
   StopOnDestroy: []
+  volume: {fileID: 11400000, guid: 4919b29e7de337943b7f1e457abbddb4, type: 2}
 --- !u!4 &868950441
 Transform:
   m_ObjectHideFlags: 0

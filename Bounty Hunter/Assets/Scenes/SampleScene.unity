@@ -411,6 +411,7 @@ MonoBehaviour:
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d230f23930625f448affd93782d1d469, type: 2}
+  volume: {fileID: 11400000, guid: 4919b29e7de337943b7f1e457abbddb4, type: 2}
 --- !u!4 &27344601
 Transform:
   m_ObjectHideFlags: 0
@@ -21334,10 +21335,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 724067308637334891, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 724067308637334891, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 865115757815473676, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 82141796}
+    - target: {fileID: 2314659648727111440, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314659648727111440, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314659648727111440, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238472919376554528, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238472919376554528, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355686761647950342, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355686761647950342, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355686761647950342, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406724575132126751, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: volumeSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4919b29e7de337943b7f1e457abbddb4, type: 2}
+    - target: {fileID: 4784484075738043844, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784484075738043844, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5267250463034669219, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: m_Name
       value: PauseMenu
@@ -21428,6 +21481,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5267250463034669231, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315750285977075642, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315750285977075642, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315750285977075642, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

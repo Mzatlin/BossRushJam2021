@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] Image background;
     [SerializeField] AK.Wwise.Event[] PlayOnStart;
     [SerializeField] AK.Wwise.Event[] StopOnDestroy;
+    [SerializeField] VolumeSettingsSO volume;
 
     private void Start()
     {
@@ -16,6 +17,15 @@ public class AudioManager : MonoBehaviour
         {
             if(PlayOnStart[i] != null) { PlayOnStart[i].Post(player); }
         }
+
+        SetDefaultVolume();
+    }
+
+    void SetDefaultVolume()
+    {
+        SetAudioParameter("Volume_SFX", volume.SFXVolume);
+        SetAudioParameter("Volume_Music", volume.musicVolume);
+        SetAudioParameter("Volume_Master", volume.masterVolume);
     }
 
     private void OnDestroy()
@@ -56,7 +66,7 @@ public class AudioManager : MonoBehaviour
         {
             background.color = Random.ColorHSV();
             var imageAlpha = background.color;
-            imageAlpha.a = 0.3f;
+            imageAlpha.a = 0.1f;
             background.color = imageAlpha;
         }
     }
