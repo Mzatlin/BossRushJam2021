@@ -66,7 +66,7 @@ public class AudioManager : MonoBehaviour
         {
             background.color = Random.ColorHSV();
             var imageAlpha = background.color;
-            imageAlpha.a = 0.1f;
+            imageAlpha.a = 0.2f;
             background.color = imageAlpha;
         }
     }

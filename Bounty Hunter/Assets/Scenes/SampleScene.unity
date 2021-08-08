@@ -20642,6 +20642,42 @@ PrefabInstance:
       propertyPath: droneLocations.Array.data[1]
       value: 
       objectReference: {fileID: 1743895177}
+    - target: {fileID: 3249029561788674693, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 66bbe3d39bdc9dd41827d2de056d2c04, type: 2}
+    - target: {fileID: 3249029561788674693, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: m_Parameters.colorGradient.ctime0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249029561788674693, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.27144888
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249029561788674693, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.4230974
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249029561788674693, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249029561788674693, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249029561788674693, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249029561788674693, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249029561788674693, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
+      propertyPath: m_Parameters.colorGradient.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3249029561788674695, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
       propertyPath: healthSlider
       value: 
@@ -20692,11 +20728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3249029561788674699, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
       propertyPath: maxHealth
-      value: 125
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3249029561788674699, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
       propertyPath: currentHealth
-      value: 125
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3249029561788674701, guid: e27d0a8861d281f458ab132904a7a741, type: 3}
       propertyPath: m_Name

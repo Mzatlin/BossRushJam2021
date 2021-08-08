@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6534174788997903464, guid: 775f2dbcb4206304283f4363e125609b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6534174788997903465, guid: 775f2dbcb4206304283f4363e125609b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -517,6 +521,7 @@ GameObject:
   - component: {fileID: 953427285}
   - component: {fileID: 953427284}
   - component: {fileID: 953427286}
+  - component: {fileID: 953427287}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -564,6 +569,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorTex: {fileID: 2800000, guid: 85ccdead1a869ff4a90d3dffc3f035c5, type: 3}
+--- !u!114 &953427287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953427283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c0c6078fadc0a40bd370462fc06631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inactive: {fileID: 1716763149}
+  timeDelay: 1
 --- !u!1 &1053615219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1031,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1716763149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6534174787564174204, guid: 775f2dbcb4206304283f4363e125609b, type: 3}
+  m_PrefabInstance: {fileID: 145879429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1959719997
 GameObject:
   m_ObjectHideFlags: 0

@@ -130,7 +130,7 @@ public class FirstBossAI : BossAIBase
             StateMachine.SwitchToNewState(typeof(FirstBossDeathState));
         }
 
-        if (CurrentBossHealth < 25f && currentPhase < 3)
+        if (CurrentBossHealth < 65f && currentPhase < 3)
         {
             currentPhase++;
             //Add new initial phase to dictionary + intermediate attack
@@ -139,7 +139,7 @@ public class FirstBossAI : BossAIBase
             StateMachine.SetStates(states, 25f);
             StateMachine.SwitchToNewState(typeof(FirstBossPhase3State));
         }
-        else if (CurrentBossHealth < 50f && currentPhase < 2)
+        else if (CurrentBossHealth < 100f && currentPhase < 2)
         {
             currentPhase++;
             //Add new initial phase to dictionary + intermediate attack
