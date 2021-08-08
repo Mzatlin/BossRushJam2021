@@ -440,7 +440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05bbcc20f022c314ab8c39b3aa1c4b4c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -670,11 +670,11 @@ MonoBehaviour:
   firstDayDialogue:
   - Looks like his sales have hit rock bottom.
   secondDayDialogue:
-  - Looks like his sales have hit rock bottom.
+  - Looks like your sales have hit rock bottom, for good.
   thirdDayDialogue:
-  - Your music sucked
+  - 'Your body dropped harder than your terrible music. '
   finalDayDialogue:
-  - Show's over.
+  - Show's over, creep.
 --- !u!114 &742115110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,7 +766,7 @@ MonoBehaviour:
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
   offset: 1
   firstDeath:
-  - {fileID: 21300000, guid: f9216dfd1d0ca4b4daba6e72ff8b9339, type: 3}
+  - {fileID: 21300000, guid: 05bbcc20f022c314ab8c39b3aa1c4b4c, type: 3}
   secondDeath:
   - {fileID: 21300000, guid: 977332ab33a6c304eba488d8c3458b78, type: 3}
   thirdDeath:

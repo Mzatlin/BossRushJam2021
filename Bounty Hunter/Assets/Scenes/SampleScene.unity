@@ -5276,12 +5276,15 @@ MonoBehaviour:
   bossDialogue: {fileID: 11400000, guid: d819a72b0a94da546b913494a00004bd, type: 2}
   firstPhaseDialogue:
   - Are you here to buy something?
-  - No. I'm here to take you in.
-  - Oh man. That's a bummer. Do you know how many people you'd let down?
+  - Nope. Your prices are too high for me. Just here to take you down.
+  - 'Oh man. That''s a bummer. If only I had something to protect myself with....
+    heh.
+
+'
   secondPhaseDialogue:
   - "I really don\u2019t want to use up my merchandise, but you give me no choice."
   thirdphaseDialogue:
-  - 'Why don''t we make a deal? Whatever they''re paying you, I''ll double it! '
+  - Why don't we make a deal? Whatever they're paying you, I'll double it!  ...Please?
 --- !u!114 &625295117
 MonoBehaviour:
   m_ObjectHideFlags: 0

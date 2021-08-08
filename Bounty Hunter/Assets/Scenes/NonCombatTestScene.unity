@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Weapons Dealer
+  m_text: The Arms Dealer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0152214e9fcd4664fb967e4413e575ca, type: 2}
   m_sharedMaterial: {fileID: -8699756924265654156, guid: 0152214e9fcd4664fb967e4413e575ca, type: 2}
@@ -5243,7 +5243,7 @@ MonoBehaviour:
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
   boardEntries:
   - bossImage: {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
-    bossName: The Weapons Dealer
+    bossName: The Arms Dealer
     sceneName: SampleScene
   - bossImage: {fileID: 21300000, guid: 7a136d868294e02498bf41b789e4ca70, type: 3}
     bossName: The DJ
@@ -8095,19 +8095,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
   firstDayDialogue:
-  - Looking for a game of poker?
-  - No. I'm going to accept today's bounty.
-  - Really? Good Luck. This target has a lot of tricks up his sleeve, so be careful.
-  - Thanks, I'll keep that in mind.
-  - Bounty Board coming up!
+  - Evening! Need more tokens I'm guessing?
+  - No thanks. I'm looking to take today's bounty.
+  - You sure about that?. It's been a long time since I've seen you take one.
+  - Yeah... I kind of wish this rat race was behind me, but I've got no choice.
+  - Alright, if you say so. Be careful with this one, he's got a lot of tricks up
+    his sleeve.
   secondDayDialogue:
-  - Back for seconds?
-  - Yeah... unfortunately.
-  - You're helping a lot of people doing this. Might as well, right?
+  - Back for more? Would've thought the last reward would have been more than enough.
+  - Yeah... unfortunately I gambled it all away.
+  - Wow, guess I can't judge you for that, kind of my job to keep those slots rollin'.
+  - Understandable, it's not your fault. Guess I'm playing bounty hunter again.
+  - Suit yourself. I heard this next one loves using lasers, so be sure to bring
+    your best dash tech.
   thirdDayDialogue:
-  - Yes.
-  - 
-  - 
+  - Are you sure you're not just ditching retirement? You're doing a great job so
+    far!
+  - 'Sorry, but I''ve made up my mind. This will be my final bounty. '
+  - That's the spirit! As much as I've enjoyed your company, I feel it's best if
+    you settled your debt.
+  - That's the plan. One more bounty.
+  - Final bounty it is! Unfortunately this last one won't be easy. This lunatic has
+    bested even the greatest of bounty hunters.
   finalDayDialogue:
   - Yes.
   - 
@@ -9368,7 +9377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1739334598
 MonoBehaviour:
   m_ObjectHideFlags: 0

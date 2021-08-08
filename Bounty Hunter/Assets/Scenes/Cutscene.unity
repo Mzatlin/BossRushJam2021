@@ -485,13 +485,15 @@ MonoBehaviour:
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
   firstDayDialogue:
   - I used to be this city's best bounty hunter.
-  - I felt like I was on top of the world.
-  - Now? Well... let's just say I had a few to many rounds at the casino.
+  - I felt like I was on top of the world. The thrill of the hunt, as well as winning
+    the jackpot had always kept me going.
+  - Now? Well... let's just say I had a few to many rounds at the slot machine.
   - Speaking of which...
   secondDayDialogue:
   - I had completed my mission and have more than enough cash to pay off the debt.
-  - But...
-  - If I were to run the slots for a bit... I could be more than out of debt!
+  - But...I lost it all to that damn slot machine. My greed screwed me over once
+    again.
+  - Maybe if I were to run the slots one more time... I could start winning it back.
   - Here goes nothing...
   thirdDayDialogue:
   - I had the money. Everything was set...
@@ -499,7 +501,7 @@ MonoBehaviour:
   - Why do I keep doing this to myself?
   - Am I going to be stuck in this loop forever?
   - No! I have to change...starting today.
-  - 'One. More. Bounty. '
+  - 'One. More. Spin. '
   finalDayDialogue:
   - When I said one more spin.
   - 'I meant it. '

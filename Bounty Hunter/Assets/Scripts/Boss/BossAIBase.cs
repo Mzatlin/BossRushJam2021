@@ -58,6 +58,11 @@ public abstract class BossAIBase : MonoBehaviour
         }
     }
 
+    public void HandleStopCoroutine()
+    {
+        StopCoroutine(enemyCoroutine);
+    }
+
     public GameObject GetPlayer()
     {
         return player;

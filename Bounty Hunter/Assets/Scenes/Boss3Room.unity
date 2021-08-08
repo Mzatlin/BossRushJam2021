@@ -7732,6 +7732,8 @@ MonoBehaviour:
   portrait: {fileID: 1620682940}
   sprites:
   - {fileID: 21300000, guid: 693b71ed5f317c64187a74d4ee3c3a86, type: 3}
+  - {fileID: 21300000, guid: a5018cf495db8224b93aa39f615bb3b1, type: 3}
+  - {fileID: 21300000, guid: 693b71ed5f317c64187a74d4ee3c3a86, type: 3}
 --- !u!114 &1435368022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7746,13 +7748,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossDialogue: {fileID: 11400000, guid: e5022d5d251e7c949b275e5e1d5ad4c1, type: 2}
   firstPhaseDialogue:
-  - 'An audience! '
-  - Welcome to the greatest show of your life!
+  - I detect someone who needs to be entertained!
+  - Sounds like your detection is broken. I'm just hear to smash your face in.
+  - Oh no, I can feel it. Your dread is palpable. You need... a show!
+  - Welcome to the greatest show unearthed!
   secondPhaseDialogue:
-  - 'My My! You''re quite the audience. '
-  - The show has only just begun!
+  - My My! You're lasting much longer than any other audience member. The show has
+    only just begun!
   thirdphaseDialogue:
-  - The show... must... go on...
+  - The show... must... go on... Your dread... is palpable....
 --- !u!114 &1435368023
 MonoBehaviour:
   m_ObjectHideFlags: 0

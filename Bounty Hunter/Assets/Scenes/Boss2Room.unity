@@ -9581,9 +9581,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossDialogue: {fileID: 11400000, guid: c684ef5302caa534b8e0a61bea469ae0, type: 2}
   firstPhaseDialogue:
-  - Uh... dude? The Show's not on yet?
-  - No. I'm here to take you in.
-  - Oh man. That's a bummer. Do you know how many people you'd let down?
+  - Uh... dude? The show's not on for another hour. You're messing up my rehearsal.
+  - Sorry buddy, but there won't be a show tonight.
+  - Says who, chump!? Defense Bot! Take out the trash!
   secondPhaseDialogue:
   - "I really don\u2019t want to use up my merchandise, but you give me no choice."
   thirdphaseDialogue:
@@ -9635,6 +9635,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1694911358}
+--- !u!114 &1030281243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030281227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accb347b189df1b41b31647b80fb1864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 31199785}
+  sprites:
+  - {fileID: 21300000, guid: b4028cfc7a62d3f47832b46f9a27659a, type: 3}
+  - {fileID: 21300000, guid: a5018cf495db8224b93aa39f615bb3b1, type: 3}
+  - {fileID: 21300000, guid: 53c47c581d6db4640a674fe4708f2f67, type: 3}
 --- !u!1 &1037356714
 GameObject:
   m_ObjectHideFlags: 0
@@ -15559,11 +15576,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossDialogue: {fileID: 11400000, guid: c684ef5302caa534b8e0a61bea469ae0, type: 2}
   firstPhaseDialogue:
-  - My Dispenser! You're really killing the vibe, man! Time for my Solo
+  - Stop hurting my bot! You're really killing the vibe, man! Time for my Solo.
   secondPhaseDialogue:
-  - Get ready for the drop, little man!
+  - You've messed with the wrong DJ. Get ready for the drop, little man!
   thirdphaseDialogue:
-  - Show ain't over yet!
+  - 'Why don''t we have a duet, Defense Bot? '
 --- !u!114 &1726308865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15606,6 +15623,7 @@ MonoBehaviour:
   portrait: {fileID: 31199785}
   sprites:
   - {fileID: 21300000, guid: b4028cfc7a62d3f47832b46f9a27659a, type: 3}
+  - {fileID: 21300000, guid: a5018cf495db8224b93aa39f615bb3b1, type: 3}
   - {fileID: 21300000, guid: 53c47c581d6db4640a674fe4708f2f67, type: 3}
 --- !u!4 &1726308877 stripped
 Transform:

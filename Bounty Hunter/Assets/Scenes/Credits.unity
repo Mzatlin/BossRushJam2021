@@ -391,17 +391,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Animations: Kate Simons
+  m_text: 'Animator: Kate Simons
 
-    Backgrounds: Kaz
+    Background Artist: Kaz
 
-    Sound Design/Composer:
+    Sound Designer/Composer:
     Jake Gamelin
 
-    Programming: Michael Zatlin Jr.
+    Programmer/Game Designer: Michael Zatlin Jr.
 
 
-    Thanks For Playing!'
+    Thanks For
+    Playing!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0152214e9fcd4664fb967e4413e575ca, type: 2}
   m_sharedMaterial: {fileID: -8699756924265654156, guid: 0152214e9fcd4664fb967e4413e575ca, type: 2}
@@ -643,7 +644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a5d840d31024e4581e6445987aaee7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 948371996}
   background: {fileID: 0}
   PlayOnStart:
   - idInternal: 0

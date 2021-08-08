@@ -164,18 +164,20 @@ public class MagicianBossAI : BossAIBase
             StateMachine.SwitchToNewState(typeof(MagicianDeathPhase));
         }
 
-        if (CurrentBossHealth < 30f && currentPhase < 3)
+        if (CurrentBossHealth < 35f && currentPhase < 3)
         {
             currentPhase++;
+            //HandleStopCoroutine();
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
             states.Add(typeof(MagicianBossPhase3), new MagicianBossPhase3(this));
             StateMachine.SetStates(states, 25f);
             StateMachine.SwitchToNewState(typeof(MagicianBossPhase3));
         }
-        else if (CurrentBossHealth < 60f && currentPhase < 2)
+        else if (CurrentBossHealth < 75f && currentPhase < 2)
         {
             currentPhase++;
+            //HandleStopCoroutine();
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
             states.Add(typeof(MagicianBossPhase2State), new MagicianBossPhase2State(this));
