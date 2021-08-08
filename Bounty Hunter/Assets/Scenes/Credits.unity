@@ -648,11 +648,11 @@ MonoBehaviour:
   PlayOnStart:
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e7dfb0ae5d734224b8ea41460c6a98af, type: 2}
+    WwiseObjectReference: {fileID: 0}
   StopOnDestroy:
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 5d33400668da52e42a3bd30520fef9b8, type: 2}
   volume: {fileID: 11400000, guid: 4919b29e7de337943b7f1e457abbddb4, type: 2}
 --- !u!4 &1238012890
 Transform:

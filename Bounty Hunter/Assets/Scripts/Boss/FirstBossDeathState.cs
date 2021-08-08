@@ -26,7 +26,7 @@ public class FirstBossDeathState : BossStateBase
     {
         boss.IncrementCurrentDay();
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(7);
     }
 
     public override Type Tick()
