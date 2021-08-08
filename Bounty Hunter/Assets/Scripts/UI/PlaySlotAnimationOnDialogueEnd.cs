@@ -6,10 +6,12 @@ using UnityEngine;
 public class PlaySlotAnimationOnDialogueEnd : MonoBehaviour
 {
 
-    Animator animate, storyboardAnimate;
+    Animator animate, storyboardAnimate, liftAnimation;
     IDialogueEnd end => GetComponent<IDialogueEnd>();
     [SerializeField] GameObject slot;
     [SerializeField] GameObject storyboard;
+    [SerializeField] GameObject gunLift;
+    [SerializeField] CurrentDaySO day;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,10 @@ public class PlaySlotAnimationOnDialogueEnd : MonoBehaviour
         if (end != null)
         {
             end.OnDialogueEnd += HandleDialogueEnd;
+        }
+        if(gunLift != null)
+        {
+            liftAnimation = gunLift.GetComponent<Animator>();
         }
     }
 
@@ -33,9 +39,13 @@ public class PlaySlotAnimationOnDialogueEnd : MonoBehaviour
     IEnumerator Delay()
     {
         yield return new WaitForSeconds(2f);
-        if (animate != null)
+        if (animate != null && day != null && day.currentDay < 3)
         {
             animate.SetTrigger("Activate");
+        }
+        else
+        {
+            liftAnimation.SetTrigger("Activate");
         }
 
     }

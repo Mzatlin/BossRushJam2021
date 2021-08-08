@@ -8,6 +8,7 @@ public class SetStoryBoardPortrait : MonoBehaviour, IPortrait
     protected List<List<Sprite>> daySprites = new List<List<Sprite>>();
     [SerializeField] Image portrait;
     [SerializeField] CurrentDaySO day;
+    [SerializeField] int offset = 1;
 
     public List<Sprite> firstDeath;
     public List<Sprite> secondDeath;
@@ -35,7 +36,7 @@ public class SetStoryBoardPortrait : MonoBehaviour, IPortrait
     {
         if(day != null)
         {
-            currentList = daySprites[day.currentDay - 1];
+            currentList = daySprites[day.currentDay - offset];
         }
     }
 

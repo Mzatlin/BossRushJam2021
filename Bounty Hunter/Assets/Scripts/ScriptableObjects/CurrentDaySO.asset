@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 636d39406d65d92448319c2771cddfbb, type: 3}
   m_Name: CurrentDaySO
   m_EditorClassIdentifier: 
-  currentDay: 0
+  currentDay: 3
