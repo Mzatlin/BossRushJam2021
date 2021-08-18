@@ -35,6 +35,8 @@ public class PlayerMovementController : MonoBehaviour, IMoveDirection
         else
         {
             physics.SetMoveVelocity(Vector2.zero);
+            verticalMovement = 0;
+            horizontalMovement = 0;
             animate.SetBool("IsMoving", false);
         }
         UpdateIdle();
