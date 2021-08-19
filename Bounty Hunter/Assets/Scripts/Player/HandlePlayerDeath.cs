@@ -10,6 +10,7 @@ public class HandlePlayerDeath : MonoBehaviour
     SpriteRenderer sprite;
     Collider2D collider;
     [SerializeField] GameObject gun;
+    Animator animate;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class HandlePlayerDeath : MonoBehaviour
             health.OnDie += HandleDie;
         }
         stats = GetComponent<IPlayerStats>();
+        animate = GetComponentInChildren<Animator>();
     }
 
     private void OnDestroy()
@@ -45,6 +47,10 @@ public class HandlePlayerDeath : MonoBehaviour
        if(sprite != null)
         {
             sprite.enabled = false;
+        }
+       if(animate != null)
+        {
+            animate.SetTrigger("Dead");
         }
     }
 
