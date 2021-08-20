@@ -26,7 +26,7 @@ public class SecondBossOpeningState : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        isEnd = false;
     }
     IEnumerator EndDelay()
     {

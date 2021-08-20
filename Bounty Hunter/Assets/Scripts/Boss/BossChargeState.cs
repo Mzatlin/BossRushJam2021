@@ -59,6 +59,7 @@ public class BossChargeState : BossStateBase
     public override void EndState()
     {
         render.enabled = false;
+        isCharging = false;
     }
 
     public override Type Tick()

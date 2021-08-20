@@ -30,7 +30,7 @@ public class MagicianBossPhase3 : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        isEnd = false;
     }
 
     public override Type Tick()

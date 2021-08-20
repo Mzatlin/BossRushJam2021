@@ -29,6 +29,7 @@ public class LaserSweepState : BossStateBase
     public override void EndState()
     {
         boss.SetLasers(false);
+        boss.SetBossBool("IsFiring", false);
     }
 
     public override Type Tick()

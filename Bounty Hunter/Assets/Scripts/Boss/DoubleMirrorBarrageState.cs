@@ -62,7 +62,10 @@ public class DoubleMirrorBarrageState : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        isShooting = false;
+        isJumping = false;
+        isAttacking = false;
+        isTriggered = false;
     }
 
     public override Type Tick()

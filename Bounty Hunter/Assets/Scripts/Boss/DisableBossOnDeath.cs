@@ -34,10 +34,12 @@ public class DisableBossOnDeath : MonoBehaviour
         if (slider != null && state != null)
         {
             slider.gameObject.SetActive(false);
+            state.SwitchToNewState(typeof(DefenseSystemBossIdleState));
             state.PauseStateMachine();
             var boss = GetComponent<BossAIBase>();
             if(boss != null)
             {
+                boss.HandleStopCoroutine();
                 boss.SetBossTrigger("Death");
                 boss.SetLasers(false);
             }

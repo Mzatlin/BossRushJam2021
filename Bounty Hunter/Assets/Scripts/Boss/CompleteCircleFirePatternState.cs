@@ -42,6 +42,7 @@ public class CompleteCircleFirePatternState : BossStateBase
 
     public override void EndState()
     {
+        boss.SetBossTrigger("Idle");
     }
 
     public override Type Tick()

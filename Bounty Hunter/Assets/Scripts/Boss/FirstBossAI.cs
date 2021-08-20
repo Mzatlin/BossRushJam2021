@@ -124,6 +124,7 @@ public class FirstBossAI : BossAIBase
         if (CurrentBossHealth < 1f && currentPhase < 4)
         {
             currentPhase++;
+            HandleStopCoroutine();
             //Death Phase
             states.Add(typeof(FirstBossDeathState), new FirstBossDeathState(this));
             StateMachine.SetStates(states, 0f);
@@ -133,6 +134,7 @@ public class FirstBossAI : BossAIBase
         if (CurrentBossHealth < 65f && currentPhase < 3)
         {
             currentPhase++;
+            HandleStopCoroutine();
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
             states.Add(typeof(FirstBossPhase3State), new FirstBossPhase3State(this));
@@ -142,6 +144,7 @@ public class FirstBossAI : BossAIBase
         else if (CurrentBossHealth < 100f && currentPhase < 2)
         {
             currentPhase++;
+            HandleStopCoroutine();
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
             states.Add(typeof(FirstBossPhase2State), new FirstBossPhase2State(this));

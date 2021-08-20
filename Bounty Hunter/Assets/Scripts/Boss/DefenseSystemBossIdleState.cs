@@ -34,7 +34,8 @@ public class DefenseSystemBossIdleState : BossStateBase
 
     public override void EndState()
     {
-        Debug.Log("Exited Idle State");
+        hasWaited = false;
+        hasStartedWait = false;
     }
 
     public override Type Tick()

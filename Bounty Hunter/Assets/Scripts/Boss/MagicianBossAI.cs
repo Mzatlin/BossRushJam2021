@@ -158,6 +158,7 @@ public class MagicianBossAI : BossAIBase
         if (CurrentBossHealth < 1f && currentPhase < 4)
         {
             currentPhase++;
+            HandleStopCoroutine();
             //Death Phase
             states.Add(typeof(MagicianDeathPhase), new MagicianDeathPhase(this));
             StateMachine.SetStates(states, 0f);
@@ -167,7 +168,7 @@ public class MagicianBossAI : BossAIBase
         if (CurrentBossHealth < 35f && currentPhase < 3)
         {
             currentPhase++;
-            //HandleStopCoroutine();
+            HandleStopCoroutine();
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
             states.Add(typeof(MagicianBossPhase3), new MagicianBossPhase3(this));
@@ -177,7 +178,7 @@ public class MagicianBossAI : BossAIBase
         else if (CurrentBossHealth < 75f && currentPhase < 2)
         {
             currentPhase++;
-            //HandleStopCoroutine();
+            HandleStopCoroutine();
             //Add new initial phase to dictionary + intermediate attack
             //Set initial state as the new state 
             states.Add(typeof(MagicianBossPhase2State), new MagicianBossPhase2State(this));

@@ -48,6 +48,11 @@ public class BossMechanicStateMachine : MonoBehaviour, IStateMachine
 
     public void SwitchToNewState(Type nextState)
     {
+        if(CurrentState != null)
+        {
+            CurrentState.EndState();
+        }
+
         CurrentState = states[nextState];
         if (CurrentState != null)
         {

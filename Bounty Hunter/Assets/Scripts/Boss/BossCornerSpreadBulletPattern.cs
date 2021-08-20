@@ -56,7 +56,10 @@ public class BossCornerSpreadBulletPattern : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        isAttacking = false;
+        isShooting = false;
+        isJumping = false;
+        boss.SetGunVisibility(false);
     }
 
     public override Type Tick()

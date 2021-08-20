@@ -13,7 +13,6 @@ public class WaveDiveState : BossStateBase
     GameObject player;
     Transform startLocation;
     LayerMask obstacleLayers;
-    LineRenderer render;
 
     float chargeDamage = 2f;
     bool isCharging = false;
@@ -53,7 +52,7 @@ public class WaveDiveState : BossStateBase
 
     public override void EndState()
     {
-        render.enabled = false;
+        isCharging = false;
     }
 
     public override Type Tick()
@@ -113,9 +112,9 @@ public class WaveDiveState : BossStateBase
     IEnumerator ChargeDelay()
     {
         yield return new WaitForSeconds(chargeDelay);
-        boss.ActivateParticle(true, moveDirection);
+       // boss.ActivateParticle(true, moveDirection);
         yield return new WaitForSeconds(0.5f);
-        boss.ActivateParticle(false, moveDirection);
+       // boss.ActivateParticle(false, moveDirection);
         isCharging = true;
     }
 }

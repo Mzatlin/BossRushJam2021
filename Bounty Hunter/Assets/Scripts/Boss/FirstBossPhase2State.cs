@@ -6,7 +6,7 @@ using UnityEngine;
 public class FirstBossPhase2State : BossStateBase
 {
     FirstBossAI boss;
-    
+
     bool isEnd;
 
     public FirstBossPhase2State(FirstBossAI _boss) : base(_boss.gameObject)
@@ -29,7 +29,7 @@ public class FirstBossPhase2State : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        isEnd = false;
     }
 
     public override Type Tick()
@@ -54,7 +54,7 @@ public class FirstBossPhase2State : BossStateBase
     IEnumerator SpawnLandMines(int mineAmount)
     {
         yield return new WaitForSeconds(0.3f);
-        for(int i = 0; i < mineAmount; i++)
+        for (int i = 0; i < mineAmount; i++)
         {
             GameObject landMine = boss.CreateLandMine(new Vector2(UnityEngine.Random.Range(-7, 10), UnityEngine.Random.Range(-3, 6)));
             yield return null;

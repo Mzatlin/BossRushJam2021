@@ -19,10 +19,7 @@ public class FirstBossIdleState : BossStateBase
 
     public override void BeginState()
     {
-        Debug.Log("Entered Idle State");
-        hasWaited = false;
-        isJumping = false;
-        boss.SetGunVisibility(false);
+        ResetState();
         if (!boss.GetOpeningStats())
         {
             isOpening = true;
@@ -31,6 +28,13 @@ public class FirstBossIdleState : BossStateBase
         {
             isOpening = false;
         }
+    }
+
+    void ResetState()
+    {
+        hasWaited = false;
+        isJumping = false;
+        boss.SetGunVisibility(false);
     }
 
     Type GetRandomState()
@@ -49,7 +53,7 @@ public class FirstBossIdleState : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        ResetState();
     }
 
     public override Type Tick()

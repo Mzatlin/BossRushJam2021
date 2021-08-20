@@ -31,7 +31,8 @@ public class DJBossIdleState : BossStateBase
 
     public override void EndState()
     {
-        Debug.Log("End of Idle State");
+        hasWaited = false;
+        hasStartedWait = false;
     }
 
 

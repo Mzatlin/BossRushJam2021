@@ -90,16 +90,10 @@ public class DJBossAI : BossAIBase
     // Update is called once per frame
     void Update()
     {
-        if (CurrentBossHealth < 50 && firstBossState != null && !isUnpaused)
+        if(CurrentBossHealth < 1 && currentPhase < 4)
         {
-            isUnpaused = true;
-            states.Add(typeof(DJBossPhase2State), new DJBossPhase2State(this));
-            StateMachine.SetStates(states, 0f);
-            StateMachine.SwitchToNewState(typeof(DJBossPhase2State));
-        }
-
-        if(CurrentBossHealth < 1)
-        {
+            currentPhase++;
+            HandleStopCoroutine();
             SetLasersActive(false);
             firstBossState.PauseStateMachine();
             var phase = firstBoss.GetComponent<BossAIBase>();
@@ -107,10 +101,20 @@ public class DJBossAI : BossAIBase
             {
                 phase.SetLasers(false);
             }
-                states.Add(typeof(DJBossDeathState), new DJBossDeathState(this));
+            states.Add(typeof(DJBossDeathState), new DJBossDeathState(this));
             StateMachine.SetStates(states, 0f);
             StateMachine.SwitchToNewState(typeof(DJBossDeathState));
         }
+        if (CurrentBossHealth < 50 && firstBossState != null && !isUnpaused && currentPhase < 3)
+        {
+            currentPhase++;
+            HandleStopCoroutine();
+            isUnpaused = true;
+            states.Add(typeof(DJBossPhase2State), new DJBossPhase2State(this));
+            StateMachine.SetStates(states, 0f);
+            StateMachine.SwitchToNewState(typeof(DJBossPhase2State));
+        }
+
     }
 
     protected override void HandleDialogueEnd()

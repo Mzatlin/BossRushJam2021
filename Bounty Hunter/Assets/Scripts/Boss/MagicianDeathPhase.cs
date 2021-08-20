@@ -25,10 +25,7 @@ public class MagicianDeathPhase : BossStateBase
     }
 
 
-    public override void EndState()
-    {
-        throw new NotImplementedException();
-    }
+    public override void EndState(){}
 
     public override Type Tick()
     {

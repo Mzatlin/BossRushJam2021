@@ -33,6 +33,8 @@ public class SneakAttackState : BossStateBase
 
     public override void EndState()
     {
+        isJumping = false;
+        isShooting = false;
     }
 
     public override Type Tick()
@@ -113,7 +115,7 @@ public class SneakAttackState : BossStateBase
     Vector2 GetRandomDirection(float angleStep, int randomNum)
     {
         Vector2 direction = Vector2.zero;
-      
+
         if (randomNum < 1)
         {
             direction = (boss.GetPlayer().transform.position - boss.transform.position).normalized;

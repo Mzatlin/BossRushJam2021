@@ -31,6 +31,9 @@ public class DashAndShootState : BossStateBase
 
     public override void EndState()
     {
+        isJumping = false;
+        isShooting = false;
+        boss.SetGunVisibility(false);
     }
 
     public override Type Tick()

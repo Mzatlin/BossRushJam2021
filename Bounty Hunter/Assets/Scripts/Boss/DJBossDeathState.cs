@@ -25,10 +25,7 @@ public class DJBossDeathState : BossStateBase
         SceneManager.LoadScene(7);
     }
 
-    public override void EndState()
-    {
-        throw new NotImplementedException();
-    }
+    public override void EndState() {}
 
     public override Type Tick()
     {

@@ -35,10 +35,17 @@ public class MirrorAttackState : BossStateBase
     public override void BeginState()
     {
         Debug.Log("Enter Mirror State");
+        ResetState();
+    }
+
+    void ResetState()
+    {
         projectileAmount = 10;
         projectileSpeed = 100f;
         fireRate = 2f;
         jumpAmount = baseJumpAmount + boss.currentPhase;
+        isShooting = false;
+        isJumping = false;
     }
 
     Transform GetNextPosition()
@@ -59,7 +66,8 @@ public class MirrorAttackState : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        ResetState();
+        Debug.Log("End Reached");
     }
 
     public override Type Tick()

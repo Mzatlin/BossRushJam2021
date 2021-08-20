@@ -30,7 +30,7 @@ public class FirstBossPhase3State : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        isEnd = false;
     }
 
     public override Type Tick()

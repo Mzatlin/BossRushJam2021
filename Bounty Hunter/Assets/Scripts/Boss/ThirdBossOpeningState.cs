@@ -13,7 +13,6 @@ public class ThirdBossOpeningState : BossStateBase
     }
     public override void BeginState()
     {
-        Debug.Log("entered opening");
         boss.HandleCoroutine(Delay());
         boss.endDialogueEvent += HandleEnd;
         isEnd = false;
@@ -27,7 +26,7 @@ public class ThirdBossOpeningState : BossStateBase
 
     public override void EndState()
     {
-        throw new NotImplementedException();
+        isEnd = false;
     }
     IEnumerator EndDelay()
     {
