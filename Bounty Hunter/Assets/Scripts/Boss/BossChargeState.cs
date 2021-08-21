@@ -50,7 +50,7 @@ public class BossChargeState : BossStateBase
         if (hit != null && isCharging)
         {
             hit.ProcessDamage(chargeDamage);
-            if (bossAudio != null) { bossAudio.PlayAudioByString("Play_Player_Damaged", player); }
+            //if (bossAudio != null) { bossAudio.PlayAudioByString("Play_Player_Damaged", player); }
         }
         isCharging = false;
         boss.HandleCoroutine(ResetDelay());
