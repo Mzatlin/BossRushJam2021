@@ -3200,6 +3200,11 @@ Transform:
   m_Father: {fileID: 692551573}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &667561440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3874483641809293926, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+  m_PrefabInstance: {fileID: 28466104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &692377424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7479,6 +7484,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1301690660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8165763111744136697, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+  m_PrefabInstance: {fileID: 28466104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1333995415
 GameObject:
   m_ObjectHideFlags: 0
@@ -8389,6 +8399,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f48574f7e6f8a549baacf72037a375a, type: 3}
+--- !u!1 &1573241491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4766230698580380868, guid: c9857f552208dc443b64bb2bc36d7113, type: 3}
+  m_PrefabInstance: {fileID: 28466104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1585114975
 GameObject:
   m_ObjectHideFlags: 0
@@ -14927,7 +14942,7 @@ PrefabInstance:
       objectReference: {fileID: 1034015336}
     - target: {fileID: 6870264207655078761, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: subCanvases.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6870264207655078761, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: subCanvases.Array.data[0]
@@ -14937,6 +14952,18 @@ PrefabInstance:
       propertyPath: subCanvases.Array.data[1]
       value: 
       objectReference: {fileID: 1463614295}
+    - target: {fileID: 6870264207655078761, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: subCanvases.Array.data[2]
+      value: 
+      objectReference: {fileID: 667561440}
+    - target: {fileID: 6870264207655078761, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: subCanvases.Array.data[3]
+      value: 
+      objectReference: {fileID: 1301690660}
+    - target: {fileID: 6870264207655078761, guid: 970e2532a22c963418115466cb654078, type: 3}
+      propertyPath: subCanvases.Array.data[4]
+      value: 
+      objectReference: {fileID: 1573241491}
     - target: {fileID: 7009042956074380955, guid: 970e2532a22c963418115466cb654078, type: 3}
       propertyPath: gun
       value: 
