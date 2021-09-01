@@ -35,9 +35,9 @@ public class ScreenResolutionOptions : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetResolution(int resolutionIndex)
     {
-        
+        Resolution res = resolutions[resolutionIndex];
+        Screen.SetResolution(res.width, res.height, Screen.fullScreen);
     }
 }
