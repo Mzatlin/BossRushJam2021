@@ -60,6 +60,7 @@ public class BossChargeState : BossStateBase
     {
         render.enabled = false;
         isCharging = false;
+        boss.SetDash(false);
     }
 
     public override Type Tick()
@@ -73,9 +74,11 @@ public class BossChargeState : BossStateBase
                 render.SetPosition(1, boss.transform.position);
             }
             moveDirection = (player.transform.position - boss.transform.position).normalized;
+            boss.SetDash(false);
         }
         else
         {
+            boss.SetDash(true);
             render.enabled = false;
             boss.transform.position += (Vector3)(moveDirection * chargeSpeed * Time.deltaTime);
         }

@@ -86,7 +86,9 @@ public class BossCornerSpreadBulletPattern : BossStateBase
     {
         isJumping = true;
         boss.SetBossTrigger("Dash");
+        boss.SetDash(true);
         yield return base.JumpTime(endPos);
+        boss.SetDash(false);
         isJumping = false;
         jumpAmount--;
 

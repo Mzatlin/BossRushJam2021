@@ -92,7 +92,9 @@ public class FirstBossIdleState : BossStateBase
         {
             boss.SetBossTrigger("Dash");
         }
+        boss.SetDash(true);
         yield return base.JumpTime(endPos);
+        boss.SetDash(false);
         boss.HandleCoroutine(Delay());
     }
 }

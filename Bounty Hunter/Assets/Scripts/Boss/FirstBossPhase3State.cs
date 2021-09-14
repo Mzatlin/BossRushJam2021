@@ -69,7 +69,9 @@ public class FirstBossPhase3State : BossStateBase
 
     protected override IEnumerator JumpTime(Vector2 endPos)
     {
+        boss.SetDash(true);
         yield return base.JumpTime(endPos);
+        boss.SetDash(false);
         boss.ActivateDialogue();
     }
 

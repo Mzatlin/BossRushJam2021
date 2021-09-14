@@ -19,12 +19,12 @@ public class FirstBossAI : BossAIBase
     [SerializeField] Transform bossFirePoint;
 
     Rigidbody2D rb;
-
     IGunRotate rotate => GetComponentInChildren<IGunRotate>();
-  
-
+    bool isDashing = false;
     LineRenderer lineRender;
-   
+    Vector2 imagePos = Vector2.zero;
+    float distanceBetweenImages = 0.5f;
+
     // Awake is called before the first frame update
     protected override void Awake()
     {
@@ -117,8 +117,17 @@ public class FirstBossAI : BossAIBase
         }
 
         CheckPhase();
-    }
+        CheckDash();
 
+    }
+    void CheckDash()
+    {
+        if (isDashing && Vector2.Distance(transform.position, imagePos) > distanceBetweenImages)
+        {
+            GameObject instance = ObjectPooler.Instance.GetFromPool("FirstBossAfterImage");
+            imagePos = transform.position;
+        }
+    }
     void CheckPhase()
     {
         if (CurrentBossHealth < 1f && currentPhase < 4)
@@ -214,6 +223,11 @@ public class FirstBossAI : BossAIBase
         {
             bossGun.SetActive(visibility);
         }
+    }
+
+    public void SetDash(bool setting)
+    {
+        isDashing = setting;
     }
 
 }
