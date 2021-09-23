@@ -82,7 +82,7 @@ public class WaveDiveState : BossStateBase
             boss.transform.position += (Vector3)(moveDirection * chargeSpeed * Time.deltaTime);
         }
 
-        if (boss.transform.position.y < -11 || boss.transform.position.y > 4)
+        if (boss.transform.position.y < -6 || boss.transform.position.y > 5)
         {
             jumpAmount--;
             moveDirection *= -1;
