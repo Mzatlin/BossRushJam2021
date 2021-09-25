@@ -82,10 +82,17 @@ public class WaveDiveState : BossStateBase
             boss.transform.position += (Vector3)(moveDirection * chargeSpeed * Time.deltaTime);
         }
 
+        return CheckBounds();
+
+    }
+
+    Type CheckBounds()
+    {
         if (boss.transform.position.y < -6 || boss.transform.position.y > 5)
         {
             jumpAmount--;
             moveDirection *= -1;
+          //  boss.ActivateParticle(false, moveDirection);
             return typeof(DJBossIdleState);
 
         }
@@ -93,10 +100,10 @@ public class WaveDiveState : BossStateBase
         {
             jumpAmount--;
             moveDirection *= -1;
+           // boss.ActivateParticle(false, moveDirection);
             return typeof(DJBossIdleState);
         }
         return null;
-
     }
 
 
@@ -112,9 +119,9 @@ public class WaveDiveState : BossStateBase
     IEnumerator ChargeDelay()
     {
         yield return new WaitForSeconds(chargeDelay);
-       // boss.ActivateParticle(true, moveDirection);
+       //  boss.ActivateParticle(true, moveDirection);
         yield return new WaitForSeconds(0.5f);
-       // boss.ActivateParticle(false, moveDirection);
+      
         isCharging = true;
     }
 }
