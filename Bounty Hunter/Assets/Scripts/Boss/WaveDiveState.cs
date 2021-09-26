@@ -7,7 +7,7 @@ public class WaveDiveState : BossStateBase
 {
     //values that adjust based on Phase
     float chargeSpeed = 10f;
-    float chargeDelay = 1f;
+    float chargeDelay = 1.5f;
 
     //values fetched from the master AI controller
     GameObject player;
@@ -53,6 +53,7 @@ public class WaveDiveState : BossStateBase
     public override void EndState()
     {
         isCharging = false;
+        boss.SetBossBool("IsWaveCharging", false);
     }
 
     public override Type Tick()
@@ -92,7 +93,6 @@ public class WaveDiveState : BossStateBase
         {
             jumpAmount--;
             moveDirection *= -1;
-          //  boss.ActivateParticle(false, moveDirection);
             return typeof(DJBossIdleState);
 
         }
@@ -100,7 +100,6 @@ public class WaveDiveState : BossStateBase
         {
             jumpAmount--;
             moveDirection *= -1;
-           // boss.ActivateParticle(false, moveDirection);
             return typeof(DJBossIdleState);
         }
         return null;
@@ -118,10 +117,9 @@ public class WaveDiveState : BossStateBase
 
     IEnumerator ChargeDelay()
     {
+        boss.SetBossBool("IsWaveCharging", true);
         yield return new WaitForSeconds(chargeDelay);
-       //  boss.ActivateParticle(true, moveDirection);
-        yield return new WaitForSeconds(0.5f);
-      
+        boss.SetBossBool("IsWaveCharging",false);
         isCharging = true;
     }
 }
