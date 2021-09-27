@@ -25,8 +25,16 @@ public abstract class BossStateBase : IState
 
         while (fractionOfJourney < 1)
         {
-            fractionOfJourney = ((Time.time - startTime) * lerpSpeed) / totalDistance;
-            bossGameObject.transform.position = Vector2.Lerp(startPos, endPos, fractionOfJourney);
+            try
+            {
+                fractionOfJourney = ((Time.time - startTime) * lerpSpeed) / totalDistance;
+                bossGameObject.transform.position = Vector2.Lerp(startPos, endPos, fractionOfJourney);
+            }
+            catch (Exception ex)
+            {
+                Debug.Log("Unexpected jump occured during jump " + ex);
+                Debug.Log("Start pos " + startPos + " End pos " + endPos);
+            }
             yield return null;
         }
     }

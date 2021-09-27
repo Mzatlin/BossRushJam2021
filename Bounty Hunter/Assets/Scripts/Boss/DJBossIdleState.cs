@@ -12,6 +12,7 @@ public class DJBossIdleState : BossStateBase
     bool hasWaited = false;
     bool hasStartedWait = false;
     int randomJumpAmount = 2;
+    Vector2 lastPos;
 
     public DJBossIdleState(DJBossAI _boss) : base(_boss.gameObject)
     {
@@ -43,8 +44,8 @@ public class DJBossIdleState : BossStateBase
             if (!hasStartedWait && randomJumpAmount >= 1)
             {
                 hasStartedWait = true;
-                Vector2 randomPos = boss.bossIdleLocations[UnityEngine.Random.Range(0, boss.bossIdleLocations.Length)].position;
-                Debug.Log("Boss Idle Moved to: "+randomPos);
+                Vector2 randomPos = GetRandomPosition();//boss.bossIdleLocations[UnityEngine.Random.Range(0, boss.bossIdleLocations.Length)].position;
+               // Debug.Log("Boss Idle Moved to: "+randomPos);
                 boss.HandleCoroutine(JumpTime(randomPos));
             }
 
@@ -53,6 +54,22 @@ public class DJBossIdleState : BossStateBase
         else
         {
             return currentState;
+        }
+    }
+
+
+    Vector2 GetRandomPosition()
+    {
+        int randomPos = UnityEngine.Random.Range(0, boss.bossIdleLocations.Length);
+        Vector2 nextPos = boss.bossIdleLocations[randomPos].position;
+        if (lastPos == null || nextPos != lastPos)
+        {
+            lastPos= nextPos;
+            return lastPos;
+        }
+        else
+        {
+            return GetRandomPosition();
         }
     }
 
@@ -69,6 +86,9 @@ public class DJBossIdleState : BossStateBase
             return GetRandomState();
         }
     }
+
+
+
     IEnumerator Delay()
     {
         yield return new WaitForSeconds(1f);
