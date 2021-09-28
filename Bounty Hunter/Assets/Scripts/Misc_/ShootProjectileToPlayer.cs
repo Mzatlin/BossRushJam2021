@@ -66,7 +66,6 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
                 var projectile = tempBullet.GetComponent<Projectile>();
                 if (projectile != null)
                 {
-                    Debug.Log("Player");
                     projectile.SetBulletDirection(direction);
                 }
             }

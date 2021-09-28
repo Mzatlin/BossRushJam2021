@@ -23,19 +23,26 @@ public abstract class BossStateBase : IState
         float fractionOfJourney = 0;
         float startTime = Time.time;
 
-        while (fractionOfJourney < 1)
+        if (Vector2.Distance(endPos, bossGameObject.transform.position) < 1)
         {
-            try
-            {
-                fractionOfJourney = ((Time.time - startTime) * lerpSpeed) / totalDistance;
-                bossGameObject.transform.position = Vector2.Lerp(startPos, endPos, fractionOfJourney);
-            }
-            catch (Exception ex)
-            {
-                Debug.Log("Unexpected jump occured during jump " + ex);
-                Debug.Log("Start pos " + startPos + " End pos " + endPos);
-            }
             yield return null;
+        }
+        else
+        {
+            while (fractionOfJourney < 1)
+            {
+                try
+                {
+                    fractionOfJourney = ((Time.time - startTime) * lerpSpeed) / totalDistance;
+                    bossGameObject.transform.position = Vector2.Lerp(startPos, endPos, fractionOfJourney);
+                }
+                catch (Exception ex)
+                {
+                    Debug.Log("Unexpected jump occured during jump " + ex);
+                    Debug.Log("Start pos " + startPos + " End pos " + endPos);
+                }
+                yield return null;
+            }
         }
     }
 }
