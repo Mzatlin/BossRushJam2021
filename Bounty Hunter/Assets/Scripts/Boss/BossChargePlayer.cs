@@ -50,10 +50,6 @@ public class BossChargePlayer : MonoBehaviour
             StartCoroutine(ChargeDelay());
             chargeAmounts--;
         }
-        else
-        {
-            Debug.Log("End Attack");
-        }
         transform.position = startPosition.position;
     }
 

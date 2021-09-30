@@ -34,7 +34,6 @@ public class MirrorAttackState : BossStateBase
 
     public override void BeginState()
     {
-        Debug.Log("Enter Mirror State");
         ResetState();
     }
 
@@ -67,7 +66,6 @@ public class MirrorAttackState : BossStateBase
     public override void EndState()
     {
         ResetState();
-        Debug.Log("End Reached");
     }
 
     public override Type Tick()

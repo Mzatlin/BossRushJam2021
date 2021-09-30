@@ -28,7 +28,6 @@ public class SneakAttackState : BossStateBase
     {
         fireAmount += baseFireAmount + boss.currentPhase;
         jumpAmount = baseJumpAmount + boss.currentPhase;
-        Debug.Log("Sneak Attack Start");
     }
 
     public override void EndState()

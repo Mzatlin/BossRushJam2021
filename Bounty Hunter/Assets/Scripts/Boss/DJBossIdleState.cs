@@ -23,7 +23,6 @@ public class DJBossIdleState : BossStateBase
     {
         boss.SetBossBool("IsFiring", false);
         boss.SetBossTrigger("DJFloat");
-        Debug.Log("Entered Idle State");
         hasWaited = false;
         hasStartedWait = false;
         randomJumpAmount = UnityEngine.Random.Range(2, 4);
@@ -44,8 +43,7 @@ public class DJBossIdleState : BossStateBase
             if (!hasStartedWait && randomJumpAmount >= 1)
             {
                 hasStartedWait = true;
-                Vector2 randomPos = GetRandomPosition();//boss.bossIdleLocations[UnityEngine.Random.Range(0, boss.bossIdleLocations.Length)].position;
-               // Debug.Log("Boss Idle Moved to: "+randomPos);
+                Vector2 randomPos = GetRandomPosition();
                 boss.HandleCoroutine(JumpTime(randomPos));
             }
 

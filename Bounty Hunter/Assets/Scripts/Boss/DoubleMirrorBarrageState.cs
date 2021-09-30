@@ -36,7 +36,6 @@ public class DoubleMirrorBarrageState : BossStateBase
 
     public override void BeginState()
     {
-        Debug.Log("Enter Barrage State");
         projectileAmount = 10;
         projectileSpeed = 100f;
         fireRate = 2f;

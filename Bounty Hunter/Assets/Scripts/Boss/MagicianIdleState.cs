@@ -20,7 +20,6 @@ public class MagicianIdleState : BossStateBase
 
     public override void BeginState()
     {
-        Debug.Log("Entered Idle State");
         hasWaited = false;
         hasStartedWait = false;
         if (!boss.GetOpeningStats())
@@ -35,7 +34,8 @@ public class MagicianIdleState : BossStateBase
 
     public override void EndState()
     {
-        Debug.Log("End of Idle State");
+        hasWaited = false;
+        isJumping = false;
     }
 
 

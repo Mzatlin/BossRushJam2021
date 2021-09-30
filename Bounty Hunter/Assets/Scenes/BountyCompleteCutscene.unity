@@ -937,7 +937,7 @@ MonoBehaviour:
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a71a712404bd6dd48a532182e71897ca, type: 2}
-  volume: {fileID: 0}
+  volume: {fileID: 11400000, guid: 4919b29e7de337943b7f1e457abbddb4, type: 2}
 --- !u!4 &1504689530
 Transform:
   m_ObjectHideFlags: 0
