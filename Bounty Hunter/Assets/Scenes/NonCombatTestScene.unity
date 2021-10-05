@@ -5419,7 +5419,7 @@ MonoBehaviour:
   boardEntries:
   - bossImage: {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
     bossName: The Arms Dealer
-    sceneName: SampleScene
+    sceneName: Boss1Room
   - bossImage: {fileID: 21300000, guid: 7a136d868294e02498bf41b789e4ca70, type: 3}
     bossName: The DJ
     sceneName: Boss2Room
