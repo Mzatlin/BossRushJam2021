@@ -9,6 +9,10 @@ public class ShakeCameraOnHit : MonoBehaviour
     IHealth health;
     ICameraShake shake;
     Camera cam;
+    [SerializeField]
+    float shakeMagnitude = 0.5f;
+    [SerializeField]
+    float shakeDuration = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +36,7 @@ public class ShakeCameraOnHit : MonoBehaviour
     {
         if (!health.IsDead && shake != null)
         {
-            shake.TryShake(.2f,.5f);
+            shake.TryShake(shakeDuration,shakeMagnitude);
         }
     }
 

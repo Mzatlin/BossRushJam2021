@@ -61,6 +61,7 @@ public class BossChargeState : BossStateBase
         render.enabled = false;
         isCharging = false;
         boss.SetDash(false);
+        boss.SetBossTrigger("Idle");
     }
 
     public override Type Tick()

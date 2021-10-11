@@ -7839,7 +7839,7 @@ MonoBehaviour:
   bossDialogue: {fileID: 11400000, guid: e5022d5d251e7c949b275e5e1d5ad4c1, type: 2}
   firstPhaseDialogue:
   - I detect someone who needs to be entertained!
-  - Sounds like your detection is broken. I'm just hear to smash your face in.
+  - Sounds like your detection is broken. I'm just here to smash your face in.
   - Oh no, I can feel it. Your dread is palpable. You need... a show!
   - Welcome to the greatest show unearthed!
   secondPhaseDialogue:
