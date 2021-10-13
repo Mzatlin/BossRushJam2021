@@ -34,7 +34,7 @@ public class CompleteCircleFirePatternState : BossStateBase
     {
         projectileAmount = 50;
         projectileSpeed = 100f;
-        fireRate = 2f/boss.currentPhase+.3f;
+        fireRate = (2.5f/boss.currentPhase);
         fireAmount = baseJumpAmount + boss.currentPhase;
     }
 
