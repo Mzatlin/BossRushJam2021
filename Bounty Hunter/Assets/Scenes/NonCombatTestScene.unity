@@ -155,9 +155,9 @@ RectTransform:
   m_Father: {fileID: 536169055}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.698, y: 0.8533222}
-  m_AnchorMax: {x: 0.698, y: 0.8533222}
-  m_AnchoredPosition: {x: -21.300003, y: -12.718849}
+  m_AnchorMin: {x: 0.71900004, y: 0.7567867}
+  m_AnchorMax: {x: 0.71900004, y: 0.7567867}
+  m_AnchoredPosition: {x: 11.1, y: 3.2811508}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30254131
@@ -180,7 +180,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Arms Dealer
+  m_text: 'The Arms Dealer
+
+    $1000000'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0152214e9fcd4664fb967e4413e575ca, type: 2}
   m_sharedMaterial: {fileID: -8699756924265654156, guid: 0152214e9fcd4664fb967e4413e575ca, type: 2}
@@ -243,7 +245,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -50.87434, w: 0}
+  m_margin: {x: 11.526774, y: 0, z: 13.177973, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -373,9 +375,9 @@ RectTransform:
   m_Father: {fileID: 536169055}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6804246, y: 0.5056162}
-  m_AnchorMax: {x: 0.6804246, y: 0.5056162}
-  m_AnchoredPosition: {x: 6.899994, y: 1}
+  m_AnchorMin: {x: 0.71900004, y: 0.47478098}
+  m_AnchorMax: {x: 0.71900004, y: 0.47478098}
+  m_AnchoredPosition: {x: 7.806465, y: -0.6999998}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &81174421
@@ -4402,8 +4404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.61576, y: 19.917976}
-  m_SizeDelta: {x: 433.1685, y: 178.0575}
+  m_AnchoredPosition: {x: 32.61576, y: 25.2516}
+  m_SizeDelta: {x: 433.1685, y: 167.3903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536169056
 MonoBehaviour:
@@ -5418,13 +5420,13 @@ MonoBehaviour:
   day: {fileID: 11400000, guid: 32ddf1fc475237448a6ae8c97cd45c17, type: 2}
   boardEntries:
   - bossImage: {fileID: 21300000, guid: 75ac9f02287430942ac50244e3f125e8, type: 3}
-    bossName: The Arms Dealer
+    bossName: The Arms Dealer $1000000
     sceneName: Boss1Room
   - bossImage: {fileID: 21300000, guid: 7a136d868294e02498bf41b789e4ca70, type: 3}
-    bossName: The DJ
+    bossName: The DJ   $1000000
     sceneName: Boss2Room
   - bossImage: {fileID: 21300000, guid: 16be187bbbd07934cb3b4e868f5611df, type: 3}
-    bossName: The Magician
+    bossName: The Magician $1000000
     sceneName: Boss3Room
 --- !u!4 &864362956
 Transform:
@@ -8092,9 +8094,9 @@ RectTransform:
   m_Father: {fileID: 536169055}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6902257, y: 0.31815153}
-  m_AnchorMax: {x: 0.6902257, y: 0.31815153}
-  m_AnchoredPosition: {x: 2.699997, y: -0.40000534}
+  m_AnchorMin: {x: 0.71900004, y: 0.23300001}
+  m_AnchorMax: {x: 0.71900004, y: 0.23300001}
+  m_AnchoredPosition: {x: 7.606468, y: -2.199997}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395850429
@@ -10150,10 +10152,10 @@ RectTransform:
   m_Father: {fileID: 536169055}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.15300001, y: 0.2808127}
-  m_AnchorMax: {x: 0.46300003, y: 0.75081265}
-  m_AnchoredPosition: {x: -0.15959167, y: 6.6004066}
-  m_SizeDelta: {x: -2.3200073, y: 6.7599945}
+  m_AnchorMin: {x: 0.15300001, y: 0.20910376}
+  m_AnchorMax: {x: 0.46300003, y: 0.71500003}
+  m_AnchoredPosition: {x: -0.15959167, y: 0.3004074}
+  m_SizeDelta: {x: -2.3200073, y: 0.7599945}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2032512173
 MonoBehaviour:
@@ -10210,7 +10212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2036284778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10225,9 +10227,9 @@ RectTransform:
   m_Father: {fileID: 536169055}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.698, y: 0.7333222}
-  m_AnchorMax: {x: 0.698, y: 0.7333222}
-  m_AnchoredPosition: {x: -21.299995, y: -11.618851}
+  m_AnchorMin: {x: 0.71900004, y: 0.6795557}
+  m_AnchorMax: {x: 0.71900004, y: 0.6795557}
+  m_AnchoredPosition: {x: 51.8, y: -11.611656}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036284779
@@ -10277,8 +10279,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10313,7 +10315,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -50.87434, w: 22.319485}
+  m_margin: {x: 0, y: 0, z: 101.43355, w: 22.319485}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10405,7 +10407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.30200002, y: 0.47478098}
   m_AnchorMax: {x: 0.30200002, y: 0.47478098}
-  m_AnchoredPosition: {x: 3.3399963, y: 21.6}
+  m_AnchoredPosition: {x: 3.3399963, y: 6.3}
   m_SizeDelta: {x: 175.8591, y: 140.3622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2039950229
