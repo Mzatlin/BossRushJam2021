@@ -29,7 +29,10 @@ public class ShakeCameraOnHit : MonoBehaviour
 
     void OnDestroy()
     {
-        hit.OnHit -= HandleHit;
+        if (hit != null)
+        {
+            hit.OnHit -= HandleHit;
+        }
     }
 
     private void HandleHit()
