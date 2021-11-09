@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MoveObject : MonoBehaviour
 {
-    Coroutine movement = null;
     Vector2 originalPosition;
     Vector2 endPos;
     Vector2 currentPos;

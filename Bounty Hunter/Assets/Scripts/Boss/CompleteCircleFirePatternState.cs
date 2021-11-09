@@ -14,7 +14,6 @@ public class CompleteCircleFirePatternState : BossStateBase
     int fireAmount = 0;
     int baseJumpAmount = 2;
     bool isShooting = false;
-    bool isFiring = false;
     bool isAttacking = false;
     float angle = 90f;
     Transform lastPosition;

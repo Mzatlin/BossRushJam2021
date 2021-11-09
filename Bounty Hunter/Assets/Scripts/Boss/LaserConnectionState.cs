@@ -8,7 +8,6 @@ public class LaserConnectionState : BossStateBase
     DefenseSystemBossAI boss;
     float laserdelay = 2f;
     bool isLasersSet = false;
-    float turnSpeed = 30f;
     bool hasStartedWait = false;
     int laserAmount = 2;
     int index = 0;

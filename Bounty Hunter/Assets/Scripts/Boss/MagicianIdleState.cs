@@ -10,7 +10,6 @@ public class MagicianIdleState : BossStateBase
     Type lastState;
     Type currentState;
     bool hasWaited = false;
-    bool isJumping = false;
     bool hasStartedWait = false;
     bool isOpening = false;
     public MagicianIdleState(MagicianBossAI _boss) : base(_boss.gameObject)
@@ -35,7 +34,6 @@ public class MagicianIdleState : BossStateBase
     public override void EndState()
     {
         hasWaited = false;
-        isJumping = false;
     }
 
 
