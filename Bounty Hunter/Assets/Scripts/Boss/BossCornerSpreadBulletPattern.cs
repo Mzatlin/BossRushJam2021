@@ -15,7 +15,6 @@ public class BossCornerSpreadBulletPattern : BossStateBase
     int baseJumpAmount = 2;
     bool isShooting = false;
     bool isJumping = false;
-    bool isAttacking = false;
     float angle = 90f;
     Transform lastPosition;
 
@@ -56,7 +55,6 @@ public class BossCornerSpreadBulletPattern : BossStateBase
 
     public override void EndState()
     {
-        isAttacking = false;
         isShooting = false;
         isJumping = false;
         boss.SetGunVisibility(false);

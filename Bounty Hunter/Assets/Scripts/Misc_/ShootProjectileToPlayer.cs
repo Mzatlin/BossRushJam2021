@@ -14,7 +14,6 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
 
     public float FireRate => fireRate;
     float chargupTime;
-    float chargeThreshold = 0;
     bool isCharging;
 
     void Awake()

@@ -15,8 +15,6 @@ public class MirrorAttackState : BossStateBase
     int baseJumpAmount = 2;
     bool isShooting = false;
     bool isJumping = false;
-    bool isAttacking = false;
-    float angle = 90f;
     float nextFireTime = 0f;
     float fireDelay = .5f;
     Transform lastPosition;
@@ -85,7 +83,6 @@ public class MirrorAttackState : BossStateBase
         if (Time.time > nextJumpTime && !isJumping && jumpAmount > 0)
         {
             nextJumpTime = Time.time + fireRate;
-            angle = 0;
 
             startPoint = GetNextPosition().position;
             boss.HandleCoroutine(TeleportTime(startPoint));

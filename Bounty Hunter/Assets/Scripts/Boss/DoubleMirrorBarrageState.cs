@@ -15,7 +15,6 @@ public class DoubleMirrorBarrageState : BossStateBase
     int baseJumpAmount = 2;
     bool isShooting = false;
     bool isJumping = false;
-    bool isAttacking = false;
     float angle = 90f;
     float nextFireTime = 0f;
     float fireDelay = 3.5f;
@@ -63,7 +62,6 @@ public class DoubleMirrorBarrageState : BossStateBase
     {
         isShooting = false;
         isJumping = false;
-        isAttacking = false;
         isTriggered = false;
     }
 

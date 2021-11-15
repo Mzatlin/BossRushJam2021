@@ -17,7 +17,6 @@ public class WaveDiveState : BossStateBase
     float chargeDamage = 2f;
     bool isCharging = false;
     bool isWaiting = false;
-    bool isCollided = false;
     Vector2 moveDirection;
 
     float timeDelay = .2f;
