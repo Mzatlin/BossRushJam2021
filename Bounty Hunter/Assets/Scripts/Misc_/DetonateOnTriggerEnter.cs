@@ -7,11 +7,11 @@ public class DetonateOnTriggerEnter : MonoBehaviour, IDetonate
 {
     [SerializeField] LayerMask touchLayers;
     public event Action OnDetonate = delegate { };
-    Collider2D collider;
+    Collider2D detonateCollider;
 
     private void Start()
     {
-        collider = GetComponent<Collider2D>();
+        detonateCollider = GetComponent<Collider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -19,9 +19,9 @@ public class DetonateOnTriggerEnter : MonoBehaviour, IDetonate
         if((1 << collision.gameObject.layer & touchLayers) != 0)
         {
             OnDetonate();
-            if(collider != null)
+            if(detonateCollider != null)
             {
-                collider.enabled = false;
+                detonateCollider.enabled = false;
             }
         }
     }

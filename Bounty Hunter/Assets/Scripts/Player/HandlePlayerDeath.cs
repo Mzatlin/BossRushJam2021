@@ -8,13 +8,13 @@ public class HandlePlayerDeath : MonoBehaviour
     IHealth health;
     IPlayerStats stats;
     SpriteRenderer sprite;
-    Collider2D collider;
+    Collider2D playerCollider;
     [SerializeField] GameObject gun;
     Animator animate;
     // Start is called before the first frame update
     void Start()
     {
-        collider = GetComponent<Collider2D>();
+        playerCollider = GetComponent<Collider2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         health = GetComponent<IHealth>();
         if(health != null)

@@ -10,7 +10,7 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
     GameObject player;
     Quaternion bulletAngle;
     Animator animate;
-    AudioManager audio;
+    AudioManager shootAudio;
 
     public float FireRate => fireRate;
     float chargupTime;
@@ -19,7 +19,7 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
     void Awake()
     {
         animate = GetComponentInChildren<Animator>();
-        audio = FindObjectOfType<AudioManager>();
+        shootAudio = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -59,7 +59,7 @@ public class ShootProjectileToPlayer : MonoBehaviour, IShootable
             GameObject tempBullet = ObjectPooler.Instance.GetFromPool("Enemy Bullet 1");
             if (tempBullet != null)
             {
-                audio.PlayAudioByString("Play_SingleAttack", tempBullet);
+                shootAudio.PlayAudioByString("Play_SingleAttack", tempBullet);
                 tempBullet.transform.position = transform.position;
                 tempBullet.transform.rotation = bulletAngle;
                 var projectile = tempBullet.GetComponent<Projectile>();

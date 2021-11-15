@@ -37,7 +37,7 @@ public class FirstBossAI : BossAIBase
             dialogueEnd.OnDialogueEnd += HandleDialogueEnd;
         }
         rb = GetComponent<Rigidbody2D>();
-        audio = FindObjectOfType<AudioManager>();
+        bossAIAudio = FindObjectOfType<AudioManager>();
     }
 
     void InitializeBossPositions()
@@ -99,7 +99,7 @@ public class FirstBossAI : BossAIBase
 
     public AudioManager GetAudioManager()
     {
-        return audio;
+        return bossAIAudio;
     }
 
     public void SetOpeningStats(bool isActive)

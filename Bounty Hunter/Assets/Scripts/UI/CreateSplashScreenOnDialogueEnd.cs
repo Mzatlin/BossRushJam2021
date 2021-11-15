@@ -6,7 +6,7 @@ public class CreateSplashScreenOnDialogueEnd : MonoBehaviour
 {
     Animator splashAnimator, fadeAnimator, flashAnimator;
     IDialogueEnd end => GetComponent<IDialogueEnd>();
-    AudioManager audio;
+    AudioManager splashAudio;
     [SerializeField] GameObject splashScreen;
     [SerializeField] GameObject flashScreen;
     [SerializeField] BossDialogueSO bossDialogue;
@@ -30,7 +30,7 @@ public class CreateSplashScreenOnDialogueEnd : MonoBehaviour
             end.OnDialogueEnd += HandleDialogueEnd;
         }
 
-        audio = FindObjectOfType<AudioManager>();
+        splashAudio = FindObjectOfType<AudioManager>();
     }
 
     private void HandleDialogueEnd()
@@ -43,7 +43,7 @@ public class CreateSplashScreenOnDialogueEnd : MonoBehaviour
             }
             if (flashAnimator != null)
             {
-                audio.PlayAudioByString("Play_Flash", null);
+                splashAudio.PlayAudioByString("Play_Flash", null);
                 flashAnimator.SetTrigger("Activate");
                 StartCoroutine(Delay());
             }
@@ -65,7 +65,7 @@ public class CreateSplashScreenOnDialogueEnd : MonoBehaviour
             stats.isInDialogue = false;
             stats.isReady = true;
         }
-        audio.PlayAudioByString("Stop_Flash", null);
+        splashAudio.PlayAudioByString("Stop_Flash", null);
     }
 
     private void OnDestroy()

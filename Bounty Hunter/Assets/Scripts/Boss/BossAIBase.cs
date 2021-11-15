@@ -21,7 +21,7 @@ public abstract class BossAIBase : MonoBehaviour
     protected Quaternion gunRotation;
     public int currentPhase = 1;
     protected Coroutine enemyCoroutine;
-    public AudioManager audio;
+    public AudioManager bossAIAudio;
     IFlash flash => GetComponent<IFlash>();
 
 
@@ -29,7 +29,7 @@ public abstract class BossAIBase : MonoBehaviour
     {
         dialogue = GetComponent<ActivateDialogueFromBossAI>();
         InitializeStateMachine();
-        audio = FindObjectOfType<AudioManager>();
+        bossAIAudio = FindObjectOfType<AudioManager>();
     }
 
     public void IncrementCurrentDay()
@@ -126,9 +126,9 @@ public abstract class BossAIBase : MonoBehaviour
             enemyBullet.transform.rotation = rotation;
         }
 
-        if (audio != null)
+        if (bossAIAudio != null)
         {
-            audio.PlayAudioByString("Play_SingleAttack", enemyBullet);
+            bossAIAudio.PlayAudioByString("Play_SingleAttack", enemyBullet);
         }        
         
         return enemyBullet;
@@ -147,16 +147,16 @@ public abstract class BossAIBase : MonoBehaviour
     protected virtual void SetLasersActive(bool isActive) {
         if (isActive)
         {
-            if (audio != null)
+            if (bossAIAudio != null)
             {
-                audio.PlayAudioByString("Play_ContinuousAttack", null);
+                bossAIAudio.PlayAudioByString("Play_ContinuousAttack", null);
             }
         }
         else
         {
-            if (audio != null)
+            if (bossAIAudio != null)
             {
-                audio.PlayAudioByString("Stop_ContinuousAttack", null);
+                bossAIAudio.PlayAudioByString("Stop_ContinuousAttack", null);
             }
         }
     }

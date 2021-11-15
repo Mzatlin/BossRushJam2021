@@ -9,7 +9,7 @@ public class DisableBossHealthOnStart : MonoBehaviour
     [SerializeField] GameObject firstBoss;
     IHealth firstBossHealth;
     IStateMachine stateMachine;
-    Collider2D collider => GetComponent<Collider2D>();
+    Collider2D bossCollider => GetComponent<Collider2D>();
     DJBossAI DJ;
     // Start is called before the first frame update
     void Start()
@@ -30,9 +30,9 @@ public class DisableBossHealthOnStart : MonoBehaviour
         }
 
         stateMachine = GetComponent<IStateMachine>();
-        if (collider != null)
+        if (bossCollider != null)
         {
-            collider.enabled = false;
+            bossCollider.enabled = false;
         }
         TogglePause();
     }
@@ -60,9 +60,9 @@ public class DisableBossHealthOnStart : MonoBehaviour
         {
             slider.gameObject.SetActive(true);
             TogglePause();
-            if (collider != null)
+            if (bossCollider != null)
             {
-                collider.enabled = true;
+                bossCollider.enabled = true;
             }
             if (DJ != null)
             {

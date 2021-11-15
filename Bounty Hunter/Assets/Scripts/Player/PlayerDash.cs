@@ -10,7 +10,7 @@ public class PlayerDash : MonoBehaviour
     Collider2D playerCollider;
     Rigidbody2D rb;
     Animator animate;
-    AudioManager audio;
+    AudioManager dashAudio;
     Vector2 imagePos = Vector2.zero;
     float distanceBetweenImages = 0.5f;
 
@@ -27,7 +27,7 @@ public class PlayerDash : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audio = FindObjectOfType<AudioManager>();
+        dashAudio = FindObjectOfType<AudioManager>();
         physics = GetComponent<IMovePhysics>();
         stats = GetComponent<IPlayerStats>();
         direction = GetComponent<IMoveDirection>();
@@ -80,7 +80,7 @@ public class PlayerDash : MonoBehaviour
     {
         if (!isdashing)
         {
-            if(audio != null) { audio.PlayAudioByString("Play_PlayerDash", gameObject); }
+            if(dashAudio != null) { dashAudio.PlayAudioByString("Play_PlayerDash", gameObject); }
             isdashing = true;
             dashDelay = Time.time;
             remainingDashTime = dashDuration;

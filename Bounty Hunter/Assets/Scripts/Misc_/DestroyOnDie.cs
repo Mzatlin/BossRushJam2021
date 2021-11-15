@@ -8,7 +8,7 @@ public class DestroyOnDie : MonoBehaviour
     IHealth health;
     SpriteRenderer render;
     ParticleSystem explosionParticle;
-    AudioManager audio;
+    AudioManager destroyAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class DestroyOnDie : MonoBehaviour
         render = GetComponentInChildren<SpriteRenderer>();
         render.enabled = true;
         explosionParticle = GetComponentInChildren<ParticleSystem>();
-        audio = FindObjectOfType<AudioManager>();
+        destroyAudio = FindObjectOfType<AudioManager>();
     }
 
     private void OnDestroy()
@@ -46,9 +46,9 @@ public class DestroyOnDie : MonoBehaviour
         {
             explosionParticle.Play();
         }
-        if (audio != null)
+        if (destroyAudio != null)
         {
-            audio.PlayAudioByString("Play_BombExplosion", gameObject);
+            destroyAudio.PlayAudioByString("Play_BombExplosion", gameObject);
         }
         yield return new WaitForSeconds(0.7f);
         gameObject.SetActive(false);
